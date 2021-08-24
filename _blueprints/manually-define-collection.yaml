@@ -1,0 +1,21 @@
+---
+name: Manually Define Collection
+description: A blueprint for beginning the API lifecycle by manually defining a collection.
+image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+tags:
+  - OpenAPI
+  - Prototype-First
+stage: Active
+order: 1
+areas:
+
+  - label: Define
+    description: Define the API being delivered.
+  - label: Document
+    description: Provide humans with documentation.  
+  - label: Test
+    description: Ensure an API has proper testing.  
+  - label: Discovery
+    description: Ensure an API is discoverable.
+  - label: Retire
+    description: Begin the retirement of an API.     

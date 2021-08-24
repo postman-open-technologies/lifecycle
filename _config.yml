@@ -1,0 +1,36 @@
+title: API Lifecycle
+description: Proof of Concept
+image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+url: https://postman-toolboxes.github.io/api-knowledge
+email: kin.lane@postman.com
+
+github_user: postman-open-technologies
+github_repo: api-lifecycle
+github_branch: master
+
+version:      1.1.1
+author:
+  name:       'Kin Lane'
+  email:      'kin.lane@postman.com'
+markdown:     kramdown
+
+permalink: /:categories/:year/:month/:day/:title/
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
+
+collections:
+  blueprints:
+    output: true
+    permalink: /blueprints/:path/
+  elements:
+    output: true
+    permalink: /elements/:path/    
+
+defaults:
+  - scope:
+      type: blueprints
+    values:
+      layout: blueprints    
+  - scope:
+      type: elements
+    values:
+      layout: elements       

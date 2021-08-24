@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="collection__wrapper">
+   <div class="container">
+
+		<div class="row collection__header text-center">
+         <div class="col-md-12">
+            <h2 class="h1">{{ page.title }}</h2>
+			<p><span class="post-date">{{ page.date | date_to_string }}</span></p>
+        </div>
+      </div>
+
+      <div>
+
+		{{ content }}
+
+      </div>
+
+   </div>
+</div>
+<br><br>

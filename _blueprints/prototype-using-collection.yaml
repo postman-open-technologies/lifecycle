@@ -1,0 +1,31 @@
+---
+name: Prototype Using Collection
+description: A blueprint for beginning the API lifecycle by prototyping an API using a Postman collection.
+image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+tags:
+  - OpenAPI
+  - Prototype-First
+stage: New
+order: 2
+areas:
+
+  - label: Prototype
+    description: Prototype the API being delivered.
+  - label: Mock
+    description: Provide a mock for the API.
+  - label: Document
+    description: Provide humans with documentation. 
+  - label: Design
+    description: Design the surface of the API.     
+  - label: Test
+    description: Ensure an API has proper testing.  
+  - label: Deploy
+    description: Deploy an instance of an API.   
+  - label: Manage
+    description: Manage the access to an API.
+  - label: Discovery
+    description: Ensure an API is discoverable.
+  - label: Deploy
+    description: Deploy an instance of an API.      
+  - label: Retire
+    description: Begin the retirement of an API.     

@@ -1,0 +1,34 @@
+{% assign all_tags = "" %}
+{% for api in index.apis %}
+  {% for tag in api.tags %}
+    {% if all_tags contains tag %}
+    {% else %}
+      {% assign all_tags = all_tags | append: tag | append: ',' %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% assign all_tags = all_tags | split: "," | sort %}
+
+<style>
+.tag-column {
+  float: left;
+  width: 25%;
+  text-align: left;
+}
+.tag-row{
+  width: 80%;
+}
+.tag-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<center>
+<div class="tag-row" align="center">
+  {% for tag in all_tags %}
+    <div class="tag-column">{{ tag }}</div>
+  {% endfor %}
+</div>
+</center>

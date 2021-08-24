@@ -1,0 +1,29 @@
+---
+name: Design Using OpenAPI
+description: A blueprint for beginning the API lifecycle by designing a new API using an OpenAPI.
+image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+tags:
+  - OpenAPI
+  - Design-First
+stage: New
+order: 1
+areas:
+
+  - label: Define
+    description: Properly define the API.
+  - label: Design
+    description: Design the surface of the API.
+  - label: Mock
+    description: Provide a mock for the API.
+  - label: Document
+    description: Provide humans with documentation.  
+  - label: Test
+    description: Ensure an API has proper testing.  
+  - label: Deploy
+    description: Deploy an instance of an API.   
+  - label: Manage
+    description: Manage the access to an API.
+  - label: Discovery
+    description: Ensure an API is discoverable. 
+  - label: Retire
+    description: Begin the retirement of an API.      

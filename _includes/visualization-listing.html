@@ -1,0 +1,23 @@
+<style>
+.Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+.Column {
+    display: table-cell;
+}
+</style>
+<div class="Row">
+{% for api in index.apis %}
+  {% for property in api.properties %}
+    {% if property.type == 'x-postman-visualizer' %}
+    <div class="Column">
+      <a href="{{ property.x-data.url }}"><img src="{{ property.x-data.thumbnail }}" width="300"></a><br>
+      {{ property.x-data.title }}
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</div>

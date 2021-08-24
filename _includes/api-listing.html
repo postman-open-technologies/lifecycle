@@ -1,0 +1,39 @@
+{% for api in index.apis %}
+
+  {% assign website_url = "none" %}
+  {% assign postman_docs = "none" %}
+  {% assign postman_run = "none" %}
+  {% assign github_url = "none" %}
+  {% assign twitter_url = "none" %}
+  {% assign rating = 0 %}
+
+  {% for property in api.properties %}
+    {% if property.type == 'x-website' %}{% assign website_url = property.url %}{% endif %}
+    {% if property.type == 'x-postman-documentation' %}{% assign postman_docs = property.url %}{% endif %}
+    {% if property.type == 'x-github' %}{% assign github_url = property.url %}{% endif %}
+    {% if property.type == 'x-twitter' %}{% assign twitter_url = property.url %}{% endif %}
+    {% if property.type == 'x-rating' %}{% assign rating = property.x-data.rating %}{% endif %}
+  {% endfor %}
+
+  {% assign tag_match = 0 %}
+  {% for tag in api.tags %}
+    {% if tag == show_tag %}{% assign tag_match = 1 %}{% endif %}
+  {% endfor %}
+
+  {% if tag_match == 1 %}
+    <div class="row collection">
+      <div class="col-md-7">
+         <div class="row collection__meta">
+            <div class="col-12 collection__description"><img src="{{ api.image }}" width="250" align="left" style="padding: 15px;"><span style="font-size: 18px; font-weight: bold;">{{ api.name }}</span><br>{{ api.description }}</div>
+            <div class="col-12 collection__description"><strong>Resources:</strong> {% for tag in api.tags %}{{ tag }}{% if forloop.last == true %}{% else %}, {% endif %}{% endfor %}</div>
+         </div>
+      </div>
+      <div class="col-md-5 collection_cta">
+        <a class="landing btn btn__secondary-light" href="{{ website_url }}" target="_blank">Website</a>
+        {% if twitter_url != 'none' %}<a href="{{ twitter_url }}" target="_blank"><img src="https://postman-toolboxes2.s3.amazonaws.com/assets/twitter-icon.png" align="center" width="65"></a>{% endif %}
+        {% if github_url != 'none' %}<a href="{{ github_url }}" target="_blank"><img src="https://postman-apiboxes.s3.amazonaws.com/assets/github-icon.png" align="center" width="100"></a>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<br><br>
