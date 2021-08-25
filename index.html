@@ -40,7 +40,7 @@ layout: default
             {% if blueprint.stage == 'New' %}
                <div class="row collection">
                   <div class="col-md-10" style="border: 0px solid #000;">
-                     <img src="{{ blueprint.image }}" width="100" align="left" style="padding: 15px;">
+                     <a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
                      <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
                      <p>{{ blueprint.description }}</p>
                      <p>
@@ -50,7 +50,7 @@ layout: default
                      </p>
                   </div>
                   <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 30px;">
-                     <center><a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;">View Blueprint</a></center>
+                     <center><a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank">View Blueprint</a></center>
                   </div>
                </div>
             {% endif %}   
@@ -64,7 +64,7 @@ layout: default
              {% if blueprint.stage == 'Active' %}
                 <div class="row collection">
                    <div class="col-md-10" style="border: 0px solid #000;">
-                      <img src="{{ blueprint.image }}" width="100" align="left" style="padding: 15px;">
+                      <a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
                       <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
                       <p>{{ blueprint.description }}</p>
                       <p>

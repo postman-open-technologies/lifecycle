@@ -5,8 +5,67 @@ layout: default
    <div class="container">
       <div class="row">
          <div class="col-md-6 hero_title">
-            <h1>{{ page.name }}</h1>
+            <h1>{{ site.title }}</h1>
+         </div>
+         <div class="col-md-6 hero_image"><img src="{{ site.image }}" alt=""></div>
+      </div>
+   </div>
+</div>
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-10 offset-md-1 welcome text-center">
+         <p>{{ site.description }}</p>
+      </div>
+   </div>
+</div>
+
+<div class="collection__wrapper">
+   <div class="container">
+
+			<div class="row collection__header text-center">
+         <div class="col-md-12">
+            <h2 class="h1">Blueprint: {{ page.name }}</h2>
+            <p>{{ page.description }}</p>
          </div>
       </div>
+
+      <center>
+         <div style="width: 70%; border: 0px solid #000; text-align: left;" align="center">
+
+         {{ content }}
+
+         {% assign elements = site.elements %}
+
+         <hr>
+         {% for area in page.areas %}
+            <h3>{{ area.label }}</h3>
+            <p>{{ area.description }}</p>
+            
+            <ul>
+            {% for element in area.elements %}
+               {% for e in elements %}
+                  {% if e.name == element.name %}
+                     <li><a href="{{ e.url }}" target=="_blank">{{ element.label }}</a> - {{ e.description }}</li>
+                  {% endif %}   
+               {% endfor %}  
+            {% endfor %}   
+            </ul>
+            <hr>
+         {% endfor %}      
+      </div>
+      </center>
+
+   </div>
+</div>
+
+<div class="container-fluid">
+   <div class="row blurb text-center">
+      <div class="col-md-12">
+         <h2>API Lifecycle Blueprints</h2>
+         <p class="collection__end_p">Return to the main page of API lifecycle blueprints to look through the list of blueprints.
+         </p>
+      </div>
+      <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="/">Return to Main Page</a></div>
    </div>
 </div>
