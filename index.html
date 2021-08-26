@@ -26,7 +26,7 @@ layout: default
 			<div class="row collection__header text-center">
          <div class="col-md-12">
             <h2 class="h1">API Lifecycle Blueprints</h2>
-            <p>This is a proof of concept to see how we can define the API lifecycle in a modular and flexible enough way that anyone can define their own version of the API lifecycle using a common set of elements and actions. This runs on Github, and everything is defined using YAML, allowing it to be forked and worked on collaboratively, using Github issues to evolve and iterate upon the repository of API lifecycle blueprints, elements, and actions.</p>
+            <p style="text-align: left;">This is a proof of concept to see how we can define the API lifecycle in a modular and flexible enough way that anyone can define their own version of the API lifecycle using a common set of elements and actions. This runs on Github, and everything is defined using YAML, allowing it to be forked and worked on collaboratively, using Github issues to evolve and iterate upon the repository of API lifecycle blueprints, elements, and actions.</p>
          </div>
       </div>
 
@@ -49,9 +49,9 @@ layout: default
                         {% endfor %}
                      </p>
                   </div>
-                  <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 30px;">
-                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank">View Blueprint</a></center>
-                  </div>
+                  <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 0px;">
+                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;"><img src="{{ site.url}}/images/blueprint-icon.png" width="125" align="left"></a></center>
+                  </div>  
                </div>
             {% endif %}   
 
@@ -73,8 +73,8 @@ layout: default
                          {% endfor %}
                       </p>
                    </div>
-                   <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 30px;">
-                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;">View Blueprint</a></center>
+                   <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 0px;">
+                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;"><img src="{{ site.url}}/images/blueprint-icon.png" width="125" align="left"></a></center>
                   </div>                   
                 </div>
                 {% endif %}   
@@ -97,9 +97,9 @@ layout: default
                           {% endfor %}
                        </p>
                     </div>
-                    <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 30px;">
-                      <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;">View Blueprint</a></center>
-                   </div>                   
+                    <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 0px;">
+                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;"><img src="{{ site.url}}/images/blueprint-icon.png" width="125" align="left"></a></center>
+                  </div>                    
                  </div>
                  {% endif %}   
   
@@ -128,7 +128,7 @@ layout: default
             <li><strong>Body</strong> - The full body description for this API lifecycle blueprint.</li>
          </ul>
          <h4>Elements</h4>
-         <p>A mix bag of elements that can be used across all areas of the API lifecycle, providing all of the common elements API producers are using to define and manage their API operations.</p>
+         <p>A mix bag of elements that can be used address all areas of the API lifecycle, providing all of the common elements API producers are using to define and manage their API operations.</p>
          <ul>
             <li><strong>Name</strong> - The name of the element</li>
             <li><strong>Description</strong> - A description of the element.</li>

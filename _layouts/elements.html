@@ -35,23 +35,43 @@ layout: default
 
          {{ content }}
 
+         {% assign actions = site.actions %}
+
+         <!-- Show Video-->
          <hr>
          <center>{{ page.video }}</center>
          <p align="center">[Just an Example Video]</p>
          <hr>
+         <!-- Show Video-->
 
-         <h2>Links</h2>
+         <!-- Show Related Actions-->
+         {% assign number_of_actions = page.actions | size %}
+         {% if number_of_actions > 0 %}
+            <h2>Related Actions</h2>
+            <ul>
+               {% for action in page.actions %}
+                  {% for a in actions %}
+                     {% if a.name == action.name %}
+                        <li><a href="{{ site.url }}{{ a.url }}" target=="_blank">{{ action.name }}</a> - {{ a.description }}</li>
+                     {% endif %}   
+                  {% endfor %}  
+               {% endfor %}    
+            </ul>   
+         {% endif %}   
+         <!-- Show Related Actions-->   
 
-         <h2>Links</h2>
+         <!-- Show Related Links-->
+         <h2>Related Links</h2>
          <p>These are some useful links to help support this element of the API lifecycle.</p>
          <ul>
             {% for link in page.links %}
                <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
             {% endfor %}   
          </ul>    
+         <!-- Show Related Links-->
 
+         <!-- Show Related Blueprints-->
          {% assign blueprints = site.blueprints | sort: "name" %}
-
          <h3>Blueprints</h3>
          <p>These are some of the API lifecycle blueprints that use this element of the API lifecycle.</p>
          <ul>
@@ -67,6 +87,7 @@ layout: default
             {% endif %}           
          {% endfor %}
          </ul>
+         <!-- Show Related Blueprints-->
 
       </div>
       </center>

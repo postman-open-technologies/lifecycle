@@ -3,7 +3,7 @@ description: [Just a Proof of Concept]
 
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 url: https://postman-open-technologies.github.io/lifecycle/
-#url: 
+#url: /
 email: kin@postman.com
 
 github_user: postman-open-technologies
@@ -20,6 +20,9 @@ collections:
   elements:    
     permalink: /elements/:path/  
     output: true    
+  actions:    
+    permalink: /actions/:path/  
+    output: true       
 
 defaults:
   - scope:
@@ -29,4 +32,8 @@ defaults:
   - scope:
       type: elements
     values:
-      layout: elements          
+      layout: elements    
+  - scope:
+      type: actions
+    values:
+      layout: actions              
