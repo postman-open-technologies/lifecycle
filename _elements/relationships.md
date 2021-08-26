@@ -1,6 +1,6 @@
 ---
-name: CI/CD Pipeline
-description: The CI/CD pipeline for an API.
+name: Relationships
+description: Defining and understanding the way in two concepts, objects, or people are connected with APIs.
 links:
     - title: Link Title
       url: http://example.com

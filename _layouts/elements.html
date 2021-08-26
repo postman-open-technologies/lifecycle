@@ -15,7 +15,7 @@ layout: default
 <div class="container">
    <div class="row">
       <div class="col-md-10 offset-md-1 welcome text-center">
-         <p>{{ site.description }}</p>
+         <p>{{ site.description }} (<a href="/">Main Page</a>)</p>
       </div>
    </div>
 </div>
@@ -39,11 +39,14 @@ layout: default
          <center>{{ page.video }}</center>
          <p align="center">[Just an Example Video]</p>
          <hr>
+
+         <h2>Links</h2>
+
          <h2>Links</h2>
          <p>These are some useful links to help support this element of the API lifecycle.</p>
          <ul>
             {% for link in page.links %}
-               <li><a href="{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
+               <li><a href="{{ github_repo }}/{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
             {% endfor %}   
          </ul>    
 
@@ -51,17 +54,19 @@ layout: default
 
          <h3>Blueprints</h3>
          <p>These are some of the API lifecycle blueprints that use this element of the API lifecycle.</p>
+         <ul>
          {% for blueprint in blueprints %}
-            <ul>
-            {% for area in blueprint.areas %}
-               {% for element in area.elements %}
-                  {% if page.name == element.name %}
-                     <li><a href="{{ blueprint.url }}" target=="_blank">{{ blueprint.name }}</a></li>
-                  {% endif %}   
-               {% endfor %}  
-            {% endfor %}
-            </ul>
+            {% if blueprint.name != 'Master' %}
+               {% for area in blueprint.areas %}         
+                  {% for element in area.elements %}
+                     {% if page.name == element.name %}
+                        <li style="padding: 0px; margin: 0px;"><a href="{{ github_repo }}/{{ blueprint.url }}" target=="_blank">{{ blueprint.name }}</a></li>
+                     {% endif %}   
+                  {% endfor %} 
+               {% endfor %} 
+            {% endif %}           
          {% endfor %}
+         </ul>
 
       </div>
       </center>

@@ -6,6 +6,7 @@ tags:
   - OpenAPI
   - Design-First
 stage: New
+type: sync
 order: 1
 areas:  
 

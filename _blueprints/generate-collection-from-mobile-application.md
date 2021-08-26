@@ -6,7 +6,8 @@ tags:
   - OpenAPI
   - Prototype-First
 stage: Active
-order: 3
+type: sync
+order: 4
 areas: 
 
   - label: Define

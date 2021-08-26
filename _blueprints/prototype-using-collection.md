@@ -6,6 +6,7 @@ tags:
   - OpenAPI
   - Prototype-First
 stage: New
+type: sync
 order: 2
 areas: 
 

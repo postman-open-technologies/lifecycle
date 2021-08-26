@@ -26,21 +26,21 @@ layout: default
 			<div class="row collection__header text-center">
          <div class="col-md-12">
             <h2 class="h1">API Lifecycle Blueprints</h2>
-            <p>Some of the possible ways in which the API lifecycle is set in motion...</p>
+            <p>This is a proof of concept to see how we can define the API lifecycle in a modular and flexible enough way that anyone can define their own version of the API lifecycle using a common set of elements and actions. This runs on Github, and everything is defined using YAML, allowing it to be forked and worked on collaboratively, using Github issues to evolve and iterate upon the repository of API lifecycle blueprints, elements, and actions.</p>
          </div>
       </div>
 
       <div>
         {% assign blueprints = site.blueprints | sort: "order" %}
 
-        <h3>New API</h3>
-        <p>Blueprints for the possible API lifecycles for a new API.</p>
+        <h3>New Synchronous API</h3>
+        <p>Blueprints for the possible API lifecycles for a new synchronous API.</p>
         {% for blueprint in blueprints %}
 
-            {% if blueprint.stage == 'New' %}
+            {% if blueprint.stage == 'New' and blueprint.type == 'sync' %}
                <div class="row collection">
                   <div class="col-md-10" style="border: 0px solid #000;">
-                     <a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
+                     <a href="{{ github_repo }}/{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
                      <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
                      <p>{{ blueprint.description }}</p>
                      <p>
@@ -50,21 +50,21 @@ layout: default
                      </p>
                   </div>
                   <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 30px;">
-                     <center><a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank">View Blueprint</a></center>
+                     <center><a href="{{ github_repo }}/{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank">View Blueprint</a></center>
                   </div>
                </div>
             {% endif %}   
 
          {% endfor %}
          <br><br>
-         <h3>Active API</h3>
-         <p>Blueprints for the possible API lifecycles for an active API.</p>
+         <h3>Active Synchronous APIs</h3>
+         <p>Blueprints for the possible API lifecycles for an active synchronous API.</p>
          {% for blueprint in blueprints %}
  
-             {% if blueprint.stage == 'Active' %}
+             {% if blueprint.stage == 'Active' and blueprint.type == 'sync' %}
                 <div class="row collection">
                    <div class="col-md-10" style="border: 0px solid #000;">
-                      <a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
+                      <a href="{{ github_repo }}/{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
                       <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
                       <p>{{ blueprint.description }}</p>
                       <p>
@@ -74,13 +74,87 @@ layout: default
                       </p>
                    </div>
                    <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 30px;">
-                     <center><a href="{{ blueprint.url }}" style="font-size: 24px; color: #000;">View Blueprint</a></center>
+                     <center><a href="{{ github_repo }}/{{ blueprint.url }}" style="font-size: 24px; color: #000;">View Blueprint</a></center>
                   </div>                   
                 </div>
                 {% endif %}   
  
-          {% endfor %}         
+          {% endfor %}   
+          <br><br>
+          <h3>New Asynchronous APIs</h3>
+          <p>Blueprints for the possible API lifecycles for a new asyncronous API.</p>
+          {% for blueprint in blueprints %}
+  
+              {% if blueprint.stage == 'New' and blueprint.type == 'async' %}
+                 <div class="row collection">
+                    <div class="col-md-10" style="border: 0px solid #000;">
+                       <a href="{{ github_repo }}/{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
+                       <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
+                       <p>{{ blueprint.description }}</p>
+                       <p>
+                          {% for area in blueprint.areas %}
+                          &#8594; {{ area.label }}</li>
+                          {% endfor %}
+                       </p>
+                    </div>
+                    <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 30px;">
+                      <center><a href="{{ github_repo }}/{{ blueprint.url }}" style="font-size: 24px; color: #000;">View Blueprint</a></center>
+                   </div>                   
+                 </div>
+                 {% endif %}   
+  
+           {% endfor %}                 
          <br>
+         <hr>
+         <h3>Structure</h3>
+         <p>This project takes full advantage of Jekyll and Github for the structure of the project, allowing it to be a living, evolvable catalog of information for the API lifecycle, leveraging the following objects.</p>
+         <h4>Blueprints</h4>
+         <p>Common and custom blueprints that are defined as YAML and can be iterated and evolved upon to define a specific API lifecycle, but also provide ready to go blueprints that others can follow.</p>
+         <ul>
+            <li><strong>Name</strong> - The name of the blueprint</li>
+            <li><strong>Description</strong> - A description of the blueprint.</li>
+            <li><strong>Image</strong> - An image to represent the blueprint.</li>
+            <li><strong>Tags</strong> - One or more tags to define the blueprint.</li>
+            <li><strong>Stage</strong> - What stage of the lifecycle a blueprint applies.</li>
+            <li><strong>Type</strong> - Whether a blueprint applies to synchronous or asynchronous APIs.</li>
+            <li><strong>Order</strong> - The order of the blueprints when listed out.</li>
+            <li><strong>Areas</strong> - The different areas of an API lifecycle.
+               <ul>
+                  <li><strong>Label</strong> - A label for the this area of the lifecycle.</li>
+                  <li><strong>Description</strong> - A description for the this area of the lifecycle.</li>
+                  <li><strong>Elements</strong> - The multiple elements that make up this area of the lifecycle.</li>
+               </ul>                               
+            </li>
+            <li><strong>Body</strong> - The full body description for this API lifecycle blueprint.</li>
+         </ul>
+         <h4>Elements</h4>
+         <p>A mix bag of elements that can be used across all areas of the API lifecycle, providing all of the common elements API producers are using to define and manage their API operations.</p>
+         <ul>
+            <li><strong>Name</strong> - The name of the element</li>
+            <li><strong>Description</strong> - A description of the element.</li>
+            <li><strong>Links</strong> - Supporting links for this element.
+               <ul>
+                  <li><strong>Title</strong> - The title of the element link.</li>
+                  <li><strong>URL</strong> - The description of the element link.</li>
+               </ul>                               
+            </li>
+            <li><strong>Video</strong> - A video overview for users too learn about this element.</li>
+            <li><strong>Body</strong> - The full body description for this API lifecycle element.</li>
+         </ul>
+         <h4>Actions</h4>
+         <p>A variety of actions that can be taken in associated with the various elements of the API lifecycle, providing simple, yet flexible ways that different stakeholders can take action across the API lifecycle.</p>
+         <ul>
+            <li><strong>Name</strong> - The name of the action.</li>
+            <li><strong>Description</strong> - A description of the action.</li>
+            <li><strong>Links</strong> - Supporting links for this action.
+               <ul>
+                  <li><strong>Title</strong> - The title of the action link.</li>
+                  <li><strong>URL</strong> - The description of the action link.</li>
+               </ul>                               
+            </li>
+            <li><strong>Video</strong> - A video overview for users too learn about this action.</li>
+            <li><strong>Body</strong> - The full body description for this API lifecycle action.</li>
+         </ul>
       </div>
 
    </div>
