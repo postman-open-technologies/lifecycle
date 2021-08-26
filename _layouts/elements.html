@@ -46,7 +46,7 @@ layout: default
          <p>These are some useful links to help support this element of the API lifecycle.</p>
          <ul>
             {% for link in page.links %}
-               <li><a href="{{ github_repo }}/{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
+               <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
             {% endfor %}   
          </ul>    
 
@@ -60,7 +60,7 @@ layout: default
                {% for area in blueprint.areas %}         
                   {% for element in area.elements %}
                      {% if page.name == element.name %}
-                        <li style="padding: 0px; margin: 0px;"><a href="{{ github_repo }}/{{ blueprint.url }}" target=="_blank">{{ blueprint.name }}</a></li>
+                        <li style="padding: 0px; margin: 0px;"><a href="{{ site.url }}{{ blueprint.url }}" target=="_blank">{{ blueprint.name }}</a></li>
                      {% endif %}   
                   {% endfor %} 
                {% endfor %} 

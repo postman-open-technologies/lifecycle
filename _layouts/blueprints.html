@@ -58,7 +58,7 @@ layout: default
             {% for element in area.elements %}
                {% for e in elements %}
                   {% if e.name == element.name %}
-                     <li><a href="{{ github_repo }}/{{ e.url }}" target=="_blank">{{ element.label }}</a> - {{ e.description }}</li>
+                     <li><a href="{{ site.url }}{{ e.url }}" target=="_blank">{{ element.label }}</a> - {{ e.description }}</li>
                   {% endif %}   
                {% endfor %}  
             {% endfor %}  
@@ -81,7 +81,7 @@ layout: default
                      {% if already_used == 0 %}
                         {% for e in elements %}
                            {% if e.name == master_element.name %}
-                              <li><a href="{{ github_repo }}/{{ e.url }}" target=="_blank" style="color: #FF0000">{{ master_element.label }}</a> - {{ e.description }}</li>
+                              <li><a href="{{ site.url }}{{ e.url }}" target=="_blank" style="color: #FF0000">{{ master_element.label }}</a> - {{ e.description }}</li>
                            {% endif %}   
                         {% endfor %}  
                      {% endif %}   
@@ -107,6 +107,6 @@ layout: default
          <p class="collection__end_p">Return to the main page of API lifecycle blueprints to look through the list of blueprints.
          </p>
       </div>
-      <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="{{ github_repo }}/">Return to Main Page</a></div>
+      <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="{{ site.url }}">Return to Main Page</a></div>
    </div>
 </div>
