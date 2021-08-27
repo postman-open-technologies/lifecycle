@@ -44,6 +44,17 @@ layout: default
          <hr>
          <!-- Show Video-->
 
+         <table width="100%">
+            <tr>
+               {% for screenshot in page.screenshots %}
+               <td width="33%" align="center">
+                  <a href="{{ screenshot.url }}" target="_blank"><img src="{{ screenshot.url }}" width="100%" style="border: 2px solid #000; padding: 2px;"></a>
+                  <strong>{{ screenshot.title }}</strong>
+               </td> 
+               {% endfor %}           
+            </tr>         
+         </table>         
+         <hr>
          <!-- Show Related Actions-->
          {% assign number_of_actions = page.actions | size %}
          {% if number_of_actions > 0 %}
@@ -57,9 +68,10 @@ layout: default
                   {% endfor %}  
                {% endfor %}    
             </ul>   
+            <hr>
          {% endif %}   
          <!-- Show Related Actions-->   
-
+      
          <!-- Show Related Links-->
          <h2>Related Links</h2>
          <p>These are some useful links to help support this element of the API lifecycle.</p>
@@ -69,7 +81,7 @@ layout: default
             {% endfor %}   
          </ul>    
          <!-- Show Related Links-->
-
+         <hr>
          <!-- Show Related Blueprints-->
          {% assign blueprints = site.blueprints | sort: "name" %}
          <h3>Blueprints</h3>
