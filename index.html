@@ -26,13 +26,13 @@ layout: default
 			<div class="row collection__header text-center">
          <div class="col-md-12">
             <h2 class="h1">API Lifecycle Blueprints</h2>
-            <p style="text-align: left;">This is a proof of concept to see how we can define the API lifecycle in a modular and flexible enough way that anyone can define their own version of the API lifecycle using a common set of elements and actions. This runs on Github, and everything is defined using YAML, allowing it to be forked and worked on collaboratively, using Github issues to evolve and iterate upon the repository of API lifecycle blueprints, elements, and actions.</p>
+            <p style="text-align: left;">This is a proof of concept to see how we can define the API lifecycle in a modular and flexible enough way that anyone can define their own version of the API lifecycle using a common set of elements and actions. This runs on Github, and everything is defined using YAML, allowing it to be forked and worked on collaboratively, using Github issues to evolve and iterate upon the repository of API lifecycle blueprints, elements, and actions.</p>        
          </div>
       </div>
 
       <div>
         {% assign blueprints = site.blueprints | sort: "order" %}
-
+        <hr><br>
         <h3>New Synchronous API</h3>
         <p>Blueprints for the possible API lifecycles for a new synchronous API.</p>
         {% for blueprint in blueprints %}
@@ -56,7 +56,7 @@ layout: default
             {% endif %}   
 
          {% endfor %}
-         <br><br>
+         <hr><br>
          <h3>Active Synchronous APIs</h3>
          <p>Blueprints for the possible API lifecycles for an active synchronous API.</p>
          {% for blueprint in blueprints %}
@@ -80,7 +80,7 @@ layout: default
                 {% endif %}   
  
           {% endfor %}   
-          <br><br>
+          <hr><br>
           <h3>New Asynchronous APIs</h3>
           <p>Blueprints for the possible API lifecycles for a new asyncronous API.</p>
           {% for blueprint in blueprints %}
@@ -104,9 +104,8 @@ layout: default
                  {% endif %}   
   
            {% endfor %}                 
-         <br>
          <hr>
-         <h3>Structure</h3>
+         <h3>Structure of this Project</h3>
          <p>This project takes full advantage of Jekyll and Github for the structure of the project, allowing it to be a living, evolvable catalog of information for the API lifecycle, leveraging the following objects.</p>
          <h4>Blueprints</h4>
          <p>Common and custom blueprints that are defined as YAML and can be iterated and evolved upon to define a specific API lifecycle, but also provide ready to go blueprints that others can follow.</p>
@@ -156,6 +155,13 @@ layout: default
             <li><strong>Body</strong> - The full body description for this API lifecycle action.</li>
          </ul>
       </div>
+
+      <table align="center" width="50%">
+         <tr>
+            <td align="right"><a href="https://github.com/postman-open-technologies/lifecycle/discussions/8" target="_blank"></a><img src="{{ site.url }}/images/github-issues-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
+            <td align="left"><a href="https://github.com/postman-open-technologies/lifecycle/discussions/8 target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a></td>
+         </tr>
+      </table>         
 
    </div>
 </div>

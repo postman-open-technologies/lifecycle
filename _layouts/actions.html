@@ -23,7 +23,7 @@ layout: default
 <div class="collection__wrapper">
    <div class="container">
 
-			<div class="row collection__header text-center">
+		<div class="row collection__header text-center">
          <div class="col-md-12">
             <h2 class="h1">{{ page.name }}</h2>
             <p>{{ page.description }}</p>
@@ -37,8 +37,36 @@ layout: default
 
       </div>
       </center>
-      
 
+      <!-- Show Video-->
+      <hr>
+      <center>{{ page.video }}</center>
+      <p align="center">[Just an Example Video]</p>
+      <hr>
+      <!-- Show Video-->    
+      
+      <table width="100%">
+         <tr>
+            {% for screenshot in page.screenshots %}
+            <td width="33%" align="center">
+               <img src="{{ screenshot.url }}" width="100%" style="border: 2px solid #000; padding: 2px;">
+               <strong>{{ screenshot.title }}</strong>
+            </td> 
+            {% endfor %}           
+         </tr>         
+      </table>
+      <hr>
+      <!-- Show Related Tools-->
+      <h2>Open Source Tooling</h2>
+      <p>These are some of the open source tooling that can help set this action into motion.</p>
+      <ul>
+         {% for tool in page.tools %}
+            <li><a href="{{ site.url }}{{ tool.url }}" target=="_blank">{{ tool.title }}</a> - {{ tool.description }}</li>
+         {% endfor %}   
+      </ul>    
+      <!-- Show Related Tools-->
+
+      <br>
    </div>
 </div>
 

@@ -41,10 +41,9 @@ layout: default
          }
       </script>
       <center>
-         <div style="width: 70%; border: 0px solid #000; text-align: left;" align="center">
-
-         <a href="{{ page.discussion }}" target="_blank"><img src="{{ site.url }}/images/github-issues-icon.png" width="150" align="right"></a>   
-         {{ content }}
+         <div style="width: 70%; border: 0px solid #000; text-align: left;" align="center">          
+         
+         {{ content }}          
 
          {% assign elements = site.elements %}
          {% assign area_count = 1 %}
@@ -98,6 +97,17 @@ layout: default
       </div>
       </center>
 
+      <table align="center" width="50%">
+         <tr>
+            <td width="50%" align="right"><a href="{{ page.discussion }}" target="_blank"></a><img src="{{ site.url }}/images/github-issues-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
+            <td width="50%" align="left"><a href="{{ page.discussion }}" target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a></td>
+         </tr>
+         <tr>
+            <td align="right"><a href="{{ page.yaml }}" target="_blank"></a><img src="{{ site.url }}/images/yaml-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
+            <td align="left"><a href="{{ page.yaml }}" target="_blank" style="color:#000; font-size: 22px"><strong>YAML</strong></a></td>
+         </tr>         
+      </table>       
+      <br>
    </div>
 </div>
 
