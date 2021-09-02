@@ -16,7 +16,7 @@ areas:
       - name: Search
         label: Search
       - name: Watch
-        label: Team Members       
+        label: Watch
       - name: Private Network
         label: Private Network
   - label: Design
@@ -51,8 +51,8 @@ areas:
     image: images/lifecycle-arrow-design.png
     description: 
     elements:
-      - name: RBAC
-        label: RBAC      
+      - name: Role Based Access Control
+        label:  Role Based Access Control      
       - name: Security Testing
         label: Security Testing      
       - name: Authorization
@@ -68,7 +68,7 @@ areas:
       - name: Reporting
         label: Reporting  
       - name: Notifications
-        label: Activity                          
+        label: Notifications                          
   - label: Manage
     image: images/lifecycle-arrow-design.png
     description: 
