@@ -21,15 +21,7 @@ areas:
       - name: Events
         label: Events
       - name: Application
-        label: Application
-  - label: Develop
-    image: images/lifecycle-arrow-mock.png
-    description: Developing the API.
-    elements:
-      - name: Code
-        label: OpenAPI
-      - name: Design Patterns
-        label: Design Patterns        
+        label: Application       
   - label: Develop
     image: images/lifecycle-arrow-deploy.png  
     description: Provide a mock for the API.
