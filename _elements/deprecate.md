@@ -1,6 +1,6 @@
 ---
 name: Deprecate
-description: Shutting down an API, and making it so it can't be used.
+description: API deprecation occurs eventually for all APIs, and having a formal process to the deprecation of APIs or specific versions of an API helps API producers prepare for this inevitable future in a way that keeps consumers properly informed about what is happening, allowing the deprecation of APIs to happen consistently across all teams, groups, and the entire enterprise organization.
 links:
     - title: Link Title
       url: http://example.com

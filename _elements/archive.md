@@ -1,6 +1,6 @@
 ---
 name: Archive
-description: Archiving an API so it is available for historic purposes.
+description: The archiving of an API that has been deprecated allows for everything used across the life of an API is properly archived and cataloged so that it can be referenced moving forward, utilized to inform future API development, or just provide an accurate record of the past, ensuring that if something needs to be recalled, there is always an archive to look to for satisfying requests.
 links:
     - title: Link Title
       url: http://example.com

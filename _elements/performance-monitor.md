@@ -1,6 +1,6 @@
 ---
 name: Performance Monitor
-description: A monitor for the performance testing.
+description: Monitors can be setup for all API performance testing, scheduling the run of performance testing when needed and configuring to run from the regions where performance makes the most difference on business, making sure that each individual API SLA is met, identifying API performance issues early on and responding to ensure there is no significant business impact.
 links:
     - title: Link Title
       url: http://example.com

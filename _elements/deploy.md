@@ -1,6 +1,6 @@
 ---
 name: Deploy
-description: The publishing of an API into and stage of it's development and operation.
+description: Using an API gateway to deploy and manage APIs provides a single or federated approach to providing access to backend services using well defined APIs, standardizing how APIs are published to development, staging, production, or other environments, while also consistently apply authentication, logging, and the other elements needed to properly manage APIs at scale.
 links:
     - title: Link Title
       url: http://example.com

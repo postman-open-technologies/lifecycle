@@ -1,6 +1,6 @@
 ---
 name: Contract Monitor
-description: A monitor for an APIs contract test.
+description: Monitors can be setup for all API contract testing, scheduling the run of contract testing when needed and configuring to run from the regions that matter most to business operations, making sure that each individual API contract is never breaking with consumers, making sure that each API is delivering as expected on a 24/7 schedule.
 links:
     - title: Link Title
       url: http://example.com

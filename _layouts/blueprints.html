@@ -4,28 +4,20 @@ layout: default
 <div class="container-fluid hero v5_starfield-small-night-sky pb-4">
    <div class="container">
       <div class="row">
-         <div class="col-md-6 hero_title">
-            <h1>{{ site.title }}</h1>
+         <div class="col-md-6 hero_title" style="padding: 125px 0px 0px 0px; margin: 0px;">
+            <h1><a href="{{ site.url }}" style="color: #FFF;">{{ site.title }}</a></h1>
          </div>
-         <div class="col-md-6 hero_image"><img src="{{ site.image }}" alt=""></div>
+         <div class="col-md-6 hero_image" style="padding: 0px; margin: 0px;"><a href="{{ site.url }}"><img src="{{ site.url }}/images/lifecycle.png" alt="" width="350"></a></div>
       </div>
    </div>
 </div>
 
-<div class="container">
-   <div class="row">
-      <div class="col-md-10 offset-md-1 welcome text-center">
-         <p>{{ site.description }} (<a href="{{ site.url }}/">Main Page</a>)</p>
-      </div>
-   </div>
-</div>
-
-<div class="collection__wrapper">
+<div>
    <div class="container">
 
 			<div class="row collection__header text-center">
          <div class="col-md-12">
-            <h2 class="h1">Blueprint: {{ page.name }}</h2>
+            <h2 class="h1"><strong>Blueprint:</strong> {{ page.name }}</h2>
             <p>{{ page.description }}</p>
          </div>
       </div>
@@ -51,24 +43,26 @@ layout: default
          <hr>
          {% for area in page.areas %}
 
-            <h3>{{ area.label }}</h3>
-            <p>{{ area.description }} (<a href="#" onclick="showAdditional('additional-{{ area_count }}'); return false;" title="Additional elements to consider that aren't part of this blueprint.">Additional Elements</a>)</p>
+            <h3><img src="{{ site.url }}/{{ area.image}}" width="75" align="left" style="padding: 5px;">{{ area.label }} <a href="#" onclick="showAdditional('additional-{{ area_count }}'); return false;" title="Additional Elements to Consider"><img src="{{ site.url }}/images/plus-sign.png" width="30"></a></h3>
+            <p>{{ area.description }}</p>
          
             <ul>
             {% for element in area.elements %}
                {% for e in elements %}
                   {% if e.name == element.name %}
-                     <li><a href="{{ site.url }}{{ e.url }}" target=="_blank">{{ element.label }}</a> - {{ e.description }}</li>
+                     <li><a href="{{ site.url }}{{ e.url }}" target=="_blank" style="color: #000; font-weight: bold; text-decoration: underline;">{{ element.label }}</a> - {{ e.description }}</li>
                   {% endif %}   
                {% endfor %}  
             {% endfor %}  
             <div id="additional-{{ area_count }}" style="display: none;">
-            <!-- Begin Additional -->
+            
+               <!-- Begin Additional -->
             {% for blueprint in site.blueprints %}
-               {% if blueprint.name == 'Master' %}
+               {% if blueprint.name == 'Maximum Viable' %}
                   {% assign master = blueprint %}
                {% endif %}   
             {% endfor %} 
+
             {% for master_area in master.areas %}
                {% if master_area.label == area.label %}
                   {% for master_element in master_area.elements %}
@@ -99,14 +93,32 @@ layout: default
 
       <table align="center" width="50%">
          <tr>
-            <td width="50%" align="right"><a href="{{ page.discussion }}" target="_blank"></a><img src="{{ site.url }}/images/github-issues-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
-            <td width="50%" align="left"><a href="{{ page.discussion }}" target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a></td>
-         </tr>
-         <tr>
-            <td align="right"><a href="{{ page.yaml }}" target="_blank"></a><img src="{{ site.url }}/images/yaml-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
-            <td align="left"><a href="{{ page.yaml }}" target="_blank" style="color:#000; font-size: 22px"><strong>YAML</strong></a></td>
+            <td width="25%" align="right"><a href="{{ page.discussion }}" target="_blank"></a><img src="{{ site.url }}/images/github-issues-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
+            <td width="25%" align="left"><a href="{{ page.discussion }}" target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a></td>
+            <td width="25%" align="right"><a href="{{ page.yaml }}" target="_blank"></a><img src="{{ site.url }}/images/yaml-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
+            <td width="25%" align="left"><a href="{{ page.yaml }}" target="_blank" style="color:#000; font-size: 22px"><strong>YAML</strong></a></td>
          </tr>         
       </table>       
+      <hr>
+      <div style="padding: 0px 0px 0px 0px; margin: 1px;">
+         <script>
+            function chooseBlueprint(url){
+               location.href = document.getElementById('blueprints').value;
+            }
+         </script>
+         <center>
+         <select onchange="chooseBlueprint();" style="font-size: 24px; padding: 10px; margin-bottom: 25px;" id="blueprints">
+            <option value="">Try a Different Entry Point to the API Lifecycle</option>
+            {% assign blueprints = site.blueprints | sort: "order" %}
+            {% for blueprint in blueprints %}
+               {%if blueprint.name != 'Maximum Viable' and blueprint.name != 'Minimum Viable' %}
+                  <option value="{{ blueprint.url }}">{{ blueprint.name }}</option>
+               {% endif %}        
+             {% endfor %}            
+         </select>
+         </center>
+      </div>
+
       <br>
    </div>
 </div>

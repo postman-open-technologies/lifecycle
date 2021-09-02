@@ -1,6 +1,6 @@
 ---
 name: Pipeline
-description: The CI/CD pipeline for an API.
+description: Like other aspects of the software development lifecycle, APIs benefit from well defined, repeatable CI/CD pipelines to deploy, test, automate, and orchestrate throughout the API lifecycle, publishing APIs to development, staging, production, and other stages, but then also ensuring other elements like publishing of documentation, and tests are baked into the process.
 links:
     - title: Link Title
       url: http://example.com

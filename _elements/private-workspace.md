@@ -1,6 +1,6 @@
 ---
 name: Private Workspace
-description: A private workspace for managing an API.
+description: There will be APIs that require limited visibility across teams depending on where it is at in it's lifecycle, or the nature of resources or capabilities it provides access to, making a private workspace something that is necessary to tightly control who has access and visibility.
 links:
     - title: Link Title
       url: http://example.com

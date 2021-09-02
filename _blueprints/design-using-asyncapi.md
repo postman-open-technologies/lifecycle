@@ -7,11 +7,12 @@ tags:
   - Design-First
 stage: New
 type: async
-order: 1
+order: 2
 areas:  
 
   - label: Define
-    description: Defining of the API.
+    image: images/lifecycle-arrow-define.png
+    description: Ensuring that operations supporting an API is properly defined, as well as what is needed to properly design and bring an API to life. A little planning and organization at this step of an APIs journey can go a long way towards ensuring the overall health and velocity of an API, and the applications that depend on this internal, partner, or public API.
     elements:
       - name: Use Cases
         label: Use Cases
@@ -22,13 +23,15 @@ areas:
       - name: Application
         label: Application
   - label: Develop
+    image: images/lifecycle-arrow-mock.png
     description: Developing the API.
     elements:
       - name: Code
         label: OpenAPI
       - name: Design Patterns
         label: Design Patterns        
-  - label: Operate
+  - label: Develop
+    image: images/lifecycle-arrow-deploy.png  
     description: Provide a mock for the API.
     elements:
       - name: Code
@@ -37,6 +40,7 @@ areas:
         label: Business Logic 
   - label: Operate
     description: Operate an API in production. 
+    image: images/lifecycle-arrow-manage.png  
     elements:
       - name: Deploy
         label: Deploy
@@ -49,6 +53,7 @@ areas:
       - name: Inform
         label: Inform  
   - label: Discover
+    image: images/lifecycle-arrow-discover.png
     description: Discovery involving an API.
     elements:
       - name: Events

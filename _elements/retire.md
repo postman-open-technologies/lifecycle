@@ -1,6 +1,6 @@
 ---
 name: Retire
-description: Beginning the process of retiring an API.
+description: The retirement of an API or specific version of an API is an inevitable thing and there should be a formal process in place to inform API producers about what the steps are in a process to retired, and set in motion the deprecation of an API, keeping an API or version of an API active for a specific amount of time, while acknowledging that at some point it will go away.
 links:
     - title: Link Title
       url: http://example.com

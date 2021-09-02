@@ -1,6 +1,6 @@
 ---
 name: Performance Testing
-description: Performance testing for an API.
+description: Performance tests can be defined as individual tests using collections, pulling from one or many individual API paths and measuring the time it takes for the response to be sent, providing a test that can be run manually, scheduled across multiple geographic regions, or executed as part of a CI/CD pipeline, helping ensure an API is always meeting it's expected performance benchmarks.
 links:
     - title: Link Title
       url: http://example.com

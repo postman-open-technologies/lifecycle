@@ -1,6 +1,6 @@
 ---
 name: Contract Testing
-description: The contract test for an API.
+description: Contract tests can be derived from API artifacts like OpenAPI, JSON Schema, and GraphQL, and used to ensure there are no changes to what has been promised when an API was designed or developed, providing a repeatable test that can be run manually, on a schedule from multiple regions, or as part of a CI/CD pipeline to ensure contracts with consumers are upheld.
 links:
     - title: Link Title
       url: http://example.com

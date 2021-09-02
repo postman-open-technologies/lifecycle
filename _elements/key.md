@@ -1,6 +1,6 @@
 ---
 name: Key
-description: An key for accessing an API.
+description: API keys provide the simplest form of access to an API, allowing consumers to sign up for an account, define what their application is, and then receive a key they can include in headers or other parameter to identify themselves, ensuring that API producers are fully aware of everyone who has access to an API, and all consumers have a way to clearly identify themselves and receive personalized usage data for each key.
 links:
     - title: Link Title
       url: http://example.com

@@ -1,6 +1,6 @@
 ---
 name: Reference Documentation
-description: Documentation that describes the entire surface area of an API.
+description: It is helpful for API consumers to have complete documentation for the entire surface area of an API, providing a complete reference of what is possible with an API to help consumers explore every path, parameter, schema, and other details of how an API works, making the resources and capabilities available within API something consumers can find and put to use without much work.
 links:
     - title: Link Title
       url: http://example.com

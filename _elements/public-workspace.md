@@ -1,6 +1,6 @@
 ---
 name: Public Workspace
-description: A public workspace for managing an API.
+description: Some APIs will benefit from establishing a public workspace where 3rd party consumers can learn about an API, view the moving parts of it's operation, and engage with the team behind, making the API lifecycle much more transparent.
 links:
     - title: Link Title
       url: http://example.com

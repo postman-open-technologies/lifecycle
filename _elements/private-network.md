@@ -1,6 +1,6 @@
 ---
 name: Private Network
-description: A private network for publishing APIs.
+description: Private API networks all organizations, groups, and teams to establish private catalogs of APIs, collections, and the other artifacts and elements around them, making it easier for producers and consumers to find APIs that are being designed, developed, or operating in production, making APIs more accessible but only to an intended audience.
 links:
     - title: Link Title
       url: http://example.com

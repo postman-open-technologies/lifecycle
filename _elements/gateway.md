@@ -1,6 +1,6 @@
 ---
 name: Gateway
-description: A gateway used to publish an API.
+description: API gateways provide a centralized or federated approach to the deployment and management of APIs at scale across an organization, leveraging commercial or open source API gateways to deploy APIs into development, staging, production, or other environment, allowing for the standardization of common elements of API management, and configuring APIs using common policies.
 links:
     - title: Link Title
       url: http://example.com

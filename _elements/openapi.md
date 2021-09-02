@@ -1,6 +1,6 @@
 ---
 name: OpenAPI
-description: The OpenAPI specification for an API.
+description: The OpenAPI specification provides a common vocabulary for describing the surface area of request and response APIs, as well as webhooks, ensuring that API producers and consumers are on the same page when it comes to integration, but also helps stabilize multiple areas of the API lifecycle providing a contract that can be used for delivering documentation, mocks, testing, and more.
 links:
   - title: Link Title
     url: http://example.com

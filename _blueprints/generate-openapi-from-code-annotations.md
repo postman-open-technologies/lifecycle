@@ -7,21 +7,26 @@ tags:
   - Prototype-First
 stage: Active
 type: sync
-order: 1
+order: 5
 areas:
 
   - label: Define
-    description: Define the API being delivered.
+    image: images/lifecycle-arrow-define.png
+    description: Ensuring that operations supporting an API is properly defined, as well as what is needed to properly design and bring an API to life. A little planning and organization at this step of an APIs journey can go a long way towards ensuring the overall health and velocity of an API, and the applications that depend on this internal, partner, or public API.
     elements:
+      - name: Code Annotations
+        label: Code Annotations  
       - name: OpenAPI
-        label: OpenAPI    
+        label: OpenAPI            
   - label: Document
-    description: Provide humans with documentation.  
+    image: images/lifecycle-arrow-document.png
+    description: Having complete, accurate, and easy to follow document is essential for all APIs, helping alleviate the number one pain point for API consumers when it comes to onboarding with an API, as well as expanding the number of API paths an application puts to work, making API documentation one of the most important areas of the API lifecycle.
     elements:
       - name: Reference Documentation
         label: Reference Documentation    
   - label: Test
-    description: Ensure an API has proper testing.  
+    image: images/lifecycle-arrow-test.png
+    description: A test-driven API lifecycle ensures that each API accomplishes the intended purpose it was developed for, providing manual and automated ways to ensure an API hasn't changed unexpectedly, is as performant as required, and meets the security expectations of everyone involved, helping establish a high quality of service consistently across all APIs.
     elements:
       - name: Contract Testing
         label: Contract Testing   
@@ -30,7 +35,8 @@ areas:
       - name: Security Testing
         label: Security Testing  
   - label: Monitor
-    description: Monitoring all of the API tests.
+    image: images/lifecycle-arrow-monitor.png
+    description: All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.
     elements:
       - name: Contract Monitor
         label: Contract Monitor   
@@ -39,7 +45,8 @@ areas:
       - name: Security Monitor
         label: Security Monitor                  
   - label: Discover
-    description: Ensure an API is discoverable.  
+    image: images/lifecycle-arrow-discover.png
+    description: The ability to discover APIs at all stages of the API lifecycle is key to reduce redundancy across operations, helping teams find existing APIs before they develop new ones, and properly match API consumers with the right APIs, supporting documentation, relevant workflows, and the feedback loops that exist as part of the operation of APIs internally within the enterprise, or externally with 3rd party developers. 
     elements:
       - name: Private Network
         label: Private Network   
@@ -50,4 +57,4 @@ areas:
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/15 
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/generate-openapi-from-code-annotations.md 
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Not all APIs and the teams developing them are able to embrace a design first approach to delivering APIs and sometimes it makes more sense for developers to write the code first, then provide annotations within the code that can be used to generate OpenAPI definitions for each API as part of the regular build process. It is important that there is an OpenAPI contract for each API, so that documentation, mocks, testing, and other elements can be generated, but not all teams will be able to hand-craft the OpenAPI from scratch. Making code annotations a valid approach to developing an API using a code-first approach, but still realizing the benefits of having an up to date machine readable contract present for each API as it evolves throughout the lifecycle.

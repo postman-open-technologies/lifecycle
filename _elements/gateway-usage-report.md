@@ -1,6 +1,6 @@
 ---
-name: Github Repository
-description: A Github repository. 
+name: Gateway Usage Report
+description: A usage report for an API provided by the gateway.
 links:
     - title: Link Title
       url: http://example.com

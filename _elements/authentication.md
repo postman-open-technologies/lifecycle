@@ -1,6 +1,6 @@
 ---
 name: Authentication
-description: Having authentication in place for an API.
+description: The application of known standards for authentication across all APIs as part of the API management layer helps reduce friction for developers onboarding while applying the right level of security and access control to ensure that APIs are accessible by consumers, but then out of reach of unwanted actors, and are visible via reporting and dashboards that leverage API management observability.
 links:
     - title: Link Title
       url: http://example.com

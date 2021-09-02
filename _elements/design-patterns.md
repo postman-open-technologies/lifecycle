@@ -1,6 +1,6 @@
 ---
 name: Design Patterns
-description: Known API patterns for use in API design.
+description: Utilizing common design patterns and standards for the design, development, and operation of APIs helps ensure APIs leverage a common vocabulary and increases the chances that consumers will understand how to put an API to work in their applications, increasing the effectiveness of an API, and helping increase the productivity and velocity of producers and consumers.
 links:
     - title: Link Title
       url: http://example.com

@@ -1,6 +1,6 @@
 ---
 name: Onboarding
-description: Where to onboard for an API.
+description: Offering a consistent and well defined onboarding experience for all APIs, making it as easy and straightforward for consumers to onboard with an API, while also providing API producers with an easy way to onboard new consumers with their APIs without any custom work required, reducing friction when it comes to putting APIs to work by utilizing well known approaches to onboarding.
 links:
     - title: Link Title
       url: http://example.com

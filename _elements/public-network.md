@@ -1,6 +1,6 @@
 ---
 name: Public Network
-description: A public network for publishing APIs.
+description: Public API networks allow for teams, APIs, collections, and other elements to be made available for searching and browsing by a public audience, helping API producers reach a larger audience, but also allowing consumers to quickly find the APIs and other resources they need in their applications and integrations, networking consumers with producers in an ongoing and collaborative way.
 links:
     - title: Link Title
       url: http://example.com

@@ -1,6 +1,6 @@
 ---
 name: Search
-description: A search for APIs.
+description: Ensuring APIs are always available via search helps make sure that APIs can be found by consumers, but also by other producers who are looking to develop similar APIs, making search for APIs, as well as the operations around each API a critical aspect of the API lifecycle that should be considered as early on in the design and development of an API, but at least as it is deployed into production.
 links:
     - title: Link Title
       url: http://example.com

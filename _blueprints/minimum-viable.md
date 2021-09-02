@@ -1,17 +1,16 @@
 ---
-name: Master
-description: A master blueprint for all of the elements.
+name: Minimum Viable
+description: A foundational example of what the API lifecycle can be for an organization.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:
-  - OpenAPI
-  - Design-First
-stage: Master
+  - Minimum
+stage: New
 type: sync
 order: 1
 areas:  
 
   - label: Define
-    description: Properly define the API.
+    description: Ensuring that operations supporting an API is properly defined, as well as what is needed to properly design and bring an API to life. A little planning and organization at this step of an APIs journey can go a long way towards ensuring the overall health and velocity of an API, and the applications that depend on this internal, partner, or public API.
     elements:
       - name: Team Workspace
         label: Team Workspace
@@ -21,20 +20,6 @@ areas:
         label: Github Repository
       - name: Use Cases
         label: Use Cases
-      - name: Overview
-        label: Overview     
-      - name: Environments
-        label: Environments             
-      - name: Role Based Access Control
-        label: Role Based Access Control  
-      - name: Prototype Collection
-        label: Prototype Collection  
-      - name: Workflow Collection
-        label: Workflow Collection    
-      - name: Schema
-        label: Schema 
-      - name: Examples
-        label: Examples                                            
   - label: Design
     description: Design the surface of the API.
     elements:
@@ -54,12 +39,8 @@ areas:
     elements:
       - name: Reference Documentation
         label: Reference Documentation
-      - name: Onboarding Documentation
-        label: Onboarding Documentation   
       - name: Workflow Documentation
-        label: Workflow Documentation           
-      - name: Examples
-        label: Examples              
+        label: Workflow Documentation        
   - label: Test
     description: Ensure an API has proper testing.  
     elements:
@@ -70,7 +51,7 @@ areas:
       - name: Security Testing
         label: Security Testing   
   - label: Monitor
-    description: Monitoring all of the API tests.
+    description: All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.
     elements:
       - name: Contract Monitor
         label: Contract Monitor   
@@ -81,8 +62,8 @@ areas:
   - label: Deploy
     description: Deploy an instance of an API.   
     elements:
-      - name: Pipeline
-        label: Pipeline
+      - name: CI/CD Pipeline
+        label: CI/CD Pipeline
       - name: Gateway
         label: Gateway     
   - label: Manage
@@ -90,8 +71,6 @@ areas:
     elements:
       - name: Onboarding
         label: Onboarding
-      - name: Authentication
-        label: Authentication   
       - name: Usage Plan
         label: Usage Plan    
       - name: Key
@@ -104,33 +83,7 @@ areas:
       - name: Public Network
         label: Public Network   
       - name: Search
-        label: Search 
-  - label: Observability
-    description: Providing observability across all areas.
-    elements:
-      - name: Activity
-        label: Activity 
-      - name: Reports
-        label: Reports
-      - name: Change Log
-        label: Change Log       
-      - name: Uptime Monitor Report
-        label: Uptime Monitor Report   
-      - name: Gateway Usage Report
-        label: Gateway Usage Report  
-      - name: Security Monitor Report
-        label: Security Monitor Report
-      - name: Contract Monitor Report
-        label: Contract Monitor Report    
-      - name: Performance Monitor Report
-        label: Performance Monitor Report                                         
-  - label: Communicate
-    description: Communicate with API stakeholders.    
-    elements:
-      - name: Notifications
-        label: Notifications  
-      - name: Comments
-        label: Comments                          
+        label: Search                  
   - label: Retire
     description: Begin the retirement of an API.      
     elements:
@@ -140,7 +93,7 @@ areas:
         label: Deprecate    
       - name: Archive
         label: Archive      
-discussion: https://github.com/postman-open-technologies/lifecycle/discussions/20     
-yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/master.md      
+discussion: https://github.com/postman-open-technologies/lifecycle/discussions/9
+yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/design-using-openapi.md
 ...
 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>

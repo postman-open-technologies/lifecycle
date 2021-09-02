@@ -1,6 +1,6 @@
 ---
 name: Schema
-description: A machine readable plan, outline, or model for all or part of an API.
+description: Defining all objects use as part of API operations using JSON Schema provides for a definitions that can be used as part of modeling and the API design process, as well as for validation at development, build, or even run time.
 links:
     - title: Link Title
       url: http://example.com

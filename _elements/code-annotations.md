@@ -1,6 +1,6 @@
 ---
-name: Team
-description: The team working on an API. 
+name: Code Annotations
+description: Language specific code annotations can be used to generate OpenAPI definitions for APIs in a variety of programming languages, allowing developers to provide the necessary information to create an APi contract from within their natural development environment, embracing a code-first approach to the API lifecycle while still ensuring there is an OpenAPI to be used for the rest of the lifecycle.
 links:
     - title: Link Title
       url: http://example.com

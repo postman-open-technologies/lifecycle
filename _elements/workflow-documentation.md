@@ -1,6 +1,6 @@
 ---
 name: Workflow Documentation
-description: Documentation for API workflows.
+description: Providing documentation for workflow collections help introduce consumers to what a workflow define across multiple API requests can accomplish, and potentially provide a sequential walk through of each step of the flow, allowing API consumers to quickly understand what a workflow accomplishes, but also provides all the details of the workflow in an well documented executable format.
 links:
     - title: Link Title
       url: http://example.com

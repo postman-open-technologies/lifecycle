@@ -1,6 +1,6 @@
 ---
 name: Onboarding Documentation
-description: Documentation intended for onboarding new users to an API. 
+description: It can be helpful to provide new users with documentation designed specifically for onboarding new consumers to an API, only introducing them to the most relevant paths of an API, reducing the cognitive load when it comes to getting started with an API and complimenting more complete reference documentation showing everything that is possible with an API.
 links:
     - title: Link Title
       url: http://example.com

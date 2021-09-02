@@ -4,23 +4,15 @@ layout: default
 <div class="container-fluid hero v5_starfield-small-night-sky pb-4">
    <div class="container">
       <div class="row">
-         <div class="col-md-6 hero_title">
-            <h1>{{ site.title }}</h1>
+         <div class="col-md-6 hero_title" style="padding: 125px 0px 0px 0px; margin: 0px;">
+            <h1><a href="{{ site.url }}" style="color: #FFF;">{{ site.title }}</a></h1>
          </div>
-         <div class="col-md-6 hero_image"><img src="{{ site.image }}" alt=""></div>
+         <div class="col-md-6 hero_image" style="padding: 0px; margin: 0px;"><a href="{{ site.url }}"><img src="{{ site.url }}/images/lifecycle.png" alt="" width="350"></a></div>
       </div>
    </div>
 </div>
 
-<div class="container">
-   <div class="row">
-      <div class="col-md-10 offset-md-1 welcome text-center">
-         <p>{{ site.description }} (<a href="{{ site.url }}/">Main Page</a>)</p>
-      </div>
-   </div>
-</div>
-
-<div class="collection__wrapper">
+<div>
    <div class="container">
 
 		<div class="row collection__header text-center">

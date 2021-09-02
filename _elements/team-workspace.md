@@ -1,6 +1,6 @@
 ---
 name: Team Workspace
-description: A team workspace for managing an API.
+description: Establishing and properly setting up a dedicated workspace for each API helps ensure there is always a single place to go to find everything that is happening with an API across it's entire lifecycle.
 links:
     - title: Link Title
       url: http://example.com

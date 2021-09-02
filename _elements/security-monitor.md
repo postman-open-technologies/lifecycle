@@ -1,6 +1,6 @@
 ---
 name: Security Monitor
-description: A monitor for the security tests.
+description: Monitors can be setup for all API security testing, scheduling the run of security tests when needed, making sure that each individual API is regularly certified as being secured, ensuring that APIs do not become a liability due to changes, but also keeping all APIs compliant with the latest level of security testing that is occurring across an entire organization.
 links:
     - title: Link Title
       url: http://example.com

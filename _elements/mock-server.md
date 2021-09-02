@@ -1,6 +1,6 @@
 ---
 name: Mock Server
-description: A mocked server for anAPI.
+description: A mock server helps replicate as much of the functionality and API would have in production, before the time to actually have to write any code, making APIs be more tangible and real early on in the lifecycle, allowing teams to rapidly design an API that meets the needs of everyone involved, providing usable elements that power design, documentation, testing, and other elements of the API lifecycle.
 links:
     - title: Link Title
       url: http://example.com

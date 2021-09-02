@@ -1,6 +1,6 @@
 ---
 name: Role Based Access Control
-description: Providing granular level control over resources based upon role.
+description: Role based access control allows for the artifacts and elements for each API to have clear team access to only viewing and running or being able to actually edit and change, helping prevent unwanted changes to API elements across the lifecycle.
 links:
     - title: Link Title
       url: http://example.com

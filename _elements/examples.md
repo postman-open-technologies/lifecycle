@@ -1,6 +1,6 @@
 ---
 name: Examples
-description: Examples of API request, responses, and messages.
+description: Examples of API request, responses, and messages used across API operations helps provide a versioned, evolvable, and reusable set of example and synthetic data that can make documentation richer and testing more relevant to actual business needs.
 links:
     - title: Link Title
       url: http://example.com

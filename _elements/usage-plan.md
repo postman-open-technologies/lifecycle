@@ -1,6 +1,6 @@
 ---
 name: Usage Plan
-description: A usage plan for defining access across APIs.
+description: Offering a standardized and well-defined set of usage plans for all APIs using commercial or open source API gateway or management solutions helps ensure that access to all APIs is done in a secure way that prevents exploitation by limiting the number of requests being made, or even billing for usage of an API based upon different dimensions defined within the usage plans applied.
 links:
     - title: Link Title
       url: http://example.com

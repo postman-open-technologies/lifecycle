@@ -1,6 +1,6 @@
 ---
 name: Use Cases
-description: The business use cases for an API.
+description: Establishing a list of real world business uses cases of an API helps clarify the purpose an API, ensuring that the design and development of the API matches the business objects, and the needs of potential consumers.
 links:
     - title: Link Title
       url: http://example.com

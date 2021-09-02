@@ -4,184 +4,47 @@ layout: default
 <div class="container-fluid hero v5_starfield-small-night-sky pb-4">
    <div class="container">
       <div class="row">
-         <div class="col-md-6 hero_title">
-            <h1>{{ site.title }}</h1>
+         <div class="col-md-12 hero_title" style="padding: 0px 0px 0px 0px; margin: 0px; text-align: center;">
+            <h1 style="text-align: center;"><a href="{{ site.url }}" style="color: #FFF;">{{ site.title }}</a></h1>
          </div>
-         <div class="col-md-6 hero_image"><img src="{{ site.image }}" alt=""></div>
       </div>
    </div>
 </div>
 
-<div class="container">
-   <div class="row">
-      <div class="col-md-10 offset-md-1 welcome text-center">
-         <p>{{ site.description }}</p>
-      </div>
-   </div>
-</div>
-
-<div class="collection__wrapper">
+<div>
    <div class="container">
 
 			<div class="row collection__header text-center">
          <div class="col-md-12">
-            <h2 class="h1">API Lifecycle Blueprints</h2>
-            <p style="text-align: left;">This is a proof of concept to see how we can define the API lifecycle in a modular and flexible enough way that anyone can define their own version of the API lifecycle using a common set of elements and actions. This runs on Github, and everything is defined using YAML, allowing it to be forked and worked on collaboratively, using Github issues to evolve and iterate upon the repository of API lifecycle blueprints, elements, and actions.</p>        
+            <h2 class="h1">Blueprints</h2>
+            <p style="text-align: left;">Providing a framework to define the API lifecycle in a modular and flexible enough way that anyone can use to define their own version of the API lifecycle using a common set of elements and actions being applied across operations.</p>        
          </div>
       </div>
 
-      <div>
-        {% assign blueprints = site.blueprints | sort: "order" %}
-        <hr><br>
-        <h3>New Synchronous API</h3>
-        <p>Blueprints for the possible API lifecycles for a new synchronous API.</p>
-        {% for blueprint in blueprints %}
+      <div style="padding: 0px 0px 25px 0px; margin: 1px;">
+         <center>
+            <a href="{{ site.url }}/blueprints/minimum-viable/"><img src="{{ site.url }}/images/lifecycle.png" width="40%" align="center"></a>
+         </center>
+      </div>     
 
-            {% if blueprint.stage == 'New' and blueprint.type == 'sync' %}
-               <div class="row collection">
-                  <div class="col-md-10" style="border: 0px solid #000;">
-                     <a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
-                     <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
-                     <p>{{ blueprint.description }}</p>
-                     <p>
-                        {% for area in blueprint.areas %}
-                        &#8594; {{ area.label }}</li>
-                        {% endfor %}
-                     </p>
-                  </div>
-                  <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 0px;">
-                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;"><img src="{{ site.url}}/images/blueprint-icon.png" width="125" align="left"></a></center>
-                  </div>  
-               </div>
-            {% endif %}   
-
-         {% endfor %}
-         <hr><br>
-         <h3>Active Synchronous APIs</h3>
-         <p>Blueprints for the possible API lifecycles for an active synchronous API.</p>
-         {% for blueprint in blueprints %}
- 
-             {% if blueprint.stage == 'Active' and blueprint.type == 'sync' %}
-                <div class="row collection">
-                   <div class="col-md-10" style="border: 0px solid #000;">
-                      <a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
-                      <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
-                      <p>{{ blueprint.description }}</p>
-                      <p>
-                         {% for area in blueprint.areas %}
-                         &#8594; {{ area.label }}</li>
-                         {% endfor %}
-                      </p>
-                   </div>
-                   <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 0px;">
-                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;"><img src="{{ site.url}}/images/blueprint-icon.png" width="125" align="left"></a></center>
-                  </div>                   
-                </div>
-                {% endif %}   
- 
-          {% endfor %}   
-          <hr><br>
-          <h3>New Asynchronous APIs</h3>
-          <p>Blueprints for the possible API lifecycles for a new asyncronous API.</p>
-          {% for blueprint in blueprints %}
-  
-              {% if blueprint.stage == 'New' and blueprint.type == 'async' %}
-                 <div class="row collection">
-                    <div class="col-md-10" style="border: 0px solid #000;">
-                       <a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;" target="_blank"><img src="{{ blueprint.image }}" width="150" align="left" style="padding: 15px;"></a>
-                       <span style="font-size: 18px; font-weight: bold;">{{ blueprint.name }}</span><br>
-                       <p>{{ blueprint.description }}</p>
-                       <p>
-                          {% for area in blueprint.areas %}
-                          &#8594; {{ area.label }}</li>
-                          {% endfor %}
-                       </p>
-                    </div>
-                    <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 0px;">
-                     <center><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 24px; color: #000;"><img src="{{ site.url}}/images/blueprint-icon.png" width="125" align="left"></a></center>
-                  </div>                    
-                 </div>
-                 {% endif %}   
-  
-           {% endfor %}                 
-         <hr>
-         <h3>Structure of this Project</h3>
-         <p>This project takes full advantage of Jekyll and Github for the structure of the project, allowing it to be a living, evolvable catalog of information for the API lifecycle, leveraging the following objects.</p>
-         <h4>Blueprints</h4>
-         <p>Common and custom blueprints that are defined as YAML and can be iterated and evolved upon to define a specific API lifecycle, but also provide ready to go blueprints that others can follow.</p>
-         <ul>
-            <li><strong>Name</strong> - The name of the blueprint</li>
-            <li><strong>Description</strong> - A description of the blueprint.</li>
-            <li><strong>Image</strong> - An image to represent the blueprint.</li>
-            <li><strong>Tags</strong> - One or more tags to define the blueprint.</li>
-            <li><strong>Stage</strong> - What stage of the lifecycle a blueprint applies.</li>
-            <li><strong>Type</strong> - Whether a blueprint applies to synchronous or asynchronous APIs.</li>
-            <li><strong>Order</strong> - The order of the blueprints when listed out.</li>
-            <li><strong>Areas</strong> - The different areas of an API lifecycle.
-               <ul>
-                  <li><strong>Label</strong> - A label for the this area of the lifecycle.</li>
-                  <li><strong>Description</strong> - A description for the this area of the lifecycle.</li>
-                  <li><strong>Elements</strong> - The multiple elements that make up this area of the lifecycle.</li>
-               </ul>                               
-            </li>
-            <li><strong>Body</strong> - The full body description for this API lifecycle blueprint.</li>
-         </ul>
-         <h4>Elements</h4>
-         <p>A mix bag of elements that can be used address all areas of the API lifecycle, providing all of the common elements API producers are using to define and manage their API operations.</p>
-         <ul>
-            <li><strong>Name</strong> - The name of the element</li>
-            <li><strong>Description</strong> - A description of the element.</li>
-            <li><strong>Links</strong> - Supporting links for this element.
-               <ul>
-                  <li><strong>Title</strong> - The title of the element link.</li>
-                  <li><strong>URL</strong> - The description of the element link.</li>
-               </ul>                               
-            </li>
-            <li><strong>Video</strong> - A video overview for users too learn about this element.</li>
-            <li><strong>Body</strong> - The full body description for this API lifecycle element.</li>
-            <li><strong>Actions</strong> - Actions that are possible involving an element.</li>
-            <li><strong>Screenshots</strong> - Platform screenshot supporting this element.
-               <ul>
-                  <li><strong>Title</strong> - The title of the element screenshot.</li>
-                  <li><strong>URL</strong> - The description of the element screenshot.</li>
-               </ul>                               
-            </li>              
-         </ul>
-         <h4>Actions</h4>
-         <p>A variety of actions that can be taken in associated with the various elements of the API lifecycle, providing simple, yet flexible ways that different stakeholders can take action across the API lifecycle.</p>
-         <ul>
-            <li><strong>Name</strong> - The name of the action.</li>
-            <li><strong>Description</strong> - A description of the action.</li>
-            <li><strong>Links</strong> - Supporting links for this action.
-               <ul>
-                  <li><strong>Title</strong> - The title of the action link.</li>
-                  <li><strong>URL</strong> - The description of the action link.</li>
-               </ul>                               
-            </li>
-            <li><strong>Video</strong> - A video overview for users too learn about this action.</li>
-            <li><strong>Body</strong> - The full body description for this API lifecycle action.</li>
-            <li><strong>Tools</strong> - Open source tooling to power each action.
-               <ul>
-                  <li><strong>Title</strong> - The title of the action tool.</li>
-                  <li><strong>Description</strong> - The description of the action tool</li>
-                  <li><strong>URL</strong> - The description of the action tool.</li>
-               </ul>                               
-            </li>
-            <li><strong>Screenshots</strong> - Platform screenshot supporting this action.
-               <ul>
-                  <li><strong>Title</strong> - The title of the action screenshot.</li>
-                  <li><strong>URL</strong> - The description of the action screenshot.</li>
-               </ul>                               
-            </li>                        
-         </ul>
+      <div style="padding: 0px 0px 0px 0px; margin: 1px;">
+         <script>
+            function chooseBlueprint(url){
+               location.href = document.getElementById('blueprints').value;
+            }
+         </script>
+         <center>
+         <select onchange="chooseBlueprint();" style="font-size: 24px; padding: 5px; margin-bottom: 25px;" id="blueprints">
+            <option value="">Select Your Entry Point to the API Lifecycle</option>
+            {% assign blueprints = site.blueprints | sort: "order" %}
+            {% for blueprint in blueprints %}
+               {%if blueprint.name != 'Maximum Viable' and blueprint.name != 'Minimum Viable' %}
+                  <option value="{{ blueprint.url }}">{{ blueprint.name }}</option>
+               {% endif %}        
+             {% endfor %}            
+         </select>
+         </center>
       </div>
-
-      <table align="center" width="50%">
-         <tr>
-            <td align="right"><a href="https://github.com/postman-open-technologies/lifecycle/discussions/8" target="_blank"></a><img src="{{ site.url }}/images/github-issues-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
-            <td align="left"><a href="https://github.com/postman-open-technologies/lifecycle/discussions/8 target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a></td>
-         </tr>
-      </table>         
 
    </div>
 </div>
@@ -190,7 +53,7 @@ layout: default
    <div class="row blurb text-center">
       <div class="col-md-12">
          <h2>About this API Lifecycle Project</h2>
-         <p class="collection__end_p">This site is meant to help make the API lifecycle more accessible and distilled down into reusable building blocks that can be organized into many possible blueprints for moving APIs forward.</p>
+         <p class="collection__end_p">This project runs on Github, and the lifecycle blueprints, elements, and actions are defined as YAML, and the website is powered using Jekyll, allowing everything to be updated in a collaborative way using Git.</p>
       </div>
       <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}">Join the Conversation on GitHub</a></div>
    </div>

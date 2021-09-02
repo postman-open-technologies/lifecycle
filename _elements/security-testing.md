@@ -1,6 +1,6 @@
 ---
 name: Security Testing
-description: The security tests for an API.
+description: Security tests can be defined for any API using executable and shareable collections, testing for common OWASP vulnerabilities, as well as other more custom scenarios or business approaches, providing a single or suite of security tests that can be manually run, schedule across multiple regions, or executed as part of a CI/CD pipeline, automating security consistently across APIs.
 links:
     - title: Link Title
       url: http://example.com

@@ -1,6 +1,6 @@
 ---
 name: Workflow Collection
-description: A collection defining a specific business workflow.
+description: Defining workflows across many APIs and API paths provide a rich way to design and document common business workflows and practices, providing a specific sequence of API requests needed to accomplish a business objective, or just a subset of a larger API that meets the needs of a specific business sector, helping go beyond just a reference of everything an API does and getting closer to the business value.
 links:
     - title: Link Title
       url: http://example.com
