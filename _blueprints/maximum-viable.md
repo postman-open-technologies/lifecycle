@@ -75,6 +75,8 @@ areas:
         label: Performance Testing   
       - name: Security Testing
         label: Security Testing   
+      - name: Workflow Testing
+        label: Workflow Testing           
   - label: Monitor
     description: All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.
     elements:
@@ -83,7 +85,9 @@ areas:
       - name: Performance Monitor
         label: Performance Monitor   
       - name: Security Monitor
-        label: Security Monitor                          
+        label: Security Monitor  
+      - name: Workflow Testing Monitor
+        label: Workflow Testing Monitor                                  
   - label: Deploy
     description: Establishing a well defined process for deploy an API helps teams deploy new APIs, as well as each future iteration of an API in a consistent and repeatable way, making sure APIs are deployed using known development, staging, production, other agreed upon stages that actively put to work the other elements like documentation, testing, while contributing to observability.   
     elements:

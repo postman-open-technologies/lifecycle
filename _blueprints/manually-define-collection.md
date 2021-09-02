@@ -1,5 +1,5 @@
 ---
-name: Manually Define Collection
+name: Manually Define Collection for Existing API
 description: A blueprint for beginning the API lifecycle by manually defining a collection.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:

@@ -100,24 +100,19 @@ layout: default
          </tr>         
       </table>       
       <hr>
-      <div style="padding: 0px 0px 0px 0px; margin: 1px;">
-         <script>
-            function chooseBlueprint(url){
-               location.href = document.getElementById('blueprints').value;
-            }
-         </script>
-         <center>
-         <select onchange="chooseBlueprint();" style="font-size: 24px; padding: 10px; margin-bottom: 25px;" id="blueprints">
-            <option value="">Try a Different Entry Point to the API Lifecycle</option>
-            {% assign blueprints = site.blueprints | sort: "order" %}
-            {% for blueprint in blueprints %}
-               {%if blueprint.name != 'Maximum Viable' and blueprint.name != 'Minimum Viable' %}
-                  <option value="{{ blueprint.url }}">{{ blueprint.name }}</option>
-               {% endif %}        
-             {% endfor %}            
-         </select>
+      <center>
+         <div style="padding: 0px 0px 20px 0px; margin: 1px; width: 50%; border: 0px solid #000;">
+            <h3>Change Your Entry Point to the API Lifecycle</h3>
+               <ul style="text-align: left; margin-left: 100px; padding-top: 15px;">
+               {% assign blueprints = site.blueprints | sort: "order" %}
+               {% for blueprint in blueprints %}
+                  {%if blueprint.name != 'Maximum Viable' and blueprint.name != 'Minimum Viable' %}
+                     <li><a href="{{ blueprint.url }}" style="font-size: 18px; color: #000;">{{ blueprint.name }}</a>
+                  {% endif %}        
+                {% endfor %}            
+               </ul>
+         </div>
          </center>
-      </div>
 
       <br>
    </div>

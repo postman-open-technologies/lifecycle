@@ -80,7 +80,7 @@ layout: default
          <p>These are some of the API lifecycle blueprints that use this element of the API lifecycle.</p>
          <ul>
          {% for blueprint in blueprints %}
-            {% if blueprint.name != 'Master' %}
+            {% if blueprint.name != 'Minimum Viable' and blueprint.name != 'Maximum Viable' %}
                {% for area in blueprint.areas %}         
                   {% for element in area.elements %}
                      {% if page.name == element.name %}

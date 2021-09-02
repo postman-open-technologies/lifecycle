@@ -1,5 +1,5 @@
 ---
-name: Design Using OpenAPI
+name: API-First Design Using the OpenAPI Specification
 description: A blueprint for beginning the API lifecycle by designing a new API using an OpenAPI.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:
