@@ -1,6 +1,6 @@
 ---
 name: Environments
-description: Machine readable environments for APIs allow for abstracting away common elements of an API enviornment from the definition of each API, allowing different environments to be paired with OpenAPI and collections for each API at design, develop, and build time.
+description: Machine readable environments for APIs allow for abstracting away common elements of an API environment from the definition of each API, allowing different environments to be paired with OpenAPI and collections for each API at design, develop, and build time.
 links:
     - title: Link Title
       url: http://example.com

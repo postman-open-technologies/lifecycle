@@ -1,6 +1,6 @@
 ---
 name: Secure
-description: Ensuring that an API is secure from threats and vulnerabilities.
+description: Ensuring that an API is secure from threats and vulnerabilities, making for a pretty wide spectrum of different processes and technologies that ensure digital resources and capabilities made available via APIs are only accessible to an intended audience and bad actors are not able to find ways to get access via an API.
 links:
     - title: Link Title
       url: http://example.com

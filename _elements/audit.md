@@ -1,6 +1,6 @@
 ---
 name: Audit
-description: An official inspection of an API or microservices.
+description: Auditing the usage and operations of each API, or a group of APIs to understand how APIs work, what dependencies are to understand the actual state of any part of API infrastructure is performing or underperforming, to better inform the road map for API operations.
 links:
     - title: Link Title
       url: http://example.com

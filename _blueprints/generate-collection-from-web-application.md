@@ -1,5 +1,5 @@
 ---
-name: Generate Collection From Web Application
+name: Generate Collection From Existing API Powering a Web Application
 description: A blueprint for beginning the API lifecycle by generating a collection from a web application.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:

@@ -1,6 +1,6 @@
 ---
 name: Monitor
-description: Observing, checking, and keeping a continuous record of API processes.
+description: Monitoring any process across API operations defined as a collection, then bundled with any environment, setting a schedule for the execution of the collection, and viewing or publishing of the results to any other location, providing a very wide definition of what monitoring can mean across API operations.
 links:
     - title: Link Title
       url: http://example.com

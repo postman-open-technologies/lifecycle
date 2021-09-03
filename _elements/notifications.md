@@ -1,6 +1,6 @@
 ---
 name: Notifications
-description: Providing notifications about activity around an API.
+description: Providing notifications about activity around the operation of any API, allowing for in-application, email, or type of message via integration with common platforms, providing real time updates about what is happening across API operations.
 links:
     - title: Link Title
       url: http://example.com

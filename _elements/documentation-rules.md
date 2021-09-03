@@ -1,6 +1,6 @@
 ---
 name: Documentation Rules
-description: The governance rules to apply to API documentation.
+description: Machine readable or codified rules that govern whether or not documentation exists for each API, making sure there is accessible HTML documentation available for API consumers, and even validating there are examples, and other specific parts of API documentation present.
 links:
     - title: Link Title
       url: http://example.com

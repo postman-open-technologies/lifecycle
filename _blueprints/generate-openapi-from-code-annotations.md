@@ -1,5 +1,5 @@
 ---
-name: Generate OpenAPI Using Code Annotations
+name: Generate OpenAPI a New API Using Code Annotations
 description: A blueprint for beginning the API lifecycle by automatically generating an OpenAPI.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:

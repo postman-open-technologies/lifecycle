@@ -1,6 +1,6 @@
 ---
-name: Document
-description: Documenting of the things!
+name: Documentation
+description: Documentation published as human consumable HTML pages help potential API consumers learn about what an API does by describing the paths, channels, parameters, headers, schema, messages, and other building blocks of APIs, showing examples of what is possible or by providing an API client to make calls to each API as part of the documentation.
 links:
     - title: Link Title
       url: http://example.com

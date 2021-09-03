@@ -1,6 +1,6 @@
 ---
 name: Relationships
-description: Defining and understanding the way in two concepts, objects, or people are connected with APIs.
+description: Defining and understanding the way in two concepts, objects, or people are connected with APIs, helping connect the dots between the more human and business operations side of how APIs work, acknowledging that people and process are a critical part of how APIs work, and will influence there usage and evolution over time.
 links:
     - title: Link Title
       url: http://example.com

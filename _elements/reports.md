@@ -1,6 +1,6 @@
 ---
 name: Reports
-description: Reports for an API. 
+description: Visual reports that aggregate data from across operations, making APIs and the operations around them something that team members can see activity, hisotry, and other dimension of what is happening across API operations, allowing different views to be organized and presented via dashboards.
 links:
     - title: Link Title
       url: http://example.com

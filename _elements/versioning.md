@@ -1,6 +1,6 @@
 ---
 name: Versioning
-description: The versioning of artifacts.
+description: Applying semantic versioning to individual artifacts to help manage change across each API and wider operations, providing a structured approach to how APIs are evolved, helping identify minor changes from patches, and clearly defining major revisions that would introduce breaking changes.
 links:
     - title: Link Title
       url: http://example.com

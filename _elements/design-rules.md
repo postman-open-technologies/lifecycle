@@ -1,6 +1,6 @@
 ---
 name: Design Rules
-description: The governance rules to apply to API design.
+description: Machine readable rules that can be applied at design, develop, or build time to govern the design of each API, evaluating artifacts to ensure that specific design patterns are followed when crafting each API, helping make sure that APIs follow common API patterns within an industry, or as defined by the enterprise organization.
 links:
     - title: Link Title
       url: http://example.com

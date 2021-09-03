@@ -1,6 +1,6 @@
 ---
 name: Testing Rules
-description: The governance rules for testing.
+description: Having machine readable or codified rules that ensure there is required testing in place for all APIs helps make sure that a baseline set of tests exist across all APIs, ensuring that contracts are upheld, integrations are maintained, performance is at acceptable levels, and there are not security vulnerabilities present in any API in production.
 links:
     - title: Link Title
       url: http://example.com

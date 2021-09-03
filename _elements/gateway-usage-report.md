@@ -1,6 +1,6 @@
 ---
 name: Gateway Usage Report
-description: A usage report for an API provided by the gateway.
+description: A usage report for an API provided by the gateway, providing data regarding consumption of API resources and capabilities, offering detailed or aggregate views of what is happening with each API and across operations, providing observability into how APIs are being put to use within applications and as part of integrations.
 links:
     - title: Link Title
       url: http://example.com

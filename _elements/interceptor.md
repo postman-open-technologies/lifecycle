@@ -1,6 +1,6 @@
 ---
 name: Interceptor
-description: Running traffic through Interceptor in Chrome to capture activity.
+description: Running traffic through Interceptor in Chrome to capture API traffic, allowing the details of requests and response to be translated into a collection that can be re-run, organized, shared, monitored, automated, and put to work consuming API resources, or even used to inform the evolution of an API by defining the surface area of each API based upon how it is used.
 links:
     - title: Link Title
       url: http://example.com

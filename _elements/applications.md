@@ -1,6 +1,6 @@
 ---
 name: Application
-description: An application of an API in any shape or form.
+description: Desktop, web, mobile, device, or network applications of API resources and capabilities, representing the business value of API resources and capabilities, applying individual or series of API requests to power business engagement.
 links:
     - title: Link Title
       url: http://example.com

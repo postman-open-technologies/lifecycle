@@ -1,6 +1,6 @@
 ---
 name: Collection
-description: A machine readable collection describing the surface area of an API.
+description: A machine readable artifact that acts as a container for storing and organizing multiple API requests, providing an executable, self-documented reference for a complete API, a subset of an API, as well as workflows containing multiple requests from across many different APIs in a specific order, with a precise business function.
 links:
     - title: Link Title
       url: http://example.com
@@ -13,6 +13,10 @@ actions:
   - name: Import Collection
   - name: Generate Collection from OpenAPI
   - name: Generate OpenAPI from Collection
+  - name: Sync Collection to Github
+  - name: Watch Collection  
+  - name: Fork Collection   
+  - name: Comment on Collection 
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          

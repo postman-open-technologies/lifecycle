@@ -1,6 +1,6 @@
 ---
 name: Events
-description: Meaningful occurences across business operations.
+description: Meaningful occurrences across business operations that triggers notifications or make calls to other APIs when resources are added, updated, deleted, viewed, or other action is taken with an individual API or the operations surrounding the API, making activity across API operations more interactive, dynamic, and alive.
 links:
     - title: Link Title
       url: http://example.com

@@ -1,6 +1,6 @@
 ---
 name: Management Rules
-description: The governance rules to apply to API management.
+description: The governance rules to apply to API management, ensuring that policies are being applied consistently across APIs, standardizing how APIs are managed in production, making sure there are limitations, constraints, and observability present across all APIs in ways that are defined as part of a centralized governance strategy.
 links:
     - title: Link Title
       url: http://example.com

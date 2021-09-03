@@ -32,7 +32,7 @@ layout: default
                     <p>{{ element.description }}</p>
                 </div>
                 <div class="col-md-2" style="border: 0px solid #000; text-align: center; padding-top: 0px;">
-                    <center><a href="{{ site.url }}{{ element.url }}" style="font-size: 24px; color: #000;"><img src="{{ site.url}}/images/blueprint-icon.png" width="125" align="left"></a></center>
+                    <a class="btn btn__primary" title="Run in Postman" href="{{ site.url }}{{ element.url }}">View Details</a>                    
                 </div>  
             </div>
 
@@ -43,9 +43,12 @@ layout: default
 <div class="container-fluid">
    <div class="row blurb text-center">
       <div class="col-md-12">
-         <h2>About this API Lifecycle Project</h2>
-         <p class="collection__end_p">This site is meant to help make the API lifecycle more accessible and distilled down into reusable building blocks that can be organized into many possible elements for moving APIs forward.</p>
+         <h2>Return to Main Page</h2>
+         <p class="collection__end_p">This provides a link back to the home page if you need it.
+         </p>
       </div>
-      <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}">Join the Conversation on GitHub</a></div>
+      <div class="col-md-12 blurb_padding">
+         <a class="btn btn__secondary-light" href="{{ site.url }}">Return to Main Page</a>
+      </div>
    </div>
 </div>

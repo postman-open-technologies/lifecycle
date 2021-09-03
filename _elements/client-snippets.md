@@ -1,6 +1,6 @@
 ---
-name: CLient Snippets
-description: The client snippets for an API.
+name: Client Snippets
+description: Simple easy to apply snippets of code in a variety of programming languages for each individual API request, providing ready to go resources for developers to use when learning about how an API works, while also potentially jump-starting integration and putting to use in applications.
 links:
     - title: Link Title
       url: http://example.com

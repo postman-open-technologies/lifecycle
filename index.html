@@ -17,7 +17,7 @@ layout: default
 			<div class="row collection__header text-center">
          <div class="col-md-12">
             <h2 class="h1">Blueprints</h2>
-            <p style="text-align: left;">Providing a framework to define the API lifecycle in a modular and flexible enough way that anyone can use to define their own version of the API lifecycle using a common set of elements and actions being applied across operations.</p>        
+            <p style="text-align: left;">Providing a framework to define the API lifecycle in a modular and flexible enough way that anyone can use to define their own version of the API lifecycle using a common set of <a href="{{ site.url }}/all-elements/">elements</a> and <a href="{{ site.url }}/all-actions/">actions</a> being applied across operations.</p>        
          </div>
       </div>
 
@@ -28,8 +28,8 @@ layout: default
       </div>     
 
       <center>
-      <div style="padding: 0px 0px 20px 0px; margin: 1px; width: 50%; border: 0px solid #000;">
-         <h3>Choose Your Perspective of the API Lifecycle</h3>
+      <div style="padding: 0px 0px 20px 0px; margin: 1px; width: 70%; border: 0px solid #000;">
+         <h3>Choose Your Entrance into the API Lifecycle</h3>
             <ul style="text-align: left; margin-left: 100px; padding-top: 15px;">
             {% assign blueprints = site.blueprints | sort: "order" %}
             {% for blueprint in blueprints %}

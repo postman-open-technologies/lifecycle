@@ -1,6 +1,6 @@
 ---
 name: Proxy
-description: Running traffic through a proxy to capture activity.
+description: Running traffic through a proxy to capture activity to capture the details of each request and response, then generating a collection that provides a machine readable and executable representation of API traffic that can then be executed, tested, automated, monitored, and documented as part of the production or consumption of APIs.
 links:
     - title: Link Title
       url: http://example.com

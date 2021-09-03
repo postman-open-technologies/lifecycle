@@ -1,6 +1,6 @@
 ---
 name: Inform
-description: Ensure that all stakeholders for an API have all the relevant facts and information regarding an API.
+description: Ensure that all stakeholders for an API have all the relevant facts and information regarding an API, keeping teams behind APIs up to speed all what they need to know to design, develop, and manage an API across it's evolution, allowing everyone to make the best possible decisions when it comes to delivering APIs.
 links:
     - title: Link Title
       url: http://example.com

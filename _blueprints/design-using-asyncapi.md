@@ -1,5 +1,5 @@
 ---
-name: API-First Design Using the AsyncAPI Specification
+name: New API Using the AsyncAPI Specification
 description: A blueprint for beginning an event-driven API lifecycle by designing a new API using an AsyncAPI.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:

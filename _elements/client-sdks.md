@@ -1,6 +1,6 @@
 ---
 name: Client SDKs
-description: The client SDKs for an API.
+description: The software development kits (SDKs) in a variety of programming languages that API consumers can use to bootstrap their application development and integrations, helping reduce friction when it comes to developers building on top of APIs.
 links:
     - title: Link Title
       url: http://example.com

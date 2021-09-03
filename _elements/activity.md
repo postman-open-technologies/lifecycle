@@ -1,6 +1,6 @@
 ---
 name: Activity
-description: The activity for an API.
+description: The changes made to any aspect of operations by team members, providing observability into when APIs, mock servers, documentation, testing, monitors, and other key elements of API operations are changed, configured, and go through a state change, helping provide a log of everything that happens at the operational level.
 links:
     - title: Link Title
       url: http://example.com

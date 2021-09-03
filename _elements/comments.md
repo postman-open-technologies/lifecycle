@@ -1,6 +1,6 @@
 ---
 name: Comments
-description: Allowing for comments around any element of API operations.
+description: Comments on APIs, collections, and other elements of API operations allows for more tightly coupled and inline conversations to occur around entire elements or specific parts nd pieces of elements, allowing teams to collaborate and communicate across the API lifecycle.
 links:
     - title: Link Title
       url: http://example.com

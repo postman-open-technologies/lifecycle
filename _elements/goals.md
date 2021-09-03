@@ -1,6 +1,6 @@
 ---
 name: Goals
-description: Having goals,
+description: Ensuring the goals behind an API are well defined and accessible as part of the operation of an API help ground a team's activity when it comes to supporting consumers and iterating upon API, helping ensure that the API design and operation is in alignment with business objectives.
 links:
     - title: Link Title
       url: http://example.com

@@ -1,6 +1,6 @@
 ---
 name: Code
-description: Instructions for a computer program in any language.
+description: Instructions for a computer program in any language that can be used to power APIs on the back or integrate, automate, and orchestrate on the client side, providing executable instructions that accomplish a specific business object, providing what operations needs to power information technology across an organization.
 links:
     - title: Link Title
       url: http://example.com

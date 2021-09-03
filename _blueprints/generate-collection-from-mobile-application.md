@@ -1,5 +1,5 @@
 ---
-name: Generate Collection From Mobile Application
+name: Generate Collection From Existing API Powering a Mobile Application
 description: A blueprint for beginning the API lifecycle by generating a collection from a mobile application.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:

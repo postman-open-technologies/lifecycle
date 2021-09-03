@@ -1,6 +1,6 @@
 ---
 name: Sharing
-description: Sharing via some mechanism.
+description: Sharing of elements used to produce or consume APIs across workspaces, externally with consumers, allowing an intended audience to view, download, and access artifacts and other elements of API operations so they and collaborate around the production or consumption of API resources and capabilities.
 links:
     - title: Link Title
       url: http://example.com

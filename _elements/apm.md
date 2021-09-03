@@ -1,6 +1,6 @@
 ---
-name: Application Performance Monitoring (APM)
-description: The monitoring of APIs using APM.
+name: Application Performance Management (APM)
+description: The monitoring and management of performance and availability of APIs, actively detecting and diagnosing performance problems to maintain an expected level of service, translating API operational metrics into business meaning value at scale across hundreds or thousands of internal or external APIs.
 links:
     - title: Link Title
       url: http://example.com

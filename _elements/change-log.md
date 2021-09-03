@@ -1,6 +1,6 @@
 ---
 name: Change Log
-description: The change log for an API.
+description: A detailed history of the changes that have been made specifically to an API, showing all of the changes to the structure of an API as part of the design and development process, providing a single list of what has changed for consumers, and other stakeholders to get up to speed.
 links:
     - title: Link Title
       url: http://example.com

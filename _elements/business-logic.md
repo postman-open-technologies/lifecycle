@@ -1,6 +1,6 @@
 ---
 name: Business Logic
-description: The custom rules or algorithms that handle the exchange of information between a database and user interface.
+description: The custom rules or algorithms that handle the exchange of information between a database and user interface, defining the logic that exists in between APIs and backend systems, allowing data, content, media, and other resources to be transformed, remixed, and personalized for consumers, optimizing the overall experience.
 links:
     - title: Link Title
       url: http://example.com

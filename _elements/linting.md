@@ -1,6 +1,6 @@
 ---
 name: Linting
-description: Validating an API schema against a known set of constraints.
+description: Validating an API schema against a known set of constraints, ensuring that all artifacts in use across API operations are well defined and match known and intended schema for use as part of requests, responses, and the messages being sent, published, and subscribed to across API operations.
 links:
     - title: Link Title
       url: http://example.com
