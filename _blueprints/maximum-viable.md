@@ -19,6 +19,8 @@ areas:
         label: Private Workspace
       - name: Team Workspace
         label: Team Workspace
+      - name: Partner Workspace
+        label: Partner Workspace          
       - name: Public Workspace
         label: Public Workspace                
       - name: Team
@@ -27,16 +29,30 @@ areas:
         label: Roles               
       - name: Github Repository
         label: Github Repository
+      - name: Bitbucket Repository
+        label: Bitbucket Repository
+      - name: Gitlab Repository
+        label: Gitlab Repository                
       - name: Use Cases
-        label: Use Cases   
+        label: Use Cases  
+      - name: Goals
+        label: Goals    
+      - name: Relationships
+        label: Relationships     
       - name: Environments
-        label: Environments             
-      - name: Role Based Access Control
-        label: Role Based Access Control    
+        label: Environments              
       - name: Schema
         label: Schema 
       - name: Examples
-        label: Examples                                            
+        label: Examples   
+      - name: Data Sources
+        label: Data Sources  
+      - name: Role Based Access Control
+        label: Role Based Access Control    
+      - name: OpenAPI
+        label: OpenAPI     
+      - name: WSDL
+        label: WSDL                                                                   
   - label: Design
     description: Having a formal process and approach to designing an API helps establish consistency and the precision of APIs in production, ensuring that APIs are developed using common patterns across an industry, and within an organization, establishing known practices for shaping the surface area and behaviors of APIs that applications are depending upon.
     elements:
@@ -45,7 +61,9 @@ areas:
       - name: Workflow Collection
         label: Workflow Collection      
       - name: OpenAPI
-        label: OpenAPI
+        label: OpenAPI     
+      - name: WSDL
+        label: WSDL   
       - name: Design Patterns
         label: Design Patterns        
   - label: Mock
@@ -65,7 +83,13 @@ areas:
       - name: Workflow Documentation
         label: Workflow Documentation           
       - name: Examples
-        label: Examples              
+        label: Examples   
+      - name: Code Annotations
+        label: Code Annotations    
+      - name: Interceptor
+        label: Interceptor  
+      - name: Proxy
+        label: Proxy                               
   - label: Test
     description: A test-driven API lifecycle ensures that each API accomplishes the intended purpose it was developed for, providing manual and automated ways to ensure an API hasn't changed unexpectedly, is as performant as required, and meets the security expectations of everyone involved, helping establish a high quality of service consistently across all APIs.
     elements:
@@ -76,25 +100,33 @@ areas:
       - name: Security Testing
         label: Security Testing   
       - name: Workflow Testing
-        label: Workflow Testing           
-  - label: Monitor
-    description: All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.
-    elements:
-      - name: Contract Monitor
-        label: Contract Monitor   
-      - name: Performance Monitor
-        label: Performance Monitor   
-      - name: Security Monitor
-        label: Security Monitor  
-      - name: Workflow Testing Monitor
-        label: Workflow Testing Monitor                                  
+        label: Workflow Testing    
+      - name: Uptime Testing
+        label: Uptime Testing       
+      - name: Integration Testing
+        label: Integration Testing   
+      - name: Linting
+        label: Linting                                                                   
   - label: Deploy
     description: Establishing a well defined process for deploy an API helps teams deploy new APIs, as well as each future iteration of an API in a consistent and repeatable way, making sure APIs are deployed using known development, staging, production, other agreed upon stages that actively put to work the other elements like documentation, testing, while contributing to observability.   
     elements:
       - name: Pipeline
         label: Pipeline
       - name: Gateway
-        label: Gateway     
+        label: Gateway   
+      - name: Business Logic
+        label: Business Logic    
+      - name: Resolvers
+        label: Resolvers        
+  - label: Code
+    description: Providing either server or client side code that helps make it easier to produce, consume, and integrate with APIs, helping reduce friction and increase velocity of teams by providing many of the common needs developers will need to put APIs to work across operations.
+    elements:   
+      - name: Code
+        label: Code       
+      - name: Client SDKs
+        label: Client SDKs   
+      - name: Client Snippets
+        label: Client Snippets                  
   - label: Manage
     description: APIs should be managed using a set of common, well-defined policies that define and govern how APIs are access via all stages of the lifecycle, and ensure that every API has relevant authentication, rate limits, logging, and other essential aspects of managing APIs at scale, helping strike a balance between making APIs accessible and the privacy and security concerns that exist.
     elements:
@@ -105,7 +137,40 @@ areas:
       - name: Usage Plan
         label: Usage Plan    
       - name: Key
-        label: Key       
+        label: Key  
+      - name: Applications
+        label: Applications  
+      - name: Automation
+        label: Automation  
+      - name: Client
+        label: Client   
+  - label: Monitor
+    description: All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.
+    elements:
+      - name: Monitor
+        label: Monitor
+      - name: Contract Testing Monitor
+        label: Contract Testing Monitor  
+      - name: Contract Testing Monitor Results
+        label: Contract Testing Monitor Results           
+      - name: Performance Testing Monitor
+        label: Performance Testing Monitor  
+      - name: Performance Testing Monitor Results   
+        label: Performance Testing Monitor Results           
+      - name: Security Testing Monitor
+        label: Security Testing Monitor  
+      - name: Security Testing Monitor Results   
+        label: Security Testing Monitor Results           
+      - name: Workflow Testing Monitor
+        label: Workflow Testing Monitor    
+      - name: Workflow Testing Monitor Results
+        label: Workflow Testing Monitor Results            
+      - name: Integration Testing Monitor
+        label: Integration Testing Monitor   
+      - name: Integration Testing Monitor Results
+        label: Integration Testing Monitor Results   
+      - name: Uptime Testing Monitor Results
+        label: Uptime Testing Monitor Results                                                  
   - label: Discover
     description: The ability to discover APIs at all stages of the API lifecycle is key to reduce redundancy across operations, helping teams find existing APIs before they develop new ones, and properly match API consumers with the right APIs, supporting documentation, relevant workflows, and the feedback loops that exist as part of the operation of APIs internally within the enterprise, or externally with 3rd party developers.
     elements:
@@ -115,6 +180,17 @@ areas:
         label: Public Network   
       - name: Search
         label: Search 
+  - label: Security
+    description: Ensuring that all digital resources and capabilities are properly secured from end to end, making sure proper identity and access management, vulnerability scanning, and other common approaches to securing infrastructure on the Internet is in place and properly maintained.
+    elements:
+      - name: Secure
+        label: Secure
+      - name: Role Based Access Control
+        label: Role Based Access Control
+      - name: Authentication
+        label: Authentication
+      - name: Security Testing
+        label: Security Testing
   - label: Observability
     description: Providing observability across all areas.
     elements:
@@ -123,24 +199,50 @@ areas:
       - name: Reports
         label: Reports
       - name: Change Log
-        label: Change Log       
+        label: Change Log   
+      - name: Audit
+        label: Audit     
       - name: Uptime Monitor Report
         label: Uptime Monitor Report   
       - name: Gateway Usage Report
         label: Gateway Usage Report  
       - name: Security Monitor Report
         label: Security Monitor Report
-      - name: Contract Monitor Report
-        label: Contract Monitor Report    
+      - name: Contract Testing Monitor Report
+        label: Contract Testing Monitor Report    
       - name: Performance Monitor Report
-        label: Performance Monitor Report                                         
+        label: Performance Monitor Report   
+      - name: Integration Monitor Report
+        label: Integration Monitor Report           
+      - name: Application Performance Management (APM)  
+        label: Application Performance Management (APM)  
+      - name: Intelligence
+        label: Intelligence                                      
   - label: Communicate
     description: Communicate with API stakeholders.    
     elements:
       - name: Notifications
         label: Notifications  
       - name: Comments
-        label: Comments                          
+        label: Comments  
+      - name: Inform
+        label: Inform    
+  - label: Collaborate
+    description: Communicate with API stakeholders.    
+    elements:
+      - name: Sharing
+        label: Sharing                
+  - label: Governance
+    description: Defining all the practices and process across the organization for delivering APIs, establishing well known and communicated areas, elements, and actions that shape how API operations function, providing all teams with what they need to effectively deliver API infrastructure from start to finish.
+    elements:
+      - name: Design Patterns
+        label: Design Patterns  
+      - name: Documentation Rules
+        label: Documentation Rules 
+      - name: Management Rules
+        label: Management Rules         
+      - name: Linting
+        label: Linting                                        
   - label: Retire
     description: Having a plan for the eventual retirement and ultimate deprecation of an API, or for specific paths or versions of an API should be a part of every API lifecycle, even when there is no plan for deprecation there should be a process in place for setting expectations for how long an API will be supported, as well as formal process to follow once retirement comes into view on the horizon.     
     elements:

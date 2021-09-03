@@ -33,7 +33,7 @@ layout: default
             <ul style="text-align: left; margin-left: 100px; padding-top: 15px;">
             {% assign blueprints = site.blueprints | sort: "order" %}
             {% for blueprint in blueprints %}
-               {%if blueprint.name != 'Maximum Viable' and blueprint.name != 'Minimum Viable' %}
+               {%if blueprint.name != 'Minimum Viable' %}
                   <li><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;">{{ blueprint.name }}</a>
                {% endif %}        
              {% endfor %}            

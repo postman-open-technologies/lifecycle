@@ -1,6 +1,6 @@
 ---
-name: Contract Testing Monitor Report
-description: A report that allows the one time or historical results of contract testing monitors to br visualized, providing visibility into whether or not an API contract has been broken at any point in time as defined the schedule of the contract testing re
+name: Bitbucket Repository
+description: Having a dedicated Bitbucket repository for an API provides a single place where code and other artifacts can be managed, with a pipeline, issues, and other supporting elements an API will need to operate.
 links:
     - title: Link Title
       url: http://example.com

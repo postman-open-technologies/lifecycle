@@ -101,12 +101,12 @@ layout: default
       </table>       
       <hr>
       <center>
-         <div style="padding: 0px 0px 20px 0px; margin: 1px; width: 50%; border: 0px solid #000;">
-            <h3>Change Your Entrance into the API Lifecycle</h3>
+         <div style="padding: 0px 0px 20px 0px; margin: 1px; width: 70%; border: 0px solid #000;">
+            <h3>Choose Your Entrance into the API Lifecycle</h3>
                <ul style="text-align: left; margin-left: 100px; padding-top: 15px;">
                {% assign blueprints = site.blueprints | sort: "order" %}
                {% for blueprint in blueprints %}
-                  {%if blueprint.name != 'Maximum Viable' and blueprint.name != 'Minimum Viable' %}
+                  {%if blueprint.name != 'Minimum Viable' %}
                      <li><a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;">{{ blueprint.name }}</a>
                   {% endif %}        
                 {% endfor %}            
