@@ -1,5 +1,5 @@
 ---
-name: Prototype an New API Using a Postman Collection
+name: Prototype a New API Using a Postman Collection
 description: A blueprint for beginning the API lifecycle by prototyping an API using a Postman collection.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:

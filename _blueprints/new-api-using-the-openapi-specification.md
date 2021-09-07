@@ -120,6 +120,6 @@ areas:
         label: Deprecate       
         context: 1
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/9
-yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/design-using-openapi.md
+yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/new-api-using-the-openapi-specification.md
 ...
 This blueprint enters the API lifecycle in what is widely considered to be an API design first way, ensuring that your API effort is properly defined as you leverage OpenAPI to design, mock, document, and iterate upon the design of your API before actually writing any code. This approach is desirable because it allows for API producer and even consumer stakeholders to be involved in what an API will do early on in the process, before code is actually written. This blueprint provides one of the more optimal and forward leaning approaches to embracing a standardized API lifecycle across your teams, helping ensure the lifecycle is driven by machine readable artifacts, and has clear steps moving those artifacts from design to production in a way that everyone can understand and collaborate around.

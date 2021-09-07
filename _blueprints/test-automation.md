@@ -62,7 +62,7 @@ areas:
         label: Integration Monitor Report           
       - name: Application Performance Management (APM)  
         label: Application Performance Management (APM)          
-discussion: https://github.com/postman-open-technologies/lifecycle/discussions/9
-yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/design-using-openapi.md
+discussion: https://github.com/postman-open-technologies/lifecycle/discussions/33
+yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/test-automation.md
 ...
 This blueprint focuses just on the test automation portion of the API lifecycle, highlighting the different types of tests that can be run, how monitors can be used to automate those tests on a schedule from multiple regions, and then how to tap into the observability opportunities that exist when it comes to test automation. Test automation should provide you with a 50K foot view of how testing works in conjunction with monitors, and what observability is available by default, published using visualizer, or introduced through integrations with external solutions, providing many different ways of being able to see and understand test automation for API operations.
