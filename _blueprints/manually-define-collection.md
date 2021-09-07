@@ -5,7 +5,7 @@ image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:
   - OpenAPI
   - Prototype-First
-stage: Active
+stage: Existing
 type: sync
 order: 4
 areas:
@@ -51,15 +51,7 @@ areas:
       - name: Public Network
         label: Public Network   
       - name: Search
-        label: Search  
-  - label: Retire
-    image: images/lifecycle-arrow-retire.png
-    description: Having a plan for the eventual retirement and ultimate deprecation of an API, or for specific paths or versions of an API should be a part of every API lifecycle, even when there is no plan for deprecation there should be a process in place for setting expectations for how long an API will be supported, as well as formal process to follow once retirement comes into view on the horizon.      
-    elements:
-      - name: Retire
-        label: Retire  
-      - name: Deprecate
-        label: Deprecate    
+        label: Search    
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/13      
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/manually-define-collection.md       
 ...

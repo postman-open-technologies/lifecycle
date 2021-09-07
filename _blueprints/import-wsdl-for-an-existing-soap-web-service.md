@@ -6,7 +6,7 @@ tags:
   - WSDL
   - SOAP
   - Web Service
-stage: Active
+stage: Existing
 type: sync
 order: 7
 areas:

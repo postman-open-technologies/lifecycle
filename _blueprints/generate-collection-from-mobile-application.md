@@ -5,7 +5,7 @@ image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:
   - OpenAPI
   - Prototype-First
-stage: Active
+stage: Reverse
 type: sync
 order: 7
 areas: 
