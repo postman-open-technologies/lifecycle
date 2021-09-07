@@ -1,0 +1,47 @@
+<center>
+    <h3>Choose Your Entrance into the API Lifecycle</h3>
+    <div style="padding: 10px 0px 20px 0px; margin: 1px; width: 75%; border: 0px solid #000; text-align: left;">
+
+          {% assign blueprints = site.blueprints | sort: "order" %}
+
+          <h3>Base</h3>
+          <p>These are the base blueprints we use to define the API lifecycle, laying a base that anyone can work from to define their own.</p>
+          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
+          {% for blueprint in blueprints %}
+             {%if blueprint.stage == 'Master' %}
+                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
+             {% endif %}        
+           {% endfor %}            
+          </ul>
+
+          <h3>New</h3>
+          <p>If you are creating a new API, these are the blueprints we recommend as your entrance to the API lifecycle for your organization.</p>
+          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
+          {% for blueprint in blueprints %}
+             {%if blueprint.stage == 'New' %}
+                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
+             {% endif %}        
+           {% endfor %}            
+          </ul>   
+          
+          <h3>Existing</h3>
+          <p>If you are working with an existing API, these are the blueprints we recommend as your entrance to the API lifecycle.</p>
+          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
+          {% for blueprint in blueprints %}
+             {%if blueprint.stage == 'Existing' %}
+                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
+             {% endif %}        
+           {% endfor %}            
+          </ul>   
+          
+          <h3>Automation</h3>
+          <p>If you are working with an existing API, these are the blueprints we recommend as your entrance to the API lifecycle.</p>
+          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
+          {% for blueprint in blueprints %}
+             {%if blueprint.stage == 'Automation' %}
+                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
+             {% endif %}        
+           {% endfor %}            
+          </ul>              
+    </div>
+    </center>
