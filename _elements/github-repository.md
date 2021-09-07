@@ -1,6 +1,7 @@
 ---
 name: Github Repository
-description: Having a dedicated Github repository for an API provides a single place where code and other artifacts can be managed, with a pipeline, issues, and other supporting elements an API will need to operate.
+description: 
+  - Having a dedicated Github repository for an API provides a single place where code and other artifacts can be managed, with a pipeline, issues, and other supporting elements an API will need to operate.
 links:
     - title: Link Title
       url: http://example.com

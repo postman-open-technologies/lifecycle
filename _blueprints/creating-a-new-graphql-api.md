@@ -1,12 +1,12 @@
 ---
 name: Creating a New GraphQL API
-description: Creating a new GraphQL API to provide a data API.
+description: Creating a new GraphQL API to provide a data API that allows consumers to query the whole graph.
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 tags:
-  - WSDL
+  - GrappQL
   - SOAP
   - Web Service
-stage: Active
+stage: New
 type: sync
 order: 7
 areas:

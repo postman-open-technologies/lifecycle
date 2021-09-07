@@ -1,6 +1,11 @@
 ---
 name: Inform
-description: Ensure that all stakeholders for an API have all the relevant facts and information regarding an API, keeping teams behind APIs up to speed all what they need to know to design, develop, and manage an API across it's evolution, allowing everyone to make the best possible decisions when it comes to delivering APIs.
+description: 
+  - Ensure that all stakeholders for an API have all the relevant facts and information regarding an API, keeping teams behind APIs up to speed all what they need to know to design, develop, and manage an API across it's evolution, allowing everyone to make the best possible decisions when it comes to delivering APIs.
+body:
+  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+footer:
+  - ''  
 links:
     - title: Link Title
       url: http://example.com

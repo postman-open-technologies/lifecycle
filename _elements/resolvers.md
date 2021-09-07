@@ -1,6 +1,11 @@
 ---
 name: Resolvers
-description: The bindings that map incoming queries to specific data sources so that APIs know where to find resources, distilling down API requests into meaningful queries that will make sense to backend systems, connecting the front end requests to the backend stores, routing API requests to where they need to go.
+description: 
+  - The bindings that map incoming queries to specific data sources so that APIs know where to find resources, distilling down API requests into meaningful queries that will make sense to backend systems, connecting the front end requests to the backend stores, routing API requests to where they need to go.
+body:
+  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+footer:
+  - ''  
 links:
     - title: Link Title
       url: http://example.com

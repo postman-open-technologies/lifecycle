@@ -1,6 +1,11 @@
 ---
 name: Onboarding Documentation
-description: It can be helpful to provide new users with documentation designed specifically for onboarding new consumers to an API, only introducing them to the most relevant paths of an API, reducing the cognitive load when it comes to getting started with an API and complimenting more complete reference documentation showing everything that is possible with an API.
+description: 
+  - It can be helpful to provide new users with documentation designed specifically for onboarding new consumers to an API, only introducing them to the most relevant paths of an API, reducing the cognitive load when it comes to getting started with an API and complimenting more complete reference documentation showing everything that is possible with an API.
+body:
+  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+footer:
+  - ''  
 links:
     - title: Link Title
       url: http://example.com

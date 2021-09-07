@@ -1,6 +1,11 @@
 ---
 name: Prototype Collection
-description: Prototyping an API using a Postman collection provides a quick and intuitive way to articulate what an API should do in a way that can be documented, mocked, and shared with other team members and consumers, offering an alterative approach to the API design first methodology which can push the need for an OpenAPI artifact further downstream in the process, but achieving similar outcomes.
+description: 
+  - Prototyping an API using a Postman collection provides a quick and intuitive way to articulate what an API should do in a way that can be documented, mocked, and shared with other team members and consumers, offering an alterative approach to the API design first methodology which can push the need for an OpenAPI artifact further downstream in the process, but achieving similar outcomes.
+body:
+  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+footer:
+  - ''
 links:
     - title: Link Title
       url: http://example.com

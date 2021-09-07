@@ -16,86 +16,109 @@ areas:
     elements:
       - name: Team Workspace
         label: Team Workspace
+        context: 1
       - name: Team Members
-        label: Team Members       
+        label: Team Members   
+        context: 1    
       - name: Github Repository
         label: Github Repository
+        context: 1
   - label: Design
     image: images/lifecycle-arrow-design.png
     description: Having a formal process and approach to designing an API helps establish consistency and the precision of APIs in production, ensuring that APIs are developed using common patterns across an industry, and within an organization, establishing known practices for shaping the surface area and behaviors of APIs that applications are depending upon.
     elements:
       - name: OpenAPI
         label: OpenAPI      
+        context: 1
   - label: Mock
     image: images/lifecycle-arrow-mock.png
     description: Mocking how an API works and behaves provides an effective way for teams to collaborate, communicate, and iterate as part of the design of an API, but also is something that can be used as part of testing, or just providing a sandbox environment for API consumers to learn before they actually begin working with any API in production.
     elements:
       - name: Mock Server
         label: Mock Server
+        context: 1
       - name: Examples
         label: Examples 
+        context: 1
   - label: Document
     image: images/lifecycle-arrow-document.png
     description: Having complete, accurate, and easy to follow document is essential for all APIs, helping alleviate the number one pain point for API consumers when it comes to onboarding with an API, as well as expanding the number of API paths an application puts to work, making API documentation one of the most important areas of the API lifecycle.
     elements:
       - name: Reference Documentation
-        label: Reference Documentation     
+        label: Reference Documentation 
+        context: 1    
   - label: Test
     image: images/lifecycle-arrow-test.png
     description: A test-driven API lifecycle ensures that each API accomplishes the intended purpose it was developed for, providing manual and automated ways to ensure an API hasn't changed unexpectedly, is as performant as required, and meets the security expectations of everyone involved, helping establish a high quality of service consistently across all APIs.
     elements:
       - name: Contract Testing
-        label: Contract Testing   
+        label: Contract Testing  
+        context: 1 
       - name: Performance Testing
         label: Performance Testing   
+        context: 1
       - name: Security Testing
         label: Security Testing   
+        context: 1
   - label: Monitor
     image: images/lifecycle-arrow-monitor.png
     description: All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.
     elements:
       - name: Contract Monitor
-        label: Contract Monitor   
+        label: Contract Monitor  
+        context: 1 
       - name: Performance Monitor
         label: Performance Monitor   
+        context: 1
       - name: Security Monitor
         label: Security Monitor                          
+        context: 1
   - label: Deploy
     image: images/lifecycle-arrow-deploy.png
     description: Establishing a well defined process for deploy an API helps teams deploy new APIs, as well as each future iteration of an API in a consistent and repeatable way, making sure APIs are deployed using known development, staging, production, other agreed upon stages that actively put to work the other elements like documentation, testing, while contributing to observability. 
     elements:
       - name: CI/CD Pipeline
         label: CI/CD Pipeline
+        context: 1
       - name: Gateway
         label: Gateway     
+        context: 1
   - label: Manage
     image: images/lifecycle-arrow-manage.png
     description: APIs should be managed using a set of common, well-defined policies that define and govern how APIs are access via all stages of the lifecycle, and ensure that every API has relevant authentication, rate limits, logging, and other essential aspects of managing APIs at scale, helping strike a balance between making APIs accessible and the privacy and security concerns that exist.
     elements:
       - name: Onboarding
         label: Onboarding
+        context: 1
       - name: Usage Plan
         label: Usage Plan    
+        context: 1
       - name: Key
         label: Key       
+        context: 1
   - label: Discover
     image: images/lifecycle-arrow-discover.png
     description: The ability to discover APIs at all stages of the API lifecycle is key to reduce redundancy across operations, helping teams find existing APIs before they develop new ones, and properly match API consumers with the right APIs, supporting documentation, relevant workflows, and the feedback loops that exist as part of the operation of APIs internally within the enterprise, or externally with 3rd party developers.
     elements:
       - name: Search
         label: Search     
+        context: 1
       - name: Private Network
         label: Private Network   
+        context: 1
       - name: Public Network
         label: Public Network                    
+        context: 1
   - label: Retire
     image: images/lifecycle-arrow-retire.png
     description: Having a plan for the eventual retirement and ultimate deprecation of an API, or for specific paths or versions of an API should be a part of every API lifecycle, even when there is no plan for deprecation there should be a process in place for setting expectations for how long an API will be supported, as well as formal process to follow once retirement comes into view on the horizon.     
     elements:
       - name: Retire
         label: Retire  
+        context: 1
       - name: Deprecate
         label: Deprecate       
+        context: 1
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/9
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/design-using-openapi.md
 ...

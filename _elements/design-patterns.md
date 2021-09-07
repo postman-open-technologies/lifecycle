@@ -1,6 +1,11 @@
 ---
 name: Design Patterns
-description: Utilizing common design patterns and standards for the design, development, and operation of APIs helps ensure APIs leverage a common vocabulary and increases the chances that consumers will understand how to put an API to work in their applications, increasing the effectiveness of an API, and helping increase the productivity and velocity of producers and consumers.
+description: 
+  - Utilizing common design patterns and standards for the design, development, and operation of APIs helps ensure APIs leverage a common vocabulary and increases the chances that consumers will understand how to put an API to work in their applications, increasing the effectiveness of an API, and helping increase the productivity and velocity of producers and consumers.
+body:
+  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+footer:
+  - ''  
 links:
     - title: Link Title
       url: http://example.com

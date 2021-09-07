@@ -1,6 +1,11 @@
 ---
 name: Management Rules
-description: The governance rules to apply to API management, ensuring that policies are being applied consistently across APIs, standardizing how APIs are managed in production, making sure there are limitations, constraints, and observability present across all APIs in ways that are defined as part of a centralized governance strategy.
+description: 
+  - The governance rules to apply to API management, ensuring that policies are being applied consistently across APIs, standardizing how APIs are managed in production, making sure there are limitations, constraints, and observability present across all APIs in ways that are defined as part of a centralized governance strategy.
+body:
+  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+footer:
+  - ''  
 links:
     - title: Link Title
       url: http://example.com

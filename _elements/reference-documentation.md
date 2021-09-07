@@ -1,6 +1,11 @@
 ---
 name: Reference Documentation
-description: It is helpful for API consumers to have complete documentation for the entire surface area of an API, providing a complete reference of what is possible with an API to help consumers explore every path, parameter, schema, and other details of how an API works, making the resources and capabilities available within API something consumers can find and put to use without much work.
+description: 
+  - It is helpful for API consumers to have complete documentation for the entire surface area of an API, providing a complete reference of what is possible with an API to help consumers explore every path, parameter, schema, and other details of how an API works, making the resources and capabilities available within API something consumers can find and put to use without much work.
+body:
+  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+footer:
+  - ''  
 links:
     - title: Link Title
       url: http://example.com
