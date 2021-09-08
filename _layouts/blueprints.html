@@ -43,7 +43,7 @@ layout: default
          <hr>
          {% for area in page.areas %}
 
-            <h3><img src="{{ site.url }}/{{ area.image}}" width="75" align="left" style="padding: 5px;">{{ area.label }} <a href="#" onclick="showAdditional('additional-{{ area_count }}'); return false;" title="Additional Elements to Consider"><img src="{{ site.url }}/images/plus-sign.png" width="30"></a></h3>
+            <h3><img src="{{ site.url }}/{{ area.image}}" width="75" align="left" style="padding: 5px;">{{ area.label }} <!--<a href="#" onclick="showAdditional('additional-{{ area_count }}'); return false;" title="Additional Elements to Consider"><img src="{{ site.url }}/images/plus-sign.png" width="30"></a>--></h3>
             <p>{{ area.description }}</p>
          
             <ul>

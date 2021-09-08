@@ -26,8 +26,8 @@ areas:
     image: images/lifecycle-arrow-document.png
     description: Having complete, accurate, and easy to follow document is essential for all APIs, helping alleviate the number one pain point for API consumers when it comes to onboarding with an API, as well as expanding the number of API paths an application puts to work, making API documentation one of the most important areas of the API lifecycle.
     elements:
-      - name: Reference Documentation
-        label: Reference Documentation     
+      - name: Workflow Documentation
+        label: Workflow Documentation     
   - label: Test
     image: images/lifecycle-arrow-test.png
     description: A test-driven API lifecycle ensures that each API accomplishes the intended purpose it was developed for, providing manual and automated ways to ensure an API hasn't changed unexpectedly, is as performant as required, and meets the security expectations of everyone involved, helping establish a high quality of service consistently across all APIs.
