@@ -2,10 +2,6 @@
 name: Design Rules
 description: 
   - Machine readable rules that can be applied at design, develop, or build time to govern the design of each API, evaluating artifacts to ensure that specific design patterns are followed when crafting each API, helping make sure that APIs follow common API patterns within an industry, or as defined by the enterprise organization.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
     - title: Link Title
       url: http://example.com
@@ -13,7 +9,7 @@ links:
       url: http://example.com
     - title: Link Title
       url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +18,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Design rules provide modular, codified artifacts that can be used to lint API artifacts like OpenAPI, AsyncAPI, and JSON Schema. Defining rules that represent practices that we want to see repeated across the design of our APIs, manually applied by developers at design and develop time, but also allowing them rules to be automated and run on a schedule or at build time via pipelines. Helping establish formal definitions for what API design practices should look like, educating designers and developers along the way, and also being able to actively enforce these rules going into production.

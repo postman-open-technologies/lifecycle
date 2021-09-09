@@ -2,24 +2,21 @@
 name: Environments
 description: 
   - Machine readable environments for APIs allow for abstracting away common elements of an API environment from the definition of each API, allowing different environments to be paired with OpenAPI and collections for each API at design, develop, and build time.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Managing environments
+      url: https://learning.postman.com/docs/sending-requests/managing-environments/
+    - title: Adding Environment Variables
+      url: https://learning.postman.com/docs/sending-requests/managing-environments/#adding-environment-variables
+    - title: Accessing Environments
+      url: https://learning.postman.com/docs/sending-requests/managing-environments/#accessing-environments 
+    - title: Working with Environments as a Team
+      url: https://learning.postman.com/docs/sending-requests/managing-environments/#accessing-environments  
+    - title: Managing Environment Roles
+      url: https://learning.postman.com/docs/sending-requests/managing-environments/#accessing-environments                   
+video: ''
 screenshots:
   - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+    url: images/elements/environment-1.jpeg
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+An environment is a set of variables you can use in your Postman requests. You can use environments to group related sets of values together for use across individual, or many different collections. Environments help you abstract away secrets, tokens, and other data that you will need to use across different collections while working with different APIs. You can think of environments as a mini key-value store that you can apply to collections, but then also store data pulled from collection runs, persisting data across many different API requests. It is common for collection run results to be stored within environments, paginated data, and other results from API workflows and automation, making environments a pretty robust way to persist valuable data across API consumption.
+

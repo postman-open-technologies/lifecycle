@@ -52,7 +52,9 @@ areas:
       - name: OpenAPI
         label: OpenAPI     
       - name: WSDL
-        label: WSDL                                                                   
+        label: WSDL  
+      - name: Scripts
+        label: Scripts                                                                          
   - label: Design
     description: Having a formal process and approach to designing an API helps establish consistency and the precision of APIs in production, ensuring that APIs are developed using common patterns across an industry, and within an organization, establishing known practices for shaping the surface area and behaviors of APIs that applications are depending upon.
     image: images/lifecycle-arrow-design.png
@@ -110,7 +112,9 @@ areas:
       - name: Integration Testing
         label: Integration Testing   
       - name: Linting
-        label: Linting                                                                   
+        label: Linting   
+      - name: Scripts
+        label: Scripts                                                                         
   - label: Deploy
     description: Establishing a well defined process for deploy an API helps teams deploy new APIs, as well as each future iteration of an API in a consistent and repeatable way, making sure APIs are deployed using known development, staging, production, other agreed upon stages that actively put to work the other elements like documentation, testing, while contributing to observability.   
     image: images/lifecycle-arrow-deploy.png
@@ -179,6 +183,16 @@ areas:
         label: Integration Testing Monitor Results   
       - name: Uptime Testing Monitor Results
         label: Uptime Testing Monitor Results                                                  
+  - label: Automation
+    description: Automating producing or consumption of API resources and capabilities, allowing for repeatable API-driven process to be triggered, scheduled, or respond to events, allowing for teams to properly define and set into motions certain aspects of operations while they focus on the more manual, creative, and human aspects of doing APIs. 
+    image: images/lifecycle-arrow-security.png
+    elements:
+      - name: Monitor
+        label: Monitor   
+      - name: Scripts
+        label: Scripts         
+      - name: Newman
+        label: Newman                 
   - label: Discover
     description: The ability to discover APIs at all stages of the API lifecycle is key to reduce redundancy across operations, helping teams find existing APIs before they develop new ones, and properly match API consumers with the right APIs, supporting documentation, relevant workflows, and the feedback loops that exist as part of the operation of APIs internally within the enterprise, or externally with 3rd party developers.
     image: images/lifecycle-arrow-discover.png

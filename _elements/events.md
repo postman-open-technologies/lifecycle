@@ -2,10 +2,6 @@
 name: Events
 description: 
   - Meaningful occurrences across business operations that triggers notifications or make calls to other APIs when resources are added, updated, deleted, viewed, or other action is taken with an individual API or the operations surrounding the API, making activity across API operations more interactive, dynamic, and alive.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
     - title: Link Title
       url: http://example.com
@@ -13,7 +9,7 @@ links:
       url: http://example.com
     - title: Link Title
       url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +18,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+When it comes to synchronous or request and response APIs events manifest themselves as part of the operation of webhooks, where API calls are made outward when some new event happens. When it comes to asynchronous APIs events take a much more front row seat as part of event-driven approaches to API design where API connections are sustained and messages are published to APIs and events can be subscribed to, bringing a more real-time view of the API landscape. Understanding what events are occurring around API operations is a valuable exercise no matter what type of architectural patterns are applied, and can make for a view of operations that reflects actual business events that matter to operations.

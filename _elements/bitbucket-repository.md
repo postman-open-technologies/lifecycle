@@ -2,24 +2,20 @@
 name: Bitbucket Repository
 description: 
   - Having a dedicated Bitbucket repository for an API provides a single place where code and other artifacts can be managed, with a pipeline, issues, and other supporting elements an API will need to operate.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Configuring a Bitbucket Integration
+      url: https://learning.postman.com/docs/integrations/available-integrations/bitbucket/
+    - title: Backing Up Collections on Bitbucket
+      url: https://learning.postman.com/docs/integrations/available-integrations/bitbucket/#backing-up-collections-on-bitbucket
+    - title: POstman Integrations Page
+      url: https://www.postman.com/integrations/#postman-integrations            
+video: ''
 screenshots:
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+  - title: BitBucket Integration
+    url: images/elements/bitbucket-1.jpeg        
+  - title: BitBucket Configuration
+    url: images/elements/bitbucket-2.jpeg  
+  - title: BitBucket Backup
+    url: images/elements/bitbucket-3.jpeg    
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Bitbucket repositories can be used in conjunction with Postman throughout the API lifecycle, providing a way to keep artifacts synced, and automate the API lifecycle as part of the CI/CD process defined around a Bitbucket repository. Bitbucket repositories provides not just code source control, but also API source of truth as part of the deployment of APIs, that can be managed and kept in alignment with the rest of the API lifecycle using the Postman platform and seamless integrations with Bitbucket.

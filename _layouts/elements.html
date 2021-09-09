@@ -28,25 +28,40 @@ layout: default
          {{ content }}
 
          {% assign actions = site.actions %}
+         {% assign elements = site.elements %}
 
          <!-- Show Video-->
-         <hr>
-         <center>{{ page.video }}</center>
-         <p align="center">[Just an Example Video]</p>
-         <hr>
+         {% if page.video == '' %}
+         {% else %}
+            <hr>
+           <center>{{ page.video }}</center>
+            <hr>
+         {% endif %}
          <!-- Show Video-->
 
-         <table width="100%">
-            <tr>
-               {% for screenshot in page.screenshots %}
-               <td width="33%" align="center">
-                  <a href="{{ screenshot.url }}" target="_blank"><img src="{{ screenshot.url }}" width="100%" style="border: 2px solid #000; padding: 2px;"></a>
-                  <strong>{{ screenshot.title }}</strong>
-               </td> 
-               {% endfor %}           
-            </tr>         
-         </table>         
-         <hr>
+         {% assign any_screenshots = 0 %}
+         {% for screenshot in page.screenshots %}
+            {% if screenshot.title != 'Screenshot Description' %}
+               {% assign any_screenshots = 1 %}
+            {% endif %}
+         {% endfor %}     
+         {% if any_screenshots == 1 %}      
+            <h2>Screenshots</h2>
+            <table width="100%">
+               <tr>
+                  {% for screenshot in page.screenshots %}
+                     {% if screenshot.title != 'Screenshot Description' %}
+                        <td width="33%" align="center">
+                           <a href="{{ screenshot.url }}" target="_blank"><img src="{{ site.url }}/{{ screenshot.url }}" width="100%" style="border: 0px solid #000; padding: 2px;"></a>
+                           <strong>{{ screenshot.title }}</strong>
+                        </td> 
+                     {% endif %}
+                  {% endfor %}           
+               </tr>         
+            </table>         
+            <hr>
+         {% endif %}         
+
          <!-- Show Related Actions-->
          {% assign number_of_actions = page.actions | size %}
          {% if number_of_actions > 0 %}
@@ -63,34 +78,68 @@ layout: default
             <hr>
          {% endif %}   
          <!-- Show Related Actions-->   
+
+         <!--Related Elements-->
+         {% if page.elements %}
+            <h2>Related Elements</h2>
+            <ul>
+            {% for this_element in page.elements %}
+               {% for e in elements %}
+                  {% if e.name == this_element.name %}
+                     <li><a href="{{ site.url }}{{ e.url }}" target=="_blank" style="color: #000;"><strong>{{ this_element.label }}</strong></a> - {% if element.context %} {% if element.context == 1 %}{{ e.description[0] }} {% endif %}{% if element.context == 2 %}{{ e.description[1] }} {% endif %}{% if element.context == 3 %}{{ e.description[2] }}{% endif %} {% else %} {{ e.description }} {% endif %}</li>
+                  {% endif %}   
+               {% endfor %}    
+            {% endfor %}  
+            </ul>
+         {% endif %}           
       
          <!-- Show Related Links-->
-         <h2>Related Links</h2>
-         <p>These are some useful links to help support this element of the API lifecycle.</p>
-         <ul>
-            {% for link in page.links %}
-               <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
-            {% endfor %}   
-         </ul>    
+         {% assign any_links = 0 %}
+         {% for link in page.links %}
+            {% if link.title != 'Link Title' %}
+               {% assign any_links = 1 %}
+            {% endif %}
+         {% endfor %}     
+         {% if any_links == 1 %}           
+            <h2>Related Links</h2>
+            <ul>
+               {% for link in page.links %}
+                  {% if link.title != 'Link Title' %}
+                     <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
+                  {% endif %}
+               {% endfor %}   
+            </ul>    
+            <hr> 
+         {% endif %}
          <!-- Show Related Links-->
-         <hr>
+         
          <!-- Show Related Blueprints-->
          {% assign blueprints = site.blueprints | sort: "name" %}
-         <h3>Blueprints</h3>
-         <p>These are some of the API lifecycle blueprints that use this element of the API lifecycle.</p>
-         <ul>
+         {% assign any_blueprints = 0 %}
          {% for blueprint in blueprints %}
-            {% if blueprint.name != 'Minimum Viable' and blueprint.name != 'Maximum Viable' %}
+            {% for area in blueprint.areas %}         
+               {% for element in area.elements %}
+                  {% if page.name == element.name %}
+                     {% assign any_blueprints = 1 %}
+                  {% endif %}   
+               {% endfor %} 
+            {% endfor %}         
+         {% endfor %}
+
+         {% if any_blueprints == 1 %}
+            <h3>Blueprints</h3>
+            <ul>
+            {% for blueprint in blueprints %}
                {% for area in blueprint.areas %}         
                   {% for element in area.elements %}
                      {% if page.name == element.name %}
                         <li style="padding: 0px; margin: 0px;"><a href="{{ site.url }}{{ blueprint.url }}" target=="_blank">{{ blueprint.name }}</a></li>
                      {% endif %}   
                   {% endfor %} 
-               {% endfor %} 
-            {% endif %}           
-         {% endfor %}
-         </ul>
+               {% endfor %}         
+            {% endfor %}
+            </ul>
+         {% endif %}   
          <!-- Show Related Blueprints-->
 
       </div>

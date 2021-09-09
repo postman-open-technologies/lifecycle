@@ -2,18 +2,12 @@
 name: Application Performance Management (APM)
 description: 
   - The monitoring and management of performance and availability of APIs, actively detecting and diagnosing performance problems to maintain an expected level of service, translating API operational metrics into business meaning value at scale across hundreds or thousands of internal or external APIs.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Wikipedia Page
+      url: https://en.wikipedia.org/wiki/Application_performance_management
+    - title: Postman API Monitors
+      url: https://www.postman.com/api-monitor/        
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +16,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Postman doesn't reinvent the wheel when it comes to application performance management and embraces the use of existing APM solutions by making them a first class integration within the platform, allowing you to integrate with Datadog, New Relic, and other APM solutions. Platform APM integrations allow you to pipe the results of any collection run via a monitor into existing APM infrastructure. This allows results of collection runs for contract, integration, performance, and other types of tests to be piped into APM solutions, providing visibility over the execution of any type of collection.

@@ -1,25 +1,23 @@
 ---
 name: Contract Testing
 description: 
-  - Contract tests can be derived from API artifacts like OpenAPI, JSON Schema, and GraphQL, and used to ensure there are no changes to what has been promised when an API was designed or developed, providing a repeatable test that can be run manually, on a schedule from multiple regions, or as part of a CI/CD pipeline to ensure contracts with consumers are upheld.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
+  - Contract tests can be derived from API artifacts like OpenAPI, JSON Schema, and GraphQL, and used to ensure there are no changes to what has been promised when an API was designed or developed, providing a repeatable test that can be run manually, on a schedule from multiple regions, or as part of a CI/CD pipeline to ensure contracts with consumers are upheld. 
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Consumer-driven Contract Testing using Postman
+      url: https://medium.com/better-practices/consumer-driven-contract-testing-using-postman-f3580dba5370         
+video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ynfr-y_1WRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 screenshots:
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+  - title: Contract Testing
+    url: images/elements/contract-testing-1.png 
+elements:
+  - name: Contract Testing Monitor
+    label: Contract Testing Monitor   
+    context: 0     
+  - name: Contract Testing Monitor Results
+    label: Contract Testing Monitor Results   
+    context: 0   
+  - name: Contract Testing Monitor Report
+    label: Contract Testing Monitor Report   
+    context: 0           
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Contract testing ensures that each individual API and collection paths comply with the contract that was put for with each version. Potentially using the OpenAPI for an API to generate tests, or generate collections that can be used to define specific business objectives or business scenarios. JSON Schema provides the details of the contract, and when applied as part of an OpenAPI definition, you end up with a machine readable contract that can be manually or automatically tested against, ensuring that each API doesn't change over time. It is common for collections to be define for the contract tests for each API, and then have these contracts tests scheduled for regular run via a monitor, as well as included as part of CI/CD pipelines. Providing robust coverage for contract tests that developers can manually run, or automate as required as part of the API lifecycle.

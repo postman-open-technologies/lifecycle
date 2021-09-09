@@ -1,11 +1,7 @@
 ---
 name: Deploy
 description: 
-  - Using an API gateway to deploy and manage APIs provides a single or federated approach to providing access to backend services using well defined APIs, standardizing how APIs are published to development, staging, production, or other environments, while also consistently apply authentication, logging, and the other elements needed to properly manage APIs at scale.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
+  - Using an API gateway to deploy and manage APIs provides a single or federated approach to providing access to backend services using well defined APIs, standardizing how APIs are published to development, staging, production, or other environments, while also consistently apply authentication, logging, and the other elements needed to properly manage APIs at scale. 
 links:
     - title: Link Title
       url: http://example.com
@@ -13,7 +9,7 @@ links:
       url: http://example.com
     - title: Link Title
       url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -21,5 +17,15 @@ screenshots:
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+elements:
+  - name: Pipeline
+    label: Pipeline   
+    context: 0     
+  - name: Gateway
+    label: Gateway   
+    context: 0   
+  - name: Server Code Generation
+    label: Server Code Generation   
+    context: 0              
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+The deployment or publishing of APIs can come in many forms, but modern approaches to API deployment almost always involve source control, CI/CD, as well as API gateways, producing repeatable, tested, and automated approaches to putting APIs into all stages of the lifecycle. API deployment will reflect your existing software development lifecycle and the tools and processes your existing development teams use to deliver applications, but is something that has been evolving through evolution in the cloud, containers, serverless, and gateways, while continuing to be stabilized using source control and repeatable CI/CD workflows.

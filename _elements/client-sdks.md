@@ -1,19 +1,15 @@
 ---
 name: Client SDKs
 description: 
-  - The software development kits (SDKs) in a variety of programming languages that API consumers can use to bootstrap their application development and integrations, helping reduce friction when it comes to developers building on top of APIs.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
+  - The software development kits (SDKs) in a variety of programming languages that API consumers can use to bootstrap their application development and integrations, helping reduce friction when it comes to developers building on top of APIs. 
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: How (and Why) We Created an SDK Generator for Postman Collections
+      url: https://blog.postman.com/how-and-why-we-created-an-sdk-generator-for-postman-collections/
+    - title: Postman Collection Code Generators
+      url: https://github.com/postmanlabs/postman-collection-code-generators   
+    - title: Generate Code for Your Front-end Apps
+      url: https://blog.postman.com/use-your-work-in-postman-to-generate-code-for-your-apps/           
+video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/VTtS4-r2oSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -21,5 +17,15 @@ screenshots:
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+elements:
+  - name: Client Snippets
+    label: Client Snippets   
+    context: 0    
+  - name: Client SDKs
+    label: Client SDKs   
+    context: 0     
+  - name: Code Annotations
+    label: Code Annotations   
+    context: 0     
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Client-side software development kits in a variety of programming languages are essential to helping onboard developers with an API. Abstracting many of the details of integration with an API away from view, providing a simple and familiar interface in the language of choice for each developer. It is common for API providers today to auto-generate client-side SDKs from OpenAPI or even subsets of an API for a specific business use case using a well-defined collection. SDKs can be generated, forked, and then tailored to help automate the deployment of API integrations, reducing much of the overhead developers are going to face when integrating. In recent years, a wealth of commercial and open source tooling has emerged to help API producers provide robust and complete SDKs for their APIs.

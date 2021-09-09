@@ -2,24 +2,18 @@
 name: Examples
 description: 
   - Examples of API request, responses, and messages used across API operations helps provide a versioned, evolvable, and reusable set of example and synthetic data that can make documentation richer and testing more relevant to actual business needs.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: What is an Example?
+      url: https://learning.postman.com/docs/sending-requests/examples/#what-is-an-example
+    - title: Why Use Examples?
+      url: https://learning.postman.com/docs/sending-requests/examples/#why-use-examples
+    - title: Accessing Your Saved Examples
+      url: https://learning.postman.com/docs/sending-requests/examples/#accessing-your-saved-examples   
+    - title: How Examples Appear in Your API Documentation
+      url: https://learning.postman.com/docs/sending-requests/examples/#how-your-examples-appear-in-postman-documentation                   
+video: ''
 screenshots:
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+  - title: Request Example
+    url: images/elements/examples-1.png  
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Examples are essential to API operations for helping demonstrate what an API does and how it can be used. Examples can accompany API documentation to make onboarding with an API much more intuitive, and examples could be used to mock an API during the design or testing process. Examples can help API designers and developers think through what an API should do as part of the API design or prototyping process, and can be used to provide sand boxed environments for API consumers to learn about how APIs work without working with production data. APIs should be present as part of each API request within a collection, and a regular part of the design, documentation, and testing areas of the API lifecycle.

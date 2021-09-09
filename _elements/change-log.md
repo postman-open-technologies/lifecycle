@@ -2,24 +2,12 @@
 name: Change Log
 description: 
   - A detailed history of the changes that have been made specifically to an API, showing all of the changes to the structure of an API as part of the design and development process, providing a single list of what has changed for consumers, and other stakeholders to get up to speed.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Viewing the collection changelog
+      url: https://learning.postman.com/docs/collaborating-in-postman/using-workspaces/changelog-and-restoring-collections/#viewing-the-collection-changelog          
+video: ''
 screenshots:
   - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+    url: images/elements/change-log-1.jpeg          
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+The change log for an API should inform stakeholders regarding what has happened with the design and development of an API, providing a single place that any team member or consumers can go to get up to speed on what has changed. Providing a self-service log of the change that has occurred, reducing the need to talk to designers and developers, helping increase velocity of team members, while also making sure there is a thorough record available for each API to keep all stakeholders informed regarding the change that is occurring across a platform.

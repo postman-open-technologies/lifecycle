@@ -2,10 +2,6 @@
 name: Code
 description: 
   - Instructions for a computer program in any language that can be used to power APIs on the back or integrate, automate, and orchestrate on the client side, providing executable instructions that accomplish a specific business object, providing what operations needs to power information technology across an organization.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
     - title: Link Title
       url: http://example.com
@@ -13,7 +9,7 @@ links:
       url: http://example.com
     - title: Link Title
       url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -21,5 +17,15 @@ screenshots:
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+elements:
+  - name: Client Snippets
+    label: Client Snippets   
+    context: 0    
+  - name: Client SDKs
+    label: Client SDKs   
+    context: 0     
+  - name: Code Annotations
+    label: Code Annotations   
+    context: 0           
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Coded instructions in a variety of languages is necessary for both producing and consuming APIs. There are many views of what the role code has when it comes to delivering APIs and putting them to work, with many modern approaches evolving towards a low-code or even no-code approach to integrating, automating, and orchestrating with APIs. Code is not going away as a fixture across the API landscape, but how it is applied, and the overall role of the developer is rapidly evolving towards a more DevOps approach to not just putting individual instances of APIs to work, but also the underlying architecture that is used to operate APIs. 

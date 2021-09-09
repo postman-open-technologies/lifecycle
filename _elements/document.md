@@ -2,24 +2,23 @@
 name: Documentation
 description: 
   - Documentation published as human consumable HTML pages help potential API consumers learn about what an API does by describing the paths, channels, parameters, headers, schema, messages, and other building blocks of APIs, showing examples of what is possible or by providing an API client to make calls to each API as part of the documentation.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
-      url: http://example.com
+    - title: Documenting your API
+      url: https://learning.postman.com/docs/publishing-your-api/documenting-your-api/
     - title: Link Title
       url: http://example.com
     - title: Link Title
       url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/EMTJw39_Z7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 screenshots:
   - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png  
-  - title: Screenshot Description
-    url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
+    url: images/elements/document-1.png  
+elements:
+  - name: Examples
+    label: Examples   
+    context: 0     
+  - name: Client Snippets
+    label: Client Snippets   
+    context: 0        
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+API documentation is the number one pain point for API consumers, and is the toughest area to keep accurate and up to date for API producers. API documentation has evolved over the last decade and become a natural part of API developer portals, something that is baked into API management solutions, as well as seeing waves of open source solutions emerge. API documentation is rarely hand-crafted, and most times generated using OpenAPI definitions, and natively part of defining any API using a Postman collection. API documentation should be publishable, sharable, and something that is always keeping up to date with the latest changes, allowing any API stakeholder to read and easily understand what they need to do to put an API to work in their application or integration.
