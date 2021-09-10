@@ -83,7 +83,7 @@ areas:
         context: 1
   - label: Secure
     image: images/lifecycle-arrow-test.png
-    description: Security deserves to be it's own area of the API lifecycle, but spans testing, authentication, and potentially other areas of the API lifecycle. Over the last five years API security has diversified, while also moved further left in the API lifecycle as part of a devops shift in enterprise operations. There are a number of elements present when it comes to security, but depending on the overall maturity of your API operations you will have the resources and prioritization to adequately realize each of these areas.
+    description: Security must be its own area of the API lifecycle, but it is something that should span testing, authentication, and potentially other areas of the API lifecycle. Over the last five years the world of API security has expanded, while also moving further left in the API lifecycle as part of a devops shift in how APIs are delivered. There are a number of elements present when it comes to security, but depending on the overall maturity of API operations the available resources and prioritization available to adequately realize these elements vary.
     elements:
       - name: Authentication
         label: Authentication
