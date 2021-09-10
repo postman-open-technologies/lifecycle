@@ -1,11 +1,7 @@
 ---
-name: Pipeline
+name: CI/CD Pipeline
 description: 
-  - Like other aspects of the software development lifecycle, APIs benefit from well defined, repeatable CI/CD pipelines to deploy, test, automate, and orchestrate throughout the API lifecycle, publishing APIs to development, staging, production, and other stages, but then also ensuring other elements like publishing of documentation, and tests are baked into the process.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
+  - Like other aspects of the software development lifecycle, APIs benefit from well defined, repeatable CI/CD pipelines to deploy, test, automate, and orchestrate throughout the API lifecycle, publishing APIs to development, staging, production, and other stages, but then also ensuring other elements like publishing of documentation, and tests are baked into the process. 
 links:
     - title: Link Title
       url: http://example.com
@@ -22,4 +18,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+CI/CD pipelines are an essential part of automating the delivery of APIs, and there are multiple ways they can be used in conjunction with the Postman platform from deployment, to testing and governance. Postman collections are executable units that can be run individually and sequentially as part of a CI/CD pipeline, publishing documentation, running contract, integration, and performance tests, or leverage infrastructure APIs behind our APIs to automate any part of the API lifecycle. Jenkins, Github Actions, and other CI/CD solutions allow for the execution of manually created or dynamically generated Postman collections, providing an excellent mechanism for standardizing how API lifecycle automation occurs across many different APIs, while also utilizing a standardized approach to moving APIs forward as part of an agreed upon API lifecycle.

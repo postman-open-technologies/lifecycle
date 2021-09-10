@@ -33,6 +33,16 @@
              {% endif %}        
            {% endfor %}            
           </ul>   
+
+          <h3>Reverse</h3>
+          <p>Often times we need to reverse engineer the APIs that already exist behind the applications we depend upon.</p>
+          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
+          {% for blueprint in blueprints %}
+             {%if blueprint.stage == 'Reverse' %}
+                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
+             {% endif %}        
+           {% endfor %}            
+          </ul>            
           
           <h3>Automation</h3>
           <p>If you are working with an existing API, these are the blueprints we recommend as your entrance to the API lifecycle.</p>

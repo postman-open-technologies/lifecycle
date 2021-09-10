@@ -93,10 +93,19 @@ layout: default
 
       <table align="center" width="50%">
          <tr>
-            <td width="25%" align="right"><a href="{{ page.discussion }}" target="_blank"></a><img src="{{ site.url }}/images/github-issues-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
-            <td width="25%" align="left"><a href="{{ page.discussion }}" target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a></td>
-            <td width="25%" align="right"><a href="{{ page.yaml }}" target="_blank"></a><img src="{{ site.url }}/images/yaml-icon.png" width="100" align="right" style="padding: 10px;"></a></td>
-            <td width="25%" align="left"><a href="{{ page.yaml }}" target="_blank" style="color:#000; font-size: 22px"><strong>YAML</strong></a></td>
+            <td width="33%" align="center">
+               <a href="{{ page.discussion }}" target="_blank"><img src="{{ site.url }}/images/github-issues-icon.png" width="100" style="padding: 10px;"></a>
+               <br><a href="{{ page.discussion }}" target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a>
+            </td>
+            <td width="33%" align="center">
+               <a href="{{ page.yaml }}" target="_blank"><img src="{{ site.url }}/images/yaml-icon.png" width="100" style="padding: 10px;"></a>
+               <br><a href="{{ page.yaml }}" target="_blank" style="color:#000; font-size: 22px"><strong>YAML</strong></a>
+            </td>
+            <td width="33%" align="center">
+               {% assign pdf_path = page.path | replace: '_blueprints/','' | replace: '.md','' %}               
+               <a href="{{ site.url }}/pdf/{{ pdf_path }}" target="_blank"><img src="{{ site.url }}/images/printable.png" width="100" style="padding: 10px;"></a>
+               <br><a href="{{ site.url }}/pdf/{{ pdf_path }}" target="_blank" style="color:#000; font-size: 22px"><strong>Printable</strong></a>
+            </td>            
          </tr>         
       </table>       
       
