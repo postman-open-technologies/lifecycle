@@ -1,7 +1,7 @@
 ---
-name: Gitlab Repository
+name: Github Repository
 description: 
-  - Having a dedicated Gitlab repository for an API provides a single place where code and other artifacts can be managed, with a pipeline, issues, and other supporting elements an API will need to operate.
+  - Having a dedicated Github repository for an API provides a single place where code and other artifacts can be managed, with a pipeline, issues, and other supporting elements an API will need to operate.
 links:
     - title: Github Integration
       url: https://learning.postman.com/docs/integrations/available-integrations/github/

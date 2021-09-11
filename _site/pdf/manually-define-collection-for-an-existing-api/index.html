@@ -33,7 +33,7 @@
    <div style="width: 70%; border: 0px solid #000; text-align: left;" align="center">                
 
    <h1 class="h1">Manually Define Collection for Existing API</h1>
-   <p><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+   <p><p>When it comes to defining the API lifecycle for an existing API, sometimes you just need to roll up your sleeves and begin crafting a Postman collection from existing documentation that exists. Adding each individual request, parameters, and other details, while abstracting away authentication details using an environment and variables. Manually defining a collection for an existing API helps establish a cornerstone for an API that is already in production, but could use more investment in documentation, testing, and other areas of a modern API lifecycle. Preparing an API to possibly be iterated upon for a future version, or simply just make sure it is operating and being managed in a well defined away as part of overall API operations. This API blueprint enters the API lifecycle using the proven approach to defining a Postman collection, but then guides you through some of the most comment elements of an API lifecycle that are needed to get an API up to acceptable levels, in alignment with the rest of API operations.</p>
 </p>
 
    
@@ -41,7 +41,7 @@
    
 
       <h3>Define</h3>
-      <p>Ensuring that operations supporting an API is properly defined, as well as what is needed to properly design and bring an API to life. A little planning and organization at this step of an APIs journey can go a long way towards ensuring the overall health and velocity of an API, and the applications that depend on this internal, partner, or public API.</p>
+      <p>The Postman collection has become a proven solution for defining and troubleshooting existing APIs over the last five years. Providing a machine readable representation of the details of each API request and response that can then be used as an API client, to power documentation and testing. Postman collections provide an ideal foundation for defining what an API can do, then using that collection to power other stops along the API lifecycle, be shared internally via other workspaces, and externally via workspaces, URL, or an embeddable Run in Postman button. Providing an industrial strength approach to laying a foundation for a repeatable and well known API lifecycle for an existing API that is already in production.</p>
          
       
          
@@ -259,7 +259,7 @@
    
 
       <h3>Document</h3>
-      <p>Having complete, accurate, and easy to follow document is essential for all APIs, helping alleviate the number one pain point for API consumers when it comes to onboarding with an API, as well as expanding the number of API paths an application puts to work, making API documentation one of the most important areas of the API lifecycle.</p>
+      <p>Having complete, accurate, and easy to follow documentation is essential for all APIs, and is something that  alleviates the number one pain point for API consumers when it comes to onboarding with any API, expanding the number of API paths an application puts to work. Modern approaches to producing API documentation have moved beyond a single static version of documentation simply published to a portal, as well as there being potentially multiple forms of documentation for any single API. Helping API producers onboard consumers easier, reduce the cognitive load when understanding what an API does, and properly define specific business use cases of an API being put to work in an application or as part of an integration.</p>
          
       
          
@@ -477,7 +477,7 @@
    
 
       <h3>Test</h3>
-      <p>A test-driven API lifecycle ensures that each API accomplishes the intended purpose it was developed for, providing manual and automated ways to ensure an API hasn't changed unexpectedly, is as performant as required, and meets the security expectations of everyone involved, helping establish a high quality of service consistently across all APIs.</p>
+      <p>A test-driven API lifecycle ensures that each API delivers the intended outcomes it was developed for in the first place, providing manual as well as automated ways to ensure an API hasn't changed unexpectedly and is as performant as required, helping establish a high quality of service consistently across all APIs. API testing should not be an afterthought and should be a default aspect of the API lifecycle for any API being put into production. API testing takes a solid investment in establishing proper testing practices across teams, but once you do the work to establish a baseline of testing, properly train teams on the process and tooling involved, the investment will pay off down the road.</p>
          
       
          
@@ -899,6 +899,224 @@
          
                
            
+        
+
+      </ul>
+   
+
+      <h3>Secure</h3>
+      <p>Security must be its own area of the API lifecycle, but it is something that should span testing, authentication, and potentially other areas of the API lifecycle. Over the last five years the world of API security has expanded, while also moving further left in the API lifecycle as part of a devops shift in how APIs are delivered. There are a number of elements present when it comes to security, but depending on the overall maturity of API operations the available resources and prioritization available to adequately realize these elements vary.</p>
+         
+      
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+            
+            <h4>Authentication</h4>
+            <p><p>Authentication begins on the producer side by selecting the appropriate authentication method to use when deploying an API to the gateway, setting the tone for how identity, authentication, and access control will work across the API lifecycle. Next, authentication can be defined as part of API consumption at the collection, folder, or individual request level, providing a very configurable authentication layer for automating across API operations. Authentication works seamlessly with environments, allowing secrets and tokens to be abstracted away to environments, but then applied to collections as part of specific authentication configuration using variables. Providing a very flexible and practical approach to applying authentication across many different APIs across many different teams in a manual or automated way.</p>
+</p>
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+           
       
          
                
@@ -1115,7 +1333,7 @@
    
 
       <h3>Monitor</h3>
-      <p>All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.</p>
+      <p>Monitors can be used to execute any Postman collection applied to any environment. Due to the versatility of what a Postman collection can define, collections turn monitors into a powerful API automation and orchestration tool. Beginning with the ability to schedule contract, performance, and other types of tests, but then also allowing for automating specific workflows across many different APIs. Since collections can be used to define anything that can be defined via an API, monitors can be used to schedule the running of each capability from multiple cloud regions, applying many different environmental variables. Making monitors an essential, versatile, and executable part of defining how the API lifecycle works.</p>
          
       
          
@@ -1157,6 +1375,10 @@
          
                
          
+            
+            <h4>Contract Testing Monitor</h4>
+            <p><p>Monitors can be used to automate the scheduling of any contract test, taking any collection of API requests, complete with test scripts, combined with a targeted environment, and run in a variety of cloud regions on a recurring schedule. Providing the ability to independently execute the contract testing for each API, but then monitor the contract testing of each API over time to make sure nothing has changed. Providing the essential automation of contract testing needed to ensure it is consistently applied across all APIs, defining whether or not an API is not just meeting the uptime portion of its service level agreement, but actually is meeting business needs in an ongoing way.</p>
+</p>
                
          
                
@@ -1441,6 +1663,10 @@
          
                
          
+            
+            <h4>Performance Testing Monitor</h4>
+            <p><p>Monitors can be used to automate the scheduling of any performance test, taking a single, or a variety of API paths and making sure they meet the established baseline for response time. Monitors take your performance testing collections and allow for their execution on a recurring schedule, from any cloud region, with a specific set of environment variables applied at execution time. It is important that performance testing exist as their own collections so that performance testing monitors can become more precise in where and when they run, providing a robust look at API performance from the regions and times of day that matter the most. Performance testing monitors are essential in realizing a certain quality of service at scale across all APIs in production, providing an executable unit for understanding the performance of all API resources and capabilities over time.</p>
+</p>
                
          
                
@@ -1695,6 +1921,10 @@
          
                
          
+            
+            <h4>Security Testing Monitor</h4>
+            <p><p>Monitors can be used to automate the scheduling of any security test, taking collections that are generated from an OpenAPI and scanning every path for potential vulnerabilities. Collections provide the definition of the surface area of the API and test scripts provide the ability to automate security testing against each individual path, which is something that when combined with a specific environment, and then schedule to run as a monitor becomes a very robust way to scale security testing across the surface area all APIs.. Allowing any developer to add security testing to the stack of contract, performance, and other testing, but then also contributing to the overall security strategy applied across API operations, meeting the needs of individual APIs, but automating security in a way that prevents any API from falling behind, and becoming the next breach we’ll read about in the news.</p>
+</p>
                
          
                
@@ -1741,8 +1971,218 @@
    
 
       <h3>Discover</h3>
-      <p>The ability to discover APIs at all stages of the API lifecycle is key to reduce redundancy across operations, helping teams find existing APIs before they develop new ones, and properly match API consumers with the right APIs, supporting documentation, relevant workflows, and the feedback loops that exist as part of the operation of APIs internally within the enterprise, or externally with 3rd party developers.</p>
+      <p>The ability to discover APIs at all stages of the API lifecycle is essential for reducing redundancy across operations, helping teams find existing APIs before they develop new ones, properly matching API consumers with the right APIs, while supporting documentation, relevant workflows, and the feedback loops that exist as part of the operation of APIs internally within the enterprise, or externally with 3rd party developers. API discovery does not live at the beginning or the end of the API lifecycle, but should be considered across all areas of the API lifecycle, ensuring that APIs, as well as the operations around them are as discoverable as possible, but well informed when it comes to privacy, security, and terms of service.</p>
          
+      
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+            
+            <h4>Search</h4>
+            <p><p>Search is the fundamental element of API discovery, allowing API producers to search for existing APIs before they begin the development of new APIs, as well as API consumers to search for APIs they can use as part of their applications and integrations. A healthy API lifecycle depends on the ability to search internally and externally for APIs, as well as the operations around them. The indexing of workspaces, APIs, and the elements of the API lifecycle like documentation, mock servers, and tests should occur by default across all teams before the desired efficiency and velocity will be realized across operations. Postman platform search provides visibility across these dimensions of API operations, looking across private, partner, and public dimensions, but then also leverages a role based approach to what elements of API operations are surfaced based upon your role–making API search a priority as part of the API lifecycle.</p>
+</p>
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+           
       
          
                
@@ -2163,223 +2603,13 @@
          
                
            
-      
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-            
-            <h4>Search</h4>
-            <p><p>Search is the fundamental element of API discovery, allowing API producers to search for existing APIs before they begin the development of new APIs, as well as API consumers to search for APIs they can use as part of their applications and integrations. A healthy API lifecycle depends on the ability to search internally and externally for APIs, as well as the operations around them. The indexing of workspaces, APIs, and the elements of the API lifecycle like documentation, mock servers, and tests should occur by default across all teams before the desired efficiency and velocity will be realized across operations. Postman platform search provides visibility across these dimensions of API operations, looking across private, partner, and public dimensions, but then also leverages a role based approach to what elements of API operations are surfaced based upon your role–making API search a priority as part of the API lifecycle.</p>
-</p>
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-           
         
 
       </ul>
       
    
    <h2>Conclusion</h2>
-   <p></p>
+   <p>This blueprint intends to provide a high level walk through of one possible way of defining a standardized API lifecycle beginning with the manual creation of a Postman collection that describes how an existing API should work. Each element within this blueprint works to provide a simple overview of what is involved across the entire life of an API, with more detail present on the detail page for each element (if you are viewing this on the API lifecycle project site). If you are reading this via a PDF or printed version you can visit the landing page for this blueprint to access more information and view specific actions you might possibly consider taking as part of applying each element of this proposed lifecycle within your own operations. This blueprint is a living document and will continue to evolve and be added to over time based upon feedback from readers. If you have any questions, feedback, or feel like there is more information you need, feel free to jump on the Github discussion for this blueprint, or any of the individual elements present--the value this blueprint provides is actively defined by the feedback community members like you.</p>
 
 </div>
 </center>
