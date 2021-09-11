@@ -1,7 +1,7 @@
 ---
 name: Generate OpenAPI a New API Using Code Annotations
 description: A blueprint for beginning the API lifecycle by automatically generating an OpenAPI.
-image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+image: openapi.png
 tags:
   - OpenAPI
   - Prototype-First

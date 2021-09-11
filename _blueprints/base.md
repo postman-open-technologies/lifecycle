@@ -1,7 +1,7 @@
 ---
 name: The Base of the API Lifecycle
 description: This represents the base of the API lifecycle that anyone should be thinking about.
-image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+image: lifecycle.png
 tags:
   - Default
 stage: Master

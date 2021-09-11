@@ -1,10 +1,10 @@
 ---
 name: Everything but the Kitchen Sink
 description: Contains all of the elements grouped by some of the common areas of the API lifecycle.
-image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+image: everything.png
 tags:
   - Default
-stage: Master
+stage: Template
 type: sync
 order: 1
 maturity: draft

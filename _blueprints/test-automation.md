@@ -1,7 +1,7 @@
 ---
 name: Test Automation
 description: A blueprint for understanding the different aspects of API test automation.
-image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+image: test-automation.png
 tags:
   - OpenAPI
   - Design-First

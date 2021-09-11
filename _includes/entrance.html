@@ -1,57 +1,77 @@
-<center>
-    <h3>Choose Your Entrance into the API Lifecycle</h3>
-    <div style="padding: 10px 0px 20px 0px; margin: 1px; width: 75%; border: 0px solid #000; text-align: left;">
+<div class="collection__wrapper">
+   <div class="container">
 
-          {% assign blueprints = site.blueprints | sort: "order" %}
+      {% assign blueprints = site.blueprints | sort: "order" %}
 
-          <h3>Base</h3>
-          <p>These are the base blueprints we use to define the API lifecycle, laying a base that anyone can work from to define their own.</p>
-          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
-          {% for blueprint in blueprints %}
-             {%if blueprint.stage == 'Master' %}
-                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
-             {% endif %}        
-           {% endfor %}            
-          </ul>
+		<div class="row collection__header text-center">
+         <div class="col-md-12" style="text-align: left;">
+            <h2 class="h1">Base</h2>
+            <p style="padding: 0px;">These are the base blueprints we use to define the API lifecycle, laying a base that anyone can use define their own.</p>
+        </div>
+      </div>      
+      <div>
+         {% for blueprint in blueprints %}
+            {%if blueprint.stage == 'Master' %}
+               {% include blueprints.html %}
+            {% endif %}        
+          {% endfor %}            
+      </div>
+      <hr>
+		<div class="row collection__header text-center">
+         <div class="col-md-12" style="text-align: left;">
+            <h2 class="h1">New APIs</h2>
+            <p style="padding: 0px;">If you are creating a new API, these are the blueprints we recommend as your entrance to the API lifecycle for your organization.</p>
+        </div>
+      </div>      
+      <div>
+         {% for blueprint in blueprints %}
+            {%if blueprint.stage == 'New' %}
+               {% include blueprints.html %}
+            {% endif %}        
+          {% endfor %}            
+      </div>   
+      <hr>
+		<div class="row collection__header text-center">
+         <div class="col-md-12" style="text-align: left;">
+            <h2 class="h1">Existing APIs</h2>
+            <p style="padding: 0px;">If you are working with an existing API, these are the blueprints we recommend as your entrance to the API lifecycle.</p>
+        </div>
+      </div>      
+      <div>
+         {% for blueprint in blueprints %}
+            {%if blueprint.stage == 'Existing' %}
+               {% include blueprints.html %}
+            {% endif %}        
+          {% endfor %}            
+      </div>   
+      <hr>
+		<div class="row collection__header text-center">
+         <div class="col-md-12" style="text-align: left;">
+            <h2 class="h1">Reverse Engineer</h2>
+            <p style="padding: 0px;">Often times we need to reverse engineer the APIs that already exist behind the applications we depend upon.</p>
+        </div>
+      </div>      
+      <div>
+         {% for blueprint in blueprints %}
+            {%if blueprint.stage == 'Reverse' %}
+               {% include blueprints.html %}
+            {% endif %}        
+          {% endfor %}            
+      </div>      
+      <hr>
+		<div class="row collection__header text-center">
+         <div class="col-md-12" style="text-align: left;">
+            <h2 class="h1">Automation</h2>
+            <p style="padding: 0px;">If you are working with an existing API, these are the blueprints we recommend as your entrance to the API lifecycle.</p>
+        </div>
+      </div>      
+      <div>
+         {% for blueprint in blueprints %}
+            {%if blueprint.stage == 'Automation' %}
+               {% include blueprints.html %}
+            {% endif %}        
+          {% endfor %}            
+      </div>        
 
-          <h3>New</h3>
-          <p>If you are creating a new API, these are the blueprints we recommend as your entrance to the API lifecycle for your organization.</p>
-          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
-          {% for blueprint in blueprints %}
-             {%if blueprint.stage == 'New' %}
-                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
-             {% endif %}        
-           {% endfor %}            
-          </ul>   
-          
-          <h3>Existing</h3>
-          <p>If you are working with an existing API, these are the blueprints we recommend as your entrance to the API lifecycle.</p>
-          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
-          {% for blueprint in blueprints %}
-             {%if blueprint.stage == 'Existing' %}
-                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
-             {% endif %}        
-           {% endfor %}            
-          </ul>   
-
-          <h3>Reverse</h3>
-          <p>Often times we need to reverse engineer the APIs that already exist behind the applications we depend upon.</p>
-          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
-          {% for blueprint in blueprints %}
-             {%if blueprint.stage == 'Reverse' %}
-                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
-             {% endif %}        
-           {% endfor %}            
-          </ul>            
-          
-          <h3>Automation</h3>
-          <p>If you are working with an existing API, these are the blueprints we recommend as your entrance to the API lifecycle.</p>
-          <ul style="text-align: left; margin-left: 15px; padding-top: 15px; list-style: none;">            
-          {% for blueprint in blueprints %}
-             {%if blueprint.stage == 'Automation' %}
-                <li>&#8594;<a href="{{ site.url }}{{ blueprint.url }}" style="font-size: 18px; color: #000;"><strong>{{ blueprint.name }}</strong></a> - {{ blueprint.description }}</li>
-             {% endif %}        
-           {% endfor %}            
-          </ul>              
-    </div>
-    </center>
+   </div>
+</div>
