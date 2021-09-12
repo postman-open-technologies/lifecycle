@@ -1,9 +1,8 @@
 title: API Lifecycle
-description: [Just a Proof of Concept]
+description:  framework to define the API lifecycle in a modular and flexible way so that anyone can define their own version of the API lifecycle using a common set of <a href="{{ site.url }}/all-elements/">elements</a> and <a href="{{ site.url }}/all-actions/">actions</a> being applied across standard definition of API operations.
 
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 url: https://postman-open-technologies.github.io/lifecycle/
-#url: /
 email: kin@postman.com
 
 github_user: postman-open-technologies
