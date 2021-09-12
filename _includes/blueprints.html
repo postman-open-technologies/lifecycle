@@ -3,8 +3,8 @@
    <div class="col-md-9">
       <div class="row collection__meta">
          <div class="col-12 collection__description">
-            <img src="{{ site.url }}/images/{{ blueprint.image }}" width="90" style="margin: 10px; border: 1px solid #000; background-color:#FFF; padding: 5px;" align="left">
-            <h3>{{ blueprint.name }}</h3>
+            <a href="{{{ site.url }}{{ blueprint.url }}" title="Details"><img src="{{ site.url }}/images/{{ blueprint.image }}" width="90" style="margin: 10px; border: 1px solid #000; background-color:#FFF; padding: 5px;" align="left"></a>
+            <h3><a href="{{{ site.url }}{{ blueprint.url }}" title="Details" style="color: #000;">{{ blueprint.name }}</a></h3>
             <p>{{ blueprint.description }}</p>
          </div>
       </div>
