@@ -1,19 +1,19 @@
 ---
 name: Interceptor
 description: 
-  - Running traffic through Interceptor in Chrome to capture API traffic, allowing the details of requests and response to be translated into a collection that can be re-run, organized, shared, monitored, automated, and put to work consuming API resources, or even used to inform the evolution of an API by defining the surface area of each API based upon how it is used.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
+  - Running traffic through Interceptor in Chrome to capture API traffic, allowing the details of requests and response to be translated into a collection that can be re-run, organized, shared, monitored, automated, and put to work consuming API resources, or even used to inform the evolution of an API by defining the surface area of each API based upon how it is used. 
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Chrome Extension
+      url: https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo?hl=en
+    - title: Using Postman Interceptor
+      url: https://learning.postman.com/docs/sending-requests/capturing-request-data/interceptor/
+    - title: Installing Interceptor
+      url: https://learning.postman.com/docs/sending-requests/capturing-request-data/interceptor/#installing-interceptor   
+    - title: Syncing cookies
+      url: https://learning.postman.com/docs/sending-requests/capturing-request-data/interceptor/#syncing-cookies  
+    - title: Capturing requests
+      url: https://learning.postman.com/docs/sending-requests/capturing-request-data/interceptor/#capturing-requests                     
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +22,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Postman Interceptor is a Chrome extension that acts as a browser companion to Postman. Interceptor enables you to sync cookies from your browser to Postman and capture network requests directly from Chrome, saving them to your history or Postman collection. Reverse engineering existing web applications to map out the API landscape below is a common need for developers in today's rapidly expanding API landscape. Postman interceptor makes it easy to reverse engineer the API behind the web applications we use each day, then quickly generate a collection from the traffic, allowing us to capture, save, replay, and automate using the APIs behind web applications. Going beyond what we use the user interface for an get more creative in how we put the APIs behind the apps we already use to work.

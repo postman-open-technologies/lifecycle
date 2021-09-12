@@ -1,11 +1,7 @@
 ---
 name: Onboarding Documentation
 description: 
-  - It can be helpful to provide new users with documentation designed specifically for onboarding new consumers to an API, only introducing them to the most relevant paths of an API, reducing the cognitive load when it comes to getting started with an API and complimenting more complete reference documentation showing everything that is possible with an API.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
+  - It can be helpful to provide new users with documentation designed specifically for onboarding new consumers to an API, only introducing them to the most relevant paths of an API, reducing the cognitive load when it comes to getting started with an API and complimenting more complete reference documentation showing everything that is possible with an API.  
 links:
     - title: Link Title
       url: http://example.com
@@ -13,7 +9,7 @@ links:
       url: http://example.com
     - title: Link Title
       url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +18,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Reference documentation for APIs should exist for any API, providing a complete reference of all API paths available, but when it comes to helping reduce the cognitive load for developers when they are onboarding, it can help having a subset or specialized set of documentation designed to onboard developers as quickly as possible. Onboarding API documentation provides the details of only the most common paths developers will need to get up and running with an API, or maybe a specific set of paths that a certain type of partner within an industry will need to get up and running. Onboarding API documentation helps make APIs more accessible and reduces friction for developers when it comes to going from discovery to integration, in as few steps as possible.
