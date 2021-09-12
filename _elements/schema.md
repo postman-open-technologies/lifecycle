@@ -2,18 +2,14 @@
 name: Schema
 description: 
   - Defining all objects use as part of API operations using JSON Schema provides for a definitions that can be used as part of modeling and the API design process, as well as for validation at development, build, or even run time.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Postman Schema
+      url: https://schema.postman.com/
+    - title: Validating APIs
+      url: https://learning.postman.com/docs/designing-and-developing-your-api/validating-elements-against-schema/
+    - title: Validating schema
+      url: https://learning.postman.com/docs/designing-and-developing-your-api/validating-elements-against-schema/#validating-schema           
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +18,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+In the world of APIs schema define almost every aspect of our operations, providing us with a framework for how something is structured, but because schema are machine readable, it also provides us with how something will work, and with linting and validation also whether something is working as defined by a specific contract. Schema is most often associated with data made available via APIs from databases, but schema also is used to define every stop along the API lifecycle, and provides us with the artifacts we need to properly govern the API lifecycle. Schema is how we define shared meaning across our API operations, between teams moving APIs forward, but also with the consumers who are putting the digital resources, capabilities, media, and algorithms we make available via our APIs to work in their applications and integrations. There are numerous opportunities for defining, managing, and putting schema to work across the Postman API platform when it comes to producing or consuming APIs.

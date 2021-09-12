@@ -3,13 +3,11 @@ name: CI/CD Pipeline
 description: 
   - Like other aspects of the software development lifecycle, APIs benefit from well defined, repeatable CI/CD pipelines to deploy, test, automate, and orchestrate throughout the API lifecycle, publishing APIs to development, staging, production, and other stages, but then also ensuring other elements like publishing of documentation, and tests are baked into the process. 
 links:
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Continuous Integration (CI) with Postman API
+      url: https://learning.postman.com/docs/running-collections/using-newman-cli/continuous-integration/
+    - title: Running collections on the command line with Newman
+      url: https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/         
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          

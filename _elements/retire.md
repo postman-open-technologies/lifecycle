@@ -2,10 +2,6 @@
 name: Retire
 description: 
   - The retirement of an API or specific version of an API is an inevitable thing and there should be a formal process in place to inform API producers about what the steps are in a process to retired, and set in motion the deprecation of an API, keeping an API or version of an API active for a specific amount of time, while acknowledging that at some point it will go away.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
     - title: Link Title
       url: http://example.com
@@ -22,4 +18,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-As an API, or a specific version of an API approaches its end of life it is common to retire the API, setting expectations with consumers about the eventual deprecation of an API within a specific time period. The retirement of an API can involve updating documentation to reflect the retirement state of an API, adding a potential header that goes out with each API response, as well as sending out notifications and other communications with consumers that an API has reached the retirement stage.
+As an API, or a specific version of an API approaches its end of life it is common to retire the API, setting expectations with consumers about the eventual deprecation of an API within a specific time period. The retirement of an API can involve updating documentation to reflect the retirement state of an API, adding a potential header that goes out with each API response, as well as sending out notifications and other communications with consumers that an API has reached the retirement stage. Retirement is the stage that signals to consumers that an API is still available for use, but will not be evolving forward anymore, and at some date in the near future it will eventually be deprecated.

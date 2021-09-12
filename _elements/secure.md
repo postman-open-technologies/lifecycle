@@ -1,11 +1,7 @@
 ---
 name: Secure
 description: 
-  - Ensuring that an API is secure from threats and vulnerabilities, making for a pretty wide spectrum of different processes and technologies that ensure digital resources and capabilities made available via APIs are only accessible to an intended audience and bad actors are not able to find ways to get access via an API.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
+  - Ensuring that an API is secure from threats and vulnerabilities, making for a pretty wide spectrum of different processes and technologies that ensure digital resources and capabilities made available via APIs are only accessible to an intended audience and bad actors are not able to find ways to get access via an API. 
 links:
     - title: Link Title
       url: http://example.com
@@ -13,7 +9,7 @@ links:
       url: http://example.com
     - title: Link Title
       url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +18,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+The securing of API infrastructure should be the number one concern for organizations. With the number of APIs powering desktop, web, mobile, and device applications, the surface area for vulnerabilities is only increasing, raising the stakes when it comes to how secure an organization. This element of the API lifecycle spans multiple other areas including management via authentication, and testing using security testing and monitoring practices. Security is about not just securing each individual API, but also being able to consistently apply it across hundreds or thousands of APIs. How secure an organization is is increasingly dependent on how teams are able to apply the latest security practices as part of their regular work without having to become security experts on top of their existing role. Because of this DevOps shift in how our organizations are operating, security is shifting left and becoming something that isn't an afterthought or a stage of the API lifecycle later on, and moving earlier on in the design and development of APIs.

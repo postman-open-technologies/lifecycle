@@ -2,18 +2,16 @@
 name: Sharing
 description: 
   - Sharing of elements used to produce or consume APIs across workspaces, externally with consumers, allowing an intended audience to view, download, and access artifacts and other elements of API operations so they and collaborate around the production or consumption of API resources and capabilities.
-body:
-  - 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
-footer:
-  - ''  
 links:
-    - title: Link Title
+    - title: Sharing your Work
       url: http://example.com
-    - title: Link Title
-      url: http://example.com
-    - title: Link Title
-      url: http://example.com            
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    - title: Sharing to workspaces
+      url: https://learning.postman.com/docs/collaborating-in-postman/sharing/#sharing-to-workspaces
+    - title: Sharing by Link
+      url: https://learning.postman.com/docs/collaborating-in-postman/sharing/#sharing-by-link    
+    - title: Creating Run in Postman Buttons
+      url: https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button/              
+video: ''
 screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png          
@@ -22,4 +20,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Sharing is essential across the API lifecycle for collaborating with team members, partners, and 3rd party consumers, making APIs, documentation, tests, mock servers, environments, and other elements of the API lifecycle available for use. The most common way to share API lifecycle artifacts is across workspaces with different levels of access by team members, partners, and the general public. APIs, collections, and environments can be easily shared across workspaces designed to target a specific team or audience. Next, sharing of collections can be done using the URL to the raw JSON behind, or by publishing the collection using the Run in Postman button, which can be embedded in any HTML page. Sharing is a fundamental ingredient for how API operations move forward and act as the factory floor for an organization. Without sharing there is no internal collaboration amongst team members or engagement with the public across the API lifecycle.
