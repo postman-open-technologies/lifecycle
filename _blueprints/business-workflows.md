@@ -1,6 +1,7 @@
 ---
 name: Build a Business Workflow
-description: A blueprint for beginning the API lifecycle by designing a new API using an OpenAPI.
+description: This API lifecycle blueprint focuses on defining common business workflows, then automating around these well defined scenarios. Defining collections across multiple APIs, including authentication, scripting, data, environments, then automate using monitors and pipelines.
+conclusion: This blueprint looks at how you can approach the development and operation of API-driven workflows using a well defined API lifecycle. Each element within this blueprint works to provide a simple overview of what is involved across the entire life of an API, with more detail present on the detail page for each element (if you are viewing this on the API lifecycle project site). If you are reading this via a PDF or printed version you can visit the landing page for this blueprint to access more information and view specific actions you might possibly consider taking as part of applying each element of this proposed lifecycle within your own operations. This blueprint is a living document and will continue to evolve and be added to over time based upon feedback from readers. If you have any questions, feedback, or feel like there is more information you need, feel free to jump on the Github discussion for this blueprint, or any of the individual elements present--the value this blueprint provides is actively defined by the feedback community members like you.
 image: workflow.png
 tags:
   - OpenAPI
@@ -8,7 +9,8 @@ tags:
 stage: Automation
 type: sync
 order: 1
-maturity: draft
+maturity: stable
+version: 2021-09-11
 areas:  
 
   - label: Define
@@ -42,32 +44,8 @@ areas:
       - name: Workflow Testing Monitor
         label: Workflow Testing Monitor    
       - name: Workflow Testing Monitor Results
-        label: Workflow Testing Monitor Results  
-  - label: Observability
-    description: Tapping into the outputs available across API operations to understand what is happening with individual APIs throughout their lifecycle, but also in aggregate for domains, teams, and other logical groups, helping make API operations more visible in real time.
-    image: images/lifecycle-arrow-observability.png
-    elements:
-      - name: Activity
-        label: Activity 
-      - name: Reports
-        label: Reports
-      - name: Change Log
-        label: Change Log      
-      - name: Uptime Monitor Report
-        label: Uptime Monitor Report   
-      - name: Gateway Usage Report
-        label: Gateway Usage Report  
-      - name: Security Monitor Report
-        label: Security Monitor Report
-      - name: Contract Testing Monitor Report
-        label: Contract Testing Monitor Report    
-      - name: Performance Monitor Report
-        label: Performance Monitor Report   
-      - name: Workflow Monitor Report
-        label: Workflow Monitor Report           
-      - name: Application Performance Management (APM)  
-        label: Application Performance Management (APM)                                      
+        label: Workflow Testing Monitor Results                                       
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/29
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/business-workflows.md
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+A standardized API lifecycle can be applied to the design, development, and usage of API business workflows that are defined as machine readable collections which can be automated using monitors and CI/CD pipelines. Postman collections provide a versatile approach to defining multiple individual API requests that include authentication, parameters, headers, and other details, then organize into folders and specific sequences. Providing a format for defining, documenting, but then also executing common business workflows across many internal, partner, or external APIs. Something becomes endlessly useful when managed as part of a well defined lifecycle, equipping developers with what they need to define and design the workflows, but also maintain them, execute them, and use them to automate a variety of business tasks that exist in their worlds.

@@ -1,6 +1,7 @@
 ---
 name: Test Automation
-description: A blueprint for understanding the different aspects of API test automation.
+description: Test automation is essential for delivering reliable and consistent APIs at scale across the enterprise. This is a blueprint for walking through the base of how test automation can work as part of a well defined API lifecycle, helping teams standardize how they approach testing APIs.
+conclusion: This blueprint is meant to provide a standardized approach to automating the testing of APIs across operations as part of a standardized API lifecycle. Each element within this blueprint works to provide a simple overview of what is involved across the entire life of an API, with more detail present on the detail page for each element (if you are viewing this on the API lifecycle project site). If you are reading this via a PDF or printed version you can visit the landing page for this blueprint to access more information and view specific actions you might possibly consider taking as part of applying each element of this proposed lifecycle within your own operations. This blueprint is a living document and will continue to evolve and be added to over time based upon feedback from readers. If you have any questions, feedback, or feel like there is more information you need, feel free to jump on the Github discussion for this blueprint, or any of the individual elements present--the value this blueprint provides is actively defined by the feedback community members like you.
 image: test-automation.png
 tags:
   - OpenAPI
@@ -8,7 +9,8 @@ tags:
 stage: Automation
 type: sync
 order: 1
-maturity: draft
+maturity: stable
+version: 2021-09-11
 areas:  
    
   - label: Test

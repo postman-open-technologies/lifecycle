@@ -1,6 +1,6 @@
 ---
 name: New API Using the OpenAPI Specification
-description: A blueprint for beginning the API lifecycle by designing a new API using an OpenAPI, showing one possible lifecycle from end to end.
+description: This provides a blueprint for beginning the API lifecycle by designing a new API using an OpenAPI, showing one possible lifecycle from end to end. Approaching the API lifecycle in a design-first way, while ensuring all the other essential areas of the API lifecycle are present.
 conclusion: This blueprint intends to provide a high level walk through of one possible way of defining a standardized API lifecycle which is centered around an API design-first approach to delivering an API with OpenAPI at the center. This view of the API lifecycle will not work for all teams and for all APIs, but it does provide one possible overview that may work for many situations. Each element within this blueprint works to provide a simple overview of what is involved across the entire life of an API, with more detail present on the detail page for each element (if you are viewing this on the API lifecycle project site). If you are reading this via a PDF or printed version you can visit the landing page for this blueprint to access more information and view specific actions you might possibly consider taking as part of applying each element of this proposed lifecycle within your own operations. This blueprint is a living document and will continue to evolve and be added to over time based upon feedback from readers. If you have any questions, feedback, or feel like there is more information you need, feel free to jump on the Github discussion for this blueprint, or any of the individual elements present--the value this blueprint provides is actively defined by the feedback community members like you.
 image: openapi.png
 tags:
@@ -10,6 +10,7 @@ stage: New
 type: sync
 order: 1
 maturity: stable
+version: 2021-09-11
 areas:  
 
   - label: Define

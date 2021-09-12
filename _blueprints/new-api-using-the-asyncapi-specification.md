@@ -1,7 +1,7 @@
 ---
 name: New API Using the AsyncAPI Specification
-description: A blueprint for beginning an event-driven API lifecycle by designing a new API using an AsyncAPI.
-image: asyncapi.jpeg
+description: This is a blueprint to try and define a new event-driven API using AsyncAPI, pushing the boundaries of this API lifecycle blueprint to include multiple protocols, patterns, and ensure that there can be a well defined API lifecycle across a diverse set of approaches to delivering APIs.
+image: asyncapi.png
 tags:
   - OpenAPI
   - Design-First
@@ -9,6 +9,7 @@ stage: New
 type: async
 order: 2
 maturity: draft
+version: 2021-09-11
 areas:  
 
   - label: Define

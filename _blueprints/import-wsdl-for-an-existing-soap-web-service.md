@@ -1,6 +1,6 @@
 ---
 name: Import WSDL for an Existing SOAP Web Service
-description: A blueprint for beginning the API lifecycle by importing a WSDL for an existing SOAP web service.
+description: This is a blueprint for entering a standardized API lifecycle using a WSDL for an existing web service, acknowledging that SOAP still has it's place in many enterprise environments, but a common API lifecycle including documentation, testing, and other elements is still needed.
 conclusion: This blueprint intends to provide a high level walk through of one possible way of defining a standardized API lifecycle which is centered around an existing SOAP web service. Each element within this blueprint works to provide a simple overview of what is involved across the entire life of an API, with more detail present on the detail page for each element (if you are viewing this on the API lifecycle project site). If you are reading this via a PDF or printed version you can visit the landing page for this blueprint to access more information and view specific actions you might possibly consider taking as part of applying each element of this proposed lifecycle within your own operations. This blueprint is a living document and will continue to evolve and be added to over time based upon feedback from readers. If you have any questions, feedback, or feel like there is more information you need, feel free to jump on the Github discussion for this blueprint, or any of the individual elements present--the value this blueprint provides is actively defined by the feedback community members like you.
 image: wsdl.png
 tags:
@@ -11,6 +11,7 @@ stage: Existing
 type: sync
 order: 7
 maturity: stable
+version: 2021-09-11
 areas:
 
   - label: Define

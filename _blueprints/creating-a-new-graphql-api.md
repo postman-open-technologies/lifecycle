@@ -1,6 +1,6 @@
 ---
 name: Creating a New GraphQL API
-description: Creating a new GraphQL API to provide a data API that allows consumers to query the whole graph.
+description: This is a blueprint for pushing this API lifecycle blueprint to also work for new GraphQL APIs, identifying the steps needed to define and stand up a new GraphQL API, but then apply a consistent well defined lifecycle to how the API is moved forward and supported in production.
 image: graphql.png
 tags:
   - GrappQL
@@ -10,6 +10,7 @@ stage: New
 type: sync
 order: 7
 maturity: draft
+version: 2021-09-11
 areas:
 
   - label: Define

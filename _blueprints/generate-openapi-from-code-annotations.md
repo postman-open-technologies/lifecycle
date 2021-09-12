@@ -1,14 +1,15 @@
 ---
 name: Generate OpenAPI a New API Using Code Annotations
-description: A blueprint for beginning the API lifecycle by automatically generating an OpenAPI.
+description: This is a blueprint for entering the API lifecycle by generating an OpenAPI using code annotations, taking a code-first approach to bringing each API to life, while still ensuring that there is a contract to help guide the API across a more standardized API lifecycle.
 image: openapi.png
 tags:
   - OpenAPI
-  - Prototype-First
+  - Code Annotations
 stage: Existing
 type: sync
 order: 5
 maturity: stable
+version: 2021-09-11
 areas:
 
   - label: Define

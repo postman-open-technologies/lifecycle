@@ -1,6 +1,6 @@
 ---
 name: The Base of the API Lifecycle
-description: This represents the base of the API lifecycle that anyone should be thinking about.
+description: This blueprint provides a look at the base of the API lifecycle, laying the foundation for a API lifecycle you'll see variations of across this site, with different views depending on where you enter the lifecycle, and what your priorities are within your organization and teams.
 image: lifecycle.png
 tags:
   - Default
@@ -8,6 +8,7 @@ stage: Master
 type: sync
 order: 1
 maturity: draft
+version: 2021-09-11
 areas:  
 
   - label: Discover
