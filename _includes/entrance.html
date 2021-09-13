@@ -72,6 +72,19 @@
             {% endif %}        
           {% endfor %}            
       </div>        
-
+      <hr>
+		<div class="row collection__header text-center">
+         <div class="col-md-12" style="text-align: left;">
+            <h2 class="h1">Governance</h2>
+            <p style="padding: 0px;">These are two blueprints for helping jump start the API governance conversation as part of a well defined API lifecycle.</p>
+        </div>
+      </div>      
+      <div>
+         {% for blueprint in blueprints %}
+            {%if blueprint.stage == 'Governance' %}
+               {% include blueprints.html %}
+            {% endif %}        
+          {% endfor %}            
+      </div>   
    </div>
 </div>
