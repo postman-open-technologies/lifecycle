@@ -9,7 +9,7 @@ links:
     url: https://spec.openapis.org/oas/latest.html
   - title: Postman Learning Center
     url: https://learning.postman.com/docs/integrations/available-integrations/working-with-openAPI/           
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7F3f4WOFs38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/V2PWRA6q3jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 actions:
   - name: Import OpenAPI
   - name: Generate Collection from OpenAPI
