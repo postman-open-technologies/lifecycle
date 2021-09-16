@@ -1,6 +1,6 @@
 ---
 name: The Base of the API Lifecycle
-description: This blueprint provides a look at the base of the API lifecycle, laying the foundation for a API lifecycle you'll see variations of across this site, with different views depending on where you enter the lifecycle, and what your priorities are within your organization and teams.
+description: This blueprint illustrates a generic API lifecycle. It provides a starting point for subsequent lifecycle variations elsewhere on this site. Depending on your priorities and starting point, you may need to expand this base lifecycle to match your desired situation.
 image: lifecycle.png
 tags:
   - Default
@@ -12,7 +12,7 @@ version: 2021-09-11
 areas:  
 
   - label: Discover
-    description: Before starting a new API product, it is important to discover if the solution to the problem you're trying to solve already exists. Building on already existing functionality brings products and services to market faster. Postman has a number of features that makes this discovery step easier.
+    description: Before starting a new API endeavor, it is crucial to discover if the solution to the problem you're trying to solve already exists. Building on already existing functionality brings products and services to market faster. Postman has several elements that make this discovery step easier.
     image: images/lifecycle-arrow-discover.png
     elements:
       - name: Search
@@ -23,7 +23,7 @@ areas:
         label: Private Network
   - label: Design
     image: images/lifecycle-arrow-design.png
-    description: Designing an interface is one of the most critical steps in the API's lifecycle. It involves making decisions on how the interface will look and feel when used. American software engineer Grady Booch calls these decisions "significant", where significance is measured by the cost of change. Once your API has its first user, the cost of changing that interface increases significantly. Applying the appropriate rigor at this stage of the lifecycle will decrease the likelihood that change is necessary later. 
+    description: Designing an interface is one of the most critical steps in the API's lifecycle. It involves making decisions on how the interface will look and feel when used. American software engineer Grady Booch calls these decisions "significant", where significance is measured by the cost of change. Once your API has its first user, the cost of changing that interface increases significantly. Applying the appropriate rigor at this stage of the lifecycle will decrease the likelihood that change is necessary later. This includes, but is not limited to, defining performance, functionality, and security expectations.
     elements:
       - name: Techniques
         label: Techniques    
@@ -39,7 +39,7 @@ areas:
         label: Documentation 
   - label: Publish
     image: images/lifecycle-arrow-deploy.png
-    description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+    description: Publishing is the act of making an *implementation* available that executes a service's interface in an accessible environment. This act requires more than just pushing a deployment to a cloud host. Publishing an API entails communicating documentation and, in some cases, code to the appropriate audience. 
     elements:
       - name: Document
         label: Document      
@@ -51,7 +51,7 @@ areas:
         label: Public Network     
   - label: Secure
     image: images/lifecycle-arrow-security.png
-    description: APIs usefulness to automation also makes APIs a potential target for malicious actors. Ensuring security is accounted for and applied consistently for all APIs produced is an incredibly important step. 
+    description: An APIs usefulness to automation also makes APIs a potential target for malicious actors. Ensuring security is accounted for and applied consistently for all APIs produced is a significant step. 
     elements:
       - name: Role Based Access Control
         label:  Role Based Access Control      
@@ -61,7 +61,7 @@ areas:
         label: Authorization 
   - label: Monitor
     image: images/lifecycle-arrow-monitor.png
-    description: In order to properly manage APIs and how they flow through the API lifecycle, it is vital to have accurate and up-to-date information. Postman provides a number of useful features to track APIs across the platform.
+    description: To properly manage APIs and how they flow through the API lifecycle, it is vital to have accurate and up-to-date information. Postman provides several valuable elements to track APIs across the platform.
     elements:
       - name: Activity
         label: Activity  
@@ -73,7 +73,7 @@ areas:
         label: Notifications                          
   - label: Manage
     image: images/lifecycle-arrow-manage.png
-    description: Markets, strategies, team experience, and professional expectations change. So too do APIs. Changing an interface is no trivial task, however, given the number of people that may depend on it. Learning to prioritize and schedule changes to minimize the negative impacts is a skill. Thankfully, Postman includes features to navigate through this important step.
+    description: Markets, strategies, team experience, and professional expectations change. So too, do APIs. However, changing an interface is no trivial task, given the number of integrations depending on it. Learning to prioritize and schedule changes to minimize the negative impacts is a skill. Thankfully, Postman includes elements to navigate through this step of growing importance.
     elements:
       - name: Versioning
         label: Versioning
