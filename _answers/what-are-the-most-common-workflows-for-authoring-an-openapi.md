@@ -8,7 +8,7 @@ links:
       url: https://www.asyncapi.com/
     - title: JSON Schema
       url: https://json-schema.org/          
-video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/XX9QeeQTNPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'     
+video: ''     
 ...
 Like other stops along the API lifecycle, Postman is an API Swiss Army Knife, allowing for many different ways of executing similar tasks. When it comes to authoring an OpenAPI we work to provide you with native workflows for authoring directly within Postman API builder, but also outside of the platform, while still ensuring that each OpenAPI is available for use across the API lifecycle--here are some of the most common actions we see taken as part of OpenAPI authoring workflows:
 
@@ -17,4 +17,6 @@ Like other stops along the API lifecycle, Postman is an API Swiss Army Knife, al
 - [Author in Postman API Builder](https://apis.how/actions/author-an-openapi-in-api-builder/)
 - [Author in Open Source Solution](https://apis.how/actions/author-an-openapi-in-open-source-editor/)
 - [Sync OpenAPI from Github](https://apis.how/actions/sync-openapi-to-github/)
-- Sync OpenAPI from Postman API
+- [Sync OpenAPI from Postman API](https://apis.how/actions/sync-openapi-using-the-postman-api/)
+
+It is optimal to edit OpenAPI definitions directly within the Postman API builder, but it is common for their to be off platform OpenAPI authoring workflows exist in multiple places. The Postman API builder allows for the greatest flexibility for authoring OpenAPI on the web and desktop, allowing for real time collaboration and commenting around APIs, and keeping the contract in sync with documentation, mock servers, and testing. However, there is no reason that OpenAPIs can't simultaneously be authored in other locations then synced with Postman via existing Git enabled workflows as well as the Postman API. Providing the most flexibility when nit comes to authoring an OpenAPI across teams.
