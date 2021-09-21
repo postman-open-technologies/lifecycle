@@ -22,6 +22,12 @@ collections:
   actions:    
     permalink: /actions/:path/  
     output: true       
+  questions:    
+    permalink: /questions/:path/  
+    output: true       
+  answers:    
+    permalink: /answers/:path/  
+    output: true       
 
 defaults:
   - scope:
@@ -35,4 +41,12 @@ defaults:
   - scope:
       type: actions
     values:
-      layout: actions              
+      layout: actions          
+  - scope:
+      type: answers
+    values:
+      layout: answers     
+  - scope:
+      type: questions
+    values:
+      layout: questions                

@@ -1,0 +1,23 @@
+{% for service in site.services %}
+
+   {% assign tag_match = 0 %}
+   {% for tag in service.tags %}
+      {% if show_tag == tag %}
+         {% assign tag_match = 1 %}
+      {% endif %}      
+   {% endfor %}  
+
+   {% assign website_url = 0 %}
+   {% for common in service.x-common %}
+      {% if common.type == 'x-website' %}
+         {% assign website_url = common.url %}
+      {% endif %}      
+   {% endfor %}     
+
+   {% if tag_match == 1 %}
+   <div style="width: 250px; height: 200px; border: 0px solid #000; display: inline;">
+      <a href="{{ website_url }}"><img src="../{{ service.image }}" width="250" style="padding: 10px; display: inline;"></a>
+   </div>
+   {% endif %}      
+
+{% endfor %}  

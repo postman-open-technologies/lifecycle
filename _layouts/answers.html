@@ -1,0 +1,96 @@
+---
+layout: default
+---
+<div class="container-fluid hero v5_starfield-small-night-sky pb-4">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 hero_title" style="padding: 125px 0px 0px 0px; margin: 0px;">
+            <h1><a href="{{ site.url }}" style="color: #FFF;">{{ site.title }}</a></h1>
+         </div>
+         <div class="col-md-6 hero_image" style="padding: 0px; margin: 0px;"><a href="{{ site.url }}"><img src="{{ site.url }}/images/lifecycle.png" alt="" width="350"></a></div>
+      </div>
+   </div>
+</div>
+
+<div>
+   <div class="container">
+
+		<div class="row collection__header text-center">
+         <div class="col-md-12">
+            <h2 class="h1">{{ page.name }}</h2>
+            <p>{{ page.description }}</p>
+         </div>
+      </div>
+
+      <center>
+      <div style="width: 70%; border: 0px solid #000; text-align: left;" align="center">
+
+         {{ content }}
+
+      </div>
+      </center>
+
+      <!-- Show Video-->
+      <hr>
+      <center>{{ page.video }}</center>
+      <hr>
+      <!-- Show Video-->    
+      
+
+      {% assign any_screenshots = 0 %}
+      {% for screenshot in page.screenshots %}
+         {% if screenshot.title != 'Screenshot Description' %}
+            {% assign any_screenshots = 1 %}
+         {% endif %}
+      {% endfor %}     
+      {% if any_screenshots == 1 %}      
+         <h2>Screenshots</h2>
+         <table width="100%">
+            <tr>
+               {% for screenshot in page.screenshots %}
+                  {% if screenshot.title != 'Screenshot Description' %}
+                     <td width="33%" align="center">
+                        <a href="{{ screenshot.url }}" target="_blank"><img src="{{ site.url }}/{{ screenshot.url }}" width="100%" style="border: 0px solid #000; padding: 2px;"></a>
+                        <strong>{{ screenshot.title }}</strong>
+                     </td> 
+                  {% endif %}
+               {% endfor %}           
+            </tr>         
+         </table>         
+         <hr>
+      {% endif %}  
+      
+      <!-- Show Related Links-->
+      {% assign any_links = 0 %}
+      {% for link in page.links %}
+         {% if link.title != 'Link Title' %}
+            {% assign any_links = 1 %}
+         {% endif %}
+      {% endfor %}     
+      {% if any_links == 1 %}           
+         <h2>Related Links</h2>
+         <ul>
+            {% for link in page.links %}
+               {% if link.title != 'Link Title' %}
+                  <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
+               {% endif %}
+            {% endfor %}   
+         </ul>    
+         <hr> 
+      {% endif %}
+      <!-- Show Related Links-->
+
+      <br>
+   </div>
+</div>
+
+<div class="container-fluid">
+   <div class="row blurb text-center">
+      <div class="col-md-12">
+         <h2>Return to Main Page</h2>
+         <p class="collection__end_p">This provides a link back to the home page if you need it.
+         </p>
+      </div>
+      <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="{{ site.url }}">Return to Main Page</a></div>
+   </div>
+</div>
