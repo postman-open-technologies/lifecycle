@@ -39,14 +39,15 @@ layout: default
       
       <table width="100%">
          <tr>
-            {% for screenshot in page.screenshots %}
+            {% for issue in page.screenshots %}
             <td width="33%" align="center">
-               <a href="{{ screenshot.url }}" target="_blank"><img src="{{ screenshot.url }}" width="100%" style="border: 2px solid #000; padding: 2px;"></a>
-               <strong>{{ screenshot.title }}</strong>
+               <a href="{{ issue.url }}" target="_blank"><img src="{{ issue.url }}" width="100%" style="border: 2px solid #000; padding: 2px;"></a>
+               <strong>{{ issue.title }}</strong>
             </td> 
             {% endfor %}           
          </tr>         
       </table>
+
       <hr>
       <!-- Show Related Tools-->
       <h2>Open Source Tooling</h2>
@@ -57,6 +58,19 @@ layout: default
          {% endfor %}   
       </ul>    
       <!-- Show Related Tools-->
+
+      <table align="center" width="50%">
+         <tr>
+            <td width="33%" align="center">
+               <a href="{{ page.issue }}" target="_blank"><img src="{{ site.url }}/images/github-issues-icon.png" width="100" style="padding: 10px;"></a>
+               <br><a href="{{ page.issue }}" target="_blank" style="color:#000; font-size: 22px"><strong>Issue</strong></a>
+            </td>
+            <td width="33%" align="center">
+               <a href="{{ page.yaml }}" target="_blank"><img src="{{ site.url }}/images/yaml-icon.png" width="100" style="padding: 10px;"></a>
+               <br><a href="{{ page.yaml }}" target="_blank" style="color:#000; font-size: 22px"><strong>YAML</strong></a>
+            </td>         
+         </tr>         
+      </table>  
 
       <br>
    </div>
