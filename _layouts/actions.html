@@ -30,24 +30,45 @@ layout: default
       </div>
       </center>
 
-      <!-- Show Video-->
-      <hr>
-      <center>{{ page.video }}</center>
-      <p align="center">[Just an Example Video]</p>
-      <hr>
-      <!-- Show Video-->    
+         <!-- Show Video-->
+         {% if page.video == '' %}
+         {% else %}
+            <hr>
+           <center>{{ page.video }}</center>
+            <hr>
+         {% endif %}
+         <!-- Show Video--> 
       
-      <table width="100%">
-         <tr>
-            {% for issue in page.screenshots %}
-            <td width="33%" align="center">
-               <a href="{{ issue.url }}" target="_blank"><img src="{{ issue.url }}" width="100%" style="border: 2px solid #000; padding: 2px;"></a>
-               <strong>{{ issue.title }}</strong>
-            </td> 
-            {% endfor %}           
-         </tr>         
-      </table>
+      {% assign any_screenshots = 0 %}
+      {% for screenshot in page.screenshots %}
+         {% if screenshot.title != 'Screenshot Description' %}
+            {% assign any_screenshots = 1 %}
+         {% endif %}
+      {% endfor %}     
+      {% if any_screenshots == 1 %}      
+         <h2>Screenshots</h2>
+         <table width="100%">
+            <tr>
+               {% for screenshot in page.screenshots %}
+                  {% if screenshot.title != 'Screenshot Description' %}
+                     <td width="33%" align="center">
+                        <a href="{{ screenshot.url }}" target="_blank"><img src="{{ site.url }}/{{ screenshot.url }}" width="100%" style="border: 0px solid #000; padding: 2px;"></a>
+                        <strong>{{ screenshot.title }}</strong>
+                     </td> 
+                  {% endif %}
+               {% endfor %}           
+            </tr>         
+         </table>         
+         <hr>
+      {% endif %}  
 
+      {% assign any_tools = 0 %}
+      {% for tool in page.tools %}
+         {% if screenshot.title != 'Open Source Tool' %}
+            {% assign any_tools = 1 %}
+         {% endif %}
+      {% endfor %}     
+      {% if any_tools == 1 %}       
       <hr>
       <!-- Show Related Tools-->
       <h2>Open Source Tooling</h2>
@@ -58,6 +79,7 @@ layout: default
          {% endfor %}   
       </ul>    
       <!-- Show Related Tools-->
+      {% endif %} 
 
       <table align="center" width="50%">
          <tr>
