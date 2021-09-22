@@ -1,7 +1,8 @@
 ---
 name: Applications
+version: 2021-09-21
 description: 
-  - Desktop, web, mobile, device, or network applications of API resources and capabilities, representing the business value of API resources and capabilities, applying individual or series of API requests to power business engagement.
+  - Desktop, web, mobile, device, or network applications that apply API resources and capabilities delivering the intended business value of API resources and capabilities, putting individual or series of API requests to work powering business operations.
 links:
     - title: Link Title
       url: http://example.com
@@ -18,4 +19,4 @@ screenshots:
   - title: Screenshot Description
     url: https://postman-open-technologies.github.io/lifecycle//images/postman-screenshot.png   
 ...
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+Desktop, web, and mobile applications are likely what we mean when using the word "application" as part of our work. But in the last decade, the word is also being used to describe devices, network, and other ways we can apply digital resources today. Applications are the tangible result of API consumption that end-users see and put to work in their personal and professional lives. It is common for APIs to be developed to serve a single application. Still, increasingly organizations are looking to deliver APIs independent of specific applications and can be used across several different known and unknown applications.
