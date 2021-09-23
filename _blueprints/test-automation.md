@@ -18,13 +18,7 @@ areas:
     description: A test-driven API lifecycle ensures that each API accomplishes the intended purpose it was developed for, providing manual and automated ways to ensure an API hasn't changed unexpectedly, is as performant as required, and meets the security expectations of everyone involved, helping establish a high quality of service consistently across all APIs.
     elements:
       - name: Contract Testing
-        label: Contract Testing   
-      - name: Performance Testing
-        label: Performance Testing       
-      - name: Uptime Testing
-        label: Uptime Testing       
-      - name: Integration Testing
-        label: Integration Testing      
+        label: Contract Testing        
   - label: Monitor
     image: images/lifecycle-arrow-monitor.png
     description: All tests applied to an API should be monitored on a logical schedule and from relevant geographic regions, monitoring that APIs aren't breaking their contract, falling below their agreed upon service level agreement (SLA), or becoming a security risk, helping automate the quality of service across APIs in a way that allows teams to be as productive as possible.
@@ -34,37 +28,23 @@ areas:
       - name: Contract Testing Monitor
         label: Contract Testing Monitor  
       - name: Contract Testing Monitor Results
-        label: Contract Testing Monitor Results           
-      - name: Performance Testing Monitor
-        label: Performance Testing Monitor  
-      - name: Performance Testing Monitor Results   
-        label: Performance Testing Monitor Results                             
-      - name: Integration Testing Monitor
-        label: Integration Testing Monitor   
-      - name: Integration Testing Monitor Results
-        label: Integration Testing Monitor Results   
-      - name: Uptime Testing Monitor Results
-        label: Uptime Testing Monitor Results                           
+        label: Contract Testing Monitor Results   
+  - label: Deploy
+    image: images/lifecycle-arrow-deploy.png
+    description: Tests can be automated using a CI/CD pipeline, allowing for test to be executed every time a commit or pull request is made against a repo. Allowing tests to be run against any instance of an API, ensuring that any API being deployed has not broken it's contract, and the API does what is expected.
+    elements:
+      - name: CI/CD Pipeline
+        label: CI/CD Pipeline
+        context: 1  
+      - name: Newman
+        label: Newman
+        context: 1                                                
   - label: Observability
     image: images/lifecycle-arrow-observability.png
     description: Tapping into the outputs available across API operations to understand what is happening with individual APIs throughout their lifecycle, but also in aggregate for domains, teams, and other logical groups, helping make API operations more visible in real time.
-    elements:
-      - name: Activity
-        label: Activity 
-      - name: Reports
-        label: Reports
-      - name: Change Log
-        label: Change Log      
-      - name: Uptime Monitor Report
-        label: Uptime Monitor Report   
+    elements:   
       - name: Contract Testing Monitor Report
-        label: Contract Testing Monitor Report    
-      - name: Performance Monitor Report
-        label: Performance Monitor Report   
-      - name: Integration Monitor Report
-        label: Integration Monitor Report           
-      - name: Application Performance Management (APM)  
-        label: Application Performance Management (APM)          
+        label: Contract Testing Monitor Report           
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/33
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/test-automation.md
 ...
