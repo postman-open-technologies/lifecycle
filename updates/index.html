@@ -22,20 +22,22 @@ layout: default
 			<p><hr /></p>
 	  {% endfor %}
 
-	  <hr />
-	  <ul class="pagination" style="text-align: center;">
-		  {% if paginator.previous_page %}
-			  <li style="text-align:left;"><a href="{{ paginator.previous_page_path }}" class="button"><< Prev</a></li>
-		  {% else %}
-			  <li style="text-align:left;"><a href="{{ paginator.previous_page_path }}" class="button disabled"><< Prev</a></li>
-		  {% endif %}
-			  <li style="width: 75%"><span></span></li>
-		  {% if paginator.next_page %}
-			  <li style="text-align:right;"><a href="{{ paginator.next_page_path }}" class="button">Next >></a></li>
-		  {% else %}
-			  <li style="text-align:right;"><a href="{{ paginator.next_page_path }}" class="button disabled">Next >></a></li>
-		  {% endif %}
-	  </ul>	  
+	  <table width="100%" style="border: 0px solid #000;">
+		  <tr>
+			{% if paginator.previous_page %}
+				<td style="text-align:left;"><a href="{{ paginator.previous_page_path }}" class="button"><< Prev</a></td>
+			{% else %}
+				<td style="text-align:left;"></td>
+			{% endif %}
+				<td style="width: 75%; text-align: center;"><a href="/"><strong>Return to Main Page</strong></a></li>
+			{% if paginator.next_page %}
+				<td style="text-align:right;"><a href="{{ paginator.next_page_path }}" class="button">Next >></a></td>
+			{% else %}
+				<td style="text-align:right;"></td>
+			{% endif %}
+		  </tr>
+	  </table>	 
+	  <br> 
 
 	</div>
 </div>
