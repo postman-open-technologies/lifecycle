@@ -1,0 +1,19 @@
+<!-- Show Related Links-->
+{% assign any_links = 0 %}
+{% for link in page.links %}
+{% if link.title != 'Link Title' %}
+    {% assign any_links = 1 %}
+{% endif %}
+{% endfor %}     
+{% if any_links == 1 %}           
+<h2>Related Links</h2>
+<ul>
+    {% for link in page.links %}
+        {% if link.title != 'Link Title' %}
+            <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
+        {% endif %}
+    {% endfor %}   
+</ul>    
+<hr> 
+{% endif %}
+<!-- Show Related Links-->

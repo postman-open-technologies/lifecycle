@@ -1,0 +1,13 @@
+<!--Related Elements-->
+{% if page.elements %}
+<h2>Related Elements</h2>
+<ul>
+{% for this_element in page.elements %}
+    {% for e in elements %}
+        {% if e.name == this_element.name %}
+            <li><a href="{{ site.url }}{{ e.url }}" target=="_blank" style="color: #000;"><strong>{{ this_element.label }}</strong></a> - {% if element.context %} {% if element.context == 1 %}{{ e.description[0] }} {% endif %}{% if element.context == 2 %}{{ e.description[1] }} {% endif %}{% if element.context == 3 %}{{ e.description[2] }}{% endif %} {% else %} {{ e.description }} {% endif %}</li>
+        {% endif %}   
+    {% endfor %}    
+{% endfor %}  
+</ul>
+{% endif %}  

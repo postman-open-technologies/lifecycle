@@ -34,55 +34,11 @@ layout: default
       </div>
       </center>
 
-      <!-- Show Video-->
-      <hr>
-      <center>{{ page.video }}</center>
-      <hr>
-      <!-- Show Video-->    
+      {% include video.html %}   
       
-
-      {% assign any_screenshots = 0 %}
-      {% for screenshot in page.screenshots %}
-         {% if screenshot.title != 'Screenshot Description' %}
-            {% assign any_screenshots = 1 %}
-         {% endif %}
-      {% endfor %}     
-      {% if any_screenshots == 1 %}      
-         <h2>Screenshots</h2>
-         <table width="100%">
-            <tr>
-               {% for screenshot in page.screenshots %}
-                  {% if screenshot.title != 'Screenshot Description' %}
-                     <td width="33%" align="center">
-                        <a href="{{ screenshot.url }}" target="_blank"><img src="{{ site.url }}/{{ screenshot.url }}" width="100%" style="border: 0px solid #000; padding: 2px;"></a>
-                        <strong>{{ screenshot.title }}</strong>
-                     </td> 
-                  {% endif %}
-               {% endfor %}           
-            </tr>         
-         </table>         
-         <hr>
-      {% endif %}  
+      {% include screenshots.html %} 
       
-      <!-- Show Related Links-->
-      {% assign any_links = 0 %}
-      {% for link in page.links %}
-         {% if link.title != 'Link Title' %}
-            {% assign any_links = 1 %}
-         {% endif %}
-      {% endfor %}     
-      {% if any_links == 1 %}           
-         <h2>Related Links</h2>
-         <ul>
-            {% for link in page.links %}
-               {% if link.title != 'Link Title' %}
-                  <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a</li>
-               {% endif %}
-            {% endfor %}   
-         </ul>    
-         <hr> 
-      {% endif %}
-      <!-- Show Related Links-->
+      {% include related-links.html %}
 
       <br>
    </div>

@@ -34,117 +34,17 @@ layout: default
          {% assign actions = site.actions %}
          {% assign elements = site.elements %}
 
-         <!-- Show Video-->
-         {% if page.video == '' %}
-         {% else %}
-            <hr>
-           <center>{{ page.video }}</center>
-            <hr>
-         {% endif %}
-         <!-- Show Video-->
+         {% include video.html %}
 
-         {% assign any_screenshots = 0 %}
-         {% for screenshot in page.screenshots %}
-            {% if screenshot.title != 'Screenshot Description' %}
-               {% assign any_screenshots = 1 %}
-            {% endif %}
-         {% endfor %}     
-         {% if any_screenshots == 1 %}      
-            <h2>Screenshots</h2>
-            <table width="100%">
-               <tr>
-                  {% for screenshot in page.screenshots %}
-                     {% if screenshot.title != 'Screenshot Description' %}
-                        <td width="33%" align="center">
-                           <a href="{{ screenshot.url }}" target="_blank"><img src="{{ site.url }}/{{ screenshot.url }}" width="100%" style="border: 0px solid #000; padding: 2px;"></a>
-                           <strong>{{ screenshot.title }}</strong>
-                        </td> 
-                     {% endif %}
-                  {% endfor %}           
-               </tr>         
-            </table>         
-            <hr>
-         {% endif %}         
+         {% include screenshots.html %}
+                
+         {% include related-actions.html %}
 
-         <!-- Show Related Actions-->
-         {% assign number_of_actions = page.actions | size %}
-         {% if number_of_actions > 0 %}
-            <h2>Actions</h2>
-            <ul>
-               {% for action in page.actions %}
-                  {% for a in actions %}
-                     {% if a.name == action.name %}
-                        <li><a href="{{ site.url }}{{ a.url }}" target=="_blank">{{ action.name }}</a> - {{ a.description }}</li>
-                     {% endif %}   
-                  {% endfor %}  
-               {% endfor %}    
-            </ul>   
-            <hr>
-         {% endif %}   
-         <!-- Show Related Actions-->   
+         {% include related-elements.html %}
 
-         <!--Related Elements-->
-         {% if page.elements %}
-            <h2>Related Elements</h2>
-            <ul>
-            {% for this_element in page.elements %}
-               {% for e in elements %}
-                  {% if e.name == this_element.name %}
-                     <li><a href="{{ site.url }}{{ e.url }}" target=="_blank" style="color: #000;"><strong>{{ this_element.label }}</strong></a> - {% if element.context %} {% if element.context == 1 %}{{ e.description[0] }} {% endif %}{% if element.context == 2 %}{{ e.description[1] }} {% endif %}{% if element.context == 3 %}{{ e.description[2] }}{% endif %} {% else %} {{ e.description }} {% endif %}</li>
-                  {% endif %}   
-               {% endfor %}    
-            {% endfor %}  
-            </ul>
-         {% endif %}           
+         {% include related-links.html %}
       
-         <!-- Show Related Links-->
-         {% assign any_links = 0 %}
-         {% for link in page.links %}
-            {% if link.title != 'Link Title' %}
-               {% assign any_links = 1 %}
-            {% endif %}
-         {% endfor %}     
-         {% if any_links == 1 %}           
-            <h2>Related Links</h2>
-            <ul>
-               {% for link in page.links %}
-                  {% if link.title != 'Link Title' %}
-                     <li><a href="{{ site.url }}{{ link.url }}" target=="_blank">{{ link.title }}</a></li>
-                  {% endif %}
-               {% endfor %}   
-            </ul>    
-            <hr> 
-         {% endif %}
-         <!-- Show Related Links-->
-         
-         <!-- Show Related Blueprints-->
-         {% assign blueprints = site.blueprints | sort: "name" %}
-         {% assign any_blueprints = 0 %}
-         {% for blueprint in blueprints %}
-            {% for area in blueprint.areas %}         
-               {% for element in area.elements %}
-                  {% if page.name == element.name %}
-                     {% assign any_blueprints = 1 %}
-                  {% endif %}   
-               {% endfor %} 
-            {% endfor %}         
-         {% endfor %}
-
-         {% if any_blueprints == 1 %}
-            <h3>Blueprints</h3>
-            <ul>
-            {% for blueprint in blueprints %}
-               {% for area in blueprint.areas %}         
-                  {% for element in area.elements %}
-                     {% if page.name == element.name %}
-                        <li style="padding: 0px; margin: 0px;"><a href="{{ site.url }}{{ blueprint.url }}" target=="_blank">{{ blueprint.name }}</a></li>
-                     {% endif %}   
-                  {% endfor %} 
-               {% endfor %}         
-            {% endfor %}
-            </ul>
-         {% endif %}   
-         <!-- Show Related Blueprints-->
+         {% include related-blueprints.html %}
 
       </div>
       </center>

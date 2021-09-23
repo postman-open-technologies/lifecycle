@@ -1,0 +1,16 @@
+<!-- Show Related Actions-->
+{% assign number_of_actions = page.actions | size %}
+{% if number_of_actions > 0 %}
+<h2>Actions</h2>
+<ul>
+    {% for action in page.actions %}
+        {% for a in actions %}
+            {% if a.name == action.name %}
+            <li><a href="{{ site.url }}{{ a.url }}" target=="_blank">{{ action.name }}</a> - {{ a.description }}</li>
+            {% endif %}   
+        {% endfor %}  
+    {% endfor %}    
+</ul>   
+<hr>
+{% endif %}   
+<!-- Show Related Actions-->  
