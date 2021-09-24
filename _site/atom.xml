@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>API Lifecycle</title>
+  <updated>2021-09-24T00:00:00Z</updated>
+  <link rel="self" href="http://localhost:4000/atom.xml"/>
+  <author><name>Kin Lane</name></author>
+  <id>http://localhost:4000/atom.xml</id>
+	<entry>
+    <title>Adding Some Common API Lifecycle Questions</title>
+    <link href="http://apis.how/2021/09/24/added-some-common-api-lifecycle-questions.html"/>
+    <updated>2021-09-24T00:00:00Z</updated>
+    <content><![CDATA[To help illuminate the next steps for API lifecycle conversation, we are beginning to assemble a list of questions that help get at where folks are in their API journey and more about what some next steps might be when moving things forward. We added eight separate questions that help figure out where the best place to start is for the API lifecycle and governance.
+
+What does successfully scaling of governance can be?
+When (and what) would you celebrate with your leadership?
+Would you like help to define a blueprint of your API lifecycle?
+Would you like help to define an API design guide?
+Would you like to run governance in a CI/CD pipeline?
+Would you like to run governance manually in workspaces?
+Would you like to schedule governance using a monitor?
+Would you prefer to have turn-key API governance?
+
+We have a bunch more questions to add to the project; then, we’ll be continuing to associate these questions with elements, roles, and levels of maturity when it comes to how far along organizations are in their API journey. Then we’ll enable the ability to build questionnaires around some of these common API lifecycle questions.]]></content>
+    <id>http://apis.how/2021/09/24/added-some-common-api-lifecycle-questions.html</id>
+  </entry><entry>
+    <title>Common OpenAPI Workflows</title>
+    <link href="http://apis.how/2021/09/23/openapi-workflows.html"/>
+    <updated>2021-09-23T00:00:00Z</updated>
+    <content><![CDATA[In response to folks asking us about the most common workflows for authoring an OpenAPI, we published an official answer to how we are seeing folks editing their OpenAPI, providing a link to a handful of everyday actions readers can consider. Like other answers published via this project, this answer will evolve as we define other ways people author their OpenAPIs. There is no single way to craft an OpenAPI, and understanding the different workflows helps make sure you are equipped for various scenarios. Allowing for teams to design, craft, produce, generate, or introduce OpenAPI into the overall API lifecycle. Acknowledging it needs to be there, but there are many ways to be injected into delivering APIs on the ground floor.]]></content>
+    <id>http://apis.how/2021/09/23/openapi-workflows.html</id>
+  </entry><entry>
+    <title>Integration for Azure DevOps</title>
+    <link href="http://apis.how/2021/09/23/integration-for-azure-devops.html"/>
+    <updated>2021-09-23T00:00:00Z</updated>
+    <content><![CDATA[We are getting requests from customers for deeper integration with Azure DevOps. We don’t currently support a first-class integration with Azure DevOps, but using existing Postman collections and existing narratives to integrate with it provides a huge opportunity to integrate and automate with Azure DevOps via the Postman platform. There are also multiple issues submitted already with Postman app support requesting more integration with Azure DevOps, so I recommend heading over there and finding the one that matches what you need and piling on. While a first-class integration with Azure DevOps will make it easier, there are still significant opportunities to seamlessly integrate APIs developed on the Postman platform with Azure DevOps across our operations.]]></content>
+    <id>http://apis.how/2021/09/23/integration-for-azure-devops.html</id>
+  </entry><entry>
+    <title>Why we Use API Specifications</title>
+    <link href="http://apis.how/2021/09/22/why-we-use-api-specifications.html"/>
+    <updated>2021-09-22T00:00:00Z</updated>
+    <content><![CDATA[We get asked regularly regarding why teams should be using API specifications like OpenAPI and AsyncAPI. If you aren’t familiar with these API specifications or have much experience putting them to work, it is unlikely that you see the massive upside to putting them to work. To help standardize how we answer this question, we added a new answer to this age-old question, something we will keep refining over time. There are apparent benefits across the API lifecycle when using API specifications, most notably documentation and code generation. Still, they also have much more significant and profound human effects in helping us have more focused conversations around what an API is and does and why it matters to operations.]]></content>
+    <id>http://apis.how/2021/09/22/why-we-use-api-specifications.html</id>
+  </entry><entry>
+    <title>Integration for PingFederate</title>
+    <link href="http://apis.how/2021/09/22/integration-for-pingfederate.html"/>
+    <updated>2021-09-22T00:00:00Z</updated>
+    <content><![CDATA[We are getting requests from customers for deeper integration with PingFederate. We don’t currently support a first-class integration with PingFederate, but using the official Ping public workspace and existing Postman collections for the administration of PingFederate provide a huge opportunity to integrate and automate with PingFederate via the Postman platform. There is also no issue currently submitted requesting PingFederate, so we encourage those who have asked to submit an issue. We’ll work to drive more attention to the issue of inclusion in our integration road map.]]></content>
+    <id>http://apis.how/2021/09/22/integration-for-pingfederate.html</id>
+  </entry><entry>
+    <title>Automated Testing CI/CD Workflow</title>
+    <link href="http://apis.how/2021/09/22/automated-testing-cicd-workflow.html"/>
+    <updated>2021-09-22T00:00:00Z</updated>
+    <content><![CDATA[The automated testing blueprint focused heavily on using monitors for the automation and only lightly on using a CI/CD pipeline. I added more details about how contract testing is made part of the CI/CD pipeline. Taking the testing, we generate from OpenAPI. We have created contract tests for them, making sure they are run as part of the pipeline and have relevant development and production environments. While also considering what we should be doing with the automated testing results, storing somewhere, or doing nothing and letting the pipeline fail to speak for itself. This made the Automated Testing blueprint a little more verbose, but we can keep refining and making something folks can use to inform their automated testing practices with some work.]]></content>
+    <id>http://apis.how/2021/09/22/automated-testing-cicd-workflow.html</id>
+  </entry><entry>
+    <title>Taking Action Across the API Lifecycle</title>
+    <link href="http://apis.how/2021/09/17/taking-action-across-the-api-lifecycle.html"/>
+    <updated>2021-09-17T00:00:00Z</updated>
+    <content><![CDATA[This project provides a variety of blueprints defining different views of the API lifecycle, employing modular elements that describe the other areas of the API lifecycle. Within each component, many different individual actions can be taken to realize this portion of how we operate our APIs, providing an overview, videos, links, tooling, and other resources to help take some meaningful action across the enterprise API lifecycle. Actions are managed as a first-class resource using Jekyll running in the Github repository for this project, with each action defined as YAML. Actions are being updated to help map each one to a native platform feature or open-source solution that will help make the action possible. ]]></content>
+    <id>http://apis.how/2021/09/17/taking-action-across-the-api-lifecycle.html</id>
+  </entry><entry>
+    <title>Elements of the API Lifecycle</title>
+    <link href="http://apis.how/2021/09/16/elements-of-the-api-lifecycle.html"/>
+    <updated>2021-09-16T00:00:00Z</updated>
+    <content><![CDATA[The lifecycle comprises a number of common elements that help us move APIs from idea to deprecation. This project is about defining all of the common, and even some of the not-so-common elements of the API lifecycle and use them to define a variety of API blueprints. Elements are managed as a first-class resource using Jekyll running in the Github repository for this project, with each individual element defined as YAML. Elements have meta-data for what it does, but then also has related screenshots, tooling, and links that can be reused and applied in a modular way across many different blueprints.]]></content>
+    <id>http://apis.how/2021/09/16/elements-of-the-api-lifecycle.html</id>
+  </entry><entry>
+    <title>Defining API Lifecycle Blueprints</title>
+    <link href="http://apis.how/2021/09/15/api-lifecycle-blueprints.html"/>
+    <updated>2021-09-15T00:00:00Z</updated>
+    <content><![CDATA[API lifecycle blueprints are meant to provide a simple, machine-readable, and consistent way of defining the API lifecycle using common elements defined through practical actions. This project focuses on producing base and standardized blueprints for anyone to learn from and apply in their API operations and provides a structured approach to defining custom blueprints for any API operations. Blueprints are managed as a first-class resource using Jekyll running in the Github repository for this project, with each blueprint defined as YAML. Blueprints have meta-data for each area of the API lifecycle it covers. They also have related elements and actions that can be reused and applied modularly across many different blueprints.]]></content>
+    <id>http://apis.how/2021/09/15/api-lifecycle-blueprints.html</id>
+  </entry>
+</feed>
