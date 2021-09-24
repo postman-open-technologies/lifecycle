@@ -12,7 +12,23 @@ order: 1
 maturity: stable
 version: 2021-09-11
 areas:  
-   
+
+  - label: Define
+    description: The most important first step of any API lifecycle is to make sure the operations around an API are properly defined, laying the foundation for being able to effectively design and bring an API to life, while also establishing a known place, or places to go to get all the information you need regarding each individual API, or groups of APIs. A little planning and organization at this early step of the API journey can go a long way towards ensuring the overall health and velocity of an API, and the applications and integrations that will depend on each internal, partner, or public API being delivered.
+    image: images/lifecycle-arrow-define.png
+    elements:
+      - name: Team Workspace
+        label: Team Workspace
+        context: 1
+      - name: Team Members
+        label: Team Members   
+        context: 1    
+      - name: Github Repository
+        label: Github Repository
+        context: 1
+      - name: OpenAPI
+        label: OpenAPI      
+        context: 1   
   - label: Test
     image: images/lifecycle-arrow-test.png
     description: A test-driven API lifecycle ensures that each API accomplishes the intended purpose it was developed for, providing manual and automated ways to ensure an API hasn't changed unexpectedly, is as performant as required, and meets the security expectations of everyone involved, helping establish a high quality of service consistently across all APIs.
@@ -27,9 +43,9 @@ areas:
         label: Monitor
       - name: Contract Testing Monitor
         label: Contract Testing Monitor  
-      - name: Contract Testing Monitor Results
-        label: Contract Testing Monitor Results   
-  - label: Deploy
+      - name: Contract Testing Results
+        label: Contract Testing Results   
+  - label: Build
     image: images/lifecycle-arrow-deploy.png
     description: Tests can be automated using a CI/CD pipeline, allowing for test to be executed every time a commit or pull request is made against a repo. Allowing tests to be run against any instance of an API, ensuring that any API being deployed has not broken it's contract, and the API does what is expected.
     elements:
@@ -38,13 +54,27 @@ areas:
         context: 1  
       - name: Newman
         label: Newman
-        context: 1                                                
+        context: 1   
+      - name: Development Environments
+        label: Development Environments           
+      - name: Production Environments
+        label: Production Environments  
+      - name: Contract Testing
+        label: Contract Testing         
+      - name: Contract Testing Results
+        label: Contract Testing Results                                                                           
   - label: Observability
     image: images/lifecycle-arrow-observability.png
     description: Tapping into the outputs available across API operations to understand what is happening with individual APIs throughout their lifecycle, but also in aggregate for domains, teams, and other logical groups, helping make API operations more visible in real time.
     elements:   
+      - name: Activity
+        label: Activity 
+      - name: Reports
+        label: Reports    
       - name: Contract Testing Monitor Report
-        label: Contract Testing Monitor Report           
+        label: Contract Testing Monitor Report  
+      - name: Application Performance Management (APM)
+        label: Application Performance Management (APM)               
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/33
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/test-automation.md
 ...
