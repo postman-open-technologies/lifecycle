@@ -102,19 +102,23 @@ layout: default
 
       <table align="center" width="50%">
          <tr>
-            <td width="33%" align="center">
+            <td width="25%" align="center">
                <a href="{{ page.discussion }}" target="_blank"><img src="{{ site.url }}/images/github-issues-icon.png" width="100" style="padding: 10px;"></a>
                <br><a href="{{ page.discussion }}" target="_blank" style="color:#000; font-size: 22px"><strong>Discussions</strong></a>
             </td>
-            <td width="33%" align="center">
+            <td width="25%" align="center">
                <a href="{{ page.yaml }}" target="_blank"><img src="{{ site.url }}/images/yaml-icon.png" width="100" style="padding: 10px;"></a>
                <br><a href="{{ page.yaml }}" target="_blank" style="color:#000; font-size: 22px"><strong>YAML</strong></a>
             </td>
-            <td width="33%" align="center">
+            <td width="25%" align="center">
                {% assign pdf_path = page.path | replace: '_blueprints/','' | replace: '.md','' %}               
                <a href="{{ site.url }}/printable/{{ pdf_path }}" target="_blank"><img src="{{ site.url }}/images/printable.png" width="100" style="padding: 10px;"></a>
                <br><a href="{{ site.url }}/printable/{{ pdf_path }}" target="_blank" style="color:#000; font-size: 22px"><strong>Printable</strong></a>
-            </td>            
+            </td>   
+            <td width="25%" align="center">           
+               <a href="{{ site.url }}/decks/blueprints/{{ page.slug }}" target="_blank"><img src="{{ site.url }}/images/slide-deck-icon.png" width="100" style="padding: 10px;"></a>
+               <br><a href="{{ site.url }}/decks/blueprints/{{ page.slug }}" target="_blank" style="color:#000; font-size: 22px"><strong>Slide Deck</strong></a>
+            </td>                        
          </tr>         
       </table>       
       
