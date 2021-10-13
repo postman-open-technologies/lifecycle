@@ -1,5 +1,5 @@
 ---
-name: Integrated Development Environment (IDE) Automation
+name: IDE Governance
 version: 2021-10-12
 description: 
   - Governance can be applied at the integrated development environment (IDE) level, enforcing API governance locally during development, ensuring that APIs are 100% compliant with rules, contract, and script-based API governance established centrally as part of broader governance efforts.

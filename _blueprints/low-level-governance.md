@@ -27,8 +27,6 @@ areas:
     elements:
       - name: Rules-Based Linting
         label: Rules-Based Linting
-      - name: Contract-Based Linting
-        label: Contract-Based Linting
       - name: Script-Based Governance
         label: Script-Based Governance               
   - label: Rules
@@ -59,16 +57,16 @@ areas:
     image: images/lifecycle-arrow-test.png
     description: To realize governance across operations it is important that governance is applied in automated ways at different areas of the API lifecycle, helping ensure API governance can be applied early on in the lifecycle, but is also available throughout the development and delivery of aPIs, and when it makes sense bake it into the build process ensuring that governance is applied by default as every API moves into production. Helping ensure that teams aren't doing extra work to realize governance across operations, and it is just at their fingertips as they are design, developing, and building APIs as part of their regular day.
     elements:
-      - name: Design Time Governance Automation
-        label: Design Time Governance Automation
-      - name: Develop Time Governance Automation
-        label: Develop Time Governance Automation 
-      - name: Command Line Interface (CLI) Governance Automation
-        label: Command Line Interface (CLI) Governance Automation    
-      - name: Integrated Development Environment (IDE) Automation
-        label: Integrated Development Environment (IDE) Automation     
-      - name: Pipeline Governance Automation
-        label: Pipeline Governance Automation
+      - name: Design Time Governance
+        label: Design Time Governance
+      - name: Collection Governance
+        label: Collection Governance 
+      - name: CLI Governance
+        label: CLI Governance  
+      - name: IDE Governance
+        label: IDE Governance 
+      - name: Pipeline Governance
+        label: Pipeline Governance
   - label: Reporting
     image: images/lifecycle-arrow-monitor.png
     description: Reporting on the realities and outcomes of API governance across the API lifecycle is needed to make it more visual and tangible for everyone involved. Reporting across governance being applied to individual APIs, groups of APIs, and overall operations can be realized as part of native platform reporting, customized, localized or in aggregate with Postman Visualizer, or made seamless with existing operations by piping data into APM and other systems to make available for reporting and visualizations via dashboards.

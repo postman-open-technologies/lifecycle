@@ -917,280 +917,6 @@
          
                
          
-            
-            <h4>Contract-Based Linting</h4>
-            <p><p>JSON Schema can be used to define specific patterns that should exist within each OpenAPI or AsyncAPI contract being defined as part of the design, development, and operation of an API. Contract-based always begins with adhering to the specification for OpenAPI or AsyncAPI using their own JSON Schema document, but is something that can be extended to other patterns like pagination, extensions, or domain specific design pattern. A contract-based approach to governance can assist in going beyond rules based governance by allowing for more complex patterns to be checked, but utilizes existing approaches used across other areas of the API lifecycle, making it something within reach of teams. Helping establish a common set of patterns that can be applied manually or automatically throughout the life of an API to help make sure it applies common API design practices within an organization or industry.</p>
-</p>
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-           
-      
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
                
          
                
@@ -1539,12 +1265,12 @@
          
                
          
+               
+         
             
             <h4>Info Governance Rules</h4>
             <p><p>Info governance rules provide a base of YAML or JSON rules that can be applied to the info object within OpenAPI or AsyncAPI contracts, checking for specific patterns for the title, description, and other elements of an API. Rules can be defined centrally by governance leadership, or locally within teams, and then applied either at design, develop, or build time in a manual or automated way depending on the objectives of team, department, organization, or industry-wide governance.</p>
 </p>
-               
-         
                
          
                
@@ -1745,12 +1471,12 @@
          
                
          
+               
+         
             
             <h4>Contact Governance Rules</h4>
             <p><p>Contact governance rules provide a base of YAML or JSON rules that can be applied to the contact object within OpenAPI or AsyncAPI contracts, checking for specific patterns for the contact name, email, link, and other elements of an API. Rules can be defined centrally by governance leadership, or locally within teams, and then applied either at design, develop, or build time in a manual or automated way depending on the objectives of team, department, organization, or industry-wide governance.</p>
 </p>
-               
-         
                
          
                
@@ -4245,8 +3971,10 @@
          
                
          
+               
+         
             
-            <h4>Design Time Governance Automation</h4>
+            <h4>Design Time Governance</h4>
             <p><p>It is best to provide governance feedback as early on in the lifecycle as possible, and automating governance at design time as part of the editor or IDE as a real-time intellisense feedback loop, or manually triggered to evaluate an OpenAPI or AsyncAPI being designed is a common approach to realizing governance at design time. Providing design time governance feedback and automation helps not just enforce rules, contracts, and script-based approaches to governance, it helps educate and make designers more aware of governance guidelines and why they exist. Making for a pretty significant opportunity to apply governance before any API ever reaches the development phase.</p>
 </p>
                
@@ -4444,8 +4172,6 @@
                
          
                
-         
-               
            
       
          
@@ -4485,45 +4211,9 @@
          
                
          
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
             
-            <h4>Develop Time Governance Automation</h4>
-            <p><p>Not all APIs will experience a design phase, with many moving forward as part of a code-first or more traditional software development lifecycle, making develop time governance another way to enforce and enable teams when it comes to helping deliver more consistent APIs. Develop time governance automation still requires there to be machine readable artifacts like OpenAPI or AsyncAPI present, generated using annotations or other approach, but then allows developers to apply rules, contract, or script-based governance to the API they are developing. Automating the guidance around government in a way that works seamlessly with developers existing software development practices, allowing them to do what they do best, but regularly check to make sure they are in alignment with team, department, organization, or industry API governance practices.</p>
+            <h4>Collection Governance</h4>
+            <p><p>Postman collections can be designed to run governance against an OpenAPI, applying rules or scripts against an OpenAPI pulled via URL, API, or submitted as part of the body of the API request. Having governance defined as a collection provides the flexibility for designers and developers to run manually using Postman on the web or desktop, and engage with test results and reporting via visualizer. Allowing developers to learn about governance and apply to any OpenAPI manually, scheduled via a monitor, or easily dropped into a CI/CD pipeline. Providing a very flexible approach to applying governance across the entire API lifecycle.</p>
 </p>
                
          
@@ -4720,6 +4410,42 @@
                
          
                
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
            
       
          
@@ -4747,20 +4473,8 @@
          
                
          
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
-               
-         
             
-            <h4>Command Line Interface (CLI) Governance Automation</h4>
+            <h4>CLI Governance</h4>
             <p><p>Developers will want to be able to apply governance at the command line level, taking common rules and scripts and apply them to OpenAPI and other artifacts locally while developing APIs, or just exploring how governance works. Running of rules, collections, and other artifacts of API governance locally provides a safe space for developers to learn in and matches with their existing software development practices, allowing them to apply centralized or federated governance locally on the desktop, or anywhere the CLI is being run.</p>
 </p>
                
@@ -4994,6 +4708,18 @@
                
          
                
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
+         
+               
            
       
          
@@ -5105,12 +4831,8 @@
          
                
          
-               
-         
-               
-         
             
-            <h4>Integrated Development Environment (IDE) Automation</h4>
+            <h4>IDE Governance</h4>
             <p><p>Developers will want to be able to apply governance at the integrated development environment (IDE) level, taking common rules and scripts and apply them to OpenAPI and other artifacts locally while developing APIs, or just exploring how governance works. Running of rules, collections, and other artifacts of API governance locally provides a safe space for developers to learn in and matches with their existing software development practices, allowing them to apply centralized or federated governance locally on the desktop.</p>
 </p>
                
@@ -5268,6 +4990,10 @@
                
          
                
+         
+               
+         
+               
            
       
          
@@ -5438,7 +5164,7 @@
                
          
             
-            <h4>Pipeline Governance Automation</h4>
+            <h4>Pipeline Governance</h4>
             <p><p>The enforcement of API governance at the pipeline layer is not ideal in all situations and organizations. Still, it is a very desirable objective for realizing consistency in delivering APIs across an organization. Rules, contracts, and script-based governance can be codified into specific collections and then easily executed as part of the pipeline, ensuring that the OpenAPI or AsyncAPI contract for any API build aligns with a wider governance strategy. Pipeline enforcement is the desire of governance leadership at the higher levels. Still, it will take a considerable amount of work to achieve without introducing friction across teams doing the hard work to keep API operations moving ahead at the desired velocity.</p>
 </p>
                

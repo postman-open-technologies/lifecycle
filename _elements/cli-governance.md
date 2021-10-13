@@ -1,5 +1,5 @@
 ---
-name: Command Line Interface (CLI) Governance Automation
+name: CLI Governance
 version: 2021-10-12
 description: 
   - Governance can be applied at the command line interface (CLI) level, enforcing API governance locally during development, ensuring that APIs are 100% compliant with rules, contract, and script-based API governance established centrally as part of broader governance efforts.

@@ -1,5 +1,5 @@
 ---
-name: Design Time Governance Automation
+name: Design Time Governance
 description: 
   - Governance can be applied and automated at design time, providing real time or manually triggered application of governance rules, contracts, and scripts, providing a tighter feedback loop with API designers in regards to the guidance around what is expected of the design of each API.
 links:
