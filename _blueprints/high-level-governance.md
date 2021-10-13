@@ -29,7 +29,9 @@ areas:
       - name: Governance Structure
         label: Governance Structure
       - name: Governance Leadership
-        label: Governance Leadership              
+        label: Governance Leadership    
+      - name: Governance Guidelines
+        label: Governance Guidelines                     
   - label: Rules
     image: images/lifecycle-arrow-document.png
     description: API governance rules codifies what API governance is as it is applied as part of the design, development and build process on the ground floor of API operations. Rules provide the benchmark for what governance is across teams, and provide an artifact that can be applied across the API lifecycle by individual designers and developers, and eventually baked into the pipelines that move API infrastructure forward. Rules should reflect what is happening on the ground today, but apply enforcement as part of a forward motion, acknowledging that legacy APIs may not always rise to the level governance an organization is moving towards.
@@ -49,7 +51,9 @@ areas:
       - name: Reports
         label: Reports
       - name: Visualizer
-        label: Visualizer                                    
+        label: Visualizer  
+      - name: Application Performance Management (APM)  
+        label: Application Performance Management (APM)                                            
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/45
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/low-level-governance.md
 ...

@@ -1,5 +1,5 @@
 ---
-name: Build Time Governance Automation
+name: Pipeline Governance Automation
 version: 2021-09-21
 description: 
   - Governance can be applied at the pipeline level, enforcing API governance at build time, ensuring that APIs are 100% compliant with rules, contract, and script-based API governance established centrally as part of broader governance efforts.

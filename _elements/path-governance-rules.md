@@ -3,8 +3,8 @@ name: Path Governance Rules
 description: 
   - Rules can be defined to govern the paths provided for each API, leveraging the path object for OpenAPI or AsyncAPI contracts, but then apply specific ruling looking for common patterns to be present like words used, ensure no acronyms exist in the path, meeting specific guidelines regarding what a path can contain.
 links:
-    - title: Link Title
-      url: http://example.com      
+    - title: Path Spectral Rulesets
+      url: https://rules.linting.org/#rulesets-paths  
     - title: Link Title
       url: http://example.com                   
 video: ''

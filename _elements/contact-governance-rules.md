@@ -3,8 +3,8 @@ name: Contact Governance Rules
 description: 
   - Rules can be defined to govern the contact details provided for each API, leveraging the contact object for OpenAPI or AsyncAPI contracts, but then apply specific ruling looking for common patterns to be present like the contact name, email, or url of an API, meeting specific guidelines regarding what contact is needed.
 links:
-    - title: Link Title
-      url: http://example.com      
+    - title: Contact Spectral Rulesets
+      url: https://rules.linting.org/#rulesets-contact
     - title: Link Title
       url: http://example.com                   
 video: ''

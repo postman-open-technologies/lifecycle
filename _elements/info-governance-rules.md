@@ -3,8 +3,8 @@ name: Info Governance Rules
 description: 
   - Rules can be defined to govern the information provided for each API, leveraging the info block for OpenAPI or AsynCaPI contracts, but then apply specific ruling looking for common patterns to be present like the title and description of an API, meeting specific guidelines regarding what information is needed.
 links:
-    - title: Link Title
-      url: http://example.com      
+    - title: Info Spectral Rulesets
+      url: https://rules.linting.org/#rulesets-info    
     - title: Link Title
       url: http://example.com                   
 video: ''

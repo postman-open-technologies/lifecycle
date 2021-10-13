@@ -52,7 +52,9 @@ areas:
       - name: Role Based Access Control
         label: Role Based Access Control    
       - name: OpenAPI
-        label: OpenAPI     
+        label: OpenAPI   
+      - name: AsyncAPI
+        label: AsyncAPI            
       - name: WSDL
         label: WSDL  
       - name: Scripts
@@ -66,7 +68,9 @@ areas:
       - name: Workflow Collection
         label: Workflow Collection      
       - name: OpenAPI
-        label: OpenAPI     
+        label: OpenAPI   
+      - name: AsyncAPI
+        label: AsyncAPI            
       - name: WSDL
         label: WSDL   
       - name: Design Patterns

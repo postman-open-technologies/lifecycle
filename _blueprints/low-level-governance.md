@@ -19,6 +19,8 @@ areas:
     elements:
       - name: OpenAPI
         label: OpenAPI
+      - name: AsyncAPI
+        label: AsyncAPI        
   - label: Execution
     image: images/lifecycle-arrow-design.png
     description: Once you have an OpenAPI, AsyncAPI, or other artifact that you would like to apply governance too, there are a handful of ways in which you can execute governance as part of your regular work. Depending on your goals with governing the design of an API you can apply each of these elements helping manual or automatically identify problems with the design of your API. These approaches to execution are potentially dependent on other rules, as well as the approach you take to automating the application of governance.
@@ -37,14 +39,18 @@ areas:
         label: Info Governance Rules
       - name: Contact Governance Rules
         label: Contact Governance Rules   
-      - name: License Governance Rules
-        label: License Governance Rules    
-      - name: Description Governance Rules
-        label: Description Governance Rules 
+      - name: Versioning Governance Rules
+        label: Versioning Governance Rules           
       - name: Path Governance Rules
         label: Path Governance Rules  
+      - name: Operations Governance Rules
+        label: Operations Governance Rules           
       - name: Parameter Governance Rules
-        label: Parameter Governance Rules   
+        label: Parameter Governance Rules 
+      - name: Request Bodies Governance Rules
+        label: Request Bodies Governance Rules   
+      - name: Response Governance Rules
+        label: Response Governance Rules                            
       - name: Schema Governance Rules
         label: Schema Governance Rules    
       - name: Tags Governance Rules
@@ -57,8 +63,12 @@ areas:
         label: Design Time Governance Automation
       - name: Develop Time Governance Automation
         label: Develop Time Governance Automation 
-      - name: Build Time Governance Automation
-        label: Build Time Governance Automation
+      - name: Command Line Interface (CLI) Governance Automation
+        label: Command Line Interface (CLI) Governance Automation    
+      - name: Integrated Development Environment (IDE) Automation
+        label: Integrated Development Environment (IDE) Automation     
+      - name: Pipeline Governance Automation
+        label: Pipeline Governance Automation
   - label: Reporting
     image: images/lifecycle-arrow-monitor.png
     description: Reporting on the realities and outcomes of API governance across the API lifecycle is needed to make it more visual and tangible for everyone involved. Reporting across governance being applied to individual APIs, groups of APIs, and overall operations can be realized as part of native platform reporting, customized, localized or in aggregate with Postman Visualizer, or made seamless with existing operations by piping data into APM and other systems to make available for reporting and visualizations via dashboards.
@@ -67,8 +77,8 @@ areas:
         label: Reports
       - name: Visualizer
         label: Visualizer  
-      - name: Application Performance Management
-        label: Application Performance Management                                           
+      - name: Application Performance Management (APM)  
+        label: Application Performance Management (APM)                                         
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/44
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/low-level-governance.md
 ...

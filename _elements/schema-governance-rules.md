@@ -3,8 +3,8 @@ name: Schema Governance Rules
 description: 
   - Rules can be defined to govern the schema details provided for each API, leveraging the schema object for OpenAPI or AsyncAPI contracts, but then apply specific ruling looking for common patterns to be present like the schema name and description meeting specific guidelines regarding what is expected of a schema.
 links:
-    - title: Link Title
-      url: http://example.com      
+    - title: Schema Spectral Rulesets
+      url: https://rules.linting.org/#rulesets-schema    
     - title: Link Title
       url: http://example.com                   
 video: ''

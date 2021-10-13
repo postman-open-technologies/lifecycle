@@ -3,8 +3,8 @@ name: Parameter Governance Rules
 description: 
   - Rules can be defined to govern the parameter details provided for each API, leveraging the parameter object for OpenAPI or AsyncAPI contracts, but then apply specific ruling looking for common patterns to be present like the parameter name and description meeting specific guidelines regarding what is expected of a parameter.
 links:
-    - title: Link Title
-      url: http://example.com      
+    - title: Parameters Spectral Rulesets
+      url: https://rules.linting.org/#rulesets-parameters    
     - title: Link Title
       url: http://example.com                   
 video: ''

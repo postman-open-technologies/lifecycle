@@ -63,11 +63,11 @@ layout: default
             
                <!-- Begin Additional -->
             {% for blueprint in site.blueprints %}
-               {% if blueprint.name == 'Maximum Viable' %}
+               {% if blueprint.name == 'Everything' %}
                   {% assign master = blueprint %}
                {% endif %}   
             {% endfor %} 
-
+               
             {% for master_area in master.areas %}
                {% if master_area.label == area.label %}
                   {% for master_element in master_area.elements %}
@@ -79,6 +79,7 @@ layout: default
                      {% endfor %}  
                      {% if already_used == 0 %}
                         {% for e in elements %}
+                           {{ e.name }} == {{ master_element.name }}<br>
                            {% if e.name == master_element.name %}
                               <li><a href="{{ site.url }}{{ e.url }}" target=="_blank" style="color: #FF0000">{{ master_element.label }}</a> - {{ e.description[e.context] }}</li>
                            {% endif %}   

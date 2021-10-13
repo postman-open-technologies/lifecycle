@@ -3,8 +3,8 @@ name: Tag Governance Rules
 description: 
   - Rules can be defined to govern the tag details provided for each API, leveraging the tag object for OpenAPI or AsyncAPI contracts, but then apply specific ruling looking for common patterns to be present like the tag name and description meeting specific guidelines regarding what is expected of a tag.
 links:
-    - title: Link Title
-      url: http://example.com      
+    - title: Tags Spectral Rulesets
+      url: https://rules.linting.org/#rulesets-tags  
     - title: Link Title
       url: http://example.com                   
 video: ''
