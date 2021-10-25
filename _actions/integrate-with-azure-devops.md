@@ -31,7 +31,7 @@ Postman does not have a direct integration for Azure DevOps or any of it's sub-s
 
 A while back we did some research into how folks are using Azure Devops in conjunction with the Postman platform and published this story:
 
-- [Three Ways to Use Postman and Azure DevOps](https://apievangelist.com/2020/01/22/)three-ways-to-use-postman-and-azure-devops/
+- [Three Ways to Use Postman and Azure DevOps](https://apievangelist.com/2020/01/22/three-ways-to-use-postman-and-azure-devops/)
 
 Additionally, we found this two part series on conducting testing with Postman and Azure DevOps to be very useful:
 
