@@ -10,4 +10,5 @@ Multi-factor authentication (MFA) is used to ensure that digital users are who t
 * Something they know (like a password)
 * Something they have (like a mobile phone or hardware authentication fob)
 * Something they are (a fingerprint or retinal scan)
+
 If a malicious party compromises one of the factors, the chances of another factor also being compromised are low, thus reducing the likelihood of unauthorized access. MFA is a commonly enabled part of a single sign-on process. 
