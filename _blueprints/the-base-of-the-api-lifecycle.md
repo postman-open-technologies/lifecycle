@@ -1,6 +1,6 @@
 ---
 name: The Base of the API Lifecycle
-description: This blueprint illustrates a generic API lifecycle. It provides a starting point for subsequent lifecycle variations elsewhere on this site. Depending on your priorities and starting point, you may need to expand this base lifecycle to match your desired situation.
+description: This blueprint illustrates what we consider to be the base of the API lifecycle, providing a starting point for additional lifecycle variations elsewhere on this site. Depending on your priorities and your entry point, you may need to expand or remove from this base lifecycle to match your desired situation.
 image: lifecycle.png
 tags:
   - Default
@@ -11,75 +11,105 @@ maturity: mature
 version: 2021-09-11
 areas:  
 
-  - label: Discover
-    description: Before starting a new API endeavor, it is crucial to discover if the solution to the problem you're trying to solve already exists. Building on already existing functionality brings products and services to market faster. Postman has several elements that make this discovery step easier.
-    image: images/lifecycle-arrow-discover.png
+  - label: Define
+    description: Making sure the operations around an API are properly defined, laying the foundation for being able to effectively design and bring an API to life, while also establishing a known place, or places to go to get all the information you need regarding each individual API or groups of APIs. 
+    image: images/lifecycle-arrow-define.png
     elements:
-      - name: Search
-        label: Search
-      - name: Watch
-        label: Watch
-      - name: Private Network
-        label: Private Network
+      - name: Team Members
+        label: Team Members
+      - name: Team Workspace
+        label: Team Workspace
+      - name: Public Workspace
+        label: Public Workspace
+      - name: Github Repository
+        label: Github Repository          
   - label: Design
     image: images/lifecycle-arrow-design.png
-    description: Designing an interface is one of the most critical steps in the API's lifecycle. It involves making decisions on how the interface will look and feel when used. American software engineer Grady Booch calls these decisions "significant", where significance is measured by the cost of change. Once your API has its first user, the cost of changing that interface increases significantly. Applying the appropriate rigor at this stage of the lifecycle will decrease the likelihood that change is necessary later. This includes, but is not limited to, defining performance, functionality, and security expectations.
+    description: Establishing a formal process and approach to designing an API helps establish consistency of each API that ends up in production, ensuring that APIs are developed using common industry and organizational patterns while establishing known practices for shaping the surface area and behaviors of APIs.
     elements:
-      - name: Techniques
-        label: Techniques    
-      - name: Goals
-        label: Goals   
+      - name: OpenAPI
+        label: OpenAPI    
+      - name: Mock Server
+        label: Mock Server   
       - name: Comments
         label: Comments      
-      - name: Mocks
-        label: Mocks      
-      - name: Sharing
-        label: Sharing      
-      - name: Documentation
-        label: Documentation 
-  - label: Publish
+  - label: Document
+    image: images/lifecycle-arrow-document.png
+    description: Having complete, accurate, and easy to follow documentation is essential for all APIs, alleviating the number one pain point for API consumers when it comes to onboarding with APIs, providing the human-readable technical details of what an API does, helping minimize the time to first API call.
+    elements:
+      - name: Reference Documentation
+        label: Reference Documentation 
+        context: 1  
+      - name: Examples
+        label: Examples
+        context: 1            
+  - label: Deploy
     image: images/lifecycle-arrow-deploy.png
-    description: Publishing is the act of making an *implementation* available that executes a service's interface in an accessible environment. This act requires more than just pushing a deployment to a cloud host. Publishing an API entails communicating documentation and, in some cases, code to the appropriate audience. 
+    description: Providing a well-defined process to deploy an API into development, staging, and production environments, helping teams efficiently deliver future iterations of an API in a consistent and repeatable way, ensuring that APIs are properly tested, secured, and governed as a native part of the deployment process.
     elements:
-      - name: Document
-        label: Document      
-      - name: Code Generation
-        label: Code Generation   
-      - name: Private Network
-        label: Private Network   
-      - name: Public Network
-        label: Public Network     
+      - name: CI/CD Pipeline
+        label: CI/CD Pipeline
+        context: 1
+      - name: Gateway
+        label: Gateway     
+        context: 1  
+      - name: Usage Plan
+        label: Usage Plan    
+        context: 1        
+  - label: Test
+    image: images/lifecycle-arrow-test.png
+    description: A test-driven API lifecycle ensures that each API delivers the intended outcomes it was developed for in the first place, providing manual as well as automated ways to ensure an API hasn't changed unexpectedly and is as performant as required, helping establish a high quality of service consistently across all APIs. 
+    elements:
+      - name: Contract Testing
+        label: Contract Testing  
+        context: 1 
+      - name: Performance Testing
+        label: Performance Testing   
+        context: 1             
   - label: Secure
-    image: images/lifecycle-arrow-security.png
-    description: An APIs usefulness to automation also makes APIs a potential target for malicious actors. Ensuring security is accounted for and applied consistently for all APIs produced is a significant step. 
+    image: images/lifecycle-arrow-test.png
+    description: Ensuring that there is a consistent approach to identity and access management for each API, but also the proper security testing in place to make sure that all APIs are being secured in a consistent way no matter which team developed them, or whether they will be used for private, partner, or public use in applications.
     elements:
-      - name: Role Based Access Control
-        label:  Role Based Access Control      
+      - name: Authentication
+        label: Authentication
+        context: 1         
       - name: Security Testing
-        label: Security Testing      
-      - name: Authorization
-        label: Authorization 
+        label: Security Testing   
+        context: 1  
   - label: Monitor
     image: images/lifecycle-arrow-monitor.png
-    description: To properly manage APIs and how they flow through the API lifecycle, it is vital to have accurate and up-to-date information. Postman provides several valuable elements to track APIs across the platform.
+    description: Making sure that all APIs are fully monitored by scheduling contract, performance, security, and other tests from multiple cloud regions, but also being able to monitor the activity, changelog, and state of an API using notifications, helping keep teams and consumers informed regarding the state of the APIs they depend on.
     elements:
+      - name: Contract Testing Monitor
+        label: Contract Testing Monitor  
+        context: 1 
+      - name: Performance Testing Monitor
+        label: Performance Testing Monitor   
+        context: 1
+      - name: Security Testing Monitor
+        label: Security Testing Monitor                          
+        context: 1 
       - name: Activity
         label: Activity  
       - name: Change Log
-        label: Change Log  
-      - name: Reporting
-        label: Reporting  
+        label: Change Log   
       - name: Notifications
-        label: Notifications                          
-  - label: Manage
-    image: images/lifecycle-arrow-manage.png
-    description: Markets, strategies, team experience, and professional expectations change. So too, do APIs. However, changing an interface is no trivial task, given the number of integrations depending on it. Learning to prioritize and schedule changes to minimize the negative impacts is a skill. Thankfully, Postman includes elements to navigate through this step of growing importance.
+        label: Notifications                                  
+  - label: Discover
+    image: images/lifecycle-arrow-discover.png
+    description: Enabling discovery across operations, helping teams find existing APIs before they develop new ones, properly matching API consumers with the right APIs, while supporting documentation, workflows, and the feedback loops that exist as part of the operation of internal, partner, and public APIs supporting applications and integrations.
     elements:
-      - name: Versioning
-        label: Versioning
-      - name: Deprecate
-        label: Deprecate         
+      - name: Search
+        label: Search     
+        context: 1
+      - name: Private Network
+        label: Private Network   
+        context: 1
+      - name: Public Network
+        label: Public Network                    
+        context: 1
+       
 discussion: 'https://github.com/postman-open-technologies/lifecycle/discussions/27'
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/base.md
 ...
-<p>Every organization creating APIs has an API lifecycle, whether they know it or not. The difference separating high-performing API companies from those with inconsistent results is a thoughtful and practiced approach. Below are key aspects of the API lifecycle, common characterists worth focusing on, and how Postman’s API platform supports each. </p>
+The API lifecycle will mean many different things depending on who you are talking to. This base API lifecycle isn't meant to be a lifecycle definition that matches the needs of every enterprise organization, but is intended to provide you with a base example to help you begin thinking about what your own API lifecycle is. The blueprint is designed to provide you a base that you can add to or remove from, iterating upon until you find a common definition of the API lifecycle that works for your organization.

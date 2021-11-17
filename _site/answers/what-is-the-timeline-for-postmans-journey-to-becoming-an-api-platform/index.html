@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-react-helmet="lang">
+   <head>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>API Lifecycle</title>
+
+		<meta data-react-helmet="true" name="description" content="framework to define the API lifecycle in a modular and flexible way so that anyone can define their own version of the API lifecycle using a common set of elements actions being applied across standard definition of API operations.">
+
+      <link data-react-helmet="true" href="https://postman-toolboxes2.s3.amazonaws.com/assets/bootstrap.min.css" rel="stylesheet">
+      <link data-react-helmet="true" href="https://postman-toolboxes2.s3.amazonaws.com/assets/styles.css" rel="stylesheet">
+
+   </head>
+   <body>
+      <div>
+         <div>
+            <div>
+
+               <header class="header text-center navbar navbar-expand-xl navbar-light">
+                  <div class="navbar-brand header__brand">
+                    <a class="header__homelink" href="https://www.postman.com/">
+                      <img class="header__logo" src="https://postman-toolboxes2.s3.amazonaws.com/assets/postman-logo-horizontal-white.svg" alt="Postman">
+                      <span class="header__title"></span>
+                    </a>
+                  </div>
+                  <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                  <div class="header__right-links justify-content-end navbar-nav mr-auto navbar-collapse collapse show closed" id="navbarSupportedContent"></div>
+               </header>
+
+               <main>
+
+                  <div class="container-fluid hero v5_starfield-small-night-sky pb-4">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 hero_title" style="padding: 125px 0px 0px 0px; margin: 0px;">
+            <h1><a href="http://localhost:4000" style="color: #FFF;">API Lifecycle</a></h1>
+         </div>
+         <div class="col-md-6 hero_image" style="padding: 0px; margin: 0px;"><a href="http://localhost:4000"><img src="http://localhost:4000/images/lifecycle.png" alt="" width="350"></a></div>
+      </div>
+   </div>
+</div>
+
+<div>
+   <div class="container">
+
+		<div class="row collection__header text-center">
+         <div class="col-md-12">
+            <h2 class="h1">What is the timeline for Postman’s journey to becoming an API platform?</h2>
+            <p>As an API solution, Postman has been evolving for over seven years, beginning as a simple API client, but then growing into a full fledge API platform that services the entire API lifecycle.</p>
+         </div>
+      </div>
+
+      <div style="width: 100%; border: 2px solid hsl(34, 100%, 50%); background-color: hsl(34, 100%, 50%); color: #000; text-align: center; margin-bottom: 35px;">   
+         Does this provide what you need? Let us know by <a href="https://github.com/postman-open-technologies/lifecycle/issues" style="color: #000;">submitting issue</a>!
+      </div>      
+
+      <center>
+      <div style="width: 70%; border: 0px solid #000; text-align: left;" align="center">
+
+         <p>A common question we hear often is about what the Postman story is, and how we have evolved to become an API platform that supports the entire API lifecycle. Postman began as a simple API client and debugging tool, which quickly grew into a very adaptable API testing solution, but then has rapidly expanded to meet many other needs of our customers across the API lifecycle. While there are plenty of other capabilities that Postman has brought over the years, this timeline shows the core progression of Postman from a client into an API platform, which provides a reflection of many of our customer’s own journeys.</p>
+
+<p>It all began with providing a simple API client to make developers’ lives easier:</p>
+
+<ul>
+  <li><strong>2013 - Client, Scripts, and Testing</strong> - Life began as a browser bases solution for testing and debugging APIs, helping developers understand how APIs work or do not work, then saving that understanding as a reusable, sharable collection that can be run by others.</li>
+  <li><strong>2014 - Runner and CLI Runner</strong> - Collections become a standardized way to define, save, and then run one or many API requests that includes scripting for automation, allowing collections to be run on the desktop or via a command-line interface and CI/CD.</li>
+  <li><strong>2015 - Documentation &amp; Code Generation</strong> - Documentation emerges as a priority, expanding the ability for developers to publish shareable and embeddable documentation that also has a variety of code snippets in different programming languages.</li>
+  <li><strong>2016 - Github &amp; GitLab Integration</strong> - Source control integration for developers becomes important, allowing Postman to be more tightly linked to the developer’s existing software development lifecycle, allowing artifacts and tests to be kept in alignment with source control.</li>
+  <li><strong>2016 - APM, Messaging Integration</strong> - Following source control, the need to integrate with existing APM, notification, and messaging systems became an important part of developers’ workflow to produce and consume APIs as part of their work.</li>
+  <li><strong>2016 - Monitoring</strong> - Being able to schedule the monitoring of collection and extend the automation introduced by runners, and at the command line and CI/CD pipeline level, allowing contracts, performance, integration, and other tests to be monitored.</li>
+  <li><strong>2017 - Mocking </strong> - Mocking is an essential part of the API lifecycle, and as part of testing, so Postman introduced the ability to deploy mock servers as defined by a collection and the examples it contains providing a simple way to create static mocks of APIs.</li>
+  <li><strong>2018 - Team Workspaces, Comments, and Search</strong> - Acknowledging the need for closer collaboration across teams, workspaces were launched, as well as the ability to comment on collections, and search across workspaces, APIs, and collections.</li>
+  <li><strong>2019 - Builder</strong> - With the increased usage of Postman to not just consume and test APIs, but also to deliver APIs, the API Builder was launched, allowing APIs to be designed and developed using OpenAPI, RAML, and GraphQL across team workspaces.</li>
+  <li><strong>2019 - Interceptor</strong> - To support the reverse engineering of the existing APIs that exist behind web applications Postman interceptor was launched, allowing web traffic in Chrome to be captured and then used to define a Postman collection within a workspace.</li>
+  <li><strong>2019 - Public Network</strong> - The public API network was launched to support the needs of public API producers needing to attract new users, but then also provide a public catalog for API consumers to use when looking for APIs to use in their applications.</li>
+  <li><strong>2020 - Reporting</strong> - Reporting was launched to support the needs of the enterprise, providing a way for leadership to see activity across teams, workspaces, and APIs, helping understand activity and move towards more governance of API operations.</li>
+  <li><strong>2020 - Private Network</strong> - The private API network was launched to support the need for enterprise organizations to have a single internal catalog where teams can publish and discover the APIs and microservices that are being developed across teams and workspaces.</li>
+  <li><strong>2020 - Public Workspaces</strong> - The ability to change the visibility of a workspace to be publicly available was introduced to support the needs of API producers when it comes to engaging with consumers, allowing them to view, fork, and engage with their APIs.</li>
+  <li><strong>2020 - Websockets</strong> - With the introduction of WebSockets, the platform signaled a migration towards being a multi-protocol API platform, supporting WebSockets, and socket.io, but laying the groundwork for gRPC, and support for other protocols.</li>
+</ul>
+
+<p>This timeline represents the journey of Postman from a browser extension to a desktop application then ultimately an API platform by listening to, and then supporting the needs of API consumers, but then also API producers. Providing what teams are needing when it comes to designing, developing, and operating their APIs, but also consuming and automating using private, partner, and public APIs.</p>
+
+<p> This represents just a subset of the platform capabilities but reflects the Postman journey to become an API platform that will support the needs of the enterprise into the future. Providing a list of platform capabilities that can be mapped to enterprise organizations to get a handle on the productivity, quality, and overall governance of their operations.</p>
+
+
+      </div>
+      </center>
+
+      <!-- Show Video-->
+
+    
+
+
+<!-- Show Video-->    
+      
+      
+     
+  
+      
+      <!-- Show Related Links-->
+
+     
+
+<!-- Show Related Links-->
+
+      <br>
+   </div>
+</div>
+
+<div class="container-fluid">
+   <div class="row blurb text-center">
+      <div class="col-md-12">
+         <h2>Return to Main Page</h2>
+         <p class="collection__end_p">This provides a link back to the home page if you need it.
+         </p>
+      </div>
+      <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="http://localhost:4000">Return to Main Page</a></div>
+   </div>
+</div>
+
+
+               </main>
+
+               <footer class="footer"></footer>
+            </div>
+         </div>
+      </div>
+
+</body>
+</html>
