@@ -1,5 +1,5 @@
-title: API Lifecycle
-description:  framework to define the API lifecycle in a modular and flexible way so that anyone can define their own version of the API lifecycle using a common set of elements actions being applied across standard definition of API operations.
+title: APIs.How
+description:  A framework to define the API lifecycle in a modular and flexible way so that anyone can define their own version of the API lifecycle using a common set of elements actions being applied across standard definition of API operations.
 
 image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
 url: https://apis.how
