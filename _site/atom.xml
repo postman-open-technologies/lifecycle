@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>API Lifecycle</title>
+  <title>APIs.How</title>
   <updated>2021-09-24T00:00:00Z</updated>
   <link rel="self" href="http://localhost:4000/atom.xml"/>
   <author><name>Kin Lane</name></author>

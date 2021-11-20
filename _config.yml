@@ -30,6 +30,9 @@ collections:
     output: true       
   answers:    
     permalink: /answers/:path/  
+    output: true     
+  roles:    
+    permalink: /roles/:path/  
     output: true       
 
 defaults:
@@ -52,4 +55,8 @@ defaults:
   - scope:
       type: questions
     values:
-      layout: questions                
+      layout: questions   
+  - scope:
+      type: roles
+    values:
+      layout: roles                    

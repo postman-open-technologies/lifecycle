@@ -6,9 +6,9 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <title>API Lifecycle</title>
+      <title>APIs.How</title>
 
-		<meta data-react-helmet="true" name="description" content="framework to define the API lifecycle in a modular and flexible way so that anyone can define their own version of the API lifecycle using a common set of elements actions being applied across standard definition of API operations.">
+		<meta data-react-helmet="true" name="description" content="A framework to define the API lifecycle in a modular and flexible way so that anyone can define their own version of the API lifecycle using a common set of elements actions being applied across standard definition of API operations.">
 
       <link data-react-helmet="true" href="https://postman-toolboxes2.s3.amazonaws.com/assets/bootstrap.min.css" rel="stylesheet">
       <link data-react-helmet="true" href="https://postman-toolboxes2.s3.amazonaws.com/assets/styles.css" rel="stylesheet">
@@ -44,6 +44,10 @@
       <p>The most important first step of any API lifecycle is to make sure the operations around an API are properly defined, laying the foundation for being able to effectively design and bring an API to life, while also establishing a known place, or places to go to get all the information you need regarding each individual API, or groups of APIs. A little planning and organization at this early step of the API journey can go a long way towards ensuring the overall health and velocity of an API, and the applications and integrations that will depend on each internal, partner, or public API being delivered.</p>
          
       
+         
+               
+         
+               
          
                
          
@@ -318,6 +322,10 @@
                
            
       
+         
+               
+         
+               
          
                
          
@@ -864,8 +872,14 @@
                
          
                
+         
+               
+         
+               
            
       
+         
+               
          
                
          
@@ -1015,6 +1029,8 @@
             <h4>OpenAPI</h4>
             <p><p>The OpenAPI acts as the contract for any HTTP API, providing a machine readable way to describe the details of each request and response in a way that can be used across the entire API lifecycle. OpenAPI can be introduced in different ways via the API lifecycle, but once introduced should be managed as the source of truth for each API, always keeping up to date and managed via Postman workspace as well as synced to relevant repositories. The OpenAPI for each API can be used to generate collections for documentation, mocking, testing, and other areas of the API lifecycle, providing executable representations of each API tailored for a specific purpose, while maintaining a single source of truth for the contract of each API that can be used to keep docs, mocks, and tests in sync, but also to validate that each API contract is being met.</p>
 </p>
+               
+         
                
          
                
@@ -1420,6 +1436,10 @@
                
          
                
+         
+               
+         
+               
            
         
 
@@ -1565,10 +1585,14 @@
          
                
          
+               
+         
             
             <h4>Monitor</h4>
             <p><p>Postman monitors allow you to schedule the run of any collection, automating the run of API testing, governance, workflows, and anything else that is API-driven and can be defined as a collection. Monitors allow for the automation and orchestration of an almost infinite number of API capabilities, allowing for automating working with APIs, but also the API lifecycle. Monitors are how the API lifecycle becomes the moving API factory floor of an organization across different teams. API monitors run collections combined with different environments then allow the results to be published and piped into existing APM and other solutions, helping make API operations more observable.</p>
 </p>
+               
+         
                
          
                
@@ -1976,6 +2000,10 @@
                
          
                
+         
+               
+         
+               
            
       
          
@@ -2033,6 +2061,10 @@
             <h4>Contract Testing Results</h4>
             <p><p>When each collection is executed by a monitor or pipeline it has a set of results that can be published to any location and saved for reporting upon and included in other dashboards. Having a strategy and standardized approach to handling the results of contract test runs helps inform individual developers and testers how they can handle test rules, and potentially allowing compliance with overall organizational API governance. Formalizing how test results inform API operations in real time, but also potentially providing historical data on the contract testing across teams and APIs.</p>
 </p>
+               
+         
+               
+         
                
          
                
@@ -2429,10 +2461,14 @@
          
                
          
+               
+         
             
             <h4>CI/CD Pipeline</h4>
             <p><p>CI/CD pipelines are an essential part of automating the delivery of APIs, and there are multiple ways they can be used in conjunction with the Postman platform from deployment, to testing and governance. Postman collections are executable units that can be run individually and sequentially as part of a CI/CD pipeline, publishing documentation, running contract, integration, and performance tests, or leverage infrastructure APIs behind our APIs to automate any part of the API lifecycle. Jenkins, Github Actions, and other CI/CD solutions allow for the execution of manually created or dynamically generated Postman collections, providing an excellent mechanism for standardizing how API lifecycle automation occurs across many different APIs, while also utilizing a standardized approach to moving APIs forward as part of an agreed upon API lifecycle.</p>
 </p>
+               
+         
                
          
                
@@ -2671,10 +2707,14 @@
          
                
          
+               
+         
             
             <h4>Newman</h4>
             <p><p>Newman is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line. It is built with extensibility in mind so that you can easily integrate it with your continuous integration servers and build systems. Newman maintains feature parity with Postman and allows you to run collections the way they are executed inside the collection runner in Postman. The open source Newman combined with the open source collection and environment provides a portable, executable unit of value that can be applied anywhere across API operations at the command line or pipeline layers. Providing for a robust way to apply API testing manually or in an automated way as part of the regular software development lifecycle, baking testing and governance into operations.</p>
 </p>
+               
+         
                
          
                
@@ -3081,8 +3121,14 @@
                
          
                
+         
+               
+         
+               
            
       
+         
+               
          
                
          
@@ -3263,6 +3309,8 @@
             <p><p>A production environment is a set of variables you can use in your Postman requests. You can use production environments to group related sets of values together for use across individual, or many different collections. Environments help you abstract away secrets, tokens, and other data that you will need to use across different collections while working with different APIs. You can think of environments as a mini key-value store that you can apply to collections, but then also store data pulled from collection runs, persisting data across many different API requests. It is common for collection run results to be stored within environments, paginated data, and other results from API workflows and automation, making environments a pretty robust way to persist valuable data across API consumption.</p>
 
 </p>
+               
+         
                
          
                
@@ -3630,6 +3678,10 @@
                
          
                
+         
+               
+         
+               
            
       
          
@@ -3687,6 +3739,10 @@
             <h4>Contract Testing Results</h4>
             <p><p>When each collection is executed by a monitor or pipeline it has a set of results that can be published to any location and saved for reporting upon and included in other dashboards. Having a strategy and standardized approach to handling the results of contract test runs helps inform individual developers and testers how they can handle test rules, and potentially allowing compliance with overall organizational API governance. Formalizing how test results inform API operations in real time, but also potentially providing historical data on the contract testing across teams and APIs.</p>
 </p>
+               
+         
+               
+         
                
          
                
@@ -4187,8 +4243,14 @@
                
          
                
+         
+               
+         
+               
            
       
+         
+               
          
                
          
@@ -4382,6 +4444,8 @@
             <h4>Reports</h4>
             <p><p>Reports provide teams with visibility into the usage of individual APIs, but also the operations around them, helping us see activity, history, and the presence, or lack of presences of essential elements of the API lifecycle like documentation, testing, and other building blocks. The Postman platform provides native reporting on teams, APIs, and the activity that exists across workspaces. While also embracing an integration strategy that allows for the piping of data into other APM and observability solutions organizations are already using, providing another dimension for the creation of reports, and making them available via existing dashboards. Using API reporting to make APIs and API operations more visible in real time, allowing teams to stay aware of what is happening and be response to events that matter to an organization.</p>
 </p>
+               
+         
                
          
                
@@ -4735,6 +4799,10 @@
                
          
                
+         
+               
+         
+               
            
       
          
@@ -4747,6 +4815,10 @@
             <p><p>Postman doesn’t reinvent the wheel when it comes to application performance management and embraces the use of existing APM solutions by making them a first-class integration within the platform, allowing you to integrate with Datadog, New Relic, and other APM solutions. Platform APM integrations will enable you to pipe the results of any collection run via a monitor into existing APM infrastructure. This approach to integration allows results of collection runs for contract, integration, performance, and other types of tests to be piped into APM solutions, providing visibility over the execution of any collection.</p>
 
 </p>
+               
+         
+               
+         
                
          
                
