@@ -56,5 +56,14 @@ areas:
         label: Application Performance Management (APM)                                            
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/45
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/low-level-governance.md
+roles:
+  - Advocate
+  - Architect
+  - CIO
+  - CISO
+  - CTO
+  - Engineering
+  - Product
+  - Security
 ...
 A standardized API lifecycle can be applied to the design, development, and usage of API business workflows that are defined as machine readable collections which can be automated using monitors and CI/CD pipelines. Postman collections provide a versatile approach to defining multiple individual API requests that include authentication, parameters, headers, and other details, then organize into folders and specific sequences. Providing a format for defining, documenting, but then also executing common business workflows across many internal, partner, or external APIs. Something becomes endlessly useful when managed as part of a well defined lifecycle, equipping developers with what they need to define and design the workflows, but also maintain them, execute them, and use them to automate a variety of business tasks that exist in their worlds.

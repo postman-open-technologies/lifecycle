@@ -79,5 +79,16 @@ areas:
         label: Application Performance Management (APM)                                         
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/44
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/low-level-governance.md
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers 
 ...
 Governance is best developed from the top town, establishing common processes, rules, and guidance that reflect the architectural and business interests of leadership, but governance is realized at the lowest levels on the ground floor of operations, and it also makes sense in many organizations to set in motion some low-level governance patterns while higher level governance is being established. This blueprint is meant to walk through how your average API developer might approach governance as part of their regular work, helping them design and deliver more consistence APIs as part of a more high level governance approach or in absence of a more high level governance approach. Helping API teams learn how to step back and look at how they can define what a good API is and then deliver on that vision consistently as part of a high velocity release schedule. Setting the stage for a low level approach to implementing API governance that can work in alignment with higher level strategy, or begin moving the API governance from the bottom up.

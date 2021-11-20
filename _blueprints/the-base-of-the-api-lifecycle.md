@@ -111,5 +111,22 @@ areas:
        
 discussion: 'https://github.com/postman-open-technologies/lifecycle/discussions/27'
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/base.md
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - CIO
+  - CISO
+  - CTO
+  - Data
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Sales
+  - Security
+  - Support
+  - Writers
 ...
 The API lifecycle will mean many different things depending on who you are talking to. This base API lifecycle isn't meant to be a lifecycle definition that matches the needs of every enterprise organization, but is intended to provide you with a base example to help you begin thinking about what your own API lifecycle is. The blueprint is designed to provide you a base that you can add to or remove from, iterating upon until you find a common definition of the API lifecycle that works for your organization.

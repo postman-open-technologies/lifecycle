@@ -59,5 +59,16 @@ areas:
         label: Search  
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/12      
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/generate-collection-from-web-application.md
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers 
 ...
 APIs behind web applications are often developed with it's use beyond it's immediate purpose within a single application, resulting in the need to reverse engineer, document, test, and move forward as a standardized API as part of a well known API lifecycle in the future. This is a common entry into the API lifecycle for an existing API, acknowledging that APIs will regularly be brought to life to support a specific need, but then eventually they should be standardized and made usable across multiple applications and integrations. The Postman Interceptor provides an effective way to capture traffic behind the web applications we use each day and route the traffic into a collection for cleaning up, documenting, and then potentially testing and monitoring as part of a formal API lifecycle. Providing a robust approach to rapidly mapping out API infrastructure behind our web applications, and then ensuring they are well documented and reliable for use beyond a single application. 

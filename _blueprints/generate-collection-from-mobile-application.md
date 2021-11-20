@@ -59,5 +59,16 @@ areas:
         label: Search  
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/10
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/generate-collection-from-mobile-application.md
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers 
 ...
 Mobile applications are often developed rapidly using APIs without much consideration for how those APIs will be used beyond the current project. Mobile applications are often developed by teams and contractors who may not have exposure to the standardized development of APIs within an organization which would allow for APIs to be reused across multiple applications and integrations. A recurring situation that will make it necessary to reverse engineer the APIs behind a mobile application, generate a collection, documentation, and establish testing and monitors that help provide more observability into what is happening with API infrastructure behind the mobile applications we depend on. Postman provides a proxy for routing mobile traffic and generating a collection that describes the surface area of requests and responses, allowing it to be cleaned up, documented, then available for testing, monitoring, and discovery. Providing a powerful way to reverse engineer existing APIs behind mobile applications, but them make them more visible and reusuable across an organization, helping eliminate redundancy across operations.

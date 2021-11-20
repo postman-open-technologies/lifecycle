@@ -73,6 +73,17 @@ areas:
         label: Public Network                    
         context: 1  
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/13      
-yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/manually-define-collection-for-an-existing-api.md    
+yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/manually-define-collection-for-an-existing-api.md  
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers   
 ...
 When it comes to defining the API lifecycle for an existing API, sometimes you just need to roll up your sleeves and begin crafting a Postman collection from existing documentation that exists. Adding each individual request, parameters, and other details, while abstracting away authentication details using an environment and variables. Manually defining a collection for an existing API helps establish a cornerstone for an API that is already in production, but could use more investment in documentation, testing, and other areas of a modern API lifecycle. Preparing an API to possibly be iterated upon for a future version, or simply just make sure it is operating and being managed in a well defined away as part of overall API operations. This API blueprint enters the API lifecycle using the proven approach to defining a Postman collection, but then guides you through some of the most comment elements of an API lifecycle that are needed to get an API up to acceptable levels, in alignment with the rest of API operations. 

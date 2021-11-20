@@ -128,6 +128,17 @@ areas:
         label: Deprecate       
         context: 1
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/16
-yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/prototype-a-new-api-using-collection.md   
+yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/prototype-a-new-api-using-collection.md  
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers  
 ...
 Postman collections make it really easy to define the structure of an API, using requests to describe the paths, parameters, bodies, and headers, while using examples to demonstrate what will be returned with each response. When you combine collections with the ability to generate mock servers, and the built-in documentation that comes with each collection, you end up with a pretty robust way to prototype APIs. Allowing teams to collaboratively prototype what an API should do, demonstrating functionality, and documentation resources and capabilities along the way, rapdily defining what an API will do in production--without writing code, or hand-crafting an OpenAPI definition. Some teams will find this approach to delivering APIs much more desirable than hand-crafting an OpenAPI and generating mock servers and documentation from the OpenAPI, providing yet another way to approach a modern API lifecycle.

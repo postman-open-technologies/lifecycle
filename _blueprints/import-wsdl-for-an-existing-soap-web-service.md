@@ -77,6 +77,17 @@ areas:
         label: Private Network   
         context: 1  
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/32      
-yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/import-wsdl-for-an-existing-soap-web-service.md       
+yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/import-wsdl-for-an-existing-soap-web-service.md 
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers       
 ...
 Modern APIs and microservices is primarily delivered as RESTful, RPC, and GraphQL APIs using HTTP, but as the result of the widespread adoption of services oriented architecture (SOA) in the early 2000s, there are still many web services in production. SOAP is rarely used to deliver new APIs, but because of the ubiquitous nature of the approach within long living enterprise infrastructure, SOAP web services continue to play a significant role as part of API operations. This lifecycle blueprint acknowledges that existing SOAP web services have a place in the modern enterprise, and can benefit from some of the other healthy elements present across the API lifecycle for other types of APIs and microservices, ensuring they are well documented, have testing in place, as well as being monitored and discoverable just like the rest of API operations. This blueprint provides one possible path to consider as teams look to modernize their API infrastructure.

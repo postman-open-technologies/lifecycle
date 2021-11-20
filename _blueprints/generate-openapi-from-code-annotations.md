@@ -93,5 +93,16 @@ areas:
         context: 1 
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/15 
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/generate-openapi-from-code-annotations.md 
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers 
 ...
 Not all APIs and the teams developing them are able to embrace a design first approach to delivering APIs and sometimes it makes more sense for developers to write the code first, then provide annotations within the code that can be used to generate OpenAPI definitions for each API as part of the regular build process. It is important that there is an OpenAPI contract for each API, so that documentation, mocks, testing, and other elements can be generated, but not all teams will be able to hand-craft the OpenAPI from scratch. Making code annotations a valid approach to developing an API using a code-first approach, but still realizing the benefits of having an up to date machine readable contract present for each API as it evolves throughout the lifecycle.

@@ -63,5 +63,15 @@ areas:
 
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/33
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/test-automation.md
+roles:
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers 
 ...
 This blueprint works to provide a high level walk-through what an API design review process can look like. API design reviews give pause before any API goes into to production to make sure every APIs meets the design standards of an organization. Designers and developers should have a wealth of resources to help them design the best possible API before it gets submitted, but the injection of the design process ensures that each API gets attention from designer reviewers, architects, and anyone else who might speak to the value an API should deliver, and the needs of consumers. APIs design processes will make your APIs better, your teams better, and your overall organization better at doing what it does best. 

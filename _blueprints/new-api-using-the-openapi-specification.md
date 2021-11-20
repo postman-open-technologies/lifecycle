@@ -131,5 +131,16 @@ areas:
         context: 1
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/9
 yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/new-api-using-the-openapi-specification.md
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers 
 ...
-This API lifecycle blueprint introduces the API lifecycle in what is widely considered to be an API design-first way, ensuring that each API is adequately defined by and leveraging the OpenAPI specification to design, mock, document, and iterate upon the design of each API before actually writing any code, or publishing an API to a gateway. This approach is widely considered to be desirable because it allows for API producers and even consumer stakeholders to be more closely involved in what an API will do as early on in the process as possible. This blueprint looks to provide you with a walkthrough of one of the more optimal and forward leaning approaches for establishing a standardized API lifecycle across your teams, helping ensure that the API lifecycle is driven by machine readable artifacts, and possesses clear steps for moving API artifacts from design to production in a way that everyone can understand while incentivizing collaboration at each stop along the way.
+This API lifecycle blueprint introduces the API lifecycle in what is widely considered to be an API design-first way, ensuring that each API is adequately defined by and leveraging the OpenAPI specification to design, mock, document, and iterate upon the design of each API before actually writing any code, or publishing an API to a gateway. This approach is widely considered to be desirable because it allows for API producers and even consumer stakeholders to be more closely involved in what an API will do as early on in the process as possible. This blueprint looks to provide you with a walk through of one of the more optimal and forward leaning approaches for establishing a standardized API lifecycle across your teams, helping ensure that the API lifecycle is driven by machine readable artifacts, and possesses clear steps for moving API artifacts from design to production in a way that everyone can understand while incentivizing collaboration at each stop along the way.

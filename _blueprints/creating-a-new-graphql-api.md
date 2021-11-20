@@ -74,6 +74,17 @@ areas:
         label: Public Network                    
         context: 1  
 discussion: https://github.com/postman-open-technologies/lifecycle/discussions/28      
-yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/creating-a-new-graphql-api.md       
+yaml: https://github.com/postman-open-technologies/lifecycle/blob/main/_blueprints/creating-a-new-graphql-api.md     
+roles:
+  - Advocate
+  - Architect
+  - Backend
+  - DevOps
+  - Engineering
+  - Frontend
+  - Mobile
+  - Product
+  - Support
+  - Writers  
 ...
 GraphQL has emerged as an optimal way to expose databases as a robust API which can support the needs of modern web and mobile applications. Providing an approach to delivering a single API path that provides access to an entire data graph, allowing consumers to define their own queries, and receive exactly the response they need for whatever need they have in their particular application. This is a blueprint to walk through creating a new GraphQL API, while also establishing a well-defined lifecycle around the API, ensuring that it is well documented, tested, and provides a level of service that meets the business objectives of an organization.
