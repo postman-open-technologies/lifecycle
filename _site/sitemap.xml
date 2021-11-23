@@ -141,7 +141,7 @@
     <url>
       <loc>http://localhost:4000/atom.xml</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -156,7 +156,7 @@
     <url>
       <loc>http://localhost:4000/all-actions/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -171,7 +171,7 @@
     <url>
       <loc>http://localhost:4000/all-elements/editor/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -186,7 +186,7 @@
     <url>
       <loc>http://localhost:4000/all-elements/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -201,7 +201,7 @@
     <url>
       <loc>http://localhost:4000/updates/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -216,7 +216,7 @@
     <url>
       <loc>http://localhost:4000/all-answers/editor/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -231,7 +231,7 @@
     <url>
       <loc>http://localhost:4000/all-answers/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -246,7 +246,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/generate-collection-from-mobile-application/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -261,7 +261,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/prototype-a-new-api-using-collection/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -276,7 +276,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/the-base-of-the-api-lifecycle/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -291,7 +291,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/business-workflows/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -306,7 +306,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/creating-a-new-graphql-api/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -321,7 +321,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/new-api-using-the-asyncapi-specification/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -336,7 +336,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/import-wsdl-for-an-existing-soap-web-service/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -351,7 +351,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/new-api-using-the-openapi-specification/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -366,7 +366,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/low-level-governance/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -381,7 +381,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/high-level-governance/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -396,7 +396,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/generate-collection-from-web-application/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -411,7 +411,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/generate-openapi-from-code-annotations/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -426,7 +426,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/design-review/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -441,7 +441,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/manually-define-collection-for-an-existing-api/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -456,7 +456,7 @@
     <url>
       <loc>http://localhost:4000/decks/blueprints/test-automation/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -471,7 +471,7 @@
     <url>
       <loc>http://localhost:4000/decks/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -486,7 +486,7 @@
     <url>
       <loc>http://localhost:4000/printable/generate-collection-from-mobile-application/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -501,7 +501,7 @@
     <url>
       <loc>http://localhost:4000/printable/prototype-a-new-api-using-collection/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -516,7 +516,7 @@
     <url>
       <loc>http://localhost:4000/printable/business-workflows/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -531,7 +531,7 @@
     <url>
       <loc>http://localhost:4000/printable/creating-a-new-graphql-api/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -546,7 +546,7 @@
     <url>
       <loc>http://localhost:4000/printable/new-api-using-the-asyncapi-specification/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -561,7 +561,7 @@
     <url>
       <loc>http://localhost:4000/printable/import-wsdl-for-an-existing-soap-web-service/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -576,7 +576,7 @@
     <url>
       <loc>http://localhost:4000/printable/new-api-using-the-openapi-specification/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -591,7 +591,7 @@
     <url>
       <loc>http://localhost:4000/printable/low-level-governance/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -606,7 +606,7 @@
     <url>
       <loc>http://localhost:4000/printable/high-level-governance/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -621,7 +621,7 @@
     <url>
       <loc>http://localhost:4000/printable/generate-collection-from-web-application/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -636,7 +636,7 @@
     <url>
       <loc>http://localhost:4000/all-actions/editor/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -651,7 +651,7 @@
     <url>
       <loc>http://localhost:4000/printable/manually-define-collection-for-an-existing-api/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -666,7 +666,7 @@
     <url>
       <loc>http://localhost:4000/printable/test-automation/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -681,7 +681,7 @@
     <url>
       <loc>http://localhost:4000/printable/base/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -696,7 +696,7 @@
     <url>
       <loc>http://localhost:4000/all-questions/editor/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -711,7 +711,7 @@
     <url>
       <loc>http://localhost:4000/all-questions/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -726,7 +726,7 @@
     <url>
       <loc>http://localhost:4000/all-roles/editor/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -741,7 +741,7 @@
     <url>
       <loc>http://localhost:4000/all-roles/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -756,7 +756,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -771,7 +771,7 @@
     <url>
       <loc>http://localhost:4000/printable/generate-openapi-from-code-annotations/</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -788,7 +788,7 @@
     <url>
       <loc>http://localhost:4000/assets/css/style.css</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -803,7 +803,7 @@
     <url>
       <loc>http://localhost:4000/roles.html</loc>
       
-        <lastmod>2021-11-22T16:36:19-08:00</lastmod>
+        <lastmod>2021-11-22T16:37:49-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
