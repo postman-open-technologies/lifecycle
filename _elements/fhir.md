@@ -18,3 +18,13 @@ video: ''
 screenshots:   
 ...
 The FHIR standard was created by the Health Level Seven International (HL7) health-care standards organization, building on previous data format standards, but it is easier to implement because it uses a modern web-based suite of API technology, including a HTTP-based RESTful protocol, and a choice of JSON, XML or RDF for data representation. The goal oF FHIR is to facilitate interoperability between legacy health care systems, to make it easy to provide health care information to health care providers and individuals on a wide variety of devices from computers to tablets to cell phones, and to allow third-party application developers to provide medical applications which can be easily integrated into existing systems. FHIR provides an alternative to document-centric approaches by directly exposing discrete data elements as services. For example, basic elements of healthcare like patients, admissions, diagnostic reports and medications can each be retrieved and manipulated via their own resource URLs.
+
+## Key Points
+
+- APIs make healthcare more interoperable
+- APIs allow customers to move their data
+- APIs enable customers to use different doctors
+- APIs can be tested and certified by regulators
+- APIs reduce the cost of healthcare app development
+- APIs encourage development of more open source
+- APIs make healthcare pricing more transparent
