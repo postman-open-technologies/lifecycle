@@ -191,6 +191,10 @@
          
                
          
+               
+         
+               
+         
             
             <h4>OpenAPI</h4>
             <p><p>The OpenAPI acts as the contract for any HTTP API, providing a machine readable way to describe the details of each request and response in a way that can be used across the entire API lifecycle. OpenAPI can be introduced in different ways via the API lifecycle, but once introduced should be managed as the source of truth for each API, always keeping up to date and managed via Postman workspace as well as synced to relevant repositories. The OpenAPI for each API can be used to generate collections for documentation, mocking, testing, and other areas of the API lifecycle, providing executable representations of each API tailored for a specific purpose, while maintaining a single source of truth for the contract of each API that can be used to keep docs, mocks, and tests in sync, but also to validate that each API contract is being met.</p>
@@ -598,6 +602,10 @@
                
          
                
+         
+               
+         
+               
            
         
 
@@ -608,6 +616,10 @@
       <p>Once you have an OpenAPI, AsyncAPI, or other artifact that you would like to apply governance too, there are a handful of ways in which you can execute governance as part of your regular work. Depending on your goals with governing the design of an API you can apply each of these elements helping manual or automatically identify problems with the design of your API. These approaches to execution are potentially dependent on other rules, as well as the approach you take to automating the application of governance.</p>
          
       
+         
+               
+         
+               
          
                
          
@@ -1099,6 +1111,10 @@
          
                
          
+               
+         
+               
+         
             
             <h4>Script-Based Governance</h4>
             <p><p>A script-based approach to applying governance to any OpenAPI or AsyncAPI is the flexible approach to governance allowing for almost any type of assertion or desired outcome, but will require custom scripting to define each governance assertion. The OpenAPI or AsyncAPI for an API can be pulled via a URL or the Postman API, and then test scripts can be written to traverse and apply a variety of custom assertions, looking for problems in the design of each API. As with other API testing, the test results pane or visualizer can be used to report on the findings, alerting the developer that something is wrong with the design and what needs to be fixed, or throw an error to trigger the failure of a pipeline at build time. A script-based approach to governance will provide the widest flexibility, but require the most investment to develop the scripts needed to enforce governance across known API artifacts.</p>
@@ -1283,10 +1299,14 @@
          
                
          
+               
+         
             
             <h4>Info Governance Rules</h4>
             <p><p>Info governance rules provide a base of YAML or JSON rules that can be applied to the info object within OpenAPI or AsyncAPI contracts, checking for specific patterns for the title, description, and other elements of an API. Rules can be defined centrally by governance leadership, or locally within teams, and then applied either at design, develop, or build time in a manual or automated way depending on the objectives of team, department, organization, or industry-wide governance.</p>
 </p>
+               
+         
                
          
                
@@ -1726,8 +1746,16 @@
                
          
                
+         
+               
+         
+               
            
       
+         
+               
+         
+               
          
                
          
@@ -2163,6 +2191,10 @@
          
                
          
+               
+         
+               
+         
             
             <h4>Path Governance Rules</h4>
             <p><p>Path governance rules provide a base of YAML or JSON rules that can be applied to the path object within OpenAPI or AsyncAPI contracts, checking for specific patterns for words used to describe a path, restricting acronyms, enforcing unique ids, and other elements of an API. Rules can be defined centrally by governance leadership, or locally within teams, and then applied either at design, develop, or build time in a manual or automated way depending on the objectives of team, department, organization, or industry-wide governance.</p>
@@ -2284,6 +2316,10 @@
                
            
       
+         
+               
+         
+               
          
                
          
@@ -2562,6 +2598,10 @@
                
            
       
+         
+               
+         
+               
          
                
          
@@ -3033,6 +3073,10 @@
          
                
          
+               
+         
+               
+         
             
             <h4>Request Bodies Governance Rules</h4>
             <p><p>Request body governance rules provide a base of YAML or JSON rules that can be applied to the request bodies object within OpenAPI contracts, checking for specific patterns like whether it should have a body, the media type, example, and other details of an API. Rules can be defined centrally by governance leadership, or locally within teams, and then applied either at design, develop, or build time in a manual or automated way depending on the objectives of team, department, organization, or industry-wide governance.</p>
@@ -3118,6 +3162,10 @@
                
            
       
+         
+               
+         
+               
          
                
          
@@ -3605,6 +3653,10 @@
          
                
          
+               
+         
+               
+         
             
             <h4>Schema Governance Rules</h4>
             <p><p>Schema governance rules provide a base of YAML or JSON rules that can be applied to the schema object within OpenAPI or AsyncAPI contracts, checking for specific patterns for the schema name, description, and other elements of an API. Rules can be defined centrally by governance leadership, or locally within teams, and then applied either at design, develop, or build time in a manual or automated way depending on the objectives of team, department, organization, or industry-wide governance.</p>
@@ -3674,6 +3726,10 @@
                
            
       
+         
+               
+         
+               
          
                
          
@@ -4232,6 +4288,10 @@
                
          
                
+         
+               
+         
+               
            
       
          
@@ -4275,6 +4335,10 @@
             <h4>Collection Governance</h4>
             <p><p>Postman collections can be designed to run governance against an OpenAPI, applying rules or scripts against an OpenAPI pulled via URL, API, or submitted as part of the body of the API request. Having governance defined as a collection provides the flexibility for designers and developers to run manually using Postman on the web or desktop, and engage with test results and reporting via visualizer. Allowing developers to learn about governance and apply to any OpenAPI manually, scheduled via a monitor, or easily dropped into a CI/CD pipeline. Providing a very flexible approach to applying governance across the entire API lifecycle.</p>
 </p>
+               
+         
+               
+         
                
          
                
@@ -4788,8 +4852,14 @@
                
          
                
+         
+               
+         
+               
            
       
+         
+               
          
                
          
@@ -5066,8 +5136,14 @@
                
          
                
+         
+               
            
       
+         
+               
+         
+               
          
                
          
@@ -5354,6 +5430,10 @@
       <p>Reporting on the realities and outcomes of API governance across the API lifecycle is needed to make it more visual and tangible for everyone involved. Reporting across governance being applied to individual APIs, groups of APIs, and overall operations can be realized as part of native platform reporting, customized, localized or in aggregate with Postman Visualizer, or made seamless with existing operations by piping data into APM and other systems to make available for reporting and visualizations via dashboards.</p>
          
       
+         
+               
+         
+               
          
                
          
@@ -5891,6 +5971,10 @@
          
                
          
+               
+         
+               
+         
             
             <h4>Visualizer</h4>
             <p><p>Postman provides a visualizer tab for each request defined as part of a collection. The visualizer tab is rendered using test scripts for each request, taking the response, applying some JavaSCript, then rendering the results to the tab for viewing alongside JSON responses or test results, providing another way to “see” the response of each API. This is something you can apply to not just the individual response of an API, but also the aggregate responses across many API requests, or even the test results of an API, or the governance of the design and operation of an API. Providing for a very powerful way to visualize the resources and capabilities provided by each API, but also the infrastructure behind the APIs, helping make API operations more visible to developers and other business stakeholders.</p>
@@ -5920,6 +6004,10 @@
             <p><p>Postman doesn’t reinvent the wheel when it comes to application performance management and embraces the use of existing APM solutions by making them a first-class integration within the platform, allowing you to integrate with Datadog, New Relic, and other APM solutions. Platform APM integrations will enable you to pipe the results of any collection run via a monitor into existing APM infrastructure. This approach to integration allows results of collection runs for contract, integration, performance, and other types of tests to be piped into APM solutions, providing visibility over the execution of any collection.</p>
 
 </p>
+               
+         
+               
+         
                
          
                
