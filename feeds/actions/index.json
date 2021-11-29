@@ -1,0 +1,17 @@
+---
+layout: none
+---
+{% assign actions = site.actions | sort: "name" %}
+[
+{% for action in actions %}
+{
+"name": "{{ action.name }}",
+"description": "{{ action.description[0] | escape }}",
+"links": {{ action.links | jsonify }},
+"tools": {{ action.tools | jsonify }},
+"video": "{{ action.video | escape }}",
+"content": "{{ action.content | escape | strip_newlines }}"
+}
+{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

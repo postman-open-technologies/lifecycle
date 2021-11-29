@@ -1,0 +1,627 @@
+
+[
+
+{
+"name": "Are API responses validated against JSON Schema in OpenAPI?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are API responses validated against JSON Schema in Swagger?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are APIs discoverable via a partner API catalog?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are APIs discoverable via a private API catalog?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are APIs discoverable via a public API catalog?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are SDKs provided for consumers?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are all APIs put into a service plan?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are all APIs scanned for common OWASP vulnerabilities?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are code snippets provided for consumers?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are mock servers used when designing APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are mock servers used when testing APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are tests for APIs discoverable?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are there multiple gateways for deploying APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Are there performance tests being applied to APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Can team members search for APIs internally?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do APIs have a self-service onboarding?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do APIs have rate limit policies applied?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do APIs use a CI/CD system for deployment?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do all APIs have a team responsible for them?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do all of your APIs have up to date documentation?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do teams have to go through an API design review for each API?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do teams have to go through an API security review for each API?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do teams own the full lifecycle of their APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you a repository for each API?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you apply governance as part of the CI/CD pipeline deploying APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you apply governance during the development of APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you apply versioning to each of your APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you define a workspace for each API?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you define teams behind each API?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you define the dependencies between APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you deploy API in the cloud?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you deploy APIs on-premise?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you design APIs using AsyncAPI before you develop them?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you design APIs using OpenAPI before you develop them?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have GraphQL APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have REST APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have SOAP APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have Websocket APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have an API design guide?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have event-driven APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have microservices?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you have reports on your API usage?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you prototype APIs using Postman collections before you develop them?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you provide listing rules to apply against APIs for governance?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you put versions in the header of your APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you put versions in the path of your APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you report upon governance across APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you require APIs have contract testing as part of governance?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you require APIs have documentation as part of governance?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you require APIs have performance testing as part of governance?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you require APIs have security testing as part of governance?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you secure APIs using API keys?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you secure APIs using JWT?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you secure APIs using OAuth?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you test that each API returns the standard response codes?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use AsyncAPI to define APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use JSON Schema for modeling objects?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use OpenAPI to define APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use Swagger to define APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use containers to deploy your APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use date versioning for each API?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use semantic versioning for each API?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Do you use web hooks?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Does documentation provide examples for developers?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Does each API have security testing defined?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is API performance testing run on a schedule?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is API performance testing run via CI/CD pipeline?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is API security testing run on a schedule?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is API security testing run via CI/CD pipeline?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is API testing available via APM solutions?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is API testing run on a schedule?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is API testing run via CI/CD pipeline?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is client snippets and SDKs auto generated for APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is client snippets and SDKs manually developed for APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is documentation generated using OpenAPI or Swagger?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is documentation hand created by developers or writers?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is role base access control applied to APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is there a central group handling governance within your organization?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is there a common definition of what the API lifecycle is?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is there a single gateway for deploying APIs?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "Is traffic to APIs being logged?",
+"description": "",
+"tags": ["Tag"]
+}
+,
+
+{
+"name": "What does successfully scaling of your API governance look like?",
+"description": "",
+"tags": []
+}
+,
+
+{
+"name": "When (and what) would you celebrate with your leadership?",
+"description": "",
+"tags": []
+}
+,
+
+{
+"name": "Would you like help defining a blueprint of your API lifecycle?",
+"description": "",
+"tags": []
+}
+,
+
+{
+"name": "Would you like help defining an API design guide?",
+"description": "",
+"tags": []
+}
+,
+
+{
+"name": "Would you like to run governance in a CI/CD pipeline?",
+"description": "",
+"tags": []
+}
+,
+
+{
+"name": "Would you like to run governance manually in workspaces?",
+"description": "",
+"tags": []
+}
+,
+
+{
+"name": "Would you like to schedule governance using a monitor?",
+"description": "",
+"tags": []
+}
+,
+
+{
+"name": "Would you prefer to have turn-key API governance?",
+"description": "",
+"tags": []
+}
+
+
+]
