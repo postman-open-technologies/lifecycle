@@ -6,7 +6,7 @@ image: workflow.png
 tags:
   - Storytelling
   - Production
-stage: Engage
+stage: Work In Progress
 type: sync
 order: 1
 status: draft

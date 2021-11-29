@@ -5,7 +5,7 @@ conclusion: Text
 image: workflow.png
 tags:
   - Requests
-stage: Automation
+stage: Work In Progress
 type: sync
 order: 1
 status: draft

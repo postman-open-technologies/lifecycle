@@ -5,7 +5,7 @@ conclusion: Text
 image: workflow.png
 tags:
   - Observability
-stage: Automation
+stage: Work In Progress
 type: sync
 order: 1
 status: draft

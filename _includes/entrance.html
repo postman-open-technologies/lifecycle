@@ -86,5 +86,19 @@
             {% endif %}        
           {% endfor %}            
       </div>   
+      <hr>
+		<div class="row collection__header text-center">
+         <div class="col-md-12" style="text-align: left;">
+            <h2 class="h1">Work in Progress</h2>
+            <p style="padding: 0px;">These are blueprints that are currently being defined and assembled for different areas.</p>
+        </div>
+      </div>      
+      <div>
+         {% for blueprint in blueprints %}
+            {%if blueprint.stage == 'Work In Progress' %}
+               {% include blueprints.html %}
+            {% endif %}        
+          {% endfor %}            
+      </div>        
    </div>
 </div>

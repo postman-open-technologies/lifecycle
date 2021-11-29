@@ -6,7 +6,7 @@ image: workflow.png
 tags:
   - Design
   - Design First
-stage: Automation
+stage: Work In Progress
 type: sync
 order: 1
 status: draft
