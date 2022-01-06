@@ -1,9 +1,0 @@
----
-layout: none
----
-{% assign roles = site.roles | sort: "name" %}
-[
-{% for role in roles %}
-{{ role | jsonify }}{% unless forloop.last %},{% endunless %}
-{% endfor %}
-]
