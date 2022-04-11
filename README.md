@@ -1,4 +1,4 @@
-# API Lifecycle & Governance
+# API Lifecycle & Governance BLueprints
 This is a project to distill down many views of a modern lifecycle into many re-usable elements and actions organized into blueprints that provide a series of steps within a specific dimension of the API lifecycle.
 
 **Workspace:** https://apis.how/
