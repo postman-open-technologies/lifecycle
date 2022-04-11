@@ -1,4 +1,4 @@
-# API Lifecycle & Governance BLueprints
+# API Lifecycle & Governance Blueprints
 This is a project to distill down many views of a modern lifecycle into many re-usable elements and actions organized into blueprints that provide a series of steps within a specific dimension of the API lifecycle.
 
 **Workspace:** https://apis.how/
@@ -7,6 +7,10 @@ We are still working on ways to add to and evolve the content available here, ad
 
 ## Blueprints
 Here are the blueprints, or API lifecycle and governance concepts that we are working on as part of this effort. Each blueprint has an ideation board, issue dicussion, and a source of truth to help move forward each version of the blueprints.
+
+
+### Introductory
+These are a handful of high-level introductory blueprints meant for the widest possible audience.
 
 - **What is an API** ([Ideation](https://miro.com/app/board/uXjVO969IsE=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/147)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-an-api.md))
 - **History of APIs** ([Ideation](https://miro.com/app/board/uXjVO979MjQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/148)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-apis.md))
