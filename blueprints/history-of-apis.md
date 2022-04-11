@@ -1,6 +1,4 @@
-# History of Web APIs
-In an internet-connected world, desktop, web, mobile, and device applications are designed for humans to use, while APIs are designed for systems, applications, and integrations to put to work. Websites and APIs both do the same things, like return data, content, images, video, and put algorithms to work. The only difference is that APIs don’t return all the details that are needed to make things look pretty for the human eye—you only get the raw data and other machine-readable information needed behind the scenes to put the resources being delivered to work.
-
+# History of APIs
 APIs are not new, and are something that emerged in the earliest days of digital computing back in the 1950s, but are something that has evolved to meet the needs of a variety of business sectors, and have seen a massive standardization and growth as a result of the web and emergence of mobile networks.
 
 ## Planting Early Seeds
