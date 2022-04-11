@@ -1,0 +1,2 @@
+# What is API-first?
+API-first is the new model of software development in which applications are conceptualized and built as an interconnection of internal and external services through APIs. An API-first company is an organization that has adopted the API-first development model.
