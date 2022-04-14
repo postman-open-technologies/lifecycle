@@ -20,7 +20,8 @@ These are a handful of high-level introductory blueprints meant for the widest p
 ### Where to Start
 These are some of the common answers to enterprise organizations asking where they should start.
 
-- **WLandscape Mapping** ([Ideation](https://miro.com/app/board/uXjVO8kikYU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/154)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/landscape-mapping.md))
+- **Landscape Mapping** ([Ideation](https://miro.com/app/board/uXjVO8kikYU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/154)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/landscape-mapping.md))
+- **Workspaces** ([Ideation](https://miro.com/app/board/uXjVO8kzPZ8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/157)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspaces.md))\]
 
 ## Structure
 Blueprints are meant to provide very simple (1-2 pages) of guidance pertaining to a specific aspect of API operations, providing core concepts that can be consumed directly, or used as the core of blog posts, videos, white papers, boos, and other content. Here is a snapshot of the blueprint structure:
