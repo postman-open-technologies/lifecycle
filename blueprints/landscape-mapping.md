@@ -3,7 +3,6 @@
 A blueprint for helping jumpstart a mapping of the internal API landscape, allowing an organization to begin getting a handle on what is happening across operations. Beginning by profiling a specific group or domain, but then expanding it across operations once a portion of the landscape has been mapped and understood.
 
 ## Team
-Understanding the makeup of the teams behind the development of APIs is an essential part of moving APIs forward at scale across an organization. Mapping out the team landscape can begin in three areas, with efforts focusing on a single group and the members and roles that exist within that single group, before expanding to other teams. Working to make sure that the current state of teams is mapped out, but then establishing an apparatus that will accommodate the future of development by mapping out three key areas.
 
 - Team Groups - Teams can be organized by groups that reflect lines of business, and business domains. Establishing bounded context for assigning team members to, allowing API operations, workspaces, artifacts, and other resources to be organized, accessed, and reported upon via logical groups.
 - Team Members - Formerly defining who the team will be moving an API forward through all stages of it~s lifecycle, providing a clear definition of who is responsible for each part of producing an API.
@@ -13,7 +12,6 @@ Understanding the makeup of the teams behind the development of APIs is an essen
 - Role Based Access Control (RBAC) - The ability to assign roles individual team members then shape access to workspaces, APIs, collections, and environments based upon their role in producing or consuming APIs, allowing for the protection of artifacts and other elements from unwanted changes, while still making them available to the widest possible team members for use, striking the right balance across domains, groups, and workspaces.
 
 ## APIs
-Mapping the API landscape is required to get a handle on API operations, and allow business and technical leadership to assert the observability and control they need to move things forward. Until all APIs are mapped out, documented, and made discoverable, you will not be able to effectively evolve APIs, and there will always be redundancy in the API infrastructure behind web, mobile, and device applications. Mapping of the enterprise API landscape begins with documentation for each API but then focuses on the artifacts that are increasingly defining them.
 
 - Documentation - Documentation published as human consumable HTML pages help potential API consumers learn about what an API does by describing the paths, channels, parameters, headers, schema, messages, and other building blocks of APIs, showing examples of what is possible or by providing an API client to make calls to each API as part of the documentation.
 - Swagger - Swagger 2.0 is a common specification used by teams to describe what an API does. It is common for Swagger files to be manually or automatically created as part of API Operations. Swagger artifacts provide what is needed to power documentation, mock servers, testing, and what are make it so that teams can browse and search for APIs via catalogs and networks.
@@ -24,7 +22,6 @@ Mapping the API landscape is required to get a handle on API operations, and all
 API RBAC - Providing guidance for how RBAC should be applied to APIs.
 
 ## Workspace
-Understanding where work on API is occurring is needed to be able to standardize, observe, and govern the API development process. API workspaces are where you will find the artifacts developers are using to design, develop, and sustain APIs, and provide what is needed to observe operations, but then also begin to steer things in any particular direction. These are the common elements where you will find work occurring on APIs, and are where leadership should look for what is needed to observe operations and move things forward.
 
 - Team Workspace - Establishing and properly setting up a dedicated workspace for each API helps ensure there is always a single place to go to find everything that is happening with an API across it~s entire lifecycle.
 - Github Repository - Having a dedicated Github repository for an API provides a single place where code and other artifacts can be managed, with a pipeline, issues, and other supporting elements an API will need to operate.
