@@ -11,7 +11,7 @@ APIs are not new, and are something that emerged in the earliest days of digital
 ## Laying the Foundation
 By the 1970s the earliest networks were being established, resulting in the need to share files, communicate via messages, and better explore how early APIs can be used for business.
 
-- FTP
+- **FTP**: In 1971, an MIT student named Abhay Bhushan published RFC 114 with the original specification for the File Transfer Protocol (FTP). FTP built upon earlier protocols such as Telnet. While Telnet allowed operators to transfer documents between machines, it did not account for differences in architecture and operating systems, so it was difficult to use. FTP introduced a standardized way to send files and messages between computers, acting as an early form of email. In 1980, a revision to FTP that allowed operators to send and receive files using a more secure TCP/IP connection was published in RFC 765. FTP was revised again in 1985 in RFC 959, adding support for several new commands. This version of FTP is still in use today, but in 2021, several web browsers removed support for FTP in favor of more secure file transfer standards.
 - EDI
 - Email
 
