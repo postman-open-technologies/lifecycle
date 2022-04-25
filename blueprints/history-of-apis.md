@@ -18,7 +18,7 @@ By the 1970s the earliest networks were being established, resulting in the need
 ## Conducting Business
 The business value of early APIs were clear, there was just much more work to be done when it comes to standardizing how we would be able to communicate via the new networks we had developed.
 
-- Corba
+- **CORBA**: In the early 1990s, developers found it difficult to manage communication between applications with different operating systems, hardware, and programming languages. In 1991, the Object Management Group (OMG) introduced the Common Object Request Broker Architecture (CORBA), a middleware specification that allowed applications programmed in C to communicate with each other using object request brokers (ORBs) and application programming interfaces (APIs). An ORB exists between the server and the client, where it listens for requests, locates objects, and returns results for systems regardless of hardware or location. CORBA 2.0 was released in 1996, adding support for C++ and defined a standard protocol that improved interoperability between applications. Java language mapping was added two years later. As the Internet grew larger and more complex in the late 1990s, many developers found that it was difficult to build large-scale applications with CORBA, and its performance was unable to keep up with higher-speed networks.
 - XML
 - SOA
 
