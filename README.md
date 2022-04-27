@@ -16,7 +16,9 @@ These are a handful of high-level introductory blueprints meant for the widest p
 - **History of APIs** ([Ideation](https://miro.com/app/board/uXjVO979MjQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/148)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-apis.md))
 - **History of Web APIs** ([Ideation](https://miro.com/app/board/uXjVO969IgY=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/150)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-web-apis.md))
 - **What is API-First** ([Ideation](https://miro.com/app/board/uXjVO97f0Is=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/149)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-api-first.md))
-- **Business in the Clouds** ([Ideation]()) ([Discussion]()) ([Truth]())
+- **Why do you become API-First** ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/196)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/why-do-you-become-api-first.md))
+- **How do you become API-First** ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/197)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprintshow-do-you-do-api-firs/how-do-you-do-api-first.md))
+
 - **What is Postman Open Technologies** ([Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/188)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md)) ([Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing))
 
 ### Where to Start
