@@ -8,31 +8,63 @@ We are still working on ways to add to and evolve the content available here, ad
 ## Blueprints
 Here are the blueprints, or API lifecycle and governance concepts that we are working on as part of this effort. Each blueprint has an ideation board, issue dicussion, and a source of truth to help move forward each version of the blueprints.
 
+### Postman
+These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
+
+- **What is Postman Open Technologies** ([Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/188)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md)) ([Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing))
 
 ### Introductory
 These are a handful of high-level introductory blueprints meant for the widest possible audience.
 
 - **What is an API** ([Ideation](https://miro.com/app/board/uXjVO969IsE=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/147)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-an-api.md))
-- **History of APIs** ([Ideation](https://miro.com/app/board/uXjVO979MjQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/148)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-apis.md))
-- **History of Web APIs** ([Ideation](https://miro.com/app/board/uXjVO969IgY=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/150)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-web-apis.md))
 - **What is API-First** ([Ideation](https://miro.com/app/board/uXjVO97f0Is=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/149)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-api-first.md))
 - **Why do you become API-First** ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/196)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/why-do-you-become-api-first.md))
 - **How do you become API-First** ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/197)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprintshow-do-you-do-api-firs/how-do-you-do-api-first.md))
-- **What is Postman Open Technologies** ([Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/188)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md)) ([Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing))
+
+### History of APIs
+Understanding more about how we got to this point in time, exploring the evolution of whath we now know as APIs.
+
+- **History of APIs** ([Ideation](https://miro.com/app/board/uXjVO979MjQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/148)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-apis.md))
+- **History of Web APIs** ([Ideation](https://miro.com/app/board/uXjVO969IgY=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/150)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-web-apis.md))
+- **Business in the Clouds** ([Ideation](https://miro.com/app/board/uXjVO65E4X0=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/189)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/business-in-the-clouds.md))
+- **Our Lives Going Mobiles** ([Ideation](https://miro.com/app/board/uXjVO5f3PTA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/199)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/mobile.md))
+- **The API Economy** ([Ideation](https://miro.com/app/board/uXjVO5f4PnI=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/200)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/api-economy.md))
+- **Devices in our Physical World** ([Ideation](https://miro.com/app/board/uXjVO5fE9nQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/201)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/devices.md))
+- **Strengthening Partnerships** ([Ideation](https://miro.com/app/board/uXjVO5fMa24=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/190)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/strengthening-partnerships.md))
+- **Microservicess** ([Ideation](https://miro.com/app/board/uXjVO5fWC8o=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/202)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/microservices.md))
+- **Applications** ([Ideation](https://miro.com/app/board/uXjVO5enfAg=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/205)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/applications.md))
+- **Integrations** ([Ideation](https://miro.com/app/board/uXjVO5fftG8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/206)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/integrations.md))
+
+### Digital Value
+These are the units of value that define business today and are being defined as APIs.
+
+- **Resources** ([Ideation](https://miro.com/app/board/uXjVO5fQVCA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/203)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/resources.md))
+- **Capabilities** ([Ideation](https://miro.com/app/board/uXjVO5fTiio=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/204)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/capabilities.md))
 
 ### Where to Start
 These are some of the common answers to enterprise organizations asking where they should start.
 
 - **Landscape Mapping** ([Ideation](https://miro.com/app/board/uXjVO8kikYU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/154)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/landscape-mapping.md))
 - **Workspaces** ([Ideation](https://miro.com/app/board/uXjVO8kzPZ8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/157)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspaces.md))
+- **Ad Hoc Landscape** ([Ideation](https://miro.com/app/board/uXjVO5egeY8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/207)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/ad-hoclandscape.md))
 
-## Partners
+## Public Facing
+These are blueprints focused on the public facing aspects of our API operations, and what we should be considering.
 
 - **Documentation Collection Checklist** ([Ideation](https://miro.com/app/board/uXjVO6Zh8yE=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/191)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/documentation-collection-checklist.md))
 - **Public Workspace Adoptions** ([Ideation](https://miro.com/app/board/uXjVO6Zh89M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/192)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/public-workspace-adoption.md))
 - **Workspace Checklist** ([Ideation](https://miro.com/app/board/uXjVO6Zh84I=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/193)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspace-checklist.md))
 - **Time to First Call** ([Ideation](https://miro.com/app/board/uXjVO6Zh86Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/194)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/time-to-first-call.md))
 - **Portal and Network** ([Ideation](https://miro.com/app/board/uXjVO6Z3Zp0=/) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/195)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/portal-and-network.md))
+
+### Challenges - Usability
+Defining some of the common challenges faced by API producers and consumers when it comes to working with APIs.
+
+- **Usability** ([Ideation](https://miro.com/app/board/uXjVO5es4Tg=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/208)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-usability.md))
+- **Stability** ([Ideation](https://miro.com/app/board/uXjVO5eoFtw=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/209)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-stability.md))
+- **Trust** ([Ideation](https://miro.com/app/board/uXjVO5ertXo=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/210)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-trust.md))
+- **Motion** ([Ideation](https://miro.com/app/board/uXjVO5ertRc=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/211)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-motion.md))
+- **Advantage** ([Ideation](https://miro.com/app/board/uXjVO5ertS4=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/212)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-advantage.md))
 
 ### Contracts
 
