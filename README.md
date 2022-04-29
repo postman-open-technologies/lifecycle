@@ -47,6 +47,7 @@ These are some of the common answers to enterprise organizations asking where th
 - **Landscape Mapping** ([Ideation](https://miro.com/app/board/uXjVO8kikYU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/154)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/landscape-mapping.md))
 - **Workspaces** ([Ideation](https://miro.com/app/board/uXjVO8kzPZ8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/157)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspaces.md))
 - **Ad Hoc Landscape** ([Ideation](https://miro.com/app/board/uXjVO5egeY8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/207)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/ad-hoclandscape.md))
+- **Strategy** ([Ideation](https://miro.com/app/board/uXjVO5d6NaM=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/213)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/strategy.md))
 
 ## Public Facing
 These are blueprints focused on the public facing aspects of our API operations, and what we should be considering.
@@ -66,13 +67,23 @@ Defining some of the common challenges faced by API producers and consumers when
 - **Motion** ([Ideation](https://miro.com/app/board/uXjVO5ertRc=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/211)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-motion.md))
 - **Advantage** ([Ideation](https://miro.com/app/board/uXjVO5ertS4=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/212)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-advantage.md))
 
+### Toolbox
+
+- **Synchronous** ([Ideation](https://miro.com/app/board/uXjVO5d5o0I=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/214)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/synchronous.md))
+- **Asynchronous** ([Ideation](https://miro.com/app/board/uXjVO5dHPF4=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/215)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/asynchronous.md))
+- **Protocols** ([Ideation](https://miro.com/app/board/uXjVO5dYdwU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/216)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/protocols.md))
+- **Patterns** ([Ideation](https://miro.com/app/board/uXjVO5cn3t8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/216)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/patterns.md))
+
 ### Contracts
 
-- **OpenAPI** ([Ideation](https://miro.com/app/board/uXjVO86siyI=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/158)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contracts-openapi.md))
-- **AsyncAPI** ([Ideation](https://miro.com/app/board/uXjVO86o10Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/159)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contracts-asyncapi.md))
-- **JSON Schema** ([Ideation](https://miro.com/app/board/uXjVO86o10s=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/160)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contracts-json-schema.md))
-- **Protocol Buffers** ([Ideation](https://miro.com/app/board/uXjVO86o12Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/161)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contracts-protocol-buffers.md))
-- **Collections** ([Ideation](https://miro.com/app/board/uXjVO86o13k=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/162)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contracts-collections.md))
+- **Contracts** ([Ideation](https://miro.com/app/board/uXjVO5cn3wM=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/218)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contracts.md))
+- **OpenAPI** ([Ideation](https://miro.com/app/board/uXjVO86siyI=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/158)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/openapi.md))
+- **AsyncAPI** ([Ideation](https://miro.com/app/board/uXjVO86o10Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/159)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/asyncapi.md))
+- **JSON Schema** ([Ideation](https://miro.com/app/board/uXjVO86o10s=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/160)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/json-schema.md))
+- **Protocol Buffers** ([Ideation](https://miro.com/app/board/uXjVO86o12Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/161)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/protocol-buffers.md))
+- **Collections** ([Ideation](https://miro.com/app/board/uXjVO86o13k=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/162)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/collections.md))
+- **GraphQL** ([Ideation](https://miro.com/app/board/uXjVO5co29k=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/219)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/graphql.md))
+- **WSDL** ([Ideation](https://miro.com/app/board/uXjVO5c2I5k=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/220)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/wsdl.md))
 
 ### Producer Lifecycle
 
