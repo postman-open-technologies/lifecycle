@@ -94,6 +94,24 @@ Defining some of the common challenges faced by API producers and consumers when
 - **Test** ([Ideation](https://miro.com/app/board/uXjVO86oots=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/178)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/consumer-lifecycle-test.md))
 - **Observe** ([Ideation](https://miro.com/app/board/uXjVO86oovc=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/179)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/consumer-lifecycle-observe.md))	
 
+### Legacy
+
+- **Legacy** ([Ideation](https://miro.com/app/board/uXjVO475FDo=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/229)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/legacy.md))
+
+### Operational
+
+- **Organization** ([Ideation](https://miro.com/app/board/uXjVO47E22o=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/230)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/organization.md))
+- **Workspaces** ([Ideation](https://miro.com/app/board/uXjVO8kzPZ8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/157)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspaces.md))
+- **Source Control** ([Ideation](https://miro.com/app/board/uXjVO47DnV4=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/23)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/source-control.md))
+- **CI/CD** ([Ideation](https://miro.com/app/board/uXjVO4-NGt0=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/232)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/ci-cd.md))
+- **Gateways** ([Ideation](https://miro.com/app/board/uXjVO4-JMe8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/233)) ([Truth](https://postman-open-technologies.github.io/explore/control/blueprints/?search=gateway))
+- **Gateways** ([Ideation](https://miro.com/app/board/uXjVO4-JMe8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/233)) ([Truth](https://postman-open-technologies.github.io/explore/control/blueprints/?search=gateway))
+
+### Business
+
+- **APIs as a Product** ([Ideation](https://miro.com/app/board/uXjVO474g1A=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/228)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/apis-as-a-product.md))
+- **Visibility** ([Ideation](https://miro.com/app/board/uXjVO47E2no=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/229)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/visibility.md))
+
 ### Governance
 
 - **Design Governance** ([Ideation](https://miro.com/app/board/uXjVO86oozs=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/180)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance-design.md))
@@ -119,9 +137,9 @@ These are blueprints focused on the public facing aspects of our API operations,
 These are some of the common answers to enterprise organizations asking where they should start.
 
 - **Landscape Mapping** ([Ideation](https://miro.com/app/board/uXjVO8kikYU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/154)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/landscape-mapping.md))
-- **Workspaces** ([Ideation](https://miro.com/app/board/uXjVO8kzPZ8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/157)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspaces.md))
 - **Ad Hoc Landscape** ([Ideation](https://miro.com/app/board/uXjVO5egeY8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/207)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/ad-hoclandscape.md))
 - **Strategy** ([Ideation](https://miro.com/app/board/uXjVO5d6NaM=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/213)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/strategy.md))
+- **Forward Motion** ([Ideation](https://miro.com/app/board/uXjVO47_knQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/227)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/forward-motion.md))
 
 ## Structure
 Blueprints are meant to provide very simple (1-2 pages) of guidance pertaining to a specific aspect of API operations, providing core concepts that can be consumed directly, or used as the core of blog posts, videos, white papers, boos, and other content. Here is a snapshot of the blueprint structure:
