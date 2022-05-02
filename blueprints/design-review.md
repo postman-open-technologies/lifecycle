@@ -13,8 +13,8 @@ Each API being submitted as part of an API design review process should possess 
 - Examples
 - Mock Server
 - Contract Testing
-- Process
 
+## Process
 Once ready, with all the needed artifacts and elements, an API should be submitted to a well-defined process for reviewing the design of an API, then providing feedback on the state of an API, and whether it is ready for production, 
 
 - Design Review 
