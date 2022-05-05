@@ -11,7 +11,9 @@ Here are the blueprints, or API lifecycle and governance concepts that we are wo
 ### Postman
 These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
 
-- **What is Postman Open Technologies** ([Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/188)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md)) ([Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing))
+| Name        | Ideation    | Discussion  | Truth       | Deck        |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| **What is Postman Open Technologies**   | [Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)|[Discussion](https://github.com/postman-open-technologies/lifecycle/issues/188) |[Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md) |[Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing)|
 
 ### Introductory
 These are a handful of high-level introductory blueprints meant for the widest possible audience.
@@ -150,19 +152,19 @@ Defining some of the common challenges faced by API producers and consumers when
 - **Design Governance** ([Ideation](https://miro.com/app/board/uXjVO86oozs=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/180)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance-design.md))
 - **Design Review** ([Ideation](https://miro.com/app/board/uXjVO86oo9o=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/181)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/design-review.md))
 - **Security Review** ([Ideation](https://miro.com/app/board/uXjVO31-800=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/246)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/security-review.md))
-- **Platform Governance*** ([Ideation](https://miro.com/app/board/uXjVO86oo4U=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/182)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/platform-governance.md))
-- **Standards*** ([Ideation](https://miro.com/app/board/uXjVO86oo4U=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/183)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/standards.md))
-- **Centralization*** ([Ideation](https://miro.com/app/board/uXjVO4sB7DA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/222)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/centralization.md))
-- **Federation*** ([Ideation](https://miro.com/app/board/uXjVO4s6FSE=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/221)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/federation.md))
-- **Rules*** ([Ideation](https://miro.com/app/board/uXjVO4sJhgg=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/223)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/rules.md))
-- **Templates*** ([Ideation](https://miro.com/app/board/uXjVO4sJhos=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/224)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/templates.md))
+- **Platform Governance** ([Ideation](https://miro.com/app/board/uXjVO86oo4U=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/182)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/platform-governance.md))
+- **Standards** ([Ideation](https://miro.com/app/board/uXjVO86oo4U=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/183)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/standards.md))
+- **Centralization** ([Ideation](https://miro.com/app/board/uXjVO4sB7DA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/222)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/centralization.md))
+- **Federation** ([Ideation](https://miro.com/app/board/uXjVO4s6FSE=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/221)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/federation.md))
+- **Rules** ([Ideation](https://miro.com/app/board/uXjVO4sJhgg=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/223)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/rules.md))
+- **Templates** ([Ideation](https://miro.com/app/board/uXjVO4sJhos=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/224)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/templates.md))
 
 ## Regulations
 
-- **Regulations*** ([Ideation](https://miro.com/app/board/uXjVO86oo4g=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/184)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulations.md))
-- **Privacy Regulations*** ([Ideation](https://miro.com/app/board/uXjVO48wHeo=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/243)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/privacy-regulations.md))
-- **Interoperability Regulations*** ([Ideation](https://miro.com/app/board/uXjVO48z92M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/244)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/interoperability-regulations.md))
-- **Regulations Automation*** ([Ideation](https://miro.com/app/board/uXjVO48z92M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/247)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulation-automation.md))
+- **Regulations** ([Ideation](https://miro.com/app/board/uXjVO86oo4g=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/184)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulations.md))
+- **Privacy Regulations** ([Ideation](https://miro.com/app/board/uXjVO48wHeo=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/243)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/privacy-regulations.md))
+- **Interoperability Regulations** ([Ideation](https://miro.com/app/board/uXjVO48z92M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/244)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/interoperability-regulations.md))
+- **Regulations Automation** ([Ideation](https://miro.com/app/board/uXjVO48z92M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/247)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulation-automation.md))
 
 ## Public Facing
 These are blueprints focused on the public facing aspects of our API operations, and what we should be considering.
