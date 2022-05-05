@@ -13,7 +13,7 @@ These are blueprints that are specific to Postman, and how we operate different 
 
 | Name        | Ideation    | Issue  | Truth       | Deck        | Slide        | Blog        | Video      | Status      |
 | :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| **What is Postman Open Technologies**   | [Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)|[Issue](https://github.com/postman-open-technologies/lifecycle/issues/188) |[Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md) |[Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing)| none | none | none | draft | 
+| **What is Postman Open Technologies**   | [View](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)|[View](https://github.com/postman-open-technologies/lifecycle/issues/188) |[View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md) |[View](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing)| none | none | none | draft | 
 
 ### Introductory
 These are a handful of high-level introductory blueprints meant for the widest possible audience.
