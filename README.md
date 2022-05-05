@@ -20,6 +20,8 @@ These are a handful of high-level introductory blueprints meant for the widest p
 - **What is API-First** ([Ideation](https://miro.com/app/board/uXjVO97f0Is=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/149)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-api-first.md))
 - **Why do you become API-First** ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/196)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/why-do-you-become-api-first.md))
 - **How do you become API-First** ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/197)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprintshow-do-you-do-api-firs/how-do-you-do-api-first.md))
+- **What is API-Early** ([Ideation](https://miro.com/app/board/uXjVO34J1yw=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/252)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-api-early.md))
+- **What is API-Aware** ([Ideation](https://miro.com/app/board/uXjVO97f0Is=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/253)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-api-aware.md))
 
 ### History of APIs
 Understanding more about how we got to this point in time, exploring the evolution of whath we now know as APIs.
@@ -41,7 +43,7 @@ These are the units of value that define business today and are being defined as
 - **Resources** ([Ideation](https://miro.com/app/board/uXjVO5fQVCA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/203)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/resources.md))
 - **Capabilities** ([Ideation](https://miro.com/app/board/uXjVO5fTiio=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/204)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/capabilities.md))
 
-### Challenges - Usability
+### Challenges / Solutions
 Defining some of the common challenges faced by API producers and consumers when it comes to working with APIs.
 
 - **Usability** ([Ideation](https://miro.com/app/board/uXjVO5es4Tg=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/208)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-usability.md))
@@ -106,6 +108,7 @@ Defining some of the common challenges faced by API producers and consumers when
 - **CI/CD** ([Ideation](https://miro.com/app/board/uXjVO4-NGt0=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/232)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/ci-cd.md))
 - **Gateways** ([Ideation](https://miro.com/app/board/uXjVO4-JMe8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/233)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/gatewways.md)
 - **APM** ([Ideation](https://miro.com/app/board/uXjVO49SQPY=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/234)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/apm.md))
+- **Platform** ([Ideation](https://miro.com/app/board/uXjVO34QMY4=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/254)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/platform.md))
 
 ### Landscape
 
@@ -114,12 +117,27 @@ Defining some of the common challenges faced by API producers and consumers when
 - **Automated** ([Ideation](https://miro.com/app/board/uXjVO48iXTE=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/237)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/automated-landscape.md))
 - **Changing** ([Ideation](https://miro.com/app/board/uXjVO48iUmo=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/238)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/changing-landscape.md))
 
+### Quality
+
+- **Quality** ([Ideation](https://miro.com/app/board/uXjVO48tHuQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/241)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/quality.md))
+- **Contract Testing** ([Ideation](https://miro.com/app/board/uXjVO3-i6Ek=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/263)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contract-testing.md))
+- **Performance Testing** ([Ideation](https://miro.com/app/board/uXjVO3-i6I0=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/264)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/performance-testing.md))
+
 ### Business
 
+- **Business** ([Ideation](https://miro.com/app/board/uXjVO35MsM0=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/241)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/quality.md))
 - **APIs as a Product** ([Ideation](https://miro.com/app/board/uXjVO474g1A=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/228)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/apis-as-a-product.md))
+- **Product Management** ([Ideation](https://miro.com/app/board/uXjVO35MsN4=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/248)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/product-management.md))
 - **Visibility** ([Ideation](https://miro.com/app/board/uXjVO47E2no=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/229)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/visibility.md))
 - **Productivity** ([Ideation](https://miro.com/app/board/uXjVO48vL4Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/240)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/productivity.md))
-- **Quality** ([Ideation](https://miro.com/app/board/uXjVO48tHuQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/241)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/quality.md))
+- **Low Code / No Code** ([Ideation](https://miro.com/app/board/uXjVO35Yaj0=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/249)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/low-code-no-code.md))
+- **Innovation** ([Ideation](https://miro.com/app/board/uXjVO34ue_A=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/259)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/innovation.md))
+- **Composable** ([Ideation](https://miro.com/app/board/uXjVO34eJaI=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/255)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/composable.md))
+- **Collaborative** ([Ideation](https://miro.com/app/board/uXjVO34eJaI=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/255)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/collaborative.md))
+- **Interoperable** ([Ideation](https://miro.com/app/board/uXjVO34eG-w=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/257)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/interoperable.md))
+- **Future-Proof** ([Ideation](https://miro.com/app/board/uXjVO34eG6Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/258)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/future-proof.md))
+- **World Building** ([Ideation](https://miro.com/app/board/uXjVO3_VNQU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/259)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/world-building.md))
+- **Category Defining** ([Ideation](https://miro.com/app/board/uXjVO3_R1gY=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/260)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/category-defining.md))
 
 ### Knowledge
 
@@ -131,6 +149,7 @@ Defining some of the common challenges faced by API producers and consumers when
 - **Guidelines** ([Ideation](https://miro.com/app/board/uXjVO4zIBjA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/225)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/guidelines.md))
 - **Design Governance** ([Ideation](https://miro.com/app/board/uXjVO86oozs=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/180)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance-design.md))
 - **Design Review** ([Ideation](https://miro.com/app/board/uXjVO86oo9o=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/181)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/design-review.md))
+- **Security Review** ([Ideation](https://miro.com/app/board/uXjVO31-800=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/246)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/security-review.md))
 - **Platform Governance*** ([Ideation](https://miro.com/app/board/uXjVO86oo4U=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/182)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/platform-governance.md))
 - **Standards*** ([Ideation](https://miro.com/app/board/uXjVO86oo4U=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/183)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/standards.md))
 - **Centralization*** ([Ideation](https://miro.com/app/board/uXjVO4sB7DA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/222)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/centralization.md))
@@ -143,13 +162,15 @@ Defining some of the common challenges faced by API producers and consumers when
 - **Regulations*** ([Ideation](https://miro.com/app/board/uXjVO86oo4g=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/184)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulations.md))
 - **Privacy Regulations*** ([Ideation](https://miro.com/app/board/uXjVO48wHeo=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/243)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/privacy-regulations.md))
 - **Interoperability Regulations*** ([Ideation](https://miro.com/app/board/uXjVO48z92M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/244)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/interoperability-regulations.md))
+- **Regulations Automation*** ([Ideation](https://miro.com/app/board/uXjVO48z92M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/247)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulation-automation.md))
 
 ## Public Facing
 These are blueprints focused on the public facing aspects of our API operations, and what we should be considering.
 
+- **Team Profile** ([Ideation](https://miro.com/app/board/uXjVO3lbfRA=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/245)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/team-profile.md))
+- **Workspace Checklist** ([Ideation](https://miro.com/app/board/uXjVO6Zh84I=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/193)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspace-checklist.md))
 - **Documentation Collection Checklist** ([Ideation](https://miro.com/app/board/uXjVO6Zh8yE=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/191)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/documentation-collection-checklist.md))
 - **Public Workspace Adoptions** ([Ideation](https://miro.com/app/board/uXjVO6Zh89M=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/192)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/public-workspace-adoption.md))
-- **Workspace Checklist** ([Ideation](https://miro.com/app/board/uXjVO6Zh84I=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/193)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspace-checklist.md))
 - **Time to First Call** ([Ideation](https://miro.com/app/board/uXjVO6Zh86Y=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/194)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/time-to-first-call.md))
 - **Portal and Network** ([Ideation](https://miro.com/app/board/uXjVO6Z3Zp0=/) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/195)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/portal-and-network.md))
 
@@ -159,6 +180,8 @@ These are some of the common answers to enterprise organizations asking where th
 - **Landscape Mapping** ([Ideation](https://miro.com/app/board/uXjVO8kikYU=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/154)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/landscape-mapping.md))
 - **Ad Hoc Landscape** ([Ideation](https://miro.com/app/board/uXjVO5egeY8=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/207)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/ad-hoclandscape.md))
 - **Strategy** ([Ideation](https://miro.com/app/board/uXjVO5d6NaM=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/213)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/strategy.md))
+- **Lifecycle** ([Ideation](https://miro.com/app/board/uXjVO3_R1Bc=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/261)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/lifecycle.md))
+- **Enablement** ([Ideation](https://miro.com/app/board/uXjVO3_aCIk=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/262)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/enablement.md))
 - **Forward Motion** ([Ideation](https://miro.com/app/board/uXjVO47_knQ=/)) ([Discussion](https://github.com/postman-open-technologies/lifecycle/issues/227)) ([Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/forward-motion.md))
 
 ## Structure
