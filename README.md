@@ -11,9 +11,9 @@ Here are the blueprints, or API lifecycle and governance concepts that we are wo
 ### Postman
 These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
 
-| Name        | Ideation    | Discussion  | Truth       | Deck        |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| **What is Postman Open Technologies**   | [Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)|[Discussion](https://github.com/postman-open-technologies/lifecycle/issues/188) |[Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md) |[Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing)|
+| Name        | Ideation    | Discussion  | Truth       | Deck        | Blog        | Status      |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| **What is Postman Open Technologies**   | [Ideation](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)|[Discussion](https://github.com/postman-open-technologies/lifecycle/issues/188) |[Truth](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md) |[Deck](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing)| none | draft | 
 
 ### Introductory
 These are a handful of high-level introductory blueprints meant for the widest possible audience.
