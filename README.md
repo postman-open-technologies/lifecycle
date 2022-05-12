@@ -152,6 +152,11 @@ Mapping out the digital enterprise landscape to help "see" the digital resources
 | **Automated** | [View](https://miro.com/app/board/uXjVO48iXTE=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/237) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/automated-landscape.md) | none | none | none | none | draft | 
 | **Changing** | [View](https://miro.com/app/board/uXjVO48iUmo=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/238) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/changing-landscape.md) | none | none | none | none | draft | 
 
+### Productivity
+Understand what defines and improves the productivity across teams when it comes to the API lifecycle.
+
+| **Team Performance** | [View](https://miro.com/app/board/uXjVO1LQNQ4=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/268) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/team-performance.md) | [View]](https://docs.google.com/presentation/d/1ZeArX4V6l8e5BsV7NTXSRrThuYeMDmTNg7KVKzrNf2c/edit?usp=sharing) | none | none | none | draft | 
+
 ### Quality
 Understanding the fundamentals of qualityi across APIs, helping define a baseline when it comes to quality across API operations.
 
