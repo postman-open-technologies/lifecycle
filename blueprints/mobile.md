@@ -10,7 +10,7 @@ There have been many different mobile devices and operating systems to emerge in
 ## Resources
 Early mobile application developers realize that they could deliver the digital resources they needed on their mobile applications, and waves of API providers emerged to provide the essential digital resources we would be needing to power the growing spectrum of mobile applications being installed to the desktop of these powerful mobile computing devices.
 
-- **Twilio (SMS)** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+- **Twilio (SMS)**: Twilio was founded in November 2008 with the goal of integrating phone services into software. When Twilio Voice launched, it included an API that enabled developers to make and receive phone calls that were hosted in the cloud. This API could be used to make phone calls and play recordings, so it made automated phone calls possible. In February 2010, the Twilio text messaging API launched, which allowed customers to send a text query to a business and receive an automatic SMS reply.
 - **SendGrid (Email)** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 - **Stripe (Payments)** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 - **Google Maps (Maps)** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
