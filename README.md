@@ -12,7 +12,7 @@ Here are the blueprints, or API lifecycle and governance concepts that we are wo
 These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **What is Postman Open Technologies**   | [View](https://miro.com/app/board/uXjVO6xWwSY=/?share_link_id=929852038959)|[View](https://github.com/postman-open-technologies/lifecycle/issues/188) |[View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-technologies.md) |[View](https://docs.google.com/presentation/d/1MvFePTLSolclxBJC7cyNMJ9S76lcszoFpZ4KdrVqfr8/edit?usp=sharing)| none | none | none | none | draft
 | **Open Technologies Standards Support**   | [View](https://miro.com/app/board/uXjVO2dj_c0=/)|[View](https://github.com/postman-open-technologies/lifecycle/issues/267) |[View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/open-tech-standards-support.md) | none | none | none | none | none | draft
 
@@ -20,7 +20,7 @@ These are blueprints that are specific to Postman, and how we operate different 
 These are a handful of high-level introductory blueprints meant for the widest possible audience.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **What is an API** | [View](https://miro.com/app/board/uXjVO969IsE=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/147) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-an-api.md) | none | none | [View](https://blog.postman.com/intro-to-apis-what-is-an-api/) | none | none | draft
 | **What is API-First** | [View](https://miro.com/app/board/uXjVO97f0Is=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/149) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/what-is-api-first.md) | none | none | [View](https://blog.postman.com/what-is-an-api-first-company/) | none | none | draft
 | **Why do you become API-First** | [View](https://github.com/postman-open-technologies/lifecycle/issues/196) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/why-do-you-become-api-first.md) | none | none | [View](https://blog.postman.com/why-should-you-be-an-api-first-company/) | none | none | draft
@@ -32,7 +32,7 @@ These are a handful of high-level introductory blueprints meant for the widest p
 Understanding more about how we got to this point in time, exploring the evolution of whath we now know as APIs.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **History of APIs** | [View](https://miro.com/app/board/uXjVO979MjQ=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/148) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-apis.md) | none | none | none | none | **V1** | 
 | **History of Web APIs** | [View](https://miro.com/app/board/uXjVO969IgY=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/150) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/history-of-web-apis.md) | none | none | none | none | none | draft
 | **Business in the Clouds** | [View](https://miro.com/app/board/uXjVO65E4X0=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/189) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/business-in-the-clouds.md) | none | none | none | none | none | draft
@@ -48,7 +48,7 @@ Understanding more about how we got to this point in time, exploring the evoluti
 These are the units of value that define business today and are being defined as APIs, providing the atomic unit of the API economy.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Resources** | [View](https://miro.com/app/board/uXjVO5fQVCA=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/203) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/resources.md) | none | none | none | none | none | draft
 | **Capabilities** | [View](https://miro.com/app/board/uXjVO5fTiio=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/204) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/capabilities.md) | none | none | none | none | none | draft
 
@@ -56,7 +56,7 @@ These are the units of value that define business today and are being defined as
 Defining some of the common challenges faced by API producers and consumers when it comes to working with APIs, and pairing as solution.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Usability** | [View](https://miro.com/app/board/uXjVO5es4Tg=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/208) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-usability.md) | none | none | none | none | none | draft
 | **Stability** | [View](https://miro.com/app/board/uXjVO5eoFtw=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/209) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-stability.md) | none | none | none | none | none | draft
 | **Trust** | [View](https://miro.com/app/board/uXjVO5ertXo=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/210) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/challenges-trust.md) | none | none | none | none | none | draft
@@ -67,7 +67,7 @@ Defining some of the common challenges faced by API producers and consumers when
 Articuating what a diverse API toolbox looks like today, going well beyond just what is possible with simple web APIs.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Synchronous** | [View](https://miro.com/app/board/uXjVO5d5o0I=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/214) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/synchronous.md) | none | none | none | none | none | draft
 | **Asynchronous** | [View](https://miro.com/app/board/uXjVO5dHPF4=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/215) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/asynchronous.md) | none | none | none | none | none | draft
 | **Protocols** | [View](https://miro.com/app/board/uXjVO5dYdwU=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/216) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/protocols.md) | none | none | none | none | none | draft
@@ -77,7 +77,7 @@ Articuating what a diverse API toolbox looks like today, going well beyond just 
 Defining all of the ways in which you can define a contract for an API, providing a machine readable definition of each API.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Contracts** | [View](https://miro.com/app/board/uXjVO5cn3wM=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/218) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contracts.md) | none | none | none | none | none | draft
 | **OpenAPI** | [View](https://miro.com/app/board/uXjVO86siyI=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/158) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/openapi.md) | none | none | none | none | none | draft
 | **AsyncAPI** | [View](https://miro.com/app/board/uXjVO86o10Y=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/159) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/asyncapi.md) | none | none | none | none | none | draft
@@ -91,7 +91,7 @@ Defining all of the ways in which you can define a contract for an API, providin
 The view of the lifecycle from the producers perspective, looking at how APIs are brought to life and evolved over time, [here is a deck being developed to define this side of the API lifecycle](https://docs.google.com/presentation/d/1Qa7BtYWZPRfe_efTdpsq0pkLrQS_sc0cjEtwEVRYNmU/edit#slide=id.g1279c9539da_0_11)
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Define** | [View](https://miro.com/app/board/uXjVO86o1x0=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/163) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/producer-lifecycle-define.md) | none | none | none | none | none | draft
 | **Design** | [View](https://miro.com/app/board/uXjVO86o1y4=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/164) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/producer-lifecycle-design.md) | none | none | none | none | none | draft
 | **Develop** | [View](https://miro.com/app/board/uXjVO86o1zk=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/165) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/producer-lifecycle-develop.md) | none | none | none | none | none | draft
@@ -105,7 +105,7 @@ The view of the lifecycle from the producers perspective, looking at how APIs ar
 Acknowledging that there are many ways in which the lifecycle can be entered, depending on the team and the type of API being delivered, [here is a blog post that tells the story of this entire area of blueprints](https://blog.postman.com/many-paths-to-api-first-choose-your-own-adventure/).
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Design First** | [View](https://miro.com/app/board/uXjVO86o1BU=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/171) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/entry-points-design-first.md) | none | none | none | none | none | draft
 | **Code-First** | [View](https://miro.com/app/board/uXjVO86o1C0=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/172) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/entry-points-code-first.md) | none | none | none | none | none | draft
 | **Prototype-First** | [View](https://miro.com/app/board/uXjVO86o1MY=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/173) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/entry-points-prototype-first.md) | none | none | none | none | none | draft
@@ -115,7 +115,7 @@ Acknowledging that there are many ways in which the lifecycle can be entered, de
 The view of the lifecycle from consumer perspective, looking at how the APIs are being put to work in a variety of applications, [here is a deck to expore this side of the API lifecycle](https://docs.google.com/presentation/d/1Qa7BtYWZPRfe_efTdpsq0pkLrQS_sc0cjEtwEVRYNmU/edit#slide=id.g1279c9539da_0_6).
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Discover** | [View](https://miro.com/app/board/uXjVO86o1OI=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/175) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/consumer-lifecycle-discover.md) | none | none | none | none | none | draft
 | **Evaluate** | [View](https://miro.com/app/board/uXjVO86ooiY=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/176) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/consumer-lifecycle-evaluate.md) | none | none | none | none | none | draft
 | **Develop** | [View](https://miro.com/app/board/uXjVO86oojY=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/177) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/consumer-lifecycle-develop.md) | none | none | none | none | none | draft
@@ -126,14 +126,14 @@ The view of the lifecycle from consumer perspective, looking at how the APIs are
 Understanding how APis are being used to address legacy infrastructure, helping decompose and deliver as simple APIs.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Legacy** | [View](https://miro.com/app/board/uXjVO475FDo=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/229) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/legacy.md) | none | none | none | none | none | draft
 
 ### Operational
 Looking at the operational side of defining an API platform, understanding the cornerstones of API operations and the lifecycle.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Organization** | [View](https://miro.com/app/board/uXjVO47E22o=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/230) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/organization.md) | none | none | none | none | none | draft
 | **Workspaces** | [View](https://miro.com/app/board/uXjVO8kzPZ8=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/157) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspaces.md) | none | none | none | none | none | draft
 | **Source Control** | [View](https://miro.com/app/board/uXjVO47DnV4=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/23) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/source-control.md) | none | none | none | none | none | draft
@@ -146,7 +146,7 @@ Looking at the operational side of defining an API platform, understanding the c
 Mapping out the digital enterprise landscape to help "see" the digital resources and capabilities that are in use behind applicatinos and integrations.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Discoverable** | [View](https://miro.com/app/board/uXjVO49elSI=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/235) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/discoverable-landscape.md) | none | none | none | none | none | draft
 | **Observable** | [View](https://miro.com/app/board/uXjVO48kvOI=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/236) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/observable-landscape.md) | none | none | none | none | none | draft
 | **Automated** | [View](https://miro.com/app/board/uXjVO48iXTE=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/237) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/automated-landscape.md) | none | none | none | none | none | draft
@@ -161,7 +161,7 @@ Understand what defines and improves the productivity across teams when it comes
 Understanding the fundamentals of qualityi across APIs, helping define a baseline when it comes to quality across API operations.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Quality** | [View](https://miro.com/app/board/uXjVO48tHuQ=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/241) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/quality.md) | none | none | none | none | none | draft
 | **Contract Testing** | [View](https://miro.com/app/board/uXjVO3-i6Ek=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/263) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contract-testing.md) | none | none | none | none | none | draft
 | **Performance Testing** | [View](https://miro.com/app/board/uXjVO3-i6I0=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/264) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/performance-testing.md) | none | none | none | none | none | draft
@@ -170,7 +170,7 @@ Understanding the fundamentals of qualityi across APIs, helping define a baselin
 Understanding the business of APIs, and why APIs are increasingly defined as products, and how business stakeholders are getting more involved.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Business** | [View](https://miro.com/app/board/uXjVO35MsM0=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/241) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/quality.md) | none | none | none | none | none | draft
 | **APIs as a Product** | [View](https://miro.com/app/board/uXjVO474g1A=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/228) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/apis-as-a-product.md) | none | none | none | none | none | draft
 | **Product Management** | [View](https://miro.com/app/board/uXjVO35MsN4=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/248) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/product-management.md) | none | none | none | none | none | draft
@@ -190,14 +190,14 @@ Understanding the business of APIs, and why APIs are increasingly defined as pro
 Looking at the knowledge that is needed to help teams be successful when it comes to producing and consuming APIs inside and outside the firewall.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Education** | [View](https://miro.com/app/board/uXjVO48hx6A=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/239) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/education.md) | none | none | none | none | none | draft
 
 ### Governance
 Being able to understand the state of the enterprise sytem, then gain the observabilitiiy and control to steer things in the right direction.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Governance** | [View](https://miro.com/app/board/uXjVO48oCXk=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/242) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance.md) | none | none | none | none | none | draft
 | **Guidelines** | [View](https://miro.com/app/board/uXjVO4zIBjA=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/225) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/guidelines.md) | none | none | none | none | none | draft
 | **Design Governance** | [View](https://miro.com/app/board/uXjVO86oozs=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/180) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance-design.md) | none | none | none | none | none | draft
@@ -214,7 +214,7 @@ Being able to understand the state of the enterprise sytem, then gain the observ
 Breaking down the different layers of API-related regulation emerging around the globe, and how APIs are being used to respond to regulations.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Regulations** | [View](https://miro.com/app/board/uXjVO86oo4g=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/184) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulations.md) | none | none | none | none | none | draft
 | **Privacy Regulations** | [View](https://miro.com/app/board/uXjVO48wHeo=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/243) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/privacy-regulations.md) | none | none | none | none | none | draft
 | **Interoperability Regulations** | [View](https://miro.com/app/board/uXjVO48z92M=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/244) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/interoperability-regulations.md) | none | none | none | none | none | draft
@@ -224,7 +224,7 @@ Breaking down the different layers of API-related regulation emerging around the
 These are blueprints focused on the public facing aspects of our API operations, and what we should be considering as we evolve operations.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Team Profile** | [View](https://miro.com/app/board/uXjVO3lbfRA=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/245) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/team-profile.md) | none | [View](https://docs.google.com/presentation/d/1eWlSZek6GPbHX8jfXgK-CwTkf0T9h40h1N9CkFdIX28/edit?usp=sharing) | [View](https://blog.postman.com/get-more-out-of-postman-by-collaborating-with-your-team/) | [View](https://www.youtube.com/watch?v=mqio63RQ0cU) | none | draft
 | **Workspace Checklist** | [View](https://miro.com/app/board/uXjVO6Zh84I=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/193) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/workspace-checklist.md) | none | [View](https://docs.google.com/presentation/d/1GYO6miAey8a_ER26gbVwLfeeIacezMCiJWdwFQJQC1g/edit?usp=sharing) | [View](https://blog.postman.com/how-to-set-up-public-workspaces/) | none | none | draft
 | **Documentation Checklist** | [View](https://miro.com/app/board/uXjVO6Zh8yE=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/191) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/documentation-collection-checklist.md) | none | [View](https://docs.google.com/presentation/d/1gQ7r64Fs5S35167av_6ScYIK09VrquyTzW7cAfocrWY/edit?usp=sharing) | [View](https://blog.postman.com/postman-good-documentation-checklist/) | none | none | draft
@@ -236,7 +236,7 @@ These are blueprints focused on the public facing aspects of our API operations,
 These are some of the common answers to enterprise organizations asking where they should start when getting more organized with their API journey.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Landscape Mapping** | [View](https://miro.com/app/board/uXjVO8kikYU=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/154) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/landscape-mapping.md) | none | none | none | none | none | draft
 | **Ad Hoc Landscape** | [View](https://miro.com/app/board/uXjVO5egeY8=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/207) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/ad-hoclandscape.md) | none | none | none | none | none | draft
 | **Strategy** | [View](https://miro.com/app/board/uXjVO5d6NaM=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/213) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/strategy.md) | none | none | none | none | none | draft
