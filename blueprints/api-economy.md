@@ -3,7 +3,7 @@ The phrase “API Economy” is often used to describe the direct revenue opport
 
 ## Companies
 
-- **Uber** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+- **Uber** - In December 2008, Garrett Camp and Travis Kalanick attended the LeWeb tech conference in Paris found it difficult to get a taxi. They came up with the idea of a mobile app that would allow people to find a ride by tapping a button. In 2009, they developed the UberCab app. At first, they tested UberCab using 3 cars in New York City. Riders opened the app on their phone, the app used their phone's GPS location to let drivers know where to find them, and a black luxury car picked them up. The riders paid their fare within the app, so drivers did not have to handle payments. In 2010, the UberCab app launched and the first official UberCab ride was requested in San Francisco. In 2011, UberCab changed its name to Uber to distance itself from traditional taxi services. In 2012, Uber launched UberX, which allowed drivers to use non-luxury vehicles for less expensive fares. In 2013, Uber began to allow drivers to use their own personal vehicles to drive for UberX.
 - **GrubHub** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 - **DoorDash** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 - **Drizly** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
