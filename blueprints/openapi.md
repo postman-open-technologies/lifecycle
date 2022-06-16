@@ -1,1 +1,12 @@
-# Contracts - OpenAPI
+# OpenAPI
+The OpenAPI specification, formerly known as Swagger, provides the ability to describe the surface area of your HTTP 1.1 APIs using JSON or YAML. Provides a robust way to describe what is possible with each API, defining the surface area of each request and response, which can then be used as the source of truth for what is possible with each API.
+
+- **Info** - Provides a place to define common meta data for an API like a name, description, licensing, terms of service, and contact information, helping ensure al APIs have enough metadata available so that it’s purpose can be articulated across the API lifecycle.
+- **Servers** - Includes a list of servers for an instance of API, providing possibly multiple regions, or different stages of the development of an API, allowing consumers to quickly find an instance of an API that they can use to meet their needs, and properly apply a resource.
+- **Paths** - One or many paths that can be taken by API consumers to access different resources and capabilities, similar to browsing the web, but navigating the API landscape, looking for the resources and capabilities you need to power your application or integration.
+- **Operations** - Defining the specific operations that can be taken using a specific path, providing the ability to read, write, update, delete, and perform other operations on API resources, and setting in motion different capabilities that are defined as part of each API.
+- **Parameters** - Providing a defined set of parameters that can used to change the state of API responses, providing key/value pairs that provide common things like pagination or search, but getting specific depending on the objects being returned with API responses.
+- **Responses** - Describing the HTTP Status Codes, headers, and media types being returned with each response, helping the consumer understand that structure and state of the response, helping provide consumers with as much information as possible about response.
+- **Schema** - Providing JSON Schema descriptions of request and response bodies, allowing the responses to be validated, helping automate validation at the gateway, helping ensure the highest quality possible when it comes to consuming APIs within any application.
+- **Security** - Describing the type of authentication required for accessing an API, providing a machine readable description of API keys required, OAuth, JWT, and other types of security protocols in place, helping automate the authentication layer of API usage within clients.
+

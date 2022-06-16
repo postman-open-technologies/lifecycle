@@ -4,10 +4,11 @@ APIs are abstract and difficult to see, leaving a lot of anxiety when it comes t
 ## Access
 Having the ability to effectively control the visibility of your APIs, being able to quickly and confidently move an API from private or team, to being available to partners or publicly to 3rd party developers will play an outsized role in the overall velocity of an enterprise organization doing business today.
 
-- **Private** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-- **Team** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-- **Partner** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-- **Public** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+- **Private** - Keeping APIs and the operations around them private and available to an invite only state, keeping artifacts and documentation in the hands of a select audience.
+- **Team** - Limiting the access to APIs, workspaces, documentation, and the other elements of the API lifecycle to only the team who will be producing or consuming an API internally.
+- **Partner** - Expose APIs, documentation, mock servers, environments, and testing to partners, allowing them to view or even contribute to producing or consuming APIs.
+- **Public** - Making workspaces, APIs, and other elements available to the public, allowing anyone to watch, fork, and learn from APIs, as well as the operations and work around them.
+
 
 ## Operations
 Visibility of API operations begins with a portal, and has been also rapidly expanding via Git repositories and API workspaces, revealing more than just API documentation and pulling back more of the operational curtain around mock servers, environments, testing, and the monitoring and observability of operations. 

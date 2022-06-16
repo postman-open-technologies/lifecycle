@@ -2,14 +2,14 @@
 The benefits realized from doing APIs have manifested themselves in many different ways, but none rise to the value introduced over the last five years of redefining the enterprise using microservices. The microservices journey has helped us understand who we are as an organization, giving us the vocabulary for defining the technical, business, and human elements of doing business in the Internet age. Helping us not just decompose the monolithic enterprise infrastructure that has accumulated over the last few decades, but also reconfigure our operations to better serve the future we envision.
 
 ## Enterprise Building Blocks
-Microservices are the Lego building blocks we need to understand what digital resources and capabilities compose our enterprise operations and provide us with the building blocks to build any configuration of application, integration, and orchestration we will need to meet the demands of our business in a digital age.
+Microservices are the Lego building blocks we need to understand what digital resources and capabilities compose our enterprise operations and provide us with the building blocks to build any configuration of application, integration, and orchestration we will nee to operate.
 
-- **Composability** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Templates** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Synchronous** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. 
-- **Asynchronous** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Risk** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Reward** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Lifecycle** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+- **Composability** - Microservices are designed to be stitched together and consumed in a variety of ways that meet a mix of business needs, providing the digital building blocks enterprise organizations need to operate, grow, and adapt to what they need to do business.
+- **Templates** - Having standardized templates for designing and deploying microservices, helps ensure that microservices are consistent, intuitive, and easy to put to use by consumers, no matter which team was responsible for bringing it to life.
+- **Synchronous** - Synchronous microservices provide a simple and intuitive way to deliver solutions for a single digital resource or capabilitiy, providing a very modular and composable way for developers to implement the digital services needed.
+- **Asynchronous** - Asyncrhoonous microservices provide a more event-driven approach to delivering the resources and capabilities needed across the enterprise, allowing developers to publish and subscribe to a variety of channels that help define business operations.
+- **Risk** - There is risk involved with breaking down digital resources and capabilities into very modular, and potentially distributed microservices, and teams should be made aware of what is needed when managing a potentially sprawling landscape of digital services.
+- **Reward** - Witt he right enablement, there is a big payoff when it comes to the flexibility and agility a robust microservices offers, making enterprise operations more nimble when it comes to the roadmap, but also responding to any changes that may come its way.
+- **Lifecycle** - Delivering hundreds or thousands of APIs consistently across an organiation requires a common and well-known lifecycle to be employed across teams, helping ensure everyone is on the same page when it comes to delivering and iterating upon APIs.
 
 Microservices are not the silver bullet to solve all internal enterprise challenges, but it does provide a proven approach to how we break up and organize our digital resources and capabilities. Providing teams with a clear definition of a class of API that is only available internally, behind the enterprise facade.

@@ -1,18 +1,13 @@
 # Federation
-Successful transformation of employ federated approaches to governance and the resulting operation and execution across the enterprise. Acknowledging that the enterprise will always be defined by many smaller groups, domains, or states of business operation, which will need a certain degree of autonomy, but also can leverage centralized structure, standards, and resources.
+Successful API transformations often take advantage federated approaches to governance and the resulting operation and evolution across the enterprise. Acknowledging that the enterprise will always be defined by many smaller groups, domains, or states of business operation, which will need a certain degree of autonomy, but also can leverage centralized structure, standards, and resources.
 
-- Principles
-- Tools
-- Infrastructures
-- Events
-- Bounded Context
-- Unified
-- Consistency
-- Evolution
-- Poliicies
-- Change
-- Identity
-- Authentication
-- Automation
-- Autonomy
-- Models
+- **Principles** - Strengthen the understanding and foundation that API operations is perpetually realized and executed in a federated way across different domains and teams responding to the changing needs of the enterprise and the markets it serves.
+- **Tooling** - Perpetually defining the tools that are being used within different domains and teams to help get the job done on the ground floor, allowing for exploration of new tools, but then a formal process for weaving into the overall API platform and stabilizing use.
+- **Lifecycle** - Mapping out the lifecycle employed across teams, identifying the common areas of the lifecycle, but also the unique and specific variations that either should remain specialized, or shared across other teams or centralized as part of governance.
+- **Bounded Context** - Defining the existing organic lines that exist between teams and groups, then get to work understanding ways in which this can be reshaped and evolved over time to better optimize the vocabulary, standards, and lifecycle in use within teams.
+- **Policies** - Crafting policies centrally, but then diseminating and applying across federated teams, but them including teams in the process of versioning and evolving them as well, estasblishing a feedback loop between centralized and federated policies.
+- **Automation** - Equpping teams with the artifacts and tooling needed to automate governance, so that it can be centrally defined and consistent, but then enable teams to do the right thing when it comes to governance by automating the redundant aspects.
+- **Observability** - Providing the observability necessary to “see” what is happening within a domain, group, or team, but then also across them, helping ensure that APIs and the operations around them are as observable as possible, no matter who is behind it.
+- **Champions** - For federation to be success, it requires the hard work of champions embedded within teams, groups, and domains, but are willing to do the hard work to share knowledge, policies, and practices centrally, but also across enterprise teams.
+
+Like the centralization, there are upsides and downsides to federated governance, and there will be to be a constant evaluation and recalibration of what is done in a federated or centralized across teams

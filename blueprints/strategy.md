@@ -1,12 +1,12 @@
 # Strategy
-To drive your enterprise organization in the direction you desire, you are going to need a strategy. You are going to need a living, evolving, and adaptive approach to set in motion the action you will need to shift existing behavior and begin moving teams, groups, domains, and the entire organization in the same intentional direction.
+To realize the results you are looking for at scale your effort across an organization, you are going to need a strategy. You are going to need a living, evolving, and adaptive approach to set in motion the action you will need to shift existing behavior and begin moving teams, groups, domains, and the entire organization in the same intentional direction.
 
-## Foundation
+- **Goals** - Have clear goals for why you are doing APIs, then asking yourself regularly if you are serving these goals across your API operations, using your enterprise goals as the North Start for every stop along the API lifecycle and governing your relationship with consumers.
+- **Organization** - Defining the various business domains that exist within the enterprise, then establishing clear groups and teams within these domains, then governing and enabling team members across the API lifecycl eusing common domain standards and vocabulary.
+- **Landscape** - Bring the enterprise API landscape into focus, making sure you know where your APIs are at all times, that you have your finger on the pulse across the feedback loops for these APIs, and that you are able to clearly see which direction you are heading.
+- **Lifecycle** - Begin locking down a common definition of what is the API lifecycle already in existence across team, mapping out how work is occurring now, then begin identifying where more enablement is needed, and how more alignment can be established across teams.
+- **Governance** - Gather together the people in your organization who care about the big picture and get to defining guidelines and rules that can be applied across the API lifecycle to help ensure more consistent and observable APIs across all teams.
+- **Observability** - Tap every output that exists across your existing platform and infrastructure to understand the state of not just your APIs, but also the lifecycle around them, helping you better understand the state of API operations and the best way to influence change.
+- **Change** - Establish a plan for how you will handle change across your API operations, addressing everything from the versioning of your APis to the turnover on teams, ensuring that as much forward momentum is maintained while also being able to change at any time.
 
-- **Goals** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Organization** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Landscape** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Lifecycle** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Governance** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Observability** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-- **Evolving** - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+Your API strategy should be a living document, beginning as a simple set of goals, but then eventually evolving into the guidance and enablement all stakeholders across the organization wil need to successfully participate across the API lifecycle as both producers and consumers.
