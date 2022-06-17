@@ -168,6 +168,40 @@ Understanding the fundamentals of qualityi across APIs, helping define a baselin
 | **Contract Testing** | [View](https://miro.com/app/board/uXjVO3-i6Ek=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/263) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/contract-testing.md) | none | none | none | none | none | draft
 | **Performance Testing** | [View](https://miro.com/app/board/uXjVO3-i6I0=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/264) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/performance-testing.md) | none | none | none | none | none | draft
 
+### Governance
+Being able to understand the state of the enterprise sytem, then gain the observabilitiiy and control to steer things in the right direction.
+
+| Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
+| **Governance** | [View](https://miro.com/app/board/uXjVO48oCXk=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/242) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance.md) | none | none | none | none | none | draft
+| **Guidelines** | [View](https://miro.com/app/board/uXjVO4zIBjA=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/225) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/guidelines.md) | none | none | none | none | none | draft
+| **Design Governance** | [View](https://miro.com/app/board/uXjVO86oozs=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/180) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance-design.md) | none | none | none | none | none | draft
+| **Design Review** | [View](https://miro.com/app/board/uXjVO86oo9o=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/181) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/design-review.md) | none | none | none | none | none | draft
+| **Security Review** | [View](https://miro.com/app/board/uXjVO31-800=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/246) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/security-review.md) | none | none | none | none | none | draft
+| **Platform Governance** | [View](https://miro.com/app/board/uXjVO86oo4U=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/182) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/platform-governance.md) | [View](https://docs.google.com/presentation/d/1zl_WL3GoZ0TRYcva_pM4r2HAwcfJ8zvhKoBrAQzXCYw/edit#slide=id.g11b49b3e359_0_18) | none | [View](https://blog.postman.com/platform-api-governance/) | none | [View](https://docs.google.com/presentation/d/1a5BrlWBwQiqyYv4coGpk40xhsDOs1sRUqxOXIhdP0qg/edit) | draft
+| **Standards** | [View](https://miro.com/app/board/uXjVO86oo4U=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/183) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/standards.md) | none | none | none | none | none | draft
+| **Centralization** | [View](https://miro.com/app/board/uXjVO4sB7DA=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/222) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/centralization.md) | none | none | none | none | none | draft
+| **Federation** | [View](https://miro.com/app/board/uXjVO4s6FSE=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/221) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/federation.md) | none | none | none | none | none | draft
+| **Rules** | [View](https://miro.com/app/board/uXjVO4sJhgg=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/223) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/rules.md) | none | none | none | none | none | draft
+| **Templates** | [View](https://miro.com/app/board/uXjVO4sJhos=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/224) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/templates.md) | none | none | none | none | none | draft
+
+## Shifting Left
+Moving API testing, security, and governance earlier on in the API lifecycle, helping enable to do the right thing as early on as possible.
+
+| Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
+| **Shift-Left** | [View](https://miro.com/app/board/uXjVOsUAMlI=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/271) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/shift-left.md) | none | none | none | none | none | draft
+
+## Regulations
+Breaking down the different layers of API-related regulation emerging around the globe, and how APIs are being used to respond to regulations.
+
+| Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
+| **Regulations** | [View](https://miro.com/app/board/uXjVO86oo4g=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/184) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulations.md) | none | none | none | none | none | draft
+| **Privacy Regulations** | [View](https://miro.com/app/board/uXjVO48wHeo=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/243) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/privacy-regulations.md) | none | none | none | none | none | draft
+| **Interoperability Regulations** | [View](https://miro.com/app/board/uXjVO48z92M=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/244) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/interoperability-regulations.md) | none | none | none | none | none | draft
+| **Regulations Automation** | [View](https://miro.com/app/board/uXjVO48z92M=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/247) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulation-automation.md) | none | none | none | none | none | draft
+
 ### Business
 Understanding the business of APIs, and why APIs are increasingly defined as products, and how business stakeholders are getting more involved.
 
@@ -194,33 +228,6 @@ Looking at the knowledge that is needed to help teams be successful when it come
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
 | :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Education** | [View](https://miro.com/app/board/uXjVO48hx6A=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/239) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/education.md) | none | none | none | none | none | draft
-
-### Governance
-Being able to understand the state of the enterprise sytem, then gain the observabilitiiy and control to steer things in the right direction.
-
-| Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
-| **Governance** | [View](https://miro.com/app/board/uXjVO48oCXk=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/242) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance.md) | none | none | none | none | none | draft
-| **Guidelines** | [View](https://miro.com/app/board/uXjVO4zIBjA=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/225) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/guidelines.md) | none | none | none | none | none | draft
-| **Design Governance** | [View](https://miro.com/app/board/uXjVO86oozs=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/180) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/governance-design.md) | none | none | none | none | none | draft
-| **Design Review** | [View](https://miro.com/app/board/uXjVO86oo9o=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/181) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/design-review.md) | none | none | none | none | none | draft
-| **Security Review** | [View](https://miro.com/app/board/uXjVO31-800=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/246) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/security-review.md) | none | none | none | none | none | draft
-| **Platform Governance** | [View](https://miro.com/app/board/uXjVO86oo4U=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/182) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/platform-governance.md) | [View](https://docs.google.com/presentation/d/1zl_WL3GoZ0TRYcva_pM4r2HAwcfJ8zvhKoBrAQzXCYw/edit#slide=id.g11b49b3e359_0_18) | none | [View](https://blog.postman.com/platform-api-governance/) | none | [View](https://docs.google.com/presentation/d/1a5BrlWBwQiqyYv4coGpk40xhsDOs1sRUqxOXIhdP0qg/edit) | draft
-| **Standards** | [View](https://miro.com/app/board/uXjVO86oo4U=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/183) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/standards.md) | none | none | none | none | none | draft
-| **Centralization** | [View](https://miro.com/app/board/uXjVO4sB7DA=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/222) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/centralization.md) | none | none | none | none | none | draft
-| **Federation** | [View](https://miro.com/app/board/uXjVO4s6FSE=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/221) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/federation.md) | none | none | none | none | none | draft
-| **Rules** | [View](https://miro.com/app/board/uXjVO4sJhgg=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/223) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/rules.md) | none | none | none | none | none | draft
-| **Templates** | [View](https://miro.com/app/board/uXjVO4sJhos=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/224) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/templates.md) | none | none | none | none | none | draft
-
-## Regulations
-Breaking down the different layers of API-related regulation emerging around the globe, and how APIs are being used to respond to regulations.
-
-| Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
-| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
-| **Regulations** | [View](https://miro.com/app/board/uXjVO86oo4g=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/184) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulations.md) | none | none | none | none | none | draft
-| **Privacy Regulations** | [View](https://miro.com/app/board/uXjVO48wHeo=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/243) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/privacy-regulations.md) | none | none | none | none | none | draft
-| **Interoperability Regulations** | [View](https://miro.com/app/board/uXjVO48z92M=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/244) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/interoperability-regulations.md) | none | none | none | none | none | draft
-| **Regulations Automation** | [View](https://miro.com/app/board/uXjVO48z92M=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/247) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/regulation-automation.md) | none | none | none | none | none | draft
 
 ## Public Facing
 These are blueprints focused on the public facing aspects of our API operations, and what we should be considering as we evolve operations.
