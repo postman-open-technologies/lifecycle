@@ -156,6 +156,7 @@ Mapping out the digital enterprise landscape to help "see" the digital resources
 Understand what defines and improves the productivity across teams when it comes to the API lifecycle.
 
 | Name        | Ideas    | Issue     | Truth       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
 | **Team Performance** | [View](https://miro.com/app/board/uXjVO1LQNQ4=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/268) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/team-performance.md) | [View](https://docs.google.com/presentation/d/1xxyUVg8KdJDdrFGy2x7x01qrUPfeZQ1p6cjyiXP85Co/edit#slide=id.gf6090eea14_0_20) | none | none | none | [View](https://docs.google.com/presentation/d/1wuYRPAgr2sb7X1I12LPwSthAdhOibGQworFwDO5vtbE/edit#slide=id.p) | draft
 
 ### Quality
