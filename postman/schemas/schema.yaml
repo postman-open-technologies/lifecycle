@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: v0.1.0
-  title: Restaurants
+  title: Restaurants Hello world
   description: This is the API for managing detail of the restaurants.
 servers:
 - url: http://api.example.com/
