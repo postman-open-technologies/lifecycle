@@ -1,0 +1,146 @@
+openapi: 3.0.0
+info:
+  version: v0.1.0
+  title: Restaurants
+  description: This is the API for managing detail of the restaurants.
+servers:
+- url: http://api.example.com/
+paths:
+  "/restaurants":
+    get:
+      summary: Restaurants
+      operationId: getRestaurants
+      parameters:
+      - name: token
+        in: header
+        required: true
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int64
+        style: simple
+      tags:
+      - Restaurant
+      responses:
+        '200':
+          description: Restaurant
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/RestaurantListing"
+    post:
+      summary: Restaurant
+      operationId: addRestaurant
+      tags:
+      - Restaurant
+      requestBody:
+        description: Restaurant
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/Restaurant"
+      responses:
+        '201':
+          description: Restaurant
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Restaurant"
+  "/restaurants/{restaurantId}":
+    get:
+      summary: Restaurant
+      operationId: getRestaurant
+      parameters:
+      - name: restaurantId
+        in: path
+        description: The unique id.
+        required: true
+        schema:
+          type: string
+      - name: newProperty
+        in: query
+        description: The unique id.
+        required: true
+        schema:
+          type: string
+      tags:
+      - Restaurant
+      responses:
+        '200':
+          description: Restaurant
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Restaurant"
+    put:
+      summary: Restaurant
+      operationId: updateRestaurant
+      parameters:
+      - name: restaurantId
+        in: path
+        description: The unique id.
+        required: true
+        schema:
+          type: string
+      tags:
+      - Restaurant
+      requestBody:
+        description: Restaurant
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/Restaurant"
+      responses:
+        '204':
+          description: Restaurant
+    delete:
+      summary: Restaurant
+      operationId: deleteRestaurant
+      parameters:
+      - name: restaurantId
+        in: path
+        description: The unique id.
+        required: true
+        schema:
+          type: string
+      tags:
+      - Restaurant
+      responses:
+        '204':
+          description: Restaurant
+components:
+  schemas:
+    RestaurantListing:
+      type: array
+      items:
+        "$ref": "#/components/schemas/Restaurant"
+    Restaurant:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        servesCuisine:
+          description: The cuisine of the restaurant.
+          type: string
+        starRating:
+          description: An official rating for a lodging business or food establishment,
+            e.g. from national associations or standards bodies. Use the author property
+            to indicate the rating organization, e.g. as an Organization with name
+            such as (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
+          type: object
+          format: starRating
+        menu:
+          description: Either the actual menu as a structured representation, as text,
+            or a URL of the menu.
+          type: string
+        acceptsReservations:
+          description: Indicates whether a FoodEstablishment accepts reservations.
+            Values can be Boolean, an URL at which reservations can be made or (for
+            backwards compatibility) the strings ```Yes``` or ```No```.
+          type: string
+        hasMenu:
+          description: Either the actual menu as a structured representation, as text,
+            or a URL of the menu.
+          type: string
