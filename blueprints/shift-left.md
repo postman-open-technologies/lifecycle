@@ -15,6 +15,13 @@ In the early years of software development, applications were typically programm
 - **Agile Shift Left**
 - **Model-based Shift Left**
 
+## Why Shift Left?
+
+- **Cost** - Bugs and security vulnerabilities can be expensive to fix. By shifting testing earlier in the development process, testers have more opportunities to identify these issues so that they can be fixed before an application is deployed. Based on a [2020 case study performed by the Ponemon Institute](https://www.ibm.com/account/reg/us-en/signup?formid=urx-46992), a vulnerability costs about $80 to fix during development, while that same vulnerability would cost about $7,600 to fix in production.
+- **Speed**
+- **Automation**
+- **Security**
+
 ## What Can Shift Left
 
 - **API contracts**
@@ -23,13 +30,6 @@ In the early years of software development, applications were typically programm
 - **Deployment**
 - **Security**
 - **IT services**
-
-## Why Shift Left?
-
-- **Cost**
-- **Speed**
-- **Automation**
-- **Security**
 
 ## How to Start Shifting Left
 
