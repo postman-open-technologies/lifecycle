@@ -19,7 +19,7 @@ In the early years of software development, applications were typically programm
 
 - **Cost** - Bugs and security vulnerabilities can be expensive to fix. By shifting testing earlier in the development process, testers have more opportunities to identify these issues so that they can be fixed before an application is deployed. Based on a [2020 case study performed by the Ponemon Institute](https://www.ibm.com/account/reg/us-en/signup?formid=urx-46992), a vulnerability costs about $80 to fix during development, while that same vulnerability would cost about $7,600 to fix in production.
 - **Speed** - When you include testing in the earlier phases of development, you can identify and resolve issues when they are still small and isolated. By running integration tests, functional tests, and unit tests while development is still in progress, issues can be fixed right away. Developers can use the early feedback from these test results to adapt to changes in requirements or expectations, which saves a significant amount of time compared to making the same changes to a more mature product. Fixing bugs early in the process can also prevent the need for developers to resolve issues in a rush before a product deadline.
-- **Automation** - 
+- **Automation** - Shifting left can create more opportunities to automate testing. Static code analysis tools, including linters, can check code for programming and style errors without running it. Automated testing leaves less room for human error because the tests are consistent. Automation also requires less time from manual QA testers, which frees them up to work on more valuable tasks. When testing is automated, multiple tests can run on the same code at the same time.
 - **Security**
 
 ## What Can Shift Left
