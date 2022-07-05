@@ -253,6 +253,16 @@ These are some of the common answers to enterprise organizations asking where th
 | **Enablement** | [View](https://miro.com/app/board/uXjVO3_aCIk=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/262) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/enablement.md) | none | none | none | none | none | draft
 | **Forward Motion** | [View](https://miro.com/app/board/uXjVO47_knQ=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/227) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/forward-motion.md) | none | none | none | none | none | draft
 
+## Open Data & Research Intelligence
+Knowledge and guidance around the modernization of open data APIs and the establishment of standards and service driven solutions to support scientific research and machine intelligence.
+
+### Fundamentals
+
+| Name        | Ideas    | Discussions     | Outline       | Deck        | Slide        | Blog        | Video      | PDF      | Status      |
+| :----------- | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |:-----------: |
+| **Why data matters** | [View](https://miro.com/app/board/uXjVOoKAyxU=/) | none | none | none | none | none | none | none | draft
+| **The need for digital knowledge** | [View](https://miro.com/app/board/uXjVOoKAyxU=/) | none | none | none | none | none | none | none | draft
+
 ## Structure
 Blueprints are meant to provide very simple (1-2 pages) of guidance pertaining to a specific aspect of API operations, providing core concepts that can be consumed directly, or used as the core of blog posts, videos, white papers, boos, and other content. Here is a snapshot of the blueprint structure:
 
