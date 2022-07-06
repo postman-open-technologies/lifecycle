@@ -10,7 +10,7 @@ In the early years of software development, applications were typically programm
 
 ## Shift Left Models
 
-- **Traditional Shift Left**
+- **Traditional** - In the traditional shift-left testing model, also known as the V-model, testing is added to each phase of the development lifecycle. For example, user acceptance tests are developed during the initial requirements analysis phase. These tests simulate the way that customers will use the software in production using realistic data, and they are designed to verify that the final product meets the user's needs. During the system design phase, system test plans are developed to verify that the requirements are met. System testing can include load testing, performance testing, and regression testing. When more detailed design work is done, integration test plans are developed that will verify that the various units of code that make up the software can run together. Finally, during the coding phase, testers develop and run unit tests on the smallest possible modules of the code. Then, testers run the integration tests, system tests, and user acceptance tests that were developed and planned during earlier phases.
 - **Incremental Shift Left**
 - **Agile Shift Left**
 - **Model-based Shift Left**
