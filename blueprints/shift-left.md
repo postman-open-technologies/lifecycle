@@ -33,11 +33,10 @@ In the early years of software development, applications were typically programm
 
 ## How to Start Shifting Left
 
-- **High-level testing strategy**
-- **Code reviews**
-- **Scripted configurations**
-- **Monitoring**
-- **Collaboration across teams**
+- **High-level testing strategy** - Define an end-to-end testing strategy that covers the software development lifecycle. As part of this process, evaluate the risk and impact of failure for each test scenario, and decide which team or individual is responsible for each failure that can occur. Developers can begin shifting left by writing a unit test for every new feature they develop.
+- **Collaboration across teams** - Development teams should work together to define code standards. Using consistent conventions paves the way for configuring automation to enforce the standards, and it also makes it easier for developers to review each others' code.
+- **Scripted configurations** - Configure static testing and linting tools to automatically identify issues early in development. Developers and QA testers configure automated integration tests that run every time new code is merged to the main development branch.
+- **Monitoring** - Configure dashboards and tooling that allows developers to see where failures happen at every stage of the lifecycle. When they have insight into failures that occur in production, developers are better equipped to resolve the issues.
 
 ## What is Shifting Right?
 
