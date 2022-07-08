@@ -40,7 +40,9 @@ In the early years of software development, applications were typically programm
 
 ## What is Shifting Right?
 
-- **Performance testing**
+In addition to shifting more testing to the left in the software development lifecycle, many organizations are also shifting some types of testing to the right. While shift left is about testing early and often, shift right is about testing in production to measure performance.
+
+- **Performance testing** - 
 - **Chaos testing**
 - **User experience testing**
 - **Blue-green deployment**
