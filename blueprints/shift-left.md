@@ -42,8 +42,7 @@ In the early years of software development, applications were typically programm
 
 In addition to shifting more testing to the left in the software development lifecycle, many organizations are also shifting some types of testing to the right. While shift left is about testing early and often, shift right is about testing in production to measure performance.
 
-- **Performance testing** - 
-- **Chaos testing**
-- **User experience testing**
-- **Blue-green deployment**
-- **Security testing**
+- **Performance testing** - Operators can monitor how the application behaves in production by looking at logs and metrics. To test performance, they can send additional traffic to the application to see how it behaves under heavier load.
+- **Chaos testing** - With chaos testing, testers intentionally introduce issues like errors, network delays, server outages, or missing data. Testers observe how the system attempts to recover from these errors.
+- **User experience testing** - Performing usability testing helps give insight about the users' experience with the software. For example, with A/B testing, half of the users see one version of an application (A), and the other half see a different version (B). Testers analyze the users' activity on both versions of the application, and sometimes request direct feedback from the users.
+- **Security testing** - Security tests in production can check for vulnerabilities or out-of-date libraries and dependencies. Testers can also run penetration tests to scan an application for security weaknesses.
