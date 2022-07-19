@@ -1,12 +1,8 @@
 # API Lifecycle & Governance Blueprints
-This is a project to distill down many views of a modern lifecycle into many re-usable elements and actions organized into blueprints that provide a series of steps within a specific dimension of the API lifecycle.
-
-**Workspace:** https://apis.how/
-
-We are still working on ways to add to and evolve the content available here, add a visual layer, and play around with different ways of presenting them, helping reduce information overload and make it easier to discover and put to work across the API lifecycle.
+This is our Git managed process for centralizing the ideation and creation of consistent content, providing a single reference for concepts across the API lifecycle and operations.
 
 ## Blueprints
-Here are the blueprints, or API lifecycle and governance concepts that we are working on as part of this effort. Each blueprint has an View board, issue dicussion, and a source of Outline to help move forward each version of the blueprints.
+A blueprint is just a concept. It begins with an idea, grows with discussion and research, and then becomes an outline, which can be used as a buffet of concepts to work with when producing blog posts, videos, decks, and other reusable content.
 
 ### Postman
 These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
@@ -263,26 +259,18 @@ Knowledge and guidance around the modernization of open data APIs and the establ
 | **Why data matters** | [View](https://miro.com/app/board/uXjVOoKAyxU=/) | none | none | none | none | none | none | none | draft
 | **The need for digital knowledge** | [View](https://miro.com/app/board/uXjVOoKAyxU=/) | none | none | none | none | none | none | none | draft
 
-## Structure
-Blueprints are meant to provide very simple (1-2 pages) of guidance pertaining to a specific aspect of API operations, providing core concepts that can be consumed directly, or used as the core of blog posts, videos, white papers, boos, and other content. Here is a snapshot of the blueprint structure:
-
-- Blueprints
-    - Areas
-        - Elements
-            - Actions
-
 Blueprints are meant to focus on a a specific concept, breaking that concept down into unique areas, but then refererncing common reusable elements that possess actions a user can take as a result of what they have learned along the way. There are additional links, questions, videos, and other related resources involved, but for now this provides a quick snapshot of the structure.
 
 ## Process
 The process we are using to move blueprints forward is an ever evolving one, but to help encourage participation across the team, and even from the community, here are steps we are taking to create new blueprints, and iterate upon existing ones.
 
-- **View** - Use a miro board to get all the concepts on the table in a visual way.
-- **Issue** - Use Github issue to discuss each concept as we iterate upon.
-- **Markdown** - Use individual markdown files as the source of Outline for each version.
-- **Research** - Conduct research, gather references to concepts we want to include.
-- **Team** - Engage across Open Tech and other Postman teams for feedback on blueprints.
-- **Customers** - Provide anonymized references to customer conversations across blueprints.
-- **Breaking Changes** - Provide references to Breaking Changes Issues across blueprints.
-- **Analyst** - Provide reference to analyst materials that support elements across blueprints.
+- **Ideas** - Use a miro board to get all the concepts on the table in a visual way.
+- **Discussion** - Use Github issue to discuss each concept as we iterate upon.
+- **Outline** - Use individual markdown files as the source of outline for each version.
+- **Deck** - Create a deck to convey the concept for use in demos and presentations.
+- **Slide** - Create a single slide to convey the concept for use in slide decks.
+- **Blog** - Publish a blog post to support the concept and help tell the sotry.
+- **Video** - Publish a video using Space Camp, Exploratory, or Level Up process.
+- **PDF** - Create a one sheet PDF that can be easily shared with anyone via email or link.
 
 This process will continue to evolve as we move forward with more blueprints. This set of instructions is designed to focus on fleshing out as many blueprints as possible, providing areas and elements for each, but then iterating upon actions and other links, videos, and resources with future versions--we will shift the process as we progress.
