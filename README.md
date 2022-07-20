@@ -1,5 +1,5 @@
 # API Lifecycle & Governance Blueprints
-This is our Git managed process for centralizing the ideation and creation of consistent content, providing a single reference for concepts across the API lifecycle and operations.
+This is our Git managed process for centralizing the ideation and creation of consistent content, providing a single reference for concepts across the API lifecycle and operations--feel free to use, fork, and submit any content.
 
 ## Blueprints
 A blueprint is just a concept. It begins with an idea, grows with discussion and research, and then becomes an outline, which can be used as a buffet of concepts to work with when producing blog posts, videos, decks, and other reusable content.
@@ -259,7 +259,6 @@ Knowledge and guidance around the modernization of open data APIs and the establ
 | **Why data matters** | [View](https://miro.com/app/board/uXjVOoKAyxU=/) | none | none | none | none | none | none | none | draft
 | **The need for digital knowledge** | [View](https://miro.com/app/board/uXjVOoKAyxU=/) | none | none | none | none | none | none | none | draft
 
-Blueprints are meant to focus on a a specific concept, breaking that concept down into unique areas, but then refererncing common reusable elements that possess actions a user can take as a result of what they have learned along the way. There are additional links, questions, videos, and other related resources involved, but for now this provides a quick snapshot of the structure.
 
 ## Process
 The process we are using to move blueprints forward is an ever evolving one, but to help encourage participation across the team, and even from the community, here are steps we are taking to create new blueprints, and iterate upon existing ones.
@@ -274,3 +273,5 @@ The process we are using to move blueprints forward is an ever evolving one, but
 - **PDF** - Create a one sheet PDF that can be easily shared with anyone via email or link.
 
 This process will continue to evolve as we move forward with more blueprints. This set of instructions is designed to focus on fleshing out as many blueprints as possible, providing areas and elements for each, but then iterating upon actions and other links, videos, and resources with future versions--we will shift the process as we progress.
+
+I'd like to see more scheduling and distribution as part of this, but just focusing on creating as many blueprints, and supporting blog, vidoes, and other content.
