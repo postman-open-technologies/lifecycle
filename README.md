@@ -82,7 +82,7 @@ Defining all of the ways in which you can define a contract for an API, providin
 | **Collections** | [View](https://miro.com/app/board/uXjVO86o13k=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/162) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/collections.md) | none | none | none | none | none | draft
 | **GraphQL** | [View](https://miro.com/app/board/uXjVO5co29k=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/219) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/graphql.md) | none | none | [View](https://blog.postman.com/what-is-a-graphql-api-how-does-it-work/) | none | none | draft
 | **WSDL** | [View](https://miro.com/app/board/uXjVO5c2I5k=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/220) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/wsdl.md) | none | none | none | none | none | draft
-
+| **Schema Registry** | [View](https://miro.com/app/board/uXjVOhbAPvI=/) | [View](https://github.com/postman-open-technologies/lifecycle/issues/273) | [View](https://github.com/postman-open-technologies/lifecycle/blob/main/blueprints/schema-registry.md) | none | none | none | none | none | draft
 ### Producer Lifecycle
 The view of the lifecycle from the producers perspective, looking at how APIs are brought to life and evolved over time, [here is a deck being developed to define this side of the API lifecycle](https://docs.google.com/presentation/d/1Qa7BtYWZPRfe_efTdpsq0pkLrQS_sc0cjEtwEVRYNmU/edit#slide=id.g1279c9539da_0_11)
 
