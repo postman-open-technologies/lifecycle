@@ -1,0 +1,639 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style id="compiled-css" type="text/css">
+h1{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+}
+h2{
+    padding: 0 auto;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 14px;
+}
+#container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2px auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+#header{
+    background-color: FFF;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#define-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#design-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#develop-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#test-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#secure-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#deploy-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%) 
+}   
+#observe-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}   
+#distribute-owner{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+} 
+
+
+#define{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#design{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#develop{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#test{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#secure{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#deploy{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%) 
+}   
+#observe{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}   
+#distribute{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}     
+#inner{
+    background-color: FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 85%;
+    margin: 5px;
+    padding: 10px 3px 3px 3px;
+    border-radius: 10px;
+    font-size: 12px;
+    min-height: 40px;
+    display: -webkit-flex;
+    display: flex;
+}   
+
+#define-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#design-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#develop-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#test-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#secure-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#deploy-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%) 
+}   
+#observe-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}   
+#distribute-governance{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+} 
+  </style>
+</head>
+<body>
+    <div id="container">
+    <div id="header">
+        <h1>Producer API Lifecycle Map</h1>
+    </div>
+
+    <!--OWNER-->
+    <div id="define-owner">
+        <div id="inner">
+            <h2>Product Manager</h2>
+        </div>                                
+    </div>
+    <div id="design-owner">
+        <div id="inner">
+            <h2>Software Architect / PM / Designer</h2>
+        </div> 
+    </div>
+    <div id="develop-owner">
+        <div id="inner">
+            <h2>Developer</h2>
+        </div> 
+    </div>  
+    <div id="test-owner">
+        <div id="inner">
+            <h2>Test Engineer</h2>
+        </div> 
+    </div> 
+    <div id="secure-owner">
+        <div id="inner">
+            <h2>Information Security</h2>
+        </div> 
+    </div> 
+    <div id="deploy-owner">
+        <div id="inner">
+            <h2>Release Management</h2>
+        </div> 
+    </div> 
+    <div id="observe-owner">
+        <div id="inner">
+            <h2>SRE / DevOps / Platform</h2>
+        </div> 
+    </div> 
+    <div id="distribute-owner">
+        <div id="inner">
+            <h2>Product Marketing</h2>
+        </div> 
+    </div>     
+    <!--OWNER-->
+
+    <!--LIFECYCLE-->
+    <div id="define">
+        <h1>Define</h1>
+        <div id="inner">
+            <h2>Business Requirements</h2>
+        </div> 
+        <div id="inner">
+            <h2>Security Requirements</h2>
+        </div>  
+        <div id="inner">
+            <h2>Workspace Setup</h2>
+        </div> 
+        <div id="inner">
+            <h2>Source Control Setup</h2>
+        </div>                                
+    </div>
+    <div id="design">
+        <h1>Design</h1>
+        <div id="inner">
+            <h2>Contract</h2>
+        </div>      
+        <div id="inner">
+            <h2>Documentation</h2>
+        </div>   
+        <div id="inner">
+            <h2>Mock Server</h2>
+        </div>    
+        <div id="inner">
+            <h2>Source Control</h2>
+        </div>                           
+    </div>
+    <div id="develop">
+        <h1>Develop</h1>
+        <div id="inner">
+            <h2>API Server</h2>
+        </div> 
+        <div id="inner">
+            <h2>Gateway Setup</h2>
+        </div>                 
+    </div>  
+    <div id="test">
+        <h1>Test</h1>
+        <div id="inner">
+            <h2>Contract Testing</h2>
+        </div>  
+        <div id="inner">
+            <h2>Integration Testing</h2>
+        </div>  
+        <div id="inner">
+            <h2>Performance Testing</h2>
+        </div>  
+        <div id="inner">
+            <h2>Monitor Setup</h2>
+        </div>                                  
+    </div> 
+    <div id="secure">
+        <h1>Secure</h1>
+        <div id="inner">
+            <h2>Security Testing</h2>
+        </div>          
+    </div> 
+    <div id="deploy">
+        <h1>Deploy</h1>
+        <div id="inner">
+            <h2>Source Code</h2>
+        </div>   
+        <div id="inner">
+            <h2>Artifacts</h2>
+        </div>  
+        <div id="inner">
+            <h2>Server Deploy</h2>
+        </div>
+        <div id="inner">
+            <h2>Gateway Deploy</h2>
+        </div> 
+        <div id="inner">
+            <h2>Test Automation</h2>
+        </div>  
+        <div id="inner">
+            <h2>Gateway Policy</h2>
+        </div>         
+    </div> 
+    <div id="observe">
+        <h1>Observe</h1>
+        <div id="inner">
+            <h2>Monitors</h2>
+        </div>   
+        <div id="inner">
+            <h2>APM Integration</h2>
+        </div>  
+        <div id="inner">
+            <h2>Alerts</h2>
+        </div>
+        <div id="inner">
+            <h2>Reports</h2>
+        </div>                                                    
+    </div> 
+    <div id="distribute">
+        <h1>Distribute</h1>
+        <div id="inner">
+            <h2>Network</h2>
+        </div>     
+        <div id="inner">
+            <h2>Catalog</h2>
+        </div>    
+        <div id="inner">
+            <h2>Portal</h2>
+        </div>    
+        <div id="inner">
+            <h2>Run in Postman Button</h2>
+        </div>    
+        <div id="inner">
+            <h2>Consumer Feedback</h2>
+        </div>                                         
+    </div>    
+    <!--LIFECYCLE-->   
+    
+
+    <!--GOVERNANCE-->
+    <div id="define-governance">
+        <div id="inner">
+            <h2>Guidelines</h2>
+        </div>        
+        <div id="inner">
+            <h2>Rules</h2>
+        </div>  
+        <div id="inner">
+            <h2>Standards</h2>
+        </div>                                          
+    </div>
+    <div id="design-governance">
+        <div id="inner">
+            <h2>Errors</h2>
+        </div>  
+        <div id="inner">
+            <h2>Warning</h2>
+        </div>     
+        <div id="inner">
+            <h2>Design Review</h2>
+        </div>               
+    </div>
+    <div id="develop-governance">
+        <div id="inner">
+            <h2>CLI</h2>
+        </div>  
+        <div id="inner">
+            <h2>IDE</h2>
+        </div>          
+    </div>  
+    <div id="test-governance">
+        <div id="inner">
+            <h2>Errors</h2>
+        </div>  
+        <div id="inner">
+            <h2>Warning</h2>
+        </div>     
+        <div id="inner">
+            <h2>Quality Review</h2>
+        </div> 
+    </div> 
+    <div id="secure-governance">
+        <div id="inner">
+            <h2>Errors</h2>
+        </div>  
+        <div id="inner">
+            <h2>Warning</h2>
+        </div>     
+        <div id="inner">
+            <h2>Security Review</h2>
+        </div> 
+    </div> 
+    <div id="deploy-governance">
+        <div id="inner">
+            <h2>CI/CD Enforcement</h2>
+        </div> 
+    </div> 
+    <div id="observe-governance">
+
+    </div> 
+    <div id="distribute-governance">
+
+    </div>     
+    <!--GOVERNANCE-->    
+</div>
+</body>
+</html>
