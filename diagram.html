@@ -2,17 +2,27 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style id="compiled-css" type="text/css">
-h1{
+h2{
     padding: 0;
     margin: 0;
-    text-align: center;
-    font-size: 18px;
+    font-size: 24px;
 }
 h2{
-    padding: 0 auto;
+    padding: 0px 0px 8px 0px;
     margin: 0px auto;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+h3{
+    padding: 0px auto;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #000;
+}
+.icon{
+    width: 25px; height: 25px; top: -25px; right: -13px; position: relative; display: inline;
 }
 #container{
     width: 90%;
@@ -270,7 +280,11 @@ h2{
     min-height: 40px;
     display: -webkit-flex;
     display: flex;
-}   
+}  
+
+.inner-text{
+    width: 95%; text-align: center; border: 0px solid #000; position: relative; float: right; left: 12px; font-size: 16px;
+}
 
 #define-governance{
     background-color: #FFF;
@@ -403,237 +417,881 @@ h2{
   </style>
 </head>
 <body>
-    <div id="container">
-    <div id="header">
-        <h1>Producer API Lifecycle Map</h1>
-    </div>
+    <div id="container" style="border: 0px solid #000;">
+        <table border="0" align="center">
+            <tr>
+                <td>
+                    <div id="header">
 
-    <!--OWNER-->
-    <div id="define-owner">
-        <div id="inner">
-            <h2>Product Manager</h2>
-        </div>                                
-    </div>
-    <div id="design-owner">
-        <div id="inner">
-            <h2>Software Architect / PM / Designer</h2>
-        </div> 
-    </div>
-    <div id="develop-owner">
-        <div id="inner">
-            <h2>Developer</h2>
-        </div> 
-    </div>  
-    <div id="test-owner">
-        <div id="inner">
-            <h2>Test Engineer</h2>
-        </div> 
-    </div> 
-    <div id="secure-owner">
-        <div id="inner">
-            <h2>Information Security</h2>
-        </div> 
-    </div> 
-    <div id="deploy-owner">
-        <div id="inner">
-            <h2>Release Management</h2>
-        </div> 
-    </div> 
-    <div id="observe-owner">
-        <div id="inner">
-            <h2>SRE / DevOps / Platform</h2>
-        </div> 
-    </div> 
-    <div id="distribute-owner">
-        <div id="inner">
-            <h2>Product Marketing</h2>
-        </div> 
-    </div>     
-    <!--OWNER-->
+                        <h1>Digital Product Blueprint</h1>
+                        <p>This is an opinionated visual and outline to help introduce one possible API lifecycle and governance strategy to enterprise leadership, showing what is possible across the lifecycle and multiple roles.</p>
 
-    <!--LIFECYCLE-->
-    <div id="define">
-        <h1>Define</h1>
-        <div id="inner">
-            <h2>Business Requirements</h2>
-        </div> 
-        <div id="inner">
-            <h2>Security Requirements</h2>
-        </div>  
-        <div id="inner">
-            <h2>Workspace Setup</h2>
-        </div> 
-        <div id="inner">
-            <h2>Source Control Setup</h2>
-        </div>                                
-    </div>
-    <div id="design">
-        <h1>Design</h1>
-        <div id="inner">
-            <h2>Contract</h2>
-        </div>      
-        <div id="inner">
-            <h2>Documentation</h2>
-        </div>   
-        <div id="inner">
-            <h2>Mock Server</h2>
-        </div>    
-        <div id="inner">
-            <h2>Source Control</h2>
-        </div>                           
-    </div>
-    <div id="develop">
-        <h1>Develop</h1>
-        <div id="inner">
-            <h2>API Server</h2>
-        </div> 
-        <div id="inner">
-            <h2>Gateway Setup</h2>
-        </div>                 
-    </div>  
-    <div id="test">
-        <h1>Test</h1>
-        <div id="inner">
-            <h2>Contract Testing</h2>
-        </div>  
-        <div id="inner">
-            <h2>Integration Testing</h2>
-        </div>  
-        <div id="inner">
-            <h2>Performance Testing</h2>
-        </div>  
-        <div id="inner">
-            <h2>Monitor Setup</h2>
-        </div>                                  
-    </div> 
-    <div id="secure">
-        <h1>Secure</h1>
-        <div id="inner">
-            <h2>Security Testing</h2>
-        </div>          
-    </div> 
-    <div id="deploy">
-        <h1>Deploy</h1>
-        <div id="inner">
-            <h2>Source Code</h2>
-        </div>   
-        <div id="inner">
-            <h2>Artifacts</h2>
-        </div>  
-        <div id="inner">
-            <h2>Server Deploy</h2>
-        </div>
-        <div id="inner">
-            <h2>Gateway Deploy</h2>
-        </div> 
-        <div id="inner">
-            <h2>Test Automation</h2>
-        </div>  
-        <div id="inner">
-            <h2>Gateway Policy</h2>
-        </div>         
-    </div> 
-    <div id="observe">
-        <h1>Observe</h1>
-        <div id="inner">
-            <h2>Monitors</h2>
-        </div>   
-        <div id="inner">
-            <h2>APM Integration</h2>
-        </div>  
-        <div id="inner">
-            <h2>Alerts</h2>
-        </div>
-        <div id="inner">
-            <h2>Reports</h2>
-        </div>                                                    
-    </div> 
-    <div id="distribute">
-        <h1>Distribute</h1>
-        <div id="inner">
-            <h2>Network</h2>
-        </div>     
-        <div id="inner">
-            <h2>Catalog</h2>
-        </div>    
-        <div id="inner">
-            <h2>Portal</h2>
-        </div>    
-        <div id="inner">
-            <h2>Run in Postman Button</h2>
-        </div>    
-        <div id="inner">
-            <h2>Consumer Feedback</h2>
-        </div>                                         
-    </div>    
-    <!--LIFECYCLE-->   
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><hr /></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div id="header">
+
+                        <h1>Details</h1>
+                        <p>These are some of the key details that shape how this blueprint should be applied, and who it is targeting.</p>
+                        <ul>
+                            <li><strong>Visibility</strong> - Public - This will be made available to a public audience.</li>
+                            <li><strong>Maturity</strong> - Production - This is meant to support a production instance.</li>
+                        </ul>
+
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><hr /></td>
+            </tr>            
+
+            <tr>
+                <td>       
+                    
+                    <h1 style="text-align: left;">Producer Lifecycle</h1>
+                    <p>This provides a series of lifecycle stages with individual elements that can be considered as part of each stage, providing a common set of building blocks that teams can use when delivering an API, considering what is needed across all stages to deliver a viable digital product.</p>                    
+
+                    <!--LIFECYCLE-->
+                    <div id="define">
+                        <h2>Define</h2>
+                        <div id="inner">
+                            <div class="inner-text">Business Requirements</div><img src="images/confluence-icon.png" class="icon">  
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Security Requirements</div><img src="images/confluence-icon.png" class="icon">  
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Workspace</div><img src="images/postman-icon.png" class="icon">  
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Source Control</div><img src="images/github-icon.png" class="icon">  
+                        </div>                                
+                    </div>d
+                    <div id="design">
+                        <h2>Design</h2>
+                        <div id="inner">                                                      
+                            <div class="inner-text">Contract</div><img src="images/postman-icon.png" class="icon">                              
+                        </div>      
+                        <div id="inner">
+                            <div class="inner-text">Documentation</div><img src="images/postman-icon.png" class="icon">  
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Mock Server</div><img src="images/postman-icon.png" class="icon">  
+                        </div>
+                        <div id="inner">
+                            <div class="inner-text">Variables</div><img src="images/postman-icon.png" class="icon">  
+                        </div>                           
+                        <div id="inner">
+                            <div class="inner-text">Environments</div><img src="images/postman-icon.png" class="icon">  
+                        </div>                             
+                        <div id="inner">
+                            <div class="inner-text">Source Control</div><img src="images/github-icon.png" class="icon">  
+                        </div>                           
+                    </div>
+                    <div id="develop">
+                        <h2>Develop</h2>
+                        <div id="inner">
+                            <div class="inner-text">Server</div><img src="images/aws-lambda-icon.jpg" class="icon"> 
+                        </div>                        
+                        <div id="inner">
+                            <div class="inner-text">Gateway</div><img src="images/aws-api-gateway-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Source Control</div><img src="images/github-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">CLI</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">IDE</div><img src="images/visual-studio-icon.png" class="icon"> 
+                        </div>                                                                                            
+                    </div>  
+                    <div id="test">
+                        <h2>Test</h2>
+                        <div id="inner">
+                            <div class="inner-text">Contract Tests</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Performance Tests</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Monitors</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                  
+                    </div> 
+                    <div id="secure">
+                        <h2>Secure</h2>
+                        <div id="inner">
+                            <div class="inner-text">Security Tests</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>    
+                        <div id="inner">
+                            <div class="inner-text">Environments</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>             
+                        <div id="inner">
+                            <div class="inner-text">Role-based Access Control</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                           
+                    </div> 
+                    <div id="deploy">
+                        <h2>Deploy</h2>
+                        <div id="inner">
+                            <div class="inner-text">Source Code</div><img src="images/github-icon.png" class="icon"> 
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Artifacts</div><img src="images/github-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Environments</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                          
+                        <div id="inner">
+                            <div class="inner-text">Server Deploy</div><img src="images/aws-lambda-icon.jpg" class="icon"> 
+                        </div>
+                        <div id="inner">
+                            <div class="inner-text">Gateway Deploy</div><img src="images/aws-api-gateway-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Gateway Policies</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                         
+                        <div id="inner">
+                            <div class="inner-text">Contract Test</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Security Test</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                 
+                    </div> 
+                    <div id="observe">
+                        <h2>Observe</h2>
+                        <div id="inner">
+                            <div class="inner-text">Monitors</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">APM Integration</div><img src="images/new-relic-icon" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Alerts</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>
+                        <div id="inner">
+                            <div class="inner-text">Reports</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                                    
+                    </div> 
+                    <div id="distribute">
+                        <h2>Distribute</h2>
+                        <div id="inner">
+                            <div class="inner-text">Network</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>     
+                        <div id="inner">
+                            <div class="inner-text">Catalog</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>    
+                        <div id="inner">
+                            <div class="inner-text">Portal</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>    
+                        <div id="inner">
+                            <div class="inner-text">Buttons</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Blog Post</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>    
+                        <div id="inner">
+                            <div class="inner-text">Video</div><img src="images/youtube-icon.png" class="icon"> 
+                        </div>                                                 
+                        <div id="inner">
+                            <div class="inner-text">Feedback Loop</div><img src="images/visual-studio-icon.png" class="icon"> 
+                        </div>                                         
+                    </div>    
+                    <!--LIFECYCLE-->   
     
+                </td>
+            </tr>   
+            
+            <tr>
+                <td><hr /></td>
+            </tr>            
 
-    <!--GOVERNANCE-->
-    <div id="define-governance">
-        <div id="inner">
-            <h2>Guidelines</h2>
-        </div>        
-        <div id="inner">
-            <h2>Rules</h2>
-        </div>  
-        <div id="inner">
-            <h2>Standards</h2>
-        </div>                                          
+            <tr>
+                <td>
+
+                    <h1 style="text-align: left;">Roles</h1>
+                    <p>One of the top challenges in properly defining an API strategy is having a clear picture of who the multiple business and technical stakeholders are.</p>
+
+                    <!--OWNER-->
+                    <div id="define-owner">
+                        <h2>Define</h2>
+                        <div id="inner">
+                            <div class="inner-text">Product Manager</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                
+                    </div>
+                    <div id="design-owner">
+                        <h2>Design</h2>
+                        <div id="inner">
+                            <div class="inner-text">Software Architect</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Product Manager</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Designer</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                               
+                    </div>
+                    <div id="develop-owner">
+                        <h2>Develop</h2>
+                        <div id="inner">
+                            <div class="inner-text">Developer</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                    </div>  
+                    <div id="test-owner">
+                        <h2>Test</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Test Engineer</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                    </div> 
+                    <div id="secure-owner">
+                        <h2>Secure</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Information Security</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                    </div> 
+                    <div id="deploy-owner">
+                        <h2>Deploy</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Release Management</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                    </div> 
+                    <div id="observe-owner">
+                        <h2>Observe</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Site reliability Engineering (SRE)</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">DevOps</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Platform</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                                 
+                    </div> 
+                    <div id="distribute-owner">
+                        <h2>Distribute</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Product Marketing</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                    </div>     
+                    <!--OWNER-->
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><hr /></td>
+            </tr>            
+
+            <tr>
+                <td>      
+                    
+                    <h1 style="text-align: left;">Governance</h1>
+                    <p>These area focuses on oitlining the enablement and ultimately governance that is occurring acrosss API operations, providing a clear definition of how APIs are being consistently delivered across teams.</p>                    
+                    
+
+                    <!--GOVERNANCE-->
+                    <div id="define-governance">
+                        <h2>Define</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Guidelines</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>        
+                        <div id="inner">
+                            <div class="inner-text">Rules</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Standards</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>                                          
+                    </div>
+                    <div id="design-governance">
+                        <h2>Design</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Errors</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Warning</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>     
+                        <div id="inner">
+                            <div class="inner-text">Design Review</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>               
+                    </div>
+                    <div id="develop-governance">
+                        <h2>Develop</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">CLI</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">IDE</div><img src="images/visual-studio-icon.png" class="icon"> 
+                        </div>          
+                    </div>  
+                    <div id="test-governance">
+                        <h2>Test</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Errors</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Warning</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>     
+                        <div id="inner">
+                            <div class="inner-text">Quality Review</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                    </div> 
+                    <div id="secure-governance">
+                        <h2>Secure</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">Errors</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Warning</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>     
+                        <div id="inner">
+                            <div class="inner-text">Security Review</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                    </div> 
+                    <div id="deploy-governance">
+                        <h2>Deploy</h2>                        
+                        <div id="inner">
+                            <div class="inner-text">CI/CD Enforcement</div><img src="images/github-icon.png" class="icon"> 
+                        </div> 
+                    </div> 
+                    <div id="observe-governance">
+                        <h2>Observe</h2>                        
+
+                    </div> 
+                    <div id="distribute-governance">
+                        <h2>Distribute</h2>
+                    </div>     
+                    <!--GOVERNANCE-->    
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><hr /></td>
+            </tr>
+
+            <tr>
+                <td>      
+                    
+                    <h1 style="text-align: left;">Tooling</h1>
+                    <p>This provides a listing of the tooling being applied across each stage of the lifecycle across different roles, helping make sure every element is being addressed with a known set of tools and services.</p>                                        
+
+                    <!--Tools-->
+                    <div id="define-governance">
+                        <h2>Define</h2>
+                        <div id="inner">
+                            <div class="inner-text">Postman</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>        
+                        <div id="inner">
+                            <div class="inner-text">Github</div><img src="images/github-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Confluence</div><img src="images/confluence-icon.png" class="icon"> 
+                        </div>                                          
+                    </div>
+                    <div id="design-governance">
+                        <h2>Design</h2>
+                        <div id="inner">
+                            <div class="inner-text">Postman</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Github</div><img src="images/github-icon.png" class="icon"> 
+                        </div>                  
+                    </div>
+                    <div id="develop-governance">
+                        <h2>Develop</h2>
+                        <div id="inner">
+                            <div class="inner-text">Github</div><img src="images/github-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">AWS Lambda</div><img src="images/aws-lambda-icon.jpg" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">AWS Gateway</div><img src="images/aws-api-gateway-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Visual Studio</div><img src="images/visual-studio-icon.png" class="icon"> 
+                        </div>                                                            
+                    </div>  
+                    <div id="test-governance">
+                        <h2>Test</h2>
+                        <div id="inner">
+                            <div class="inner-text">Postman</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                    </div> 
+                    <div id="secure-governance">
+                        <h2>Secure</h2>
+                        <div id="inner">
+                            <div class="inner-text">Postman</div><img src="images/postman-icon.png" class="icon"> 
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">OWASP Zap</div>
+                        </div>     
+                    </div> 
+                    <div id="deploy-governance">
+                        <h2>Deploy</h2>
+                        <div id="inner">
+                            <div class="inner-text">Postman</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">GitHub</div><img src="images/github-icon.png" class="icon"> 
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">AWS Lambda</div><img src="images/aws-lambda-icon.jpg" class="icon"> 
+                        </div>            
+                        <div id="inner">
+                            <div class="inner-text">AWS API Gateway</div><img src="images/aws-api-gateway-icon.png" class="icon"> 
+                        </div>                                                            
+                    </div> 
+                    <div id="observe-governance">
+                        <h2>Observe</h2>
+                        <div id="inner">
+                            <div class="inner-text">Postman</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">New Relic</div><img src="images/new-relic-icon.png" class="icon"> 
+                        </div>                         
+                    </div> 
+                    <div id="distribute-governance">
+                        <h2>Distribute</h2>
+                        <div id="inner">
+                            <div class="inner-text">Postman</div><img src="images/postman-icon.png" class="icon"> 
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">GitHub</div><img src="images/github-icon.png" class="icon"> 
+                        </div>                         
+                    </div>     
+                    <!--Tools-->    
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><hr /></td>
+            </tr>            
+
+            <tr>
+                <td>       
+                    
+                    <h1 style="text-align: left;">Consumer Lifecycle</h1>
+                    <p>This lifecycle provides a look at the other side of the producer lifecycle, considering what consumers will be needing when it comes to putting the API to work in their applications and integrations.</p>                    
+
+                    <!--LIFECYCLE-->
+                    <div id="define" style="width: 14%">
+                        <h2>Discover</h2>
+                        <div id="inner">
+                            <div class="inner-text">Search</div>
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Security Requirements</div>
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">APIs</div>
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Documentation</div>
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Teams</div>
+                        </div>                                                      
+                    </div>
+                    <div id="design" style="width: 14%">
+                        <h2>Evaluate</h2>
+                        <div id="inner">
+                            <div class="inner-text">Explore</div>
+                        </div>      
+                        <div id="inner">
+                            <div class="inner-text">Execute</div>
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Examples</div>
+                        </div>    
+                        <div id="inner">
+                            <div class="inner-text">Documentation</div>
+                        </div>                           
+                    </div>
+                    <div id="develop" style="width: 14%">
+                        <h2>Integrate</h2>
+                        <div id="inner">
+                            <div class="inner-text">Contracts</div>
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Collections</div>
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Automation</div>
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Workflows</div>
+                        </div>                                                                
+                    </div>  
+                    <div id="test" style="width: 14%">
+                        <h2>Test</h2>
+                        <div id="inner">
+                            <div class="inner-text">Availability</div>
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Contract</div>
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Performance</div>
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Security</div>
+                        </div>                                  
+                    </div> 
+                    <div id="secure" style="width: 14%">
+                        <h2>Deploy</h2>
+                        <div id="inner">
+                            <div class="inner-text">Source Control</div>
+                        </div>        
+                        <div id="inner">
+                            <div class="inner-text">CI/CD Pipelines</div>
+                        </div>                 
+                        <div id="inner">
+                            <div class="inner-text">Collections</div>
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Serverless</div>
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Runners</div>
+                        </div>                                                                                        
+                    </div> 
+                    <div id="observe" style="width: 14%">
+                        <h2>Observe</h2>
+                        <div id="inner">
+                            <div class="inner-text">Watches</div>
+                        </div>   
+                        <div id="inner">
+                            <div class="inner-text">Forks</div>
+                        </div>  
+                        <div id="inner">
+                            <div class="inner-text">Feedback</div>
+                        </div>
+                        <div id="inner">
+                            <div class="inner-text">Notifications</div>
+                        </div> 
+                        <div id="inner">
+                            <div class="inner-text">Usage</div>
+                        </div>        
+                    </div> 
+                    <!--LIFECYCLE-->   
+    
+                </td>
+            </tr>  
+
+            <tr>
+                <td><hr /></td>
+            </tr>
+
+            <tr>
+                <td> 
+
+                    <h1>Define</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>
+                    <ul>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Business Requirements</strong> - Providing the requirements for the API, based upon what the business needs.</li>
+                                <li><strong>Security Requirements</strong> - Providing the security requirements to esnure it is a high priority.</li>
+                                <li><strong>Workspace</strong> - Setting up a private, team, partner, or public workspace for working with the API.</li>
+                                <li><strong>Source Control</strong> - Setting up the source control for the API code, artifacts, and pipelines.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Product Manager</strong> - A product manager is the helping define what is needed for this API.</li>
+                                <li><strong>Architect</strong> - An architect is part of the conversaiton to help with the big picture of the API.</li>                                
+                            </ul>
+                        </li>                        
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>Confluence</strong> - A confluence wiki is used to manage the business and security requirements.</li>
+                                <li><strong>Postman</strong> - Postman is used to provide the workspace and platform for managing the API.</li>
+                                <li><strong>Github</strong> - GitHub is used for the repository, requirements, and the feedback loop.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>Guidelines</strong> - Offering operational level guidance for teams to use when delivering the API, helping teams be more consistent in their work.</li>
+                                <li><strong>Spectral Rules</strong> - Defining which rules are applicable to an API, helping select the right patterns needed applied across the APIs being delivered.</li>
+                                <li><strong>Standards</strong> - Providing all of the standards that should be applied when it comes to designing and delivering an API, help standardize API offerings.</li>
+                                <li><strong>Templates</strong> - Providing a set of reusable templates that team members can use when it comes to designing and delivering the API more quickly.</li>
+                            </ul>
+                        </li> 
+                    </ul>                                               
+                    
+                    <h1>Design</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>
+                    <ul>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Contract</strong> - This is the description for this element.</li>
+                                <li><strong>Documentation</strong> - This is the description for this element.</li>
+                                <li><strong>Mock Server</strong> - This is the description for this element.</li>
+                                <li><strong>Variables</strong> - This is the description for this element.</li>
+                                <li><strong>Environments</strong> - This is the description for this element.</li>
+                                <li><strong>Source Control</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Architect</strong> - Ensuring that an architect plays a role in the design of an API, providing high level advice as early on as possible in the lifecycle.</li>
+                                <li><strong>Product Manager</strong> - Letting teh product manager lead the conversation when it comes to designing the API to business specifications.</li>
+                                <li><strong>Designer</strong> - Tapping into the talent of API designers who understand the finer aspects of designing the APIs need for this digital product.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>Postman</strong> - This is the description for this element.</li>
+                                <li><strong>GitHub</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>Syntax</strong> - This is the description for this element.</li>
+                                <li><strong>Rules</strong> - This is the description for this element.</li>
+                                <li><strong>Design Review</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+
+                    <h1>Development</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>
+                    <ul>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Server</strong> - This is the description for this element.</li>
+                                <li><strong>Gateway</strong> - This is the description for this element.</li>
+                                <li><strong>Source Control</strong> - This is the description for this element.</li>
+                                <li><strong>CLI</strong> - This is the description for this element.</li>
+                                <li><strong>IDE</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Developer</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>GitHub</strong> - This is the description for this element.</li>
+                                <li><strong>AWS Lambda</strong> - This is the description for this element.</li>
+                                <li><strong>AWS Gateway</strong> - This is the description for this element.</li>
+                                <li><strong>Visual Studio</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>CLI</strong> - This is the description for this element.</li>
+                                <li><strong>IDE</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+
+                    <h1>Test</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>
+                    <ul>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+
+                    <h1>Secure</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>
+                    <ul>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+
+                    <h1>Deploy</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>
+                    <ul>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+
+                    <h1>Observe</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>
+                    <ul>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+
+                    <h1>Distribute</h1>
+                    <p>This is the information to support the diagram, roles, and stages of the API lifecycle above.</p>        
+                    <ul>
+                        <li><strong>Role</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lifecycle</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tooling</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li>                        
+                        <li><strong>Governance</strong>
+                            <ul>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                                <li><strong>Element</strong> - This is the description for this element.</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+
+                </td>
+            </tr>
+        </table>
+
     </div>
-    <div id="design-governance">
-        <div id="inner">
-            <h2>Errors</h2>
-        </div>  
-        <div id="inner">
-            <h2>Warning</h2>
-        </div>     
-        <div id="inner">
-            <h2>Design Review</h2>
-        </div>               
-    </div>
-    <div id="develop-governance">
-        <div id="inner">
-            <h2>CLI</h2>
-        </div>  
-        <div id="inner">
-            <h2>IDE</h2>
-        </div>          
-    </div>  
-    <div id="test-governance">
-        <div id="inner">
-            <h2>Errors</h2>
-        </div>  
-        <div id="inner">
-            <h2>Warning</h2>
-        </div>     
-        <div id="inner">
-            <h2>Quality Review</h2>
-        </div> 
-    </div> 
-    <div id="secure-governance">
-        <div id="inner">
-            <h2>Errors</h2>
-        </div>  
-        <div id="inner">
-            <h2>Warning</h2>
-        </div>     
-        <div id="inner">
-            <h2>Security Review</h2>
-        </div> 
-    </div> 
-    <div id="deploy-governance">
-        <div id="inner">
-            <h2>CI/CD Enforcement</h2>
-        </div> 
-    </div> 
-    <div id="observe-governance">
-
-    </div> 
-    <div id="distribute-governance">
-
-    </div>     
-    <!--GOVERNANCE-->    
-</div>
 </body>
 </html>
