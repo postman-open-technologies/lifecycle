@@ -1,0 +1,126 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Security Review</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Security Review</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="security-review">Security Review</h1>
+<p>Injecting a required security review of an API, considering the OWASP Top 10 as the starting point, running the following checks against every API before certifying it ready for production.</p>
+
+<h2 id="security-fundamentals">Security Fundamentals</h2>
+
+<p>There are many unique security considerations teams should be thinking about early on in the defining and designing of APIs, but also as teams are developing them, leaving teams with a more secure API.</p>
+
+<ul>
+  <li><strong>Encryption</strong> - Making encryption the default for all APIs, covering the transport layer, but also storage and database behind APIs, having a solid encryption plan from the start.</li>
+  <li><strong>Authentication</strong> - Leveraging common standards when it comes to authenticating API consumers for using any API, and reducing the complexity for consumers at this layer.</li>
+  <li><strong>Authorization</strong> - Considering an added authorization layer that defines what API-driven resources and capabilities each consumer has access to once they gain access to APIs.</li>
+  <li><strong>Role-Based Access Control</strong> - Applying RBAC to all of the elements of API operations, defining who can edit or just read artifacts, documentation, testing, and other elements.</li>
+  <li><strong>Contracts</strong> - Each API possess a complete contract, including full details of the authentication and authorization, providing the menu of security in place for each API.</li>
+  <li><strong>Environments</strong> - Evaluate the development, staging, sandbox, and production environments that teams have available and what they secret strategy is for their team.</li>
+  <li><strong>Documentation</strong> - Including security fundamentals as part of the documentation for each API, making sure that consumers are always fully aware of the security that is in use.</li>
+  <li><strong>Tests</strong> - Provide collection security tests, providing modular, reusable, executable, and fully documented security tests for all of the most common vulnerabilities teams face.</li>
+</ul>
+
+<p>There is plenty more your security team will be considering when it comes to API security, but this should be the baseline for security when it comes to your operations, providing the fundamentals.</p>
+
+<h2 id="owasp-top-10">OWASP Top 10</h2>
+<p>Injecting a required security review of an API, considering the OWASP Top 10 as the starting point, running the following checks against every API before certifying it ready for production.</p>
+
+<ul>
+  <li><strong>Broken Object Level Authorization</strong> - APIs tend to expose endpoints that handle object identifiers, creating a wide attack surface Level Access Control issue.</li>
+  <li><strong>Broken User Authentication</strong> - Authentication mechanisms are often implemented incorrectly, allowing attackers to compromise authentication tokens or to exploit implementation flaws to assume other user’s identities temporarily or permanently.</li>
+  <li><strong>Excessive Data Exposure</strong> - Looking forward to generic implementations, developers tend to expose all object properties without considering their individual sensitivity, relying on clients to perform the data filtering before displaying it to the user.</li>
+  <li><strong>Lack of Resources &amp; Rate Limiting</strong> - Quite often, APIs do not impose any restrictions on the size or number of resources that can be requested by the client/user. Not only can this impact the API server performance, leading to Denial of Service (DoS), but also leaves the door open to authentication flaws such as brute force.</li>
+  <li><strong>Broken Function Level Authorization</strong> - Complex access control policies with different hierarchies, groups, and roles, and an unclear separation between administrative and regular functions, tend to lead to authorization flaws. By exploiting these issues, attackers gain access to other users’ resources and/or administrative functions.</li>
+  <li><strong>Mass Assignment</strong> - Binding client provided data (e.g., JSON) to data models, without proper properties filtering based on an allowlist, usually leads to Mass Assignment. Either guessing objects properties, exploring other API endpoints, reading the documentation, or providing additional object properties in request payloads, allows attackers to modify object properties they are not supposed to.</li>
+  <li><strong>Security Misconfiguration</strong> - Security misconfiguration is commonly a result of unsecure default configurations, incomplete or ad-hoc configurations, open cloud storage, misconfigured HTTP headers, unnecessary HTTP methods, permissive Cross-Origin resource sharing (CORS), and verbose error messages containing sensitive information.</li>
+  <li><strong>Injection</strong> - Injection flaws, such as SQL, NoSQL, Command Injection, etc., occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s malicious data can trick the interpreter into executing unintended commands or accessing data without proper authorization.</li>
+  <li><strong>Improper Assets Management</strong> - APIs tend to expose more endpoints than traditional web applications, making proper and updated documentation highly important. Proper hosts and deployed API versions inventory also play an important role to mitigate issues such as deprecated API versions and exposed debug endpoints.</li>
+  <li><strong>Insufficient Logging &amp; Monitoring</strong> - Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems to tamper with, extract, or destroy data. Most breach studies demonstrate the time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.</li>
+</ul>
+
+<p>The OWASP Top 10 API vulnerabilities provide us with the baseline that should exist across 100% of the APIs in production, no matter whether they are for internal, partner, or public consumers.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

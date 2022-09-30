@@ -1,0 +1,11 @@
+<a name="{{ rule.slug }}"></a>
+<div class="row collection">                 
+   <div class="col-md-11" style="border: 0px solid #000;">
+      <span style="font-size: 18px; font-weight: bold;">{{ rule.title }} - {{ rule.rules['x-status'] }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
+      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
+   </div>            
+   <div class="col-md-1" style="border: 0px solid #000;">
+      <a href="{{ site.url }}/{{ rule.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
+      <strong>Link</strong></a>
+   </div>   
+</div> 

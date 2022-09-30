@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Design</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Design</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="design">Design</h1>
+<p>Investing in informed design of the surface area of each API, shaping how it works, what protocols and standards it uses, and how each API will conform to wider rules for how APIs should be designed across an organization. The investment in the design of each API, as well as the overall practice of design across operations helps fine tune and bring operations into alignment.</p>
+
+<ul>
+  <li><strong>Patterns</strong> - Selecting which patterns like REST, GraphQL, and other common patterns are to be used, to help standardize how APIs work, while helping choose the right tool for the job.</li>
+  <li><strong>Protocol</strong> - Making a sensible decision regarding what protocol will be used when it comes to designing an API, picking the right solution for the project and the consumers using it.</li>
+  <li><strong>Standards</strong> - Understanding what Internet, industry, and organizational standards will be used when designing the API, making sure that each API is as consistent as possible.</li>
+  <li><strong>Schema</strong> - Establish schema for all of the objects that are in use as part of requests, responses, and to publish and subscribe to when integrating an API into applications.</li>
+  <li><strong>Contracts</strong> - Putting contracts like OpenAPI and AsyncAPI to work when it comes to defining the surface area of each API, providing a machine readable contract that guides work.</li>
+  <li><strong>Versioning</strong> - Change is inevitable, and there will need to be a clear plan for how an API will be versionied, leveraging a common pattern when it comes to managing change.</li>
+  <li><strong>Rules</strong> - Identifying which linting rules will be needed to help ensure the API is following central governance, and keeping APIs as consistent as they can be across all teams.</li>
+  <li><strong>Editor</strong> - Establishing a common and consistent way of directly, or visually editing the artifacts that are used as part of the APi design process, helping carry load of design.</li>
+  <li><strong>Examples</strong> - Pushing for there to be examples of each part of an API, providing actual exacmples as part of each contract which can be used for documentation and mocking.</li>
+  <li><strong>Mocks</strong> - Generate a mock representation of an API using it’s contract, providing an example of what the API will do in production, helping in the design process, but also onboarding.</li>
+</ul>
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

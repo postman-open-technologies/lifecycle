@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Deploy</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Deploy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h2 id="deploy">Deploy</h2>
+<p>Once an API is ready for deployment to a staging or production environment, there should be a repeatable set of elements at work to move enterprise operations forward at scale. The deployment orchestration of APIs across teams help optimize the API factory floor across enterprise domains, making every step forward more deliberate and repeatable.</p>
+
+<ul>
+  <li><strong>Source Control</strong> - Using source control to manage code and artifacts used to deploy an API, providing a single location to find everything behind each version of an API.</li>
+  <li><strong>CI/CD Pipeline</strong> - The pipeline ensures that the deployment of an API to each stage is as repeatable as possible, with tests  and other essential needs of the PI build process.</li>
+  <li><strong>Gateway</strong> - Publishing contracts, policies, and other configurations to the API gateway, deploying an API into a staging or production enviironment if all tests pass in the pipeline.</li>
+  <li><strong>Releases</strong> - Establishing a formal release for this version of an API, documenting the changes being deployed, and communication around it, keeping consumers informed.</li>
+  <li><strong>Stages</strong> - Allowing for multiple stages to be deployed, providing development, staging, production, and potentially other environments for deploying and testing APIs within.</li>
+  <li>**Environments -Applying commonly managed environments, with a coordinated variable strategy, applying when testing and automating configuration as part of the pipeline.</li>
+  <li><strong>Plans</strong> - Requiring that all APIs be deployed into a standardized set of plans, with consistent policies applied, limiting access to resources, and applying proper security.</li>
+</ul>
+
+<p>Deployment will mean different things to different organizations, what is important is that there is always a source of truth, a repeatable build process, and a standards set of releases, stages, environments, and plans are leveraged to deploy APIs consistently across teams and domains.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

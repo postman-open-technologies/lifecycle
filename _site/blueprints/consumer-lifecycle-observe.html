@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Observe</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Observe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="observe">Observe</h1>
+<p>API consumers need to be able to effectively “see” API operations and how their API consumption, or the consumption across a community will influence their own applications and integrations. The observability involving specific instances of APIs, produce suites of APIs, as well as the operations that surround them is proving two be something that is fast defining the difference between healthy API ecosystems, and not-so-healthy API communities, and something that will define your organization.</p>
+
+<ul>
+  <li><strong>Watches</strong> - Keeping track of the watches on workspaces, APIs, and collections to understand who is tuned into what is happening, using watches as a metric for the number of consumers, contributors, and internal and external stakeholders who are tuned in.</li>
+  <li><strong>Forks</strong> - Tracking on who is forking repositories and collections, using the fork count as a metric for engagement and known who your consumers are, and how they are putting APIs to work by tracking on engagement via workspaces, repositories, and collections.</li>
+  <li><strong>Feedback</strong> - Being part of the feedback loop, engaging with API producers and consumers, understanding what the conversation is around each API, or group of APIs, observing the discussions that are going on around digital resources and capabilities.</li>
+  <li><strong>Notifications</strong> - Using notifications to engage with a platform and keep consumers part of the forward motion of an API, using in-app, email, or even SMS notifications to handle the engagement between producer and consumers, using it as an output for observability.</li>
+  <li><strong>Usage</strong> - Providing dashboards, reporting, and other visuals to help consumers understand what their platform usage is, using it as an opportunity to keep consumers engaged, and playing and active part in the community, helping them observe the activity that matters.</li>
+</ul>
+
+<p>Using existing platform outputs to keep consumers informed, but also make their engagement more observable for producers and other consumers helps contribute to the overall health and viability of the ecosystem that exists around each API internally within the enterprise or within the external community.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

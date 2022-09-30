@@ -1,0 +1,42 @@
+---
+layout: none
+---
+{
+"rules": {
+    {% assign rules = site.rules %}
+    {% assign this_count = 1 %}
+    {% assign rules_count = page.rules | size %}
+    {% for this_rule in page.rules %}
+    {% for rule in rules %}
+        {% assign r = rule %}
+        {% if this_rule == rule.slug %}
+            "{{ rule.slug }}": {            
+                {% assign prop_count = 1 %}
+                {% for property in rule[rule.slug] %}
+                    {% if property[0] contains 'x-' %}{% else %}{% assign prop_count = prop_count | plus: 1 %}{% endif %}
+                {% endfor %}  
+                {% assign this_prop_count = 1 %}               
+                {% for property in rule[rule.slug] %}
+                    {% if property[1].first %}
+                        {% if property[0] contains 'x-' %}{% else %}    
+                        {% assign this_prop_count = this_prop_count | plus: 1 %}
+                        "{{ property[0] }}": {{ property[1] | jsonify  }}{% if prop_count != this_prop_count %},{% endif %}
+                        {% endif %}
+                    {% else %}
+                        {% if property[0] contains 'x-' %}{% else %}   
+                            {% assign this_prop_count = this_prop_count | plus: 1 %}
+                            {% if property[0] == 'recommended' %} 
+                                "{{ property[0] }}": {{ property[1] }}{% if prop_count != this_prop_count %},{% endif %}
+                            {% else %}
+                                "{{ property[0] }}": "{{ property[1] }}"{% if prop_count != this_prop_count %},{% endif %}
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}                    
+                {% endfor %} 
+            }
+            {% assign this_count = this_count | plus: 1 %}
+        {% endif %}            
+    {% endfor %}    
+    {% if this_count <= rules_count %},{% endif %} 
+    {% endfor %}
+}}

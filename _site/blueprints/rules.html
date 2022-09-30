@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Rules</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Rules</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="rules">Rules</h1>
+<p>Machine readable rules in YAML or JSON that can be used to lint any other YAML or JSON artifact, allowing for common or specialized rules to be established to help check for consistency in the design, development, deployment, and management of APIs, helping codify standards and health practices for delivering APIs into the API lifecycle across domains and teams.</p>
+
+<ul>
+  <li><strong>Name</strong> - The name of the linting rule, describing what it applies to and how it benefits in making the design of an API more consistent, or also possibly the operation around it.</li>
+  <li><strong>NDescription</strong> - A verbose description of what a rule does, providing as much detail about how the rule helps standardize one small part of operations, helping stabilize teams.</li>
+  <li><strong>NGiven</strong> - The property being targeted for linting, identifying a specific aspect of a contract needing attention, focus the attention of linters on this particular part of each API.</li>
+  <li><strong>NThen</strong> - The criteria for evaluating the contract being linted, providing the logic for the rule being applied, being precise or more loose in how each contract is being scrutinized.</li>
+  <li><strong>NFormats</strong> - Identifying the different types of contract formats that rules are design to be applied to, organizing Swagger, OpenAPI, AsyncAPI, and other formats together.</li>
+  <li><strong>NDocumentation URL</strong> - An external URL for documentation and educational resources associated with a specific rule, turning every rule into a potentially teachable moment.</li>
+  <li><strong>NRulesets</strong> - Organizing multiple rules into sets so that they can all be applied at once, and organized by domain, or other bounded context, keeping rules easier to apply.</li>
+  <li><strong>NJSONPath</strong> - The specification used as part of the “given” and “then” properties to target specific sections of a JSON contract, providing any level of scope when linting contracts.</li>
+</ul>
+
+<p>Rules help us distill down all the things we need for usability, consistency, and stability down into modular rules that can be applied as sets or individually during design time, or more importantly throughout the API lifecycle, and in some cases gated at the pipeline level, ensuring we are always producing the best API we possibly can, no matter what team produce it.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

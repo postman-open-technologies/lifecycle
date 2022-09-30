@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Deploy</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Deploy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="deploy">Deploy</h1>
+<p>The deployment of API integrations comes in many shapes and sizes today, and the notion of what is an application has shifted over time. When putting APIs to work it used to simply about web and mobile applications, or system to system integrations. The concept of deployment in the world of API consumer could range from writing custom code for an application to low-code/no-code syncing between two separate API platforms. What is being deployed, how it runs and is maintained is becoming as versatile and modular as APIs themselves.</p>
+
+<ul>
+  <li><strong>Source Control</strong> - Having all manually developed or automatically generating client code in a repository, providing a source of truth for the code being deployed, but also for any artifacts that are needed to define the deployment and operation of any API integration.</li>
+  <li><strong>CI/CD Pipelines</strong> - Implementing the continuous integration portion of CI/CD, automating how applications and integrations are deployed, making the deployment of API integrations, applications, and other use cases something that is always repeatable.</li>
+  <li><strong>Collections</strong> - Leveraging a Postman collections as a modular, sharable, and executable definition of an application, stitching together many different API calls across internal and external API sources to apply digital resources and capabilities in a specific way.</li>
+  <li><strong>Serverless</strong> - Utilizing serverless layers for deploying integrations, orchestrations, and different ways to automate API resources and capabilities, tapping into ephemeral compute to deploy integration code that accomplishes specific business outcomes.</li>
+  <li><strong>Runners</strong> - Acknowledging that some collection applications will just be manually run my different team members using runners, organizing different types of integrations and applications by workspaces and letting different stakeholders manually put to work.</li>
+  <li><strong>Monitors</strong> - Scheduling the run of collection-defined integrations, using the collection, combined with environments that employ a variable strategy to accomplish any API-driven applications and integrations on a schedule from any cloud region.</li>
+  <li><strong>Workflows</strong> - Take advantage of complex workflows to put APIs to work, iterating through multiple series of API calls to enabl business and technical stakeholders to design, save, and execute the scenarios they need to accomplish business each day.</li>
+  <li><strong>Webhooks</strong> - Responding to different API events using webhooks to trigger collection defined integrations, applications, and workflows, engaging with users via different platforms while responding to their activity using modular API deployments.</li>
+</ul>
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

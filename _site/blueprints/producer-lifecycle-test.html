@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Test</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Test</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="test">Test</h1>
+<p>Defining, documenting, and automating the testing of the underlying contract for each API, understanding the overall performance of the API, integration, and other types of tests. Providing supporting automation to properly test the entire surface area of each API, as well as the operations.</p>
+
+<h2 id="artifacts">Artifacts</h2>
+
+<ul>
+  <li>**Collections - Using collections to define one or a sequence of many API requests, establishing a modular, collaborative, and executable artifact used across API testing.</li>
+  <li>**Scripts - Defining folder level, pre-request, or post-request scripts that run to configure request, validate responses, and automate testing to iterate and behave as consumers.</li>
+</ul>
+
+<h2 id="types">Types</h2>
+
+<ul>
+  <li>**Contract - Using OpenAPI and AsyncAPI contracts to ensure 100% of the surface area of an API is being tested and behavior reflects the contract between producer and consumer.</li>
+  <li>**Performance - Testing specific paths for each API to understand the performance of an API, gateway, and network from multiple regions to ensure the desired performance exists.</li>
+</ul>
+
+<h2 id="use-cases">Use Cases</h2>
+
+<ul>
+  <li>**Mocking - Leverage mock servers generated from the API contract, but then augmenting with examples for specific use cases, testing for specific outcomes.</li>
+  <li>**Data - Injecting CSV or JSON data as part of the testing process making sure API requests reflect specific business workflows and outcomes, testing real-world API-driven scenarios.</li>
+</ul>
+
+<h2 id="automation">Automation</h2>
+
+<ul>
+  <li>**Monitor - Scheduling monitors of tests to run on a schedule that reflects the business needs of the API, but also the type of test being run, allowing testing to be automated by teams.</li>
+  <li>**CI/CD Pipeline - Baking tests into CI/CD pipelines, ensuring that all tests run when APIs are being built, ensuring that no API goes into production with the tests being executed.</li>
+</ul>
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

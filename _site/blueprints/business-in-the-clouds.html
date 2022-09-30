@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Business in the Clouds</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Business in the Clouds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="business-in-the-clouds">Business in the Clouds</h1>
+<p>Web APIs were increasingly being used for more industrial-grade purposes, making common building blocks of information technology (IT) available as simple XML or JSON APIs. Further commoditizing essential technical resources that businesses were depending on, shifting how we deploy and pay for our IT infrastructure while making them more elastic and scalable to meet the increasing demands being placed on our enterprises by web and mobile applications.</p>
+
+<h2 id="early-cloud-apis">Early Cloud APIs</h2>
+
+<ul>
+  <li><strong>S3</strong>: In the early 2000s, Amazon was already a successful e-commerce platform, and around that time the company began to focus on making their internal development more efficient. Developers frequently built new databases, compute resources, and storage resources every time they worked on a new project. To save time and resources, developers began to build common resources that any internal team could consume and use for their own projects. Over time, this practice turned the Amazon platform into a set of APIs that combined infrastructure services with intuitive developer tools. In 2002, Amazon released an early version of their web service, which included SOAP and XML interfaces for the Amazon product catalog along with the same infrastructure services they were using internally. In March 2006, Amazon officially released Amazon Web Services (AWS) and the API for their Simple Storage Service (S3). S3 is an object storage solution that provides near-infinite storage for developers, allowing them to pay for each gigabyte they use. By storing objects in S3, developers can access their data from anywhere on the Internet at any time, instead of relying on static HTTP objects that depend on the resources and uptime of a specific server. S3 made it possible to use an API to create and manage infrastructure, instead of using APIs for data management only.</li>
+  <li><strong>EC2</strong>: In 2003, following the release of an early version of AWS, Amazon was working to improve their internal infrastructure. A group of engineers at Amazon proposed the idea of provisioning virtual servers that developers could create on demand instead of using their traditional servers and datacenters. Maintaining and scaling traditional infrastructure can be very expensive, so creating ephemeral servers in the cloud had the potential to save Amazon a significant amount of money. This internal service became Elastic Compute Cloud (EC2). In August 2006, a few months after Amazon launched AWS and S3 publicly, Amazon also released EC2. Similar to S3, the EC2 service allows companies to decentralize their infrastructure by storing computing resources in the cloud.</li>
+  <li><strong>RDS</strong>: In October 2009, Amazon introduced their Relational Database Service (RDS). Developers can use RDS to provision relational databases for applications in the cloud. Tasks such as backups, recovery, and software patching are automatic. Developers resize the database and manage its computing resources using an API call.</li>
+</ul>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

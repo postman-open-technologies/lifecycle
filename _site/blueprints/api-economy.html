@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>The API Economy</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">The API Economy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="the-api-economy">The API Economy</h1>
+<p>The phrase “API Economy” is often used to describe the direct revenue opportunities associated with making APIs available to 3rd party developers. While this represents one slice of this new lens to look at the economy through, there is a much larger opportunity with what these API providers will be enabling. We are seeing ongoing waves of startups and large enterprises leveraging an API-first approach to providing the solutions consumers are looking for, and even defining entirely new layers to the global economy.</p>
+
+<h2 id="companies">Companies</h2>
+
+<ul>
+  <li><strong>Uber</strong> - In December 2008, after Garrett Camp and Travis Kalanick attended the LeWeb tech conference in Paris, they found it difficult to get a taxi. This experience inspired them to design a mobile app that allowed people to find a ride by tapping a button. In 2009, they developed the UberCab app. At first, they tested UberCab using 3 cars in New York City. A rider opened UberCab on their phone, the app used their phone’s GPS location to let drivers know where to find them, and a black luxury car picked them up. The rider paid their fare within the app, so drivers did not have to handle payments. In 2010, the UberCab app launched and the first official UberCab ride was requested in San Francisco. In 2011, UberCab changed its name to Uber to distance itself from traditional taxi services. In 2012, Uber launched UberX, which allowed drivers to use non-luxury vehicles for less expensive fares. In 2013, Uber began to allow drivers to use their own personal vehicles to drive for UberX.</li>
+  <li><strong>Grubhub</strong> - In 2004, Mike Evans and Matt Maloney founded Grubhub in Chicago, hoping to improve the experience of ordering food. Evans and Maloney were looking for a way to order meals without calling the restaurant, looking at a paper menu, reading their credit card number, and dictating their address. They collected menus from restaurants around their neighborhood and offered to include them on their website for a 10% commission. Customers could open the Grubhub website to see which restaurants around them had a delivery option, and they could also view the menu and place their order. In 2010, Grubhub launched their mobile app. In 2012, Grubhub launched a tablet app for restaurants to use when taking orders. In 2014, Grubhub began offering delivery service for restaurants that do not have their own delivery drivers.</li>
+  <li><strong>DoorDash</strong> - In 2012, Tony Xu and Evan Moore were pitching their startup ideas to small businesses in Palo Alto, California. After talking with the owner of a macaroon shop, they found out that the shop was turning down delivery requests because they were unable to fulfill them. Xu and Moore went on to interview about 200 other small business owners and learned that deliveries were a pain point for most of them. They brought in Stanford classmates Andy Fang and Stanley Tang, and the four of them developed the Palo Alto Delivery website and began doing deliveries themselves around the Stanford campus. They charged a $6 delivery fee for each order, which was their only revenue. The website contained menus for local restaurants and a Google Voice number where customers would call them to place their orders. In June 2013, they renamed the website to DoorDash and began to hire additional drivers and expand their delivery area.</li>
+  <li><strong>Drizly</strong> - In 2012, Boston College students Nick Rellas and Justin Robinson were chatting over text, wishing that they could get beer delivered. After doing some research, Rellas and Robinson learned that alcohol delivery was legal. As long as they did not charge a commission, no liquor license was required. In 2013, along with Rellas’s cousin Cory Rellas and with input from information systems professor John Gallaugher, they founded Drizly, a website and iOS app that made it possible to order beer, wine, and liquor from local stores for delivery within one hour. Either in the app or on the Drizly website, a customer can browse the available options at the stores in their area, place an order, and pay. The store receives an alert and then sends a request to their delivery partner. When the delivery partner reaches the customer, they must scan the barcode on the customer’s ID to verify the customer’s age, and then they deliver the order.</li>
+  <li><strong>Instacart</strong> - In 2012, Apoorva Mehta, a former employee of Amazon’s fulfillment services department, developed the Instacart app in San Francisco so that he could avoid shopping for groceries. Users can open the Instacart app, browse and shop for groceries at local grocery stores, and select a delivery time. A personal shopper goes to the store, picks out the items, purchases and packs them up, and delivers the order to the customer’s home at the time they specified. Using an early version of the app, Mehta placed an order at a local grocery store, went to the store, shopped the order himself, and then delivered it to his home. Mehta had founded several businesses, but Instacart gained immediate demand and he had to quickly hire personal shoppers to fulfill orders. In the summer of 2012, Mehta brought in co-founders Max Mullen and Brandon Leonardo. By 2014, Instacart had expanded to 10 additional cities, and by 2017, Instacart had partnered with grocery stores nationwide.</li>
+</ul>
+
+<h2 id="solutions">Solutions</h2>
+
+<ul>
+  <li><strong>Ridesharing</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+  <li><strong>Food Delivery</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+  <li><strong>Grocery Delivery</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+  <li><strong>Alcohol Delivery</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+</ul>
+
+<h2 id="concepts">Concepts</h2>
+
+<ul>
+  <li><strong>Gig Marketplace</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+</ul>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

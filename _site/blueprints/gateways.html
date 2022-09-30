@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Gateways</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Gateways</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="gateways">Gateways</h1>
+<p>The first wave of API Gateways, historically, was offered as a component within larger API Management platforms. As the industry evolved, a new wave of API Gateways was introduced to provide solutions to a changing landscape. Some of these gateway providers are now supplementing their standalone offering with additional tools, often centered around a management approach more conducive to internal API lifecycles.</p>
+
+<h2 id="capabilities">Capabilities</h2>
+<p>Depending on the gateway solution chosen, there is a mix of common capabilities offered at this essential, but also ubiquitous part of doing APIs today.</p>
+
+<ul>
+  <li><strong>Authentication</strong> - Ensuring that consumers are authenticated before they access an API resource or capability, helping provide security across all APIs being used behind applications.</li>
+  <li><strong>Authorization</strong> - Ensuring that once a consumer gains access to an API, that they only have access to resources and capabilities that they are entitled to have access to.</li>
+  <li><strong>Plans</strong> - Organizing APIs and their consumers into standardized, but also sometimes customized access plans that govern which APIs they can use and how much of a resource they can have.</li>
+  <li><strong>Routing</strong> - A common capability for gateways is to route traffic to a specific backend service, or possibly an external service, playing traffic cop when it comes to all the API requests made.</li>
+  <li><strong>Policies</strong> - Applying machine readable policies that define the configuration and constraints applied to APIs and their consumers as they access digital resources via each gateway.</li>
+  <li><strong>Rate Limiting</strong> - Placing limits on the number of requests consumers can make in a second, minute, hour, week, or month, ensuring that the availability of services isn’t abused.</li>
+  <li><strong>Transformation</strong> - It is common for API gateways to transform requests being made, changing or adding headers, parameters, or the body of each request to support back-end needs.</li>
+  <li><strong>Contracts</strong> - Gateways are increasingly using OpenAPI, AsyncAPI, JSON Schema, and other contracts to shape the deployment and management of APis, leveraging the contract to operate.</li>
+  <li><strong>Versioning</strong> - Helping API producers manage change across their AIs is increasingly supported at the gateway level, helping define access across many different versions of an API over time.</li>
+</ul>
+
+<h2 id="characteristics">Characteristics</h2>
+<p>The age of a single gateway from a single vendor controlling access to internal resources and capabilities is over, and today’s multi-gateway landscape possesses a range of characteristics.</p>
+
+<ul>
+  <li><strong>Centralized</strong> - In many enterprises there can be a single centralized gateway, often times handline all of the traffic coming from outside the enterprise via a single entry point.</li>
+  <li><strong>Federated</strong> - It is increasingly common for enterprise operations to support a federated gateway approach to making APIs available across domains, acquisitions, and potentially regions.</li>
+  <li><strong>Regional</strong> - The deployment of regionally specific gateways has emerged to respond to the increased regulation and data sovereignty that has emerged within specific countries.</li>
+  <li><strong>Vendors</strong> - It is common for enterprise organizations to have API gateways from multiple vendors, providing a mix of gateway solutions for teams to use when securing APIs.</li>
+  <li><strong>Open</strong> - The usage of openl licensed gateways, as well as openly licensed contracts, policies, and other artifacts is an increasingly common hallmark of the gateway in operation.</li>
+</ul>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

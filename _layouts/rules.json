@@ -1,0 +1,30 @@
+---
+layout: none
+---
+{
+"rules": {
+"{{ page.slug }}":{
+{% assign prop_count = 0 %}
+{% for property in page[page.slug] %}
+{% if property[0] contains 'x-' %}{% else %}{% assign prop_count = prop_count | plus: 1 %}{% endif %}
+{% endfor %} 
+{% assign this_count = 1 %}
+{% for property in page[page.slug] %}
+    {% if property[1].first %}
+        {% if property[0] contains 'x-' %}{% else %}  
+        "{{ property[0] }}": {{ property[1] | jsonify  }}{% unless forloop.last %}{% if prop_count != this_count %},{% endif %}{% endunless %}
+        {% endif %}
+    {% else %}
+        {% if property[0]  contains 'x-' %}{% else %}    
+            {% if property[0] == 'recommended' %}
+                "{{ property[0] }}": {{ property[1] }}{% unless forloop.last %}{% if prop_count != this_count %},{% endif %}{% endunless %}
+            {% else %}
+                "{{ property[0] }}": "{{ property[1] }}"{% unless forloop.last %}{% if prop_count != this_count %},{% endif %}{% endunless %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+    {% assign this_count = this_count | plus: 1 %}
+{% endfor %} 
+}
+}
+}

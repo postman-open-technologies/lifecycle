@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Source Control</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Source Control</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="source-control">Source Control</h1>
+<p>Leveraging existing source control used for tracking and managing changes to code and using it to also include the machine readable artifacts produced across a modern API lifecycle. Using source control to manage the collaboration necessary between multiple API stakeholders, consumers, and across the multiple versions of an API that might be in production at any given moment. Extending the existing software development lifecycle (SDLC) to support what is needed to deliver, but also govern each API across a well-known API lifecycle.</p>
+
+<ul>
+  <li><strong>Organizations</strong> - Establishing organizations for source control that are in alignment with the wider API strategy for the enterprise.</li>
+  <li><strong>Repositories</strong> - Ensuring there is a clear mono or distributed repository strategy for the API lifecycle providing the source of truth for the API lifecycle.</li>
+  <li><strong>Folders</strong> - Including in the API strategy guidance for how folders within source control should be structured and used to consistently organize code and artifacts.</li>
+  <li><strong>Artifacts</strong> - Layering on machine readable artifacts produce across the API lifecycle into our existing software development lifecycle source control process.</li>
+  <li><strong>Variables</strong> - Include source control variables as part of an overall API lifecycle variable strategy that is applied across source control, but also documentation, and other stops.</li>
+  <li><strong>Contributors</strong> - Maintain a regular awareness of the contributors associated with any repository that is used as part of the API lifecycle, keeping the team and community well-defined.</li>
+  <li><strong>Feedback</strong> - Leverage source control feedback loops as part of the wider API lifecycle feedback loop, gathering feedback from stakeholders throughout the evolution of code and artifacts.</li>
+  <li><strong>Integration</strong> - Seamlessly integrate your source control into all aspects of the API lifecycle, leveraging Git or APIs to make your source control central to where the API work is happening.</li>
+  <li><strong>Automation</strong> - Put automation to work, ensuring that the evolution of code and artifacts in service of producing or consuming APIs is as standardized and repeatable as it possibly can be.</li>
+</ul>
+
+<p>Seamlessly weaving source control into your overall API platform and operations strategy is essential for managing change across not just your code base behind your APIs, but also the artifacts that may be generating, deploying, managing, and driving every down stream change that occurs across your API operations.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

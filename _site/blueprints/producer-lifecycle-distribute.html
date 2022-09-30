@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Distribute</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Distribute</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="distribute">Distribute</h1>
+<p>An API does little good if it can’t be found and put to use. Distributing an API, as well as the supporting operations around it helps ensure that consumers can find it when building applications and integrations, but also teams who are developing potentially duplicate APIs are able to find it before creating another one.</p>
+
+<h2 id="destinations">Destinations</h2>
+
+<ul>
+  <li><strong>Portal</strong> - API deployed into production should be published to the central portal, providing centralized access to an API, making it available to internal or external consumers.</li>
+  <li><strong>Catalog</strong> - The meta data for each API should be updated and kept in sync with each API, ensuring that all the relevant information consumers will need is available in the catalog.</li>
+  <li><strong>Network</strong> - API should be made available via private, partner, and public consumers, giving it the visibility it needs to be successful, connecting with the intended consumers.</li>
+  <li><strong>Workspace</strong> - The workspaces around an API should also be made available via the network, providing teams behind, and consumers access to the operations behind.</li>
+</ul>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<ul>
+  <li><strong>Buttons</strong> - The documentation, tests, and even the workspace behind an API should be made available via blog posts, videos, wikis, and other resources available to support APIs.</li>
+  <li><strong>Visibility</strong> - The visibility of each API, and whether it is private, partner, or public should be leveraged deliberately and confidently to make sure each API is available to consumers.</li>
+  <li><strong>Search</strong> - APIs, and the operations around them should be indexed and available via search, providing teams, business stakeholders, and consumers with the able to search and use.</li>
+</ul>
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

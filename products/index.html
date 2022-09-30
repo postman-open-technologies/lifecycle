@@ -1,0 +1,834 @@
+---
+layout: default
+title: Products
+---
+
+<style id="compiled-css" type="text/css">
+h2{
+padding: 0;
+margin: 0;
+font-size: 24px;
+}
+h2{
+padding: 0px 0px 8px 0px;
+margin: 0px auto;
+text-align: center;
+font-size: 20px;
+text-decoration: underline;
+}
+h3{
+padding: 0px auto;
+margin: 5px auto;
+text-align: center;
+font-size: 16px;
+border: 1px solid #000;
+}
+.icon{
+width: 25px; height: 25px; top: -22px; right: -13px; position: relative; display: inline;
+}
+#container{
+width: 90%;
+margin: 0 auto;
+padding: 2px auto;
+background-color: #FFF;
+border-radius: 10px;
+padding: 10px;
+overflow: hidden;
+}
+#header{
+background-color: FFF;
+width: 100%;
+margin: 0 auto;
+border-radius: 0px;
+margin-bottom: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+#define-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#design-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#develop-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#test-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#secure-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#deploy-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%) 
+}   
+#observe-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}   
+#distribute-owner{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 75px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+} 
+
+
+#define{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#design{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+justify-content: center;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#develop{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+justify-content: center;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#test{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+justify-content: center;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#secure{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+justify-content: center;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#deploy{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+justify-content: center;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%) 
+}   
+#observe{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+justify-content: center;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}   
+#distribute{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+justify-content: center;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}     
+#inner{
+    background-color: FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 92%;
+    margin: 5px;
+    padding: 10px 3px 3px 3px;
+    border-radius: 10px;
+    font-size: 12px;
+    min-height: 40px;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #FFF;
+}  
+
+.inner-text{
+    width: 90%; 
+    text-align: center; 
+    border: 0px solid #000; 
+    position: relative; 
+    float: right; 
+    left: 12px; 
+    font-size: 16px;
+    min-height: 50px;
+    font-sizE: 14px;
+}
+
+#define-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#design-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}
+#develop-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#test-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#secure-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}   
+#deploy-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%) 
+}   
+#observe-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}   
+#distribute-governance{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 100px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+} 
+</style>
+
+<div id="container" style="border: 0px solid #000; margin-top: 50px;">
+    <table border="0" align="center">
+        <tr>
+            <td>
+                <div id="header">
+
+                    <h1>Digital Product Blueprint</h1>
+                    <p>This is an opinionated visual and outline to help demonstrate what a complete digital product can be when you adopt an API-first strategy, providing a common approach to defining the API lifecycle, governance, tooling, and which roles are needed to move APIs forward.</p>
+
+                </div>
+
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td>
+                <div id="header">
+                    <ul style="font-size: 20px; padding-top: 10px;">
+                        <li><strong>Approach</strong> - Design-Led</li>
+                        <li><strong>Visibility</strong> - Public</li>
+                        <li><strong>Maturity</strong> - Production</li>
+                    </ul>
+
+                </div>
+
+            </td>
+        </tr>
+
+        
+
+        <tr>
+            <td>       
+                
+                <h1 style="text-align: left;">Producer Lifecycle</h1>
+
+                <!--LIFECYCLE-->
+                <div id="define" style="min-height: 725px;">
+                    <h2>Define</h2>
+                    <div id="inner">
+                        <div class="inner-text">Domain</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Regions</div><img src="../images/aws-api-gateway-icon.png" class="icon"> 
+                    </div>                                                 
+                    <div id="inner">
+                        <div class="inner-text">Business Requirements</div><img src="../images/confluence-icon.png" class="icon">  
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Security Requirements</div><img src="../images/confluence-icon.png" class="icon">  
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Workspace</div><img src="../images/postman-icon.png" class="icon">  
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Source Control</div><img src="../images/github-icon.png" class="icon">  
+                    </div>    
+                    <div id="inner">
+                        <div class="inner-text">Team</div><img src="../images/postman-icon.png" class="icon">  
+                    </div>                                                      
+                </div>
+                <div id="design" style="min-height: 725px;">
+                    <h2>Design</h2>
+                    <div id="inner">                                                      
+                        <div class="inner-text">Contract</div><img src="../images/postman-icon.png" class="icon">                              
+                    </div>      
+                    <div id="inner">                                                      
+                        <div class="inner-text">Schema</div><img src="../images/postman-icon.png" class="icon">                              
+                    </div>                            
+                    <div id="inner">
+                        <div class="inner-text">Reference Documentation</div><img src="../images/postman-icon.png" class="icon">  
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Mock Server</div><img src="../images/postman-icon.png" class="icon">  
+                    </div>
+                    <div id="inner">
+                        <div class="inner-text">Variables</div><img src="../images/postman-icon.png" class="icon">  
+                    </div>                           
+                    <div id="inner">
+                        <div class="inner-text">Environments</div><img src="../images/postman-icon.png" class="icon">  
+                    </div>                             
+                    <div id="inner">
+                        <div class="inner-text">Source Control</div><img src="../images/github-icon.png" class="icon">  
+                    </div>                           
+                </div>
+                <div id="develop" style="min-height: 725px;">
+                    <h2>Develop</h2>
+                    <div id="inner">
+                        <div class="inner-text">Server</div><img src="../images/aws-lambda-icon.jpg" class="icon"> 
+                    </div>                        
+                    <div id="inner">
+                        <div class="inner-text">Gateway</div><img src="../images/aws-api-gateway-icon.png" class="icon"> 
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Source Control</div><img src="../images/github-icon.png" class="icon"> 
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">CLI</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">IDE</div><img src="../images/visual-studio-icon.png" class="icon"> 
+                    </div>                                                                                            
+                </div>  
+                <div id="test" style="min-height: 725px;">
+                    <h2>Test</h2>
+                    <div id="inner">
+                        <div class="inner-text">Contract Tests</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Performance Tests</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Monitors</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                  
+                </div> 
+                <div id="secure" style="min-height: 725px;">
+                    <h2>Secure</h2>
+                    <div id="inner">
+                        <div class="inner-text">Security Tests</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>    
+                    <div id="inner">
+                        <div class="inner-text">Environments</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>             
+                    <div id="inner">
+                        <div class="inner-text">Role-based Access Control</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                           
+                </div> 
+                <div id="deploy" style="min-height: 725px;">
+                    <h2>Deploy</h2>
+                    <div id="inner">
+                        <div class="inner-text">Source Code</div><img src="../images/github-icon.png" class="icon"> 
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Artifacts</div><img src="../images/github-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">CI/CD</div><img src="../images/github-icon.png" class="icon"> 
+                    </div>                         
+                    <div id="inner">
+                        <div class="inner-text">Environments</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                          
+                    <div id="inner">
+                        <div class="inner-text">Server</div><img src="../images/aws-lambda-icon.jpg" class="icon"> 
+                    </div>
+                    <div id="inner">
+                        <div class="inner-text">Gateway</div><img src="../images/aws-api-gateway-icon.png" class="icon"> 
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Policies</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                         
+                    <div id="inner">
+                        <div class="inner-text">Contract Test</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Security Test</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                 
+                </div> 
+                <div id="observe" style="min-height: 725px;">
+                    <h2>Observe</h2>
+                    <div id="inner">
+                        <div class="inner-text">Monitors</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">APM</div><img src="../images/new-relic-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Alerts</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>
+                    <div id="inner">
+                        <div class="inner-text">Reports</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                                    
+                </div> 
+                <div id="distribute" style="min-height: 725px;">
+                    <h2>Distribute</h2>
+                    <div id="inner">
+                        <div class="inner-text">Network</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>     
+                    <div id="inner">
+                        <div class="inner-text">Catalog</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>    
+                    <div id="inner">
+                        <div class="inner-text">Portal</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>    
+                    <div id="inner">
+                        <div class="inner-text">Buttons</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Blog Post</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>    
+                    <div id="inner">
+                        <div class="inner-text">Video</div><img src="../images/youtube-icon.png" class="icon"> 
+                    </div>                                                 
+                    <div id="inner">
+                        <div class="inner-text">Feedback Loop</div><img src="../images/github-icon.png" class="icon"> 
+                    </div>                                         
+                </div>    
+                <!--LIFECYCLE-->   
+
+            </td>
+        </tr>   
+        
+        
+
+        <tr>
+            <td>
+
+                <h1 style="text-align: left;">Roles</h1>
+
+                <!--Roles-->
+                <div id="define-owner" style="min-height: 300px;">
+                    <h2>Define</h2>
+                    <div id="inner">
+                        <div class="inner-text">Product Manager</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                
+                </div>
+                <div id="design-owner" style="min-height: 300px;">
+                    <h2>Design</h2>
+                    <div id="inner">
+                        <div class="inner-text">Software Architect</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Product Manager</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Designer</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                               
+                </div>
+                <div id="develop-owner" style="min-height: 300px;">
+                    <h2>Develop</h2>
+                    <div id="inner">
+                        <div class="inner-text">Developer</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                </div>  
+                <div id="test-owner" style="min-height: 300px;">
+                    <h2>Test</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Test Engineer</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                </div> 
+                <div id="secure-owner" style="min-height: 300px;">
+                    <h2>Secure</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Information Security</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                </div> 
+                <div id="deploy-owner" style="min-height: 300px;">
+                    <h2>Deploy</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Release Management</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                </div> 
+                <div id="observe-owner" style="min-height: 300px;">
+                    <h2>Observe</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Site reliability Engineering (SRE)</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">DevOps</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Platform</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                                 
+                </div> 
+                <div id="distribute-owner" style="min-height: 300px;">
+                    <h2>Distribute</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Product Marketing</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                </div>     
+                <!--OWNER-->
+
+            </td>
+        </tr>
+
+        
+
+        <tr>
+            <td>      
+                
+                <h1 style="text-align: left;">Governance</h1>
+
+
+                <!--GOVERNANCE-->
+                <div id="define-governance" style="min-height: 390px;">
+                    <h2>Define</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Guidelines</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>        
+                    <div id="inner">
+                        <div class="inner-text">Rules</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Standards</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                          
+                </div>
+                <div id="design-governance" style="min-height: 390px;">
+                    <h2>Design</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Errors</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Warning</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>     
+                    <div id="inner">
+                        <div class="inner-text">Design Review</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>               
+                </div>
+                <div id="develop-governance" style="min-height: 390px;">
+                    <h2>Develop</h2>  
+                    <div id="inner">
+                        <div class="inner-text">Errors</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Warning</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>                                               
+                    <div id="inner">
+                        <div class="inner-text">CLI</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">IDE</div><img src="../images/visual-studio-icon.png" class="icon"> 
+                    </div>          
+                </div>  
+                <div id="test-governance" style="min-height: 390px;">
+                    <h2>Test</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Errors</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Warning</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>     
+                    <div id="inner">
+                        <div class="inner-text">Quality Review</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                </div> 
+                <div id="secure-governance" style="min-height: 390px;">
+                    <h2>Secure</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">Errors</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Warning</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div>     
+                    <div id="inner">
+                        <div class="inner-text">Security Review</div><img src="../images/postman-icon.png" class="icon"> 
+                    </div> 
+                </div> 
+                <div id="deploy-governance" style="min-height: 390px;">
+                    <h2>Deploy</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">CI/CD Enforcement</div><img src="../images/github-icon.png" class="icon"> 
+                    </div> 
+                </div> 
+                <div id="observe-governance" style="min-height: 390px;">
+                    <h2>Observe</h2>                        
+                    <div id="inner">
+                        <div class="inner-text">APM</div><img src="../images/new-relic-icon.png" class="icon"> 
+                    </div> 
+                </div> 
+                <div id="distribute-governance" style="min-height: 390px;">
+                    <h2>Distribute</h2>
+                    <div id="inner">
+                        <div class="inner-text">Search</div><img src="../postman-icon.png" class="icon"> 
+                    </div>                     
+                </div>     
+                <!--GOVERNANCE-->    
+
+            </td>
+        </tr>        
+
+        <tr>
+            <td>       
+                
+                <h1 style="text-align: left;">The Consumer API Lifecycle</h1>
+                <!--CONSUMER LIFECYCLE-->   
+                <div id="define" style="width: 14%">
+                    <h2>Discover</h2>
+                    <div id="inner">
+                        <div class="inner-text">Search</div>
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Security Requirements</div>
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">APIs</div>
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Documentation</div>
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Teams</div>
+                    </div>                                                      
+                </div>
+                <div id="design" style="width: 14%">
+                    <h2>Evaluate</h2>
+                    <div id="inner">
+                        <div class="inner-text">Explore</div>
+                    </div>      
+                    <div id="inner">
+                        <div class="inner-text">Execute</div>
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Examples</div>
+                    </div>    
+                    <div id="inner">
+                        <div class="inner-text">Documentation</div>
+                    </div>                           
+                </div>
+                <div id="develop" style="width: 14%">
+                    <h2>Integrate</h2>
+                    <div id="inner">
+                        <div class="inner-text">Onboarding</div>
+                    </div>                         
+                    <div id="inner">
+                        <div class="inner-text">Contracts</div>
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Collections</div>
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Automation</div>
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Workflows</div>
+                    </div>                                                                
+                </div>  
+                <div id="test" style="width: 14%">
+                    <h2>Test</h2>
+                    <div id="inner">
+                        <div class="inner-text">Availability</div>
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Contract</div>
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Performance</div>
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Security</div>
+                    </div>                                  
+                </div> 
+                <div id="secure" style="width: 14%">
+                    <h2>Deploy</h2>
+                    <div id="inner">
+                        <div class="inner-text">Source Control</div>
+                    </div>        
+                    <div id="inner">
+                        <div class="inner-text">CI/CD Pipelines</div>
+                    </div>                 
+                    <div id="inner">
+                        <div class="inner-text">Collections</div>
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Serverless</div>
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Runners</div>
+                    </div>                                                                                        
+                </div> 
+                <div id="observe" style="width: 14%">
+                    <h2>Observe</h2>
+                    <div id="inner">
+                        <div class="inner-text">Watches</div>
+                    </div>   
+                    <div id="inner">
+                        <div class="inner-text">Forks</div>
+                    </div>  
+                    <div id="inner">
+                        <div class="inner-text">Feedback</div>
+                    </div>
+                    <div id="inner">
+                        <div class="inner-text">Notifications</div>
+                    </div> 
+                    <div id="inner">
+                        <div class="inner-text">Usage</div>
+                    </div>        
+                </div> 
+                <!--CONSUMER LIFECYCLE-->   
+
+            </td>
+        </tr>  
+
+    </table>
+
+</div>

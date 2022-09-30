@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>GraphQL</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">GraphQL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="graphql">GraphQL</h1>
+<p>GraphQL provides the ability to apply queries, mutations, and subscriptions defined within a query language to synchronous and asynchronous APIs. Adding another type of contract to our API toolbox for providing a very flexible query language for front-end developers to use when getting the data they need.</p>
+
+<ul>
+  <li><strong>Operations</strong> - The document which contains the types of operations: query, mutation, and subscription along with any fragments, describing what is possible wiith the API.</li>
+  <li><strong>Document</strong> - GraphQL has two types of documents: execution documents and schema documents, shaping what tpes of queries are possible, and how consumers can use.</li>
+  <li><strong>Selection Sets</strong> - With an execution document a set of fields that make up the content contained within curly braces, describing the desired fields associated with a query.</li>
+  <li><strong>Fields</strong> - And object-specific attribute that can be requested and returns a value, providing the atomic unit of any combination of data that is made available via API.</li>
+  <li><strong>Fragments</strong> - There are three types of fragments: named fragments allow us to reuse fields, type conditions allow us to conditionally select fields and inline fragments that don’t have a name defined inside the selection set.</li>
+  <li><strong>Directives</strong> - There are four directives defined in the spec: @skip, @include, @specifiedBy and @deprecated, chnaging how a section of the document is executed.</li>
+  <li><strong>Mutations</strong> - Different types of operations that can be made, enabling different state changes when it comes to data, providing the ability to read, update, and other states.</li>
+  <li><strong>Subscriptions</strong> - These are long-lived requests that allow the server to send the client events as they happen, allowing consumers to be subscribed to the data they need.</li>
+</ul>
+
+<p>GraphQL is an optimal solution when you have large volumes of data with a wide surface area, and you have a known set of developers who are familiar with GraphQL, the schema, and are building a variety of applications that have specialized needs around specific domains of data.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Why do you become API-first?</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Why do you become API-first?</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="why-do-you-become-api-first">Why do you become API-first?</h1>
+<p>Enterprise organizations that are further along in their API journey are now finding themselves asking more questions about why they should become an API-first company. Choosing to be API-first has the potential to dramatically increase the productivity of your teams, ensure high levels of quality across all of the APIs you produce, and build your operations on a more solid API platform. When you shift towards an API-first approach in your business, you establish the understanding and control you need across your operations to more effectively drive your enterprise forward.</p>
+
+<ul>
+  <li><strong>Is it possible to do this without a strategy?</strong> - Each one of us makes thousands of API calls a day in the course of our personal and professional lives. APIs are what have defined every major technological shift in the last 20 years. Even with this reality, many enterprise organizations still lack a formal API strategy for defining how APIs will be designed, developed, delivered, and operated. But, these are just for the APIs we build; there are hundreds of other partner and third-party APIs we depend on that we don’t have a strategy for either. There is no way for enterprise leadership to remain competitive within their industries if they don’t have a formal strategy for how APIs work across an organization, making having an API plan the top of our list of arguments for why you should be API-first.</li>
+  <li><strong>So much API redundancy behind applications</strong> - For the last 20 years, enterprise organizations have been participating in a non-stop race to stitch together a dizzying mix of applications and systems for their operations, but now they’re increasingly developing their own web, mobile, and device applications on top of it all. All of these applications are reliant on APIs to move the enterprise business forward, resulting in an often redundant chaotic mix of APIs that possess low levels of visibility and quality. Being API-first means that you prioritize all of the APIs behind your applications and consider them as a whole, taking into account how they will be used across all applications, rather than just scrambling to deliver a single application that often leaves vulnerable and redundant APIs in their shadows.</li>
+  <li><strong>You must be able to discover all of your APis</strong> - Very few enterprise organizations know where all of their APIs are, let alone have them properly published to an internal, partner, or public catalog. API discovery is a top concern when it comes to finding APIs before any new APIs are started (to reduce redundancy), and while you are looking to build an application or integration. Being API-first means that all APIs are prioritized, and APIs and microservices are discoverable by default; the right API platform makes them available via search and browsing of catalogs, and also provides names, descriptions, tags, and other metadata essential to robust and accurate API discovery. This saves time and resources across operations by making sure there isn’t redundancy and waste across the endless APIs enterprise organizations are putting to work today.</li>
+  <li><strong>You must have visibility inside and outside</strong> - Being API-first involves having well-defined boundaries, security, authentication, and other practices across the API lifecycle. With those in place, you have confidence when it comes to opening up access to digital resources and capabilities to partners and third-party developers. Without proven API lifecycle practices, and the visibility and observability you need regarding how APIs are being put to use, you just won’t have the confidence needed to share your APIs to outside sources. This will prevent you from rapidly responding to partner needs. Why? Access to your internal APIs should only be provided with a secure gateway and management layer, which is a critical dimension of how API-first companies are able to remain so competitive, agile, and adaptable in today’s business landscape.</li>
+  <li><strong>Elevating quality benefits your bottom line</strong> - Lack of quality across APIs hits an organization in the pocketbook when it comes to the loss of consumer business, but also through the time spent by teams troubleshooting, fixing, and responding to preventable incidents. Quality shapes and defines the enterprise, and sets the tone for how teams think, act, and behave. Being API-first elevates the testing of API contracts, performance, integrations, and other dimensions, helping enable teams to write and generate better tests and making sure tests are present across 100% of APIs. Teams are equipped with the training and tooling they need to develop and apply modular testing across every API they produce or consume, enforce tests via CI/CD pipelines, or schedule via monitors.</li>
+  <li><strong>Providing a solid API security perimeter</strong> - An API-first security perimeter is much more effective than firewalls and existing application security practices alone. Being API-first means that every API and microservices has a security collection that is centrally defined by security experts, but then also applied as part of the regular API development lifecycle by developers. API-first means that the shadow APIs that exist behind mobile applications—supporting system-to-system integrations and powering ephemeral applications—are elevated alongside every other API. Even the simplest of APIs are forced through the minimum security scanning and evaluation as it is being deployed or changed with each version. Security is consistently applied across all APIs used by teams, no matter what the application is or how long the API will be used by consumers.</li>
+  <li><strong>Putting APIs first increases productivity</strong> - An API-first approach means establishing well-known workspaces where API work is centralized, ensuring they possess artifacts, documentation, mock servers, environments, tests, monitors, history, and everything else new and existing team members need to get to work. Repeatable processes are established in order to optimize the design, development, deployment, and operation of APIs and microservices. Rough edges of the API lifecycle are smoothed out across teams, which are equipped with the knowledge and tooling they need to consistently deliver and iterate upon APIs. API-first organizations perpetually redefine themselves and move forward to meet the evolving demands of their consumers and the industries they operate in.</li>
+  <li><strong>Meeting demands by realizing higher velocity</strong> - Putting APIs first establishes a proven process for teams to develop, deploy, and iterate upon APIs much more efficiently. Then, when you combine this process with a consumer feedback loop, you end up with a virtuous cycle of development that can help an organization realize it’s maximum velocity. APIs designed as products are built for the future, and they leverage real-time feedback loops with consumers to rapidly design, iterate, test, and deploy new features. This increases the velocity in which the enterprise can respond to market needs. Teams more quickly deliver new digital resources and capabilities to help power business across applications and integrations.</li>
+  <li><strong>Achieving the operational observability needed</strong> - Without API-first you will never have the visibility you need to understand what is happening across the enterprise. Applying API-first processes ensures that each individual API has collections defined to test contract and performance, but also to realize security, governance, and other expectations of your operations. Modern approaches to API observability are all about tapping the existing outputs of your system to understand its state at any given time using your APM infrastructure. API-first ensures that every API and the lifecycle around it has outputs and is connected to reporting and existing APM solutions—this gives you 100% observability across all your APIs. Without this level of observability, there is no way for teams and business leaders to know what is truly happening across their operations, leaving them in the dark when it comes to making decisions that impact business.</li>
+  <li><strong>Governing the state of your complex system</strong> - In order to govern APIs at scale across teams, an enterprise needs API-first discoverability, quality, and observability at its foundation. This existing testing infrastructure allows you to not just test each individual API, but also the surface area and lifecycle for that API. Without being API-first, you just won’t have the visibility across your operations to understand where consistency exists or doesn’t exist in the design of an API, but also the supporting documentation, testing, security, and the monitoring of APIs. API governance is about being able to understand the state of your complex enterprise system and having the control and influence to make updates, guide, and realize the change you need to move in the right direction. Without an API-first mindset across all of the areas being discussed here, you will never be able to fully realize API governance at scale across teams, which means you’ll never be able to head in the direction you need to compete in today’s market.</li>
+  <li><strong>Being stronger by using common standards</strong> - Complex and non-standardized APIs require more resources to onboard and integrate with, resulting in friction throughout the life of an API. APIs that employ common patterns and adopt web, industry and organizational standards as part of a wider API-first approach ensure that APIs speak to the widest possible audience, and enable interoperability across an industry. Standards help reduce the cognitive load required to understand what an API does, and they increase the likelihood that there will be common open source libraries and tooling available when producing or consuming APIs. Utilizing standards as part of an API-first organization makes good business sense: it increases the productivity, quality, and velocity that exists across any API, leaving an organization stronger while also speaking to the widest possible number of consumers within each industry.</li>
+  <li><strong>Seeing regulations as less threatening to business</strong> - API-first makes it easier for enterprise organizations to find data across the enterprise. You’ll have the visibility needed across operations to effectively prepare for regulation, but also respond in the moment to them. In an API-first world, you have the discoverability and observability present as a default part of your operations, reducing the friction associated with responding to regulatory requirements. Without an API-first strategy, you are left with teams carrying the burden of responding to each individual inquiry; they will struggle to meet the minimum requirements associated with industry regulations, rather than working on the next digital resource or capability your business needs. API-first helps organizations see regulations as more of something to build on and around, rather than something that is perpetually disrupting business and getting in their way. This removes yet another barrier for an organization that is looking to operate, evolve, and move forward as a business.</li>
+  <li><strong>Making space for team Innovation to occur</strong> - Teams in an API-first organization have more freedom to innovate. With higher quality and reliability across operations, teams have the space to innovate around new processes, products, and features. Without API-first, you are perpetually stuck in a mode where you are responding to the past, left unable to properly plan for and build for the future. API-first prioritizes the unwinding of the complex spaghetti mess of infrastructure that has emerged behind the web, mobile, and device applications we’ve built and used over the last two decades—so that it runs more efficiently and can be more effectively iterated upon. API-first gives teams the space and peace of mind they need to think about what matters most, and ultimately what will benefit the business when it comes to innovating out ahead of regular business operations.</li>
+  <li><strong>Being API-first means being an industry leader</strong> - The enterprise digital transformation is dependent on being API-first and is essential for remaining agile, adaptable, efficient, and competitive in today’s digital marketplace. Enterprise organizations across every business sector are waking up to the importance of APIs, however, it is only the ones who have embraced API-first that are leading and shaping business around the globe today. API-first focuses on prioritizing your infrastructure investments in a more logical way. It isn’t about less priority for applications; it’s about more visibility and planning around the pipes that power them, allowing for higher quality and more reliable infrastructure behind the applications and integrations our businesses depend upon.</li>
+</ul>
+
+<p>There are many reasons why your enterprise organization should become an API-first company. We hope this blog post provides you with a list of some of the most common reasons why leading technology companies and other mainstream businesses are opting to be API-first into the future. Enterprise leaders are considering these areas as they strategize how they can make the changes they need across their teams. At this point in time, it isn’t whether you want to do APIs or not, it comes down to whether or not you are API-first or API-last.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

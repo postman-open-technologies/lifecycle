@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Organizational Standards</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Organizational Standards</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="organizational-standards">Organizational Standards</h1>
+<p>Every enterprise organization should have a set of standards they have adopted as part of API operations. There are plenty of redundant aspects of doing APIs that are easy to make consistent across APIs, things like pagination, sorting, filtering, usage of request bodies, HTTP methods, and error handling.</p>
+
+<ul>
+  <li><strong>Headers</strong> - Key / Value pairs of data that can be passed back and forth as part of API requests, confirming to the HTTP standard, and relying on the IANA registry of headers to define and shape the routing and prioritization of requests being made to APIs when using HTTP as the transport protocol between client and server.</li>
+  <li><strong>Pagination</strong> - Providing a standardized way of navigating through large sets of data and content via an API, limiting the results that are returned with each request, but providing consumers with visibility into how to navigate results and shape their API requests to achieve the most optimum outcomes for both API producer and consumer.</li>
+  <li><strong>Schema</strong> - Establishing common schema for each domain, using Internet and industry standards when possible, but then standardizing your own schema, stabilizing common objects, versioning and evolving them for reuse, then reference them in contracts and use them validation, documentation, testing, and other parts of the API lifecycle to help stabilize how data moves inside and outside the enterprise.</li>
+  <li><strong>Variables</strong> - Defining a consistent set of variables that can be used to abstract away common properties that need to be used across different APIs, defining things like base URL, headers, secrets, and environmental, collection, or global values that are needed across many different APIs.</li>
+</ul>
+
+<p>Internet, industry, and organizational standards provide the base for the consistency and interoperability enterprise organizations need across their operations, helping make APIs more intuitive and speaking a common language, reducing friction for consumers putting to work in applications and integrations.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Templates</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Templates</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="templates">Templates</h1>
+<p>Common, reusable, and standardized templates help enable teams to move faster while delivery more consistent and reusable APIs, reducing time, money, and friction downstream when it comes to using digital resources and capabilities in applications. Reusable templates often begin with design patterns that can be applied during the define and design stages of the API lifecycle, but then expand rapidly to include almost every other stop along a modern API lifecycle.</p>
+
+<ul>
+  <li><strong>Simple</strong> - Provide simple templates that reduce the cognitive load when it comes to learning about new standards and patterns needed as part of producing APIs.</li>
+  <li><strong>Modular</strong> - Keep templates modular and resuable, daisy chaining together different concepts into large patterns, workflows, and processes for moving APIs forward.</li>
+  <li><strong>Starter</strong> - Offer entire starter kits for teams to use when starting new API, providing a complete example of the preferred way for designing, developing, and operating APIs.</li>
+  <li><strong>Contracts</strong> - Maintain catalog of complete contracts that show implementations of different types of contracts, or allow for easy editing, and setting new APIs in motion.</li>
+  <li><strong>Components</strong> - Leverage the components object for OpenAPI and AsyncAPI contracts, providing a rich set of templates that can be used to rapidly design new API contracts.</li>
+  <li><strong>Extensions</strong> - Using extensions for OpenAPI and AsyncAPI, going beyond what each specification can do, providing templates teams can use across the API lifeycle.</li>
+  <li><strong>Rules</strong> - Having template rules for linting different artifacts, helping jumpstart the usage of common rules, but also the development of new rules that help govern operations.</li>
+  <li><strong>Policies</strong> - Provide standardized policies and starter templates for applying across the API lifecycle, helping centralize policy management, but federate their usage.</li>
+</ul>
+
+<p>Templates help enable teams to do the right things across the API lifecycle, helping provide the common parts and pieces of delivering APIs, leaving teams to focus on the bits that are unique and specific to the value your enterprise provides to consumers via internal, partner, and public APis.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

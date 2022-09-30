@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Federation</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Federation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="federation">Federation</h1>
+<p>Successful API transformations often take advantage federated approaches to governance and the resulting operation and evolution across the enterprise. Acknowledging that the enterprise will always be defined by many smaller groups, domains, or states of business operation, which will need a certain degree of autonomy, but also can leverage centralized structure, standards, and resources.</p>
+
+<ul>
+  <li><strong>Principles</strong> - Strengthen the understanding and foundation that API operations is perpetually realized and executed in a federated way across different domains and teams responding to the changing needs of the enterprise and the markets it serves.</li>
+  <li><strong>Tooling</strong> - Perpetually defining the tools that are being used within different domains and teams to help get the job done on the ground floor, allowing for exploration of new tools, but then a formal process for weaving into the overall API platform and stabilizing use.</li>
+  <li><strong>Lifecycle</strong> - Mapping out the lifecycle employed across teams, identifying the common areas of the lifecycle, but also the unique and specific variations that either should remain specialized, or shared across other teams or centralized as part of governance.</li>
+  <li><strong>Bounded Context</strong> - Defining the existing organic lines that exist between teams and groups, then get to work understanding ways in which this can be reshaped and evolved over time to better optimize the vocabulary, standards, and lifecycle in use within teams.</li>
+  <li><strong>Policies</strong> - Crafting policies centrally, but then diseminating and applying across federated teams, but them including teams in the process of versioning and evolving them as well, estasblishing a feedback loop between centralized and federated policies.</li>
+  <li><strong>Automation</strong> - Equpping teams with the artifacts and tooling needed to automate governance, so that it can be centrally defined and consistent, but then enable teams to do the right thing when it comes to governance by automating the redundant aspects.</li>
+  <li><strong>Observability</strong> - Providing the observability necessary to “see” what is happening within a domain, group, or team, but then also across them, helping ensure that APIs and the operations around them are as observable as possible, no matter who is behind it.</li>
+  <li><strong>Champions</strong> - For federation to be success, it requires the hard work of champions embedded within teams, groups, and domains, but are willing to do the hard work to share knowledge, policies, and practices centrally, but also across enterprise teams.</li>
+</ul>
+
+<p>Like the centralization, there are upsides and downsides to federated governance, and there will be to be a constant evaluation and recalibration of what is done in a federated or centralized across teams</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

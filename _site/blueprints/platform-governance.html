@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Platform Governance</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Platform Governance</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="platform-governance">Platform Governance</h1>
+
+<h2 id="api-definition-discovery">API definition (discovery)</h2>
+<p>One reason we see enterprise organizations struggle with their API governance is the lack of discovery that exists across not just APIs, but also artifacts, documentation, and all the other work occurring around each API. You simply cannot govern what you can’t find, and the more visible APIs and the operations are behind them are, the more likely you will be able to make API governance take root.</p>
+
+<ul>
+  <li><strong>Workspace</strong> - Ensure that every API has a private, partner, or public workspace to access the operations surrounding each API.</li>
+  <li><strong>OpenAPI</strong> - Ensure there is always a human and machine-readable API artifact available as the source of truth for each API.</li>
+  <li><strong>Repository</strong> - Establish a Git repository for each API, syncing OpenAPI and collections to the repository as part of the lifecycle.</li>
+  <li><strong>Environment</strong> - Provide development, staging production, and other environments available to apply manually or automatically.</li>
+  <li><strong>Documentation</strong> - Requiring that all APIs have complete and up-to-date documentation available to demonstrate what is possible.</li>
+  <li><strong>Team</strong> - Having the team behind each API available as a list, providing name, and contact information for consumers to use.</li>
+</ul>
+
+<p>This is the foundation for your API governance. Every API should possess these elements, and there should be a blueprint for teams to follow when it comes to setting up new APIs and bringing existing APIs up to current standards. Investment in these areas will make API governance possible in the area of design and other aspects of API operations. Once you get a handle in these areas and realize that each has APIs of its own, you’ll see entirely new ways you can elevate API governance efforts across your teams.</p>
+
+<h2 id="api-instance-reliability">API instance (reliability)</h2>
+<p>The next area we are looking to include as part of API governance is the overall reliability of each instance of an API. We want to provide a baseline set of tests across all APIs. This ensures that the business purpose for each API is being realized, but also that it is done in a way that meets service level agreements (SLA) and doesn’t introduce any vulnerabilities or security issues into operations. It’s key to establish common ways in which teams can confidently deliver and operate reliable API instructors behind our applications and integrations:</p>
+
+<ul>
+  <li><strong>Contract Testing Collection</strong> - Produce a single collection that pulls the JSON schema for each API operation and validates the request and response.</li>
+  <li><strong>Performance Testing Collection</strong> - Produce a single collection that tests one or more API operations, ensuring that it meets a minimum time threshold.</li>
+  <li><strong>Security Testing Collection</strong> - Produce a single collection that applies a common set of security vulnerability tests and 3rd party API security services.</li>
+</ul>
+
+<p>This dimension of API governance historically lives under quality, testing, and other areas of operations, but it makes a lot of sense to consider this as part of the API governance stack. This places reliability as part of governance and allows us to use the same artifacts and tooling we are using for testing to govern our APIs and the API operations around them. We can test the instances of our APIs, the surface area of those APIs, and the operations and infrastructure that move those APIs forward across a well-known API lifecycle.</p>
+
+<h2 id="api-design-consistency">API design (consistency)</h2>
+<p>Now we get to the portion of platform governance that people usually talk about when it comes to API governance—governing the design of your API. API design governance is about making sure the technical details of the surface area of your API are as consistent as possible, no matter which team designed and developed the API. This is an area of API governance that we feel is important. Still, it is also one that becomes more difficult without a single source of truth (OpenAPI) in a known workspace. It can quickly become a rabbit hole when it comes to thinking about all the different ways you can lint the OpenAPI for your API—so we recommend starting small.</p>
+
+<h3 id="design-governance-collections">Design Governance Collections</h3>
+<p>Establish a standalone collection that pulls the OpenAPI for each API using the Postman API and linting using Spectral.</p>
+
+<ul>
+  <li><strong>Info</strong> - Ensure that there are title, description, and other essential information properties.</li>
+  <li><strong>Versioning</strong> - Require a standard semantic or date-based versioning applied to each API.</li>
+  <li><strong>Operations</strong> - Make sure each individual operation has a summary, description, and id.</li>
+  <li><strong>Parameters</strong> - Standardize the format of parameter names, and all have descriptions.</li>
+  <li><strong>Responses</strong> - Push for a common set of status codes, media types, and schema responses.</li>
+  <li><strong>Schema</strong> - Standardize all request and response schema using JSON Schema components.</li>
+</ul>
+
+<p>There are plenty of other governance rules that can be applied at this level, but this provides an introductory set of concerns that should be addressed early on as part of API governance efforts. Teams will learn a lot by ensuring that these simple rules are consistently applied across API operations, enabling all teams to apply governance manually using collection runners, scheduling using monitors, or baked into CI/CD pipelines. We’re able to use the same infrastructure we are using to test each API instance to test the surface area of the API for consistent design across any team.</p>
+
+<h2 id="api-operations-delivery">API operations (delivery)</h2>
+<p>API governance isn’t something you do once and step away from. It’s something that is ongoing and should be wired up to your existing software development lifecycle and monitored in real time. Operational governance allows us to automate the reliability and consistency portions of our governance, but through additional PlatformOps collection integrations, we can configure, optimize, and automate our gateway, portals, documentation, and other building blocks of API operations. We then leverage the same infrastructure we are using to test individual APIs to also “test” the surface area of our APIs and the operations that surround them.</p>
+
+<ul>
+  <li><strong>Monitors</strong> - Ensure you are monitoring operations and paying attention even when the team is off doing other things.</li>
+  <li><strong>Contract</strong> - There is a monitor scheduled to test the contract every 24 hours.</li>
+  <li><strong>Performance</strong> - There is a monitor to test the performance of the API every hour.</li>
+  <li><strong>Security</strong> - There is a monitor to test the security of the API every 24 hours.</li>
+  <li><strong>Governance</strong> - There is a monitor to test the governance of the API every 24 hours.</li>
+  <li><strong>Pipeline</strong> - Ensure you are applying governance at the CI/CD pipeline layer, running the contract, security, and governance tests with each build.</li>
+  <li><strong>Contract</strong> - Run the contract testing collection in the pipeline.</li>
+  <li><strong>Security</strong> - Run the contract security collection in the pipeline.</li>
+  <li><strong>Governance</strong> - Run the governance testing collection in the pipeline.</li>
+  <li><strong>Gateway</strong> - Govern the deployment of APIs via gateways, allowing for manual and automated configuration and observability to occur.</li>
+  <li><strong>Authentication</strong> - Ensure that a gateway authentication is properly configured.</li>
+  <li><strong>Usage Plans</strong> - Require that each API operates within a specific usage plan.</li>
+  <li><strong>Usage History</strong> - Check usage logs for an API for common patterns.</li>
+</ul>
+
+<p>The governance of operations doesn’t stop at just monitoring our testing, security, and design governance. Baking it into our CI/CD pipeline, we can extend this to other operational areas. The same collection-based approach we are using to test each instance of API and to govern API design can be used to validate that documentation is complete and updated, possesses examples, and always has SDKs and code snippets automatically generated. When you realize that your API operations themselves have APIs, your approach to API governance becomes much broader than just the design of your APIs. Your teams can become more productive and realize higher levels of quality—all while fulfilling governance at scale.</p>
+
+<h2 id="api-observability-awareness">API observability (awareness)</h2>
+<p>The final and essential area of API governance needed to achieve the best results at scale across business domains and teams** - make sure everything is as observable as possible. Provide real-time reporting and activity visibility for each API, but also take more advantage of platform integrations to feed everything into existing API infrastructure. Operations around APIs then have the necessary observability, and governance itself becomes as observable as possible in real time.</p>
+
+<ul>
+  <li><strong>Reporting</strong> - Leverage native reporting to understand what is happening with each API in use as part of API operations.</li>
+  <li><strong>Application Performance Management (APM)</strong> - Use monitors to pipe the results of collection runs into DataDog to make the API observable.</li>
+  <li><strong>Activity</strong> - Understand how the workspace, APIs, collections, monitors, and other elements are being configured as part of your work.</li>
+</ul>
+
+<p>Collections provide connections to APIs and can be monitored on a schedule, integrated into CI/CD pipelines, and can make the API lifecycle and governance more observable. Collections are the gears of our API operations** - use them to define, automate, and make everything observable via native integrations and PlatformOps collections in service of platform API governance.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

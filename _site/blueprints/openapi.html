@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>OpenAPI</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">OpenAPI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="openapi">OpenAPI</h1>
+<p>The OpenAPI specification, formerly known as Swagger, provides the ability to describe the surface area of your HTTP 1.1 APIs using JSON or YAML. Provides a robust way to describe what is possible with each API, defining the surface area of each request and response, which can then be used as the source of truth for what is possible with each API.</p>
+
+<ul>
+  <li><strong>Info</strong> - Provides a place to define common meta data for an API like a name, description, licensing, terms of service, and contact information, helping ensure al APIs have enough metadata available so that it’s purpose can be articulated across the API lifecycle.</li>
+  <li><strong>Servers</strong> - Includes a list of servers for an instance of API, providing possibly multiple regions, or different stages of the development of an API, allowing consumers to quickly find an instance of an API that they can use to meet their needs, and properly apply a resource.</li>
+  <li><strong>Paths</strong> - One or many paths that can be taken by API consumers to access different resources and capabilities, similar to browsing the web, but navigating the API landscape, looking for the resources and capabilities you need to power your application or integration.</li>
+  <li><strong>Operations</strong> - Defining the specific operations that can be taken using a specific path, providing the ability to read, write, update, delete, and perform other operations on API resources, and setting in motion different capabilities that are defined as part of each API.</li>
+  <li><strong>Parameters</strong> - Providing a defined set of parameters that can used to change the state of API responses, providing key/value pairs that provide common things like pagination or search, but getting specific depending on the objects being returned with API responses.</li>
+  <li><strong>Responses</strong> - Describing the HTTP Status Codes, headers, and media types being returned with each response, helping the consumer understand that structure and state of the response, helping provide consumers with as much information as possible about response.</li>
+  <li><strong>Schema</strong> - Providing JSON Schema descriptions of request and response bodies, allowing the responses to be validated, helping automate validation at the gateway, helping ensure the highest quality possible when it comes to consuming APIs within any application.</li>
+  <li><strong>Security</strong> - Describing the type of authentication required for accessing an API, providing a machine readable description of API keys required, OAuth, JWT, and other types of security protocols in place, helping automate the authentication layer of API usage within clients.</li>
+</ul>
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

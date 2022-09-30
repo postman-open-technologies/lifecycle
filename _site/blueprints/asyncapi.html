@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>AsyncAPI</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">AsyncAPI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="asyncapi">AsyncAPI</h1>
+<p>The AsyncAPI specification provides the ability to describe the surface area of your multi-protocol APIs using JSON or YAML. The open source specification provides a robust way to describe what is possible with each API, defining the surface area messages and channels, which can then be used as the source of truth for what is possible when publishing and subscribing to each asynchronous API.</p>
+
+<ul>
+  <li><strong>Info</strong> - Provides a place to define common meta data for an API like a name, description, licensing, terms of service, and contact information, helping ensure al APIs have enough metadata available so that it’s purpose can be articulated across the API lifecycle.</li>
+  <li><strong>Application</strong> - An application is any kind of computer program or a group of them, allowinug for both the view of a producer or a consumer, a microservice, IoT device (sensor), or possibly a mainframe process that will be publishing and subscribing to messages.</li>
+  <li><strong>Producer</strong> - A producer is a type of application, connected to a server, that is creating messages and addressing them to a channel or publishing to multiple channels depending on the server, protocol, and use-case pattern being applied as part of an API implementation.</li>
+  <li><strong>Consumer</strong> - A consumer is a type of application, connected to a server via a supported protocol, that is consuming messages from channel or consuming from multiple channels depending on the server, protocol, and the use-case pattern in an API implementation</li>
+  <li>*Message** - A message is the mechanism by which information is exchanged via a channel between servers and applications, with the payload containing the data, defined by the application, which MUST be serialized into JSON, XML, Avro, binary, or other format.</li>
+  <li><strong>Channel</strong> - A channel is an addressable component, made available by the server, for the organization of messages, enabling producer applications to send messages to channels and consumer applications to consume messages from channels.</li>
+  <li><strong>Protocol</strong> - A protocol is the mechanism (wireline protocol OR API) by which messages are exchanged between the application and the channel. Example protocol include, but are not limited to, AMQP, HTTP, JMS, Kafka, MQTT, STOMP, WebSocket.</li>
+</ul>
+
+<p>AsyncAPI provides business contracts for the many different channels you can publish or subscribe to across the enterprise, defining the events that matter to operations, then helping ensure these events and the messages passed along are well-defined.</p>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>

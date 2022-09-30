@@ -1,0 +1,12 @@
+# AsyncAPI
+The AsyncAPI specification provides the ability to describe the surface area of your multi-protocol APIs using JSON or YAML. The open source specification provides a robust way to describe what is possible with each API, defining the surface area messages and channels, which can then be used as the source of truth for what is possible when publishing and subscribing to each asynchronous API.
+
+- **Info** - Provides a place to define common meta data for an API like a name, description, licensing, terms of service, and contact information, helping ensure al APIs have enough metadata available so that it’s purpose can be articulated across the API lifecycle.
+- **Application** - An application is any kind of computer program or a group of them, allowinug for both the view of a producer or a consumer, a microservice, IoT device (sensor), or possibly a mainframe process that will be publishing and subscribing to messages.
+- **Producer** - A producer is a type of application, connected to a server, that is creating messages and addressing them to a channel or publishing to multiple channels depending on the server, protocol, and use-case pattern being applied as part of an API implementation.
+- **Consumer** - A consumer is a type of application, connected to a server via a supported protocol, that is consuming messages from channel or consuming from multiple channels depending on the server, protocol, and the use-case pattern in an API implementation
+- *Message** - A message is the mechanism by which information is exchanged via a channel between servers and applications, with the payload containing the data, defined by the application, which MUST be serialized into JSON, XML, Avro, binary, or other format.
+- **Channel** - A channel is an addressable component, made available by the server, for the organization of messages, enabling producer applications to send messages to channels and consumer applications to consume messages from channels.
+- **Protocol** - A protocol is the mechanism (wireline protocol OR API) by which messages are exchanged between the application and the channel. Example protocol include, but are not limited to, AMQP, HTTP, JMS, Kafka, MQTT, STOMP, WebSocket.
+
+AsyncAPI provides business contracts for the many different channels you can publish or subscribe to across the enterprise, defining the events that matter to operations, then helping ensure these events and the messages passed along are well-defined.

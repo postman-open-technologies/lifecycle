@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>History of Web APIs</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">History of Web APIs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
+          </li>                                                                              
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0"><h1 id="history-of-web-apis">History of Web APIs</h1>
+<p>While taking shape for several decades, modern web APIs began to take their current form during the e-commerce and social networking evolution of the early 21st century. Pushing what was possible when it comes to buying and selling in a digital work, but then also realizing that consumers are a very social creature, and we’d want to bring our friends, family, and followers along for the ride.</p>
+
+<h2 id="commerce">Commerce</h2>
+
+<p>In the early days of the Internet, many companies used the service-oriented architecture (SOA) model to deploy their systems.
+This model includes components and services that are self-contained and reusable across a deployment.</p>
+
+<p>Early web APIs escaped from the controlled SOA experiment that was occurring within the enterprise and began to be applied to sales, products, affiliates, auctions, and the other expanding areas of the e-commerce shift that was occurring online.</p>
+
+<ul>
+  <li><strong>Salesforce</strong>: In the late 1990s, Salesforce developed a web-based sales automation tool, which was formatted in Extensible Markup Language (XML) and used a remote procedure call (RPC) to communicate over HTTP. This tool is considered to be the first software as a service (SaaS).</li>
+  <li>Amazon</li>
+  <li>eBay</li>
+</ul>
+
+<h2 id="social">Social</h2>
+<p>The digital experience was rapidly becoming a social affair, with images, links, and other digital resources become more sharable via APIs, but also by expanding the use of APIs to define our profiles, connections, and networks where we are sharing these images and links.</p>
+
+<ul>
+  <li>Flickr</li>
+  <li>Facebook</li>
+  <li>Twitter</li>
+</ul>
+
+<h2 id="web-10">Web 1.0</h2>
+
+<p>The first implementation of the World Wide Web, between the years 1989 and 2005, is known as Web 1.0.
+During this era, the web was made up of static HTML and XML sites.</p>
+
+<ul>
+  <li><strong>XML-RPC</strong>: Early web APIs, including the tool that Salesforce built, communicated by sending XML-formatted documents over HTTP using an RPC, known as the XML-RPC protocol. The XML-RPC protocol evolved into the Simple Object Access Protocol (SOAP).</li>
+  <li><strong>SOAP</strong>: Like the earlier XML-RPC protocol, SOAP sends XML data over HTTP, and it adds standards and specifications for message formats, encoding rules for API requests and responses, as well as structured data in XML. SOAP supports sending either <code class="language-plaintext highlighter-rouge">GET</code> or <code class="language-plaintext highlighter-rouge">POST</code> requests, but it does not support other HTTP methods like <code class="language-plaintext highlighter-rouge">PUT</code>, <code class="language-plaintext highlighter-rouge">DELETE</code>, <code class="language-plaintext highlighter-rouge">HEAD</code>, or <code class="language-plaintext highlighter-rouge">OPTIONS</code>. In Web 1.0, SOAP requests were primarily used for machine-to-machine interaction, but occasionally used for web-server and web-client interactions as well. SOAP was the foundation of the broader concept of web services.</li>
+</ul>
+
+<h2 id="web-20">Web 2.0</h2>
+
+<p>The Web 2.0 era began around 2005.</p>
+
+<ul>
+  <li><strong>REST</strong>: In 2000, Roy T. Fielding introduced the Representational State Transfer (REST) framework. This architectural style rejected the RPC-style approach and proposed guidelines for defining API interfaces. REST introduced new ways for web application APIs to exchange information, making use of resource identifiers, standard media types, and standard HTTP status codes. Unlike SOAP, the REST style supports the use of all HTTP methods. The concept of open, publicly-hosted APIs is based on the REST framework, and many current web APIs are considered RESTful.</li>
+  <li><strong>AJAX</strong>: In 2005, the Asynchronous JavaScript and XML (AJAX) technique was introduced. Using the lightweight AJAX approach, developers created websites that were more complex and dynamic. AJAX allows a web client to request content from a server asynchronously. Over time, developers using AJAX started moving away from XML to JavaScript Object Notation (JSON).</li>
+  <li><strong>jQuery</strong>: jQuery, along with other JavaScript libraries, grew in popularity as developers adopted the AJAX technique. Developers using AJAX and jQuery began to use web application APIs that communicated between the server and the browser, rather than between the server and client.</li>
+</ul>
+
+<h2 id="web-30">Web 3.0</h2>
+
+<p>Web 3.0 has been talked about since 2014, but it is still under development.
+This era of the web involves a broader range of internet-connected machines, distributed architecture, and a faster and more interactive experience. The technologies that make these things possible include IoT, AI, ML, and Blockchain.</p>
+
+<ul>
+  <li><strong>IoT</strong>: The Internet of things (IoT) includes physical devices and sensors that communicate with other devices over the Internet. For example, home automation devices such as smart thermostats, remote monitoring systems, and app-controlled lights are IoT devices.</li>
+  <li><strong>AI</strong>: Artificial intelligence (AI) applications are programmed to perceive their environment and take actions based on those perceptions. AI applications are designed to mimic human intelligence and simulate the way humans learn and solve problems. For example, video streaming sites can use AI to observe what content the viewer is watching and make recommendations for similar content that they might want to watch next.</li>
+  <li><strong>ML</strong>: Machine learning (ML) applications are designed to collect and learn from a set of data. While other types of AI applications must be explicitly programmed to make certain decisions, ML applications gain the ability over time to make predictions based on the data they’ve analyzed, and they can answer questions that are not specifically defined in their programming. ML applications are often used to classify information based on large amounts of historical data, such as speech or handwriting recognition, credit card fraud detection, and natural language processing.</li>
+  <li><strong>Blockchain</strong>: A blockchain is a linked list of transaction records, where each record block contains a cryptographic hash of the previous block. The blocks are linked together, forming a chain. If a block is altered, the rest of the chain is altered as well. Blockchain databases are often public and hosted on a peer-to-peer network, which makes their architecture highly distributed.</li>
+</ul>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Footer</span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.js"></script>    
+
+  </body>
+</html>
