@@ -1,0 +1,358 @@
+openapi: 3.0.0
+info:
+  title: Users Today is Thursday this is a test
+  description: "API for creating and managing NOVA Security users."
+  version: 1.0.0
+  contact: {john@test.com}
+  # license:
+  #   name: test
+servers:
+  - url: "https://3f9ab1dc-fede-484c-b519-0cc8b90c827a.mock.pstmn.io"
+paths:
+  /create:
+    post:
+      tags:
+        - Create
+      summary: New user
+      description: Creates a new user in the system. The user will be assigned an ID automatically. This can be found in the response.
+      operationId: newUser
+      requestBody:
+        content:
+          application/form-urlencoded:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                  example: "Constance"
+                lastName:
+                  type: string
+                  example: "Roob"
+            example:
+              firstName: "Gwendolyn"
+              lastName: "Bergstrom"
+      responses:
+        "200":
+          description: New user
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Content-Length:
+              schema:
+                type: string
+                example: "101"
+            Date:
+              schema:
+                type: string
+                example: "Thu, 10 Jan 2019 23:58:59 GMT"
+            ETag:
+              schema:
+                type: string
+                example: "W/\"65-KsPJ95rCxmmvvRBY2Sqroxk2vmA\""
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  firstName:
+                    type: string
+                    example: Ben
+                  id:
+                    type: string
+                    example: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                  lastName:
+                    type: string
+                    example: Smith
+                  status:
+                    type: string
+                    example: success
+              examples:
+                New user:
+                  value:
+                    firstName: Ben
+                    id: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                    lastName: Smith
+                    status: success
+  /delete:
+    delete:
+      tags:
+        - Delete
+      summary: Delete user
+      description: "Deletes a user from the system by `id`."
+      operationId: deleteUser
+      parameters:
+        - name: id
+          in: query
+          schema:
+            type: string
+            example: "{{id}}"
+          description: "The user's ID"
+      requestBody:
+        content:
+          text/plain:
+            example: ""
+      responses:
+        "200":
+          description: Delete user
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Content-Length:
+              schema:
+                type: string
+                example: "64"
+            Date:
+              schema:
+                type: string
+                example: "Fri, 11 Jan 2019 00:20:55 GMT"
+            ETag:
+              schema:
+                type: string
+                example: "W/\"40-bT/ASzl0KO3wj/eo2xEBaHPLnvk\""
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                  status:
+                    type: string
+                    example: success
+              examples:
+                Delete user:
+                  value:
+                    id: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                    status: success
+  /get:
+    get:
+      tags:
+        - Read
+      summary: Get all users
+      description: Get all users in the system.
+      operationId: getAllUsers
+      parameters:
+        - name: all
+          in: query
+          schema:
+            type: string
+            example: "true"
+      responses:
+        "200":
+          description: 200 OK
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Content-Length:
+              schema:
+                type: string
+                example: "105"
+            Date:
+              schema:
+                type: string
+                example: "Fri, 11 Jan 2019 00:00:53 GMT"
+            ETag:
+              schema:
+                type: string
+                example: "W/\"69-ti7ujd/Cyb8EeoWoqRXh482Zy5o\""
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    firstName:
+                      type: string
+                      example: Ben
+                    id:
+                      type: string
+                      example: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                    lastName:
+                      type: string
+                      example: Smith
+                    status:
+                      type: string
+                      example: success
+                example:
+                  - status: success
+                  - firstName: Ben
+                    id: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                    lastName: Smith
+              examples:
+                200 OK:
+                  value:
+                    - status: success
+                    - firstName: Ben
+                      id: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                      lastName: Smith
+  /get/:
+    get:
+      tags:
+        - Read
+      summary: Get users by last name
+      description: "Retrieves all users with the given `firstName`."
+      operationId: getUsersByLastName
+      parameters:
+        - name: firstName
+          in: query
+          schema:
+            type: string
+            example: "Ward"
+          description: "The user's first name (required)"
+      responses:
+        "200":
+          description: "200"
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Content-Length:
+              schema:
+                type: string
+                example: "105"
+            Date:
+              schema:
+                type: string
+                example: "Fri, 11 Jan 2019 00:05:34 GMT"
+            ETag:
+              schema:
+                type: string
+                example: "W/\"69-F/ktIhtM5We/sndYYNUK1vmdEnQ\""
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    firstName:
+                      type: string
+                      example: "Favian"
+                    id:
+                      type: string
+                      example: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                    lastName:
+                      type: string
+                      example: "Dibbert"
+                    status:
+                      type: string
+                      example: success
+                example:
+                  - status: success
+                  - firstName: "Paula"
+                    id: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                    lastName: "Purdy"
+              examples:
+                "200":
+                  value:
+                    - status: success
+                    - firstName: "Kelton"
+                      id: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                      lastName: "Boehm"
+  /update:
+    put:
+      tags:
+        - Update
+      summary: Update user
+      description: "Send the keys that you'd like to update, this can be one or more of `firstName`, `lastName` and `password`."
+      operationId: updateUser
+      parameters:
+        - name: id
+          in: query
+          schema:
+            type: string
+            example: "{{id}}"
+          description: "The user's ID (required)"
+      requestBody:
+        content:
+          application/form-urlencoded:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                  example: Benjamin
+                password:
+                  type: string
+                  example: foobar
+            example:
+              firstName: Benjamin
+              password: foobar
+      responses:
+        "200":
+          description: Update user
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Content-Length:
+              schema:
+                type: string
+                example: "106"
+            Date:
+              schema:
+                type: string
+                example: "Fri, 11 Jan 2019 00:18:07 GMT"
+            ETag:
+              schema:
+                type: string
+                example: "W/\"6a-SA9mzR+M2pmN7WPGgLm1ZqtRYis\""
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  firstName:
+                    type: string
+                    example: Benjamin
+                  id:
+                    type: string
+                    example: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                  lastName:
+                    type: string
+                    example: Smith
+                  status:
+                    type: string
+                    example: success
+              examples:
+                Update user:
+                  value:
+                    firstName: Benjamin
+                    id: 0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7
+                    lastName: Smith
+                    status: success
+tags:
+  - name: Create
+  - name: Read
+  - name: Update
+  - name: Delete
