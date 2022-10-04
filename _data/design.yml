@@ -643,7 +643,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Standards
@@ -666,7 +668,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Warning
@@ -676,7 +680,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Design Review
@@ -699,7 +705,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Warning       
@@ -709,7 +717,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: CLI
@@ -742,7 +752,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Warning       
@@ -752,7 +764,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Quality Review
@@ -775,7 +789,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Warning       
@@ -785,7 +801,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Security Review  
@@ -808,7 +826,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Warning       
@@ -818,7 +838,9 @@ governance:
             name: Postman
             description: You can organize teams and workspaces by domain or group using Postman.
             link: https://postman.com
-          two: spectral
+          two: 
+            name: Spectral
+            description: Spectral is used to lint contracts.
           three:
           four:      
       - name: Enforcement          
