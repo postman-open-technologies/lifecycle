@@ -287,8 +287,8 @@ producer:
         tools:
           one: 
             name: Postman
-            description: 
-            link:
+            description: You can organize teams and workspaces by domain or group using Postman.
+            link: https://postman.com
           two:
           three:
           four:      
@@ -419,7 +419,10 @@ producer:
       - name: APM
         text: This is the text.
         tools:
-          one: new-relic
+          one:
+            name: New Relic
+            description: This is the description.
+            link: https://example.com        
           two:
           three:
           four:      
@@ -589,39 +592,52 @@ roles:
     type: business
     elements:
       - name: Product Manager
+        text: This is the text.
   - name: Design
     type: business
     elements:
       - name: Software Architect
+        text: This is the text.
       - name: Product Manager
+        text: This is the text.
       - name: Designer      
+        text: This is the text.
   - name: Develop
     type: technical
     elements:
       - name: Developer  
+        text: This is the text.
   - name: Test
     type: technical
     elements:
       - name:  Test Engineer 
+        text: This is the text.
   - name: Secure
     type: technical
     elements:
       - name: Information Security 
+        text: This is the text.
   - name: Deploy
     type: technical
     elements:
       - name: Release Management 
+        text: This is the text.
   - name: Observe
     type: business
     elements:
       - name: Site reliability Engineering (SRE)
+        text: This is the text.
       - name: DevOps
+        text: This is the text.
       - name: Platform       
+        text: This is the text.
   - name: Distribute 
     type: business
     elements:
       - name: Product Marketing
+        text: This is the text.
       - name: Advocacy
+        text: This is the text.
 governance:
   - name: Define
     type: business
@@ -872,7 +888,10 @@ governance:
       - name: APM
         text: This is the text.
         tools:
-          one: new-relic
+          one:
+            name: New Relic
+            description: This is the description.
+            link: https://example.com    
           two:
           three:
           four:      
