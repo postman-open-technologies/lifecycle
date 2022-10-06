@@ -1,10 +1,12 @@
 ---
+
+# Producer Lifecycle
 producer:
   - name: Define
     type: business
     elements:
       - name: Domains
-        text: This is the text.
+        text: What domain will an API be operating in? Define the vocabulary, standards, and other patterns that developers at design and development teams will use.
         tools:
           one: 
             name: Postman
@@ -14,27 +16,27 @@ producer:
           three:
           four:
       - name: Regions
-        text: This is the text.
+        text: Identify the region(s) where an API will operate so that you can comply with regulations and other business requirements and ensure that APIs are as close to consumers as possible.
         tools:
           one: 
             name: AWS API Gateway
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://example.com
+            description: Using AWS API Gateway to deploy APIs into different regions around the world.
+            link: https://aws.amazon.com/api-gateway/
           two:
           three:
           four:      
       - name: Requirements
-        text: This is the text.
+        text: What are the requirements for the API?  You need to define the business value it will bring to help you guide development and operation.
         tools:
           one:  
-            name: Confluence
-            description: This is the description.
-            link: https://example.com
+            name: Github
+            description: Leveraging the Github README to outline the tenchincal and business requirements.
+            link: https://github.com
           two:
           three:
           four:      
       - name: Workspaces
-        text: This is the text.
+        text: Set up the workspaces where teams will be designing, developing, and managing APIs, then iterating upon them and managing multiple versions.
         tools:
           one: 
             name: Postman
@@ -44,31 +46,31 @@ producer:
           three:
           four:      
       - name: Source
-        text: This is the text.
+        text: Ensuring that every API is using source control and has a repository for managing code, but also API artifacts, and other elements needed to manage the API lifecycle.
         tools:
           one:  
             name: Github
-            description: This is the description.
-            link: https://example.com
+            description: Setting up a GitHub repository within the organization for the enterprise, domain, or team, providing a place for the API source of truth.
+            link: https://github.com
           two:
           three:
           four:      
       - name: Teams
-        text: This is the text.
+        text: Line up who will be working on an API, bringing together designers, developers, technical writers, QA specialists, and other roles who will be involved in moving your APIs forward.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman provides the ability to manage API teams, organizing API operations acros domain and teams.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Stakeholders
-        text: This is the text.
+        text: Identify business and technical stakeholders, including any external partners and consumers who might need to be involved.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Private, partner, and public networks and workspaces open up the ability to work with all stakeholders for an API.
             link: https://postman.com
           two:
           three:
@@ -77,86 +79,92 @@ producer:
     type: business
     elements:
       - name: Source
-        text: This is the text.
+        text: Using source control to manage the artifacts involved with the API design process, providing a single source of truth that grounds design across teams.
         tools:
           one:  
             name: Github
-            description: This is the description.
+            description: Cloning and syncing with the GitHub repository, keeping all API contracts as part of source control for use across the lifecycle.
             link: https://example.com
           two:
           three:
           four:      
       - name: Contracts
-        text: This is the text.
+        text: Put contracts like OpenAPI and AsyncAPI to work in defining the surface area of each API, providing a machine-readable contract to guide teams’ work.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: The Postman API builder allows you to manage the contracts you are designing as part of delivering APIs.
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: The OpenAPI specification is used to provide a contract that guides, and defines the design of this HTTP / Web / REST API being developed.
             link: https://example.com
           three:
           four:      
       - name: Schema
-        text: This is the text.
+        text: Establish a schema for all of the objects used as part of requests, responses, publishing, and subscribing when integrating an API into applications.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: In API builder you can manage the JSON Schema via OpenAPI contracts used for APIs, or simply used to manage the schema using the domain pattern.
             link: https://postman.com
           two:  
             name: JSON Schema
-            description: This is the description.
+            description: The JSON Schema specification is used to define the models applied in API requests and responses, allowing them to be validated.
             link: https://example.com
           three:
           four:      
       - name: Reference
-        text: This is the text.
+        text: Generating reference documentation using the API contract, providing a complete set of documentation for everything that is possible with an API.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to generate the reference documentation from the OpenAPI contract, keeping a complete reference available for each API.
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: The OpenAPI specification is used as the source of truth for reference documentation, allowing it to be autogenerated as needed.
             link: https://example.com
           three:
+            name: Collection
+            description: The Postman collectioni is used as a generated, portable, and sharable set of reference documentation for each API being developed.
+            link: https://example.com          
           four:      
       - name: Mocks
-        text: This is the text.
+        text: Generate a mock representation of an API using its contract, providing an example of what the API will do in production. That will help with the design process and later on, with onboarding.
         tools: 
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: You can use Postman to generate mock servers, leveraging the OpenAPI as the source of truth, and collectionis as derivative of the truth.
             link: https://postman.com
           two:  
+            name: OpenAPI
+            description: The OpenAPI specification is used as the source of truth for mock servers, allowing it to be autogenerated as needed.
+            link: https://openapis.org     
+          three:            
             name: Collection
-            description: This is the description.
-            link: https://example.com
-          three:
+            description: postman collections are used as a container for each mocked representation, providing portable and sharable virtualized instances of an API.
+            link: https://postman.com          
           four:      
       - name: Variables
-        text: This is the text.
+        text: Variables should be used to abstract away commpon patterns and secrets that are used across reference document, mock servers, and eventually API testing.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: You can develop and apply different scopes of variables using Postman, which can be applied across the API lifecycle across environments.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
+            description: Postman collections can utilize global, collection, and environment variables to apply common values and secrets where APIs are being used.
             link: https://example.com
           three:
           four:      
       - name: Environments  
-        text: This is the text.
+        text: Environments allow development, staging, production, and other environments needed to develop and deliver APIs in a machine readable and executable way.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman environments are used to define the environments teams will use to deliver APIs, standardizing them across APIs being produced.
             link: https://postman.com
           two:
           three:
@@ -165,52 +173,52 @@ producer:
     type: technical
     elements:
       - name: Source
-        text: This is the text.
+        text: The source control repository is cloned locally, providing access to artifacts that are produced as part of the API design process to develop API.
         tools:
           one:  
             name: Github
-            description: This is the description.
-            link: https://example.com
+            description: The GitHub repository is used to keep API artifacts synced, so that they can be used throughout the development process.
+            link: https://github.com
           two:
           three:
           four:      
       - name: IDE
-        text: This is the text.
+        text: An integrated development environment is used to develop the code and other artifacts that will be used as part of deploying each API.
         tools:
           one:  
             name: Visual Studio
-            description: This is the description.
-            link: https://example.com
+            description: VSCode is used to develop the code and artifacts behind each API, cloning the repository used as the source of truth.
+            link: https://code.visualstudio.com/
           two:
           three:
           four:      
       - name: CLI
-        text: This is the text.
+        text: A Command Line Interface (CLI) can be used as part of local development, making Postman artifacts and capability as part of the development process.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: The Postman CLI is used as part of the development process, making the platform available locally.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Server
-        text: This is the text.
+        text: Establish a baseline for the underlying API compute, choosing among virtual servers, containers, and serverless to power each API.
         tools:
           one:  
             name: AWS Lambda
-            description: This is the description.
-            link: https://example.com
+            description: Using AWS Lambda as the serverless backend server for the API, providing scalable compute to power the API.
+            link: https://aws.amazon.com/lambda/
           two:
           three:
           four:      
       - name: Gateway
-        text: This is the text.
+        text: Set up the gateway to prepare for an API deployment. Do the initial work to set up everything needed at the gateway layer, shifting as much of this work as far to the left in the life cycle as possible.
         tools:
           one: 
             name: AWS API Gateway
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://example.com
+            description: The AWS API Gateway is used for development, staging, and production APIs, providing a regional gateway for access each API.
+            link: https://aws.amazon.com/api-gateway/
           two:
           three:
           four:        
@@ -218,72 +226,79 @@ producer:
     type: technical
     elements:
       - name: Contract
-        text: This is the text.
+        text: Use OpenAPI and AsyncAPI contracts to ensure that 100% of the surface area of an API is tested and behavior reflects the contract between producer and consumer.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to test the contract for each API.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
-            link: https://example.com
+            description: Contract test collections are generated for testing aPIs.
+            link: https://postman.com
           three:
           four:      
       - name: Performance
-        text: This is the text.
+        text: Test specific paths for each API in multiple regions to make sure the API, gateway, and network provide the desired performance. 
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to test the performance of each API.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
-            link: https://example.com
+            description: Performance test collections are generated for testing APIs.
+            link: https://postman.com
           three:
           four:      
       - name: Monitors  
-        text: This is the text.
+        text: Schedule testing monitors to run on a schedule reflecting the business needs of the API, but also the type of test being run, allowing teams to automate testing.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to generate monitors across the tests being automated.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
-            link: https://example.com
+            description: A monitor can be used to schedule the run of each test across regions.
+            link: https://postman.com
           three:
           four:      
   - name: Secure
     type: technical
     elements:
-      - name: Fuzzing
-        text: This is the text.
+      - name: Authentication
+        text: Authentication helps ensure APIs are accessed only by those who should have access, allowing API producers and consumers to easily apply rules consistently.
         tools:
           one: 
-            name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://postman.com
-          two:  
-            name: Collection
-            description: This is the description.
-            link: https://example.com
+            name: AWS API Gateway
+            description: Using AWS API Gateway to deploy APIs into different regions around the world.
+            link: https://aws.amazon.com/api-gateway/
+          two:
           three:
-          four:      
+          four:   
+      - name: Authorization
+        text: Once a user is authenticated, the authorization layer will make sure they only have access to approved resources. 
+        tools:
+          one: 
+            name: AWS API Gateway
+            description: Using AWS API Gateway to deploy APIs into different regions around the world.
+            link: https://aws.amazon.com/api-gateway/
+          two:
+          three:
+          four:              
       - name: Environments
-        text: This is the text.
+        text: Have a solid map of the development, staging, and production environments across all APIs in operation. That will help you manage API deployment more consistently.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman environments are used to define and execute across development, staging, and production.
             link: https://postman.com
           two:
           three:
           four:      
       - name: RBAC  
-        text: This is the text.
+        text: Role-based access controls should be applied at the authorization layer of an API and to the API operations around it, helping govern who has access to operations.
         tools:
           one: 
             name: Postman
@@ -291,90 +306,103 @@ producer:
             link: https://postman.com
           two:
           three:
-          four:      
+          four: 
+      - name: Fuzzing
+        text: Providing invalid, unexpected, or random data as inputs to an API as part of manual and automated testing, helping check for the most common vulnerabilities.
+        tools:
+          one: 
+            name: Postman
+            description: You can use Postman combined with network partners who offer API-driven fuzzing solutions.
+            link: https://postman.com
+          two:  
+            name: Collection
+            description: Fuzzing collections can be defined and used to test for common vulnerabilities across APis.
+            link: https://example.com
+          three:
+          four:                
   - name: Deploy
     type: technical
     elements:    
       - name: Source
-        text: This is the text.
+        text: Use source control to manage code and artifacts used to deploy an API, providing a single location where you can find everything behind each version, ideally with multiple branches to accommodate many API contributions.
         tools:
           one:  
             name: Github
-            description: This is the description.
-            link: https://example.com
+            description: The GitHub repository is used as the source of truth when deploying each API.
+            link: https://github.com
           two:
           three:
           four:      
       - name: Artifacts
-        text: This is the text.
+        text: OpenAPI, JSON Schema, and collections are committed to the source control so that they can be used as part of the CI/CD pipelines, but also anywhere else across the API lifecycle.
         tools:
           one:  
             name: Github
-            description: This is the description.
-            link: https://example.com
+            description: A folder is created within the GitHub repository for storing artifacts.
+            link: https://github.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: OpenAPI contracts for each API are commited to the Github repository.
             link: https://example.com
           three:  
             name: Collection
-            description: This is the description.
+            description: Collections for each API are commited to the Github repository.
             link: https://example.com
           four:  
             name: JSON Schema
-            description: This is the description.
+            description: JSON Schema are published to the GitHub repository as part of OpenAPI contracts.
             link: https://example.com
       - name: CI/CD
-        text: This is the text.
+        text: The pipeline ensures that the deployment of an API to each stage is as repeatable as possible, with tests and other essential needs of the API build process making API deployment as repeatable as possible across teams.
         tools:
           one:  
             name: Github
-            description: This is the description.
-            link: https://example.com
+            description: GitHub actions are used to make the deployment of each API repeatable.
+            link: https://github.com
           two:
           three:
           four:      
       - name: Environments
-        text: This is the text.
+        text: Apply commonly managed environments, with a coordinated variable strategy for testing and automating configuration as part of the pipeline, helping to abstract away the technical details and secrets of API environments.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Staging and production environments are used as part of the CI/CD pipeline.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Server
-        text: This is the text.
+        text: The CI/CD pipeline publishes the code behind each individual API operation, levering a serverless backend for this API, helping automate and scale the backend resources needed to power APIs.
         tools:
           one:  
             name: AWS Lambda
-            description: This is the description.
+            description: AWS Lambda is leveraged to ensure the API is scalable, providing an elastic backend for each aPI.
             link: https://example.com
           two:
           three:
           four:      
       - name: Gateway
-        text: This is the text.
+        text: Publish contracts, extensions, and other configurations to the API gateway, deploying an API into a staging, then a production environment if all tests pass in the pipeline. This gives you a repeatable way of managing gateways.
         tools:
           one: 
             name: AWS API Gateway
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: AWS API Gateway is being used as the gateway for each API, ensuring deployment is automated.
             link: https://example.com
           two:
           three:
           four:      
       - name: Contract Test
-        text: This is the text.
+        text: Contract tests are executed for staging and production environments, ensuring that the contract for each API is met in staging before it is published to production for consumers to use.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to execute contract tests as part of the CI/CD pipeline.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
-            link: https://example.com
+            description: Contract test collections are executed within the CI/CD pipeline.
+            link: https://postman.com
           three:
           four:      
       - name: Security Test  
@@ -382,211 +410,223 @@ producer:
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to execute security tests as part of the CI/CD pipeline.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
-            link: https://example.com
+            description: Security test collections are executed within the CI/CD pipeline.
+            link: https://postman.com
           three:
           four:      
   - name: Observe
     type: business
     elements:
       - name: Usage
-        text: This is the text.
+        text: The usage of APIs by consumers is observable, leveraging the gateway to understand which APIs are accessed, how much consumers are using APIs, and what errors and other considerations are.
         tools:
           one: 
-            name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://postman.com
+            name: AWS API Gateway
+            description: Usage data is provided by the AWS API Gateway logging, helping define user access to APis.
+            link: https://example.com
           two:
           three:
           four:      
       - name: Monitors
-        text: This is the text.
+        text: Establish monitors for all contract, performance, security, and governance tests. These tests provide the results you need to understand the state of APIs and API operations. Use collections to define all of the outputs you need to understand the state of your APIs.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman monitors are used to observe each element of the producer lifecycle and routed into APM, messaging, CDNs, and other infrastructure.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
+            description: Collections are the executable unit of execution that can be used by each monitor to execute the desired business outcomes.
             link: https://example.com
           three:
           four:      
       - name: APM
-        text: This is the text.
+        text: Route all outputs across API operations into your existing APM solutions, tapping every output across the API life cycle to understand the health and state of the platform through the infrastructure you have already invested in.
         tools:
           one:
             name: New Relic
-            description: This is the description.
+            description: All monitors have the option to route run results into New Relic, providing dashboards for each API.
             link: https://example.com        
           two:
           three:
           four:      
-      - name: Alerts
-        text: This is the text.
+      - name: Notifications
+        text: Use notifications and alerts to observe changes with each API, as well as events that occur across the life cycle. They will help you understand consumer activity, as well as what is happening across teams and other stakeholders.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Notifications regarding regular API activity is made available via desktop, web, and email notifications.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Reports
-        text: This is the text.
+        text: Provide team, API, documentation, testing, and other reporting, showing what teams are doing across API operations and how the lifecycle is unfolding across teams. Use native platform reporting that speaks specifically to API operations.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman provides a rich set of documentation for observing the usage and activity across aPis.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Watches
-        text: This is the text.
+        text: API engagement can be observed using API and collectionw watches, tracking how API consumers are watching the APIs, documentation, mocks, testing, and other aspects of API operations.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: All APIs and collections within Postman workspaces are able to be watched.
             link: https://postman.com
-          two:  
-            name: Collection
-            description: This is the description.
-            link: https://example.com
+          two:
+            name: OpenAPI
+            description: OpenAPI contracts can be watched using API builder.
+            link: https:/openapis.org
           three:
+            name: Collection
+            description: Postman collections can be watched within workspaces.
+            link: https://postman.com
           four:      
       - name: Forks
-        text: This is the text.
+        text: Any Postman collection can be forked by consumers, allowing documentation, mock servers, tests, and other types of collecitons to be forked and used as part of integration and automations.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman provides watch counts, and shows consumers who are watching for API producers.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
-            link: https://example.com
+            description: Each collection has a watch count, allowing consumers to engage with elements of API operations.
+            link: https://postman.com
           three:
           four:      
       - name: Feedback  
-        text: This is the text.
+        text: Feedback loops connecting API consumers with API producers allow teams to gather feedback about how well APIs are meeting the needs of consumers, providing valuable information that can be used to iterate upon each API.
         tools:
           one:  
             name: Github
-            description: This is the description.
-            link: https://example.com
+            description: GitHub issues are used to gather and organize feedbback from consumers.
+            link: https://github.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: Platform comment capabilities are used to gather feedback on OpenAPI.
             link: https://example.com
           three:
           four:   
             name: Collection
-            description: This is the description.
+            description: postman comment capabilities are used to gather feedback on collections.
             link: https://example.com     
   - name: Distribute
     type: business
     elements:
       - name: Network
-        text: This is the text.
+        text: APIs should be published to the private, partner, and public networks where API consumers are, via the platforms they are already using. Tap into existing network effects for API consumers so your developers can meet them where they already are.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman networks are used to distribute APIs to consumers.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
+            description: Collections help make onboarding with APIs via networks easier.
             link: https://example.com
           three:
-          four:      
-      - name: Catalog
-        text: This is the text.
-        tools:
-          one: 
-            name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://postman.com
-          two:  
-            name: Collection
-            description: This is the description.
-            link: https://example.com
-          three:
-          four:      
+          four:          
       - name: Portal
-        text: This is the text.
-        tools:
-          one:
-          two:
-          three:
-          four:      
-      - name: Documentation
-        text: This is the text.
+        text: An API deployed into production should be published to the central portal, providing centralized access for internal or external consumers through a single doorway that can be supported as part of overall API operations.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman networks are used to distribute APIs to consumers.
+            link: https://postman.com
+          two:  
+            name: Collection
+            description: Collections help make onboarding with APIs via networks easier.
+            link: https://example.com
+          three:
+          four:    
+      - name: Documentation
+        text: Referencec documentation is published for the API, leveraging OpenAPI contracts to generate reference collections that provide a complete picture of what is possible for consumers.
+        tools:
+          one: 
+            name: Postman
+            description: Postman is used to generate and publish documentation.
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: The OpenAPI is used as the source of truth for documentation.
             link: https://example.com
           three:
           four:  
             name: Collection
-            description: This is the description.
-            link: https://example.com    
+            description: Reference collections are used to publish all documentation.
+            link: https://postman.com    
       - name: Client SDKs
         text: This is the text.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to produce client snippets or SDKs.
             link: https://postman.com
-          two:
+          two:  
+            name: OpenAPI
+            description: The OpenAPI contract can be used as code generation source.
+            link: https://example.com
           three:
-          four:      
+          four:  
+            name: Collection
+            description: Workflow collections can be used to produce SDKs.
+            link: https://postman.com         
       - name: Buttons
-        text: This is the text.
+        text: The documentation, tests, and workspace behind an API should be made available via blog posts, videos, wikis, and other resources to support APIs. Use embeddable and actionable buttons that consumers can activate with one click.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Postman is used to produce the HTML / JavaScript buttons.
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
+            description: Buttons are associated with specific API collections.
             link: https://example.com
           three:
           four:      
       - name: Blog Post
-        text: This is the text.
+        text: Each API should at least have one blog posts published, helping annouce the availablity of each API, ensuring that business and technical are made aware of the value that is available.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: The Postman blog is used to publish blog posts to the community.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Video
-        text: This is the text.
+        text: Each API should have at least one video that helps walk through documentation, onboarding, and using the API as part of workflows, applications, and integrations.
         tools:
           one:
+            name: Youtube
+            description: YouTube is used for publishing API videos and make available to consumers.
+            link: https://youtube.com          
           two:
           three:
           four:      
       - name: Education
-        text: This is the text.
+        text: Contracts, collections, blog posts, videos, and other sources should be made avalable via workspaces and repositories, helping ensure the required education for consumers is available.
         tools:
-          one:
+          one: 
+            name: Postman
+            description: The Postman blog is used to publish blog posts to the community.
+            link: https://postman.com
           two:
           three:
-          four:      
+          four:
+
+
+
+# Roles involved in the lifecycle                
 roles:
   - name: Define
     type: business
@@ -752,7 +792,7 @@ governance:
         text: This is the text.
         tools:
           one:  
-            name: Visual Studio
+            name: VSCode
             description: This is the description.
             link: https://example.com
           two:
@@ -925,12 +965,14 @@ governance:
           two:
           three:
           four:      
+
+# The consumer side of the lifecycle
 consumer:
   - name: Discover
     type: business
     elements:
       - name: Search
-        text: This is the text.
+        text: Consumers should be able to search for APIs on the interfaces they are already using, allowing for discovery of API information in a manner relevant to their work.
         tools:
           one: 
             name: Postman
@@ -956,7 +998,7 @@ consumer:
           three:
           four:      
       - name: Teams
-        text: This is the text.
+        text: The teams behind APIs, and any partner or public contributors, should be made discoverable alongside documentation and other data, encouraging engagement.
         tools:
           one: 
             name: Postman
@@ -966,7 +1008,7 @@ consumer:
           three:
           four:      
       - name: Workspaces
-        text: This is the text.
+        text: Alongside Git repositories, you should include private, partner, and public workspaces as part of discovery, indexing the places where all work occurs for each API.
         tools:
           one: 
             name: Postman
@@ -976,7 +1018,7 @@ consumer:
           three:
           four:      
       - name: APIs
-        text: This is the text.
+        text: The contracts and other artifacts that define the surface area of an API, including authentication and authorization, should be discoverable as part of regular operations.
         tools:
           one: 
             name: Postman
@@ -989,7 +1031,7 @@ consumer:
           three:
           four:      
       - name: Documentation
-        text: This is the text.
+        text: Up-to-date and accurate documentation for all APIs should be easily discoverable by teams, with human-readable details describing what is possible with each API.
         tools:
           one: 
             name: Postman
@@ -1015,7 +1057,7 @@ consumer:
     type: business
     elements:
       - name: Explore
-        text: This is the text.
+        text: Enable consumers to explore as much of the surface area of an API as possible, perhaps without even authenticating, so they can learn what is possible.
         tools:
           one: 
             name: Postman
@@ -1025,7 +1067,7 @@ consumer:
           three:
           four:      
       - name: Documentation
-        text: This is the text.
+        text: Provide rich documentation with useful descriptions, examples, and other information to help consumers get started using each API.
         tools:
           one: 
             name: Postman
@@ -1064,7 +1106,7 @@ consumer:
           three:
           four:      
       - name: Examples
-        text: This is the text.
+        text: Make sure there are always examples for each element of an API, allowing API contracts to be mocked and providing rich documentation showing how they work.
         tools:
           one: 
             name: Postman
@@ -1077,7 +1119,7 @@ consumer:
           three:
           four:      
       - name: Execute  
-        text: This is the text.
+        text: Provide the ability to execute each request, response, publish, and subscribe, making sure that learning about an API is as hands-on as it can possibly be. 
         tools:
           one: 
             name: Postman
@@ -1129,7 +1171,7 @@ consumer:
           three:
           four:      
       - name: Contracts
-        text: This is the text.
+        text: Machine-readable contracts like OpenAPI and AsyncAPI make integration as simple as importing the contract for an API, authenticating, and  making the API calls you need to move data between systems, providing an artifact that defines consumption.
         tools:
           one: 
             name: Postman
@@ -1142,7 +1184,7 @@ consumer:
           three:
           four:      
       - name: Automation
-        text: This is the text.
+        text: Take advantage of automation opportunities, allowing collections to be scheduled and baked into the CI/CD pipelines and common business capabilities to be executed. Business and technical stakeholders can do more with less through API automation.
         tools:
           one: 
             name: Postman
@@ -1152,7 +1194,7 @@ consumer:
           three:
           four:      
       - name: Workflows  
-        text: This is the text.
+        text: Provide ready-to-go low-code and no-code options for executing common business workflows, allowing multiple internal, partner, and public APIs to be daisy-chained into solutions that will help business and technical stakeholders integrate better.
         tools:
           one: 
             name: Postman
@@ -1165,7 +1207,7 @@ consumer:
     type: technical
     elements:
       - name: Availability
-        text: This is the text.
+        text: Share uptime and availability information with consumers on a dashboard, providing transparency around the operation of the platform they will depend on for their applications and helping provide a historical accounting of availability.
         tools:
           one: 
             name: Postman
@@ -1175,7 +1217,7 @@ consumer:
           three:
           four:      
       - name: Contract
-        text: This is the text.
+        text: Exposing contract tests and even the results of scheduled contract test runs will increase consumer awareness of API contracts and how their validation can be used in applications and integrations.
         tools:
           one: 
             name: Postman
@@ -1191,7 +1233,7 @@ consumer:
             description: This is the description.
             link: https://example.com     
       - name: Performance
-        text: This is the text.
+        text: Share performance tests and results of scheduled performance test runs, increasing transparency about API performance while demonstrating how your platform has considered performance and is taking steps to improve upon it.
         tools:
           one: 
             name: Postman
@@ -1204,7 +1246,7 @@ consumer:
           three:
           four:      
       - name: Security
-        text: This is the text.
+        text: Share your overall security policy and security test results, creating trust with consumers. 
         tools:
           one: 
             name: Postman
@@ -1221,7 +1263,7 @@ consumer:
     type: technical
     elements:
       - name: Source
-        text: This is the text.
+        text: Place all manually developed or automatically generating client code in a repository, providing a source of truth for the code and for any artifacts that are needed to define the deployment and operation of any API integration.
         tools:
           one:  
             name: Github
@@ -1231,7 +1273,7 @@ consumer:
           three:
           four:      
       - name: CI/CD Pipelines
-        text: This is the text.
+        text: Implement the continuous integration portion of CI/CD, automating how applications and integrations are deployed and, making the deployment of API integrations, applications, and other use cases something that is always repeatable.
         tools:
           one:  
             name: Github
@@ -1241,7 +1283,7 @@ consumer:
           three:
           four:      
       - name: Collection
-        text: This is the text.
+        text: Leverage a Postman collection as a modular, shareable, and executable definition of an application, stitching together many different API calls across internal and external API sources to apply digital resources and capabilities in a specific way.
         tools:
           one: 
             name: Postman
@@ -1254,7 +1296,7 @@ consumer:
           three:
           four:      
       - name: Serverless
-        text: This is the text.
+        text: Use serverless layers for deploying integrations, orchestrations, and automating API resources and capabilities, tapping into ephemeral compute to deploy integration code that accomplishes specific business outcomes.
         tools:
           one: 
             name: AWS API Gateway
@@ -1264,7 +1306,7 @@ consumer:
           three:
           four:      
       - name: Runners  
-        text: This is the text.
+        text: Acknowledge that some collection applications will be manually run by different team members using runners, organizing different types of integrations and applications by workspaces and letting different stakeholders manually put them to work.
         tools:
           one: 
             name: Postman
@@ -1287,7 +1329,7 @@ consumer:
           three:
           four:      
       - name: Watches
-        text: This is the text.
+        text: Keeping track of the watches on workspaces, APIs, and collections to understand who is tuned into what is happening. Use watches as a metric for the number of consumers, contributors, and internal and external stakeholders who are tuned in.
         tools:
           one: 
             name: Postman
@@ -1303,7 +1345,7 @@ consumer:
             description: This is the description.
             link: https://example.com
       - name: Forks
-        text: This is the text.
+        text: Track who is forking repositories and collections, using the fork count as a metric for engagement and knowing who your consumers are. Track engagement via workspaces, repositories, and collections to learn how consumers are using your APIs.
         tools:
           one: 
             name: Postman
@@ -1316,7 +1358,7 @@ consumer:
           three:
           four:      
       - name: Feedback
-        text: This is the text.
+        text: Engage with API producers and consumers, understanding the conversation is around each API or group of APIs. Observe discussions about digital resources and capabilities.
         tools:
           one:  
             name: Github
@@ -1342,7 +1384,7 @@ consumer:
           three:
           four:      
       - name: Notifications  
-        text: This is the text.
+        text: Use in-app, email, or SMS notifications to engage with a platform and keep consumers part of the forward motion of an API, collecting metrics for observability.
         tools:
           one: 
             name: Postman
