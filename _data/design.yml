@@ -632,84 +632,90 @@ roles:
     type: business
     elements:
       - name: Product Manager
-        text: This is the text.
+        text: The product manager or owner is leading the definition of each API.
+      - name: Software Architect
+        text: Software architects are providing the support the product managers need.       
   - name: Design
     type: business
     elements:
       - name: Software Architect
-        text: This is the text.
+        text: The software architect participates and helps guide the design process.
       - name: Product Manager
-        text: This is the text.
+        text: Product managers participates in the design of each API product delivered.
       - name: Designer      
-        text: This is the text.
+        text: The API designer is taking the lead on the design of each API delivered.
   - name: Develop
     type: technical
     elements:
-      - name: Developer  
-        text: This is the text.
+      - name: Developers  
+        text: A developer generally develops the backend for each API locally.
   - name: Test
     type: technical
     elements:
       - name:  Test Engineer 
-        text: This is the text.
+        text: Test engineer and QA teams are brought into help ensure the quality of APIs.
   - name: Secure
     type: technical
     elements:
       - name: Information Security 
-        text: This is the text.
+        text: InfoSec teams are brought in to help make sure all APIs delivered are secure.
   - name: Deploy
     type: technical
     elements:
+      - name: Developers  
+        text: Developers may play a role in deploying each API into some or all stages.   
       - name: Release Management 
-        text: This is the text.
+        text: The release management team is tapped to actually move APIs into production.
   - name: Observe
     type: business
     elements:
       - name: Site reliability Engineering (SRE)
-        text: This is the text.
+        text: SRE are brought into help mange the technical observability for each API.
       - name: DevOps
-        text: This is the text.
+        text: DevOps teams are leveraged to help make the API lifecycle more observable.
       - name: Platform       
-        text: This is the text.
+        text: PlatformOps teams are increasingly owning this stage of the API lifecycle.
   - name: Distribute 
     type: business
     elements:
       - name: Product Marketing
-        text: This is the text.
+        text: Produc marketing teams are in charge of actually distributed APis.
       - name: Advocacy
-        text: This is the text.
+        text: Dev relations and advocacy are leverage to bring attention to APis.
+
+# Governance of API Operations
 governance:
   - name: Define
     type: business
     elements:
       - name: Guidelines
-        text: This is the text.
+        text: Human readable guidelines are crafted and made available, helping educate teams about policies and practices used across the API lifecycle.
         tools:
           one:  
             name: Github
-            description: This is the description.
-            link: https://example.com
+            description: The README for the GitHub repository is used for publishing guidelines.
+            link: https://github.com
           two:
           three:
           four:      
       - name: Rules
-        text: This is the text.
+        text: Spectral rules are used to define the design, security, and other policies that are expected to be applied to APIs across the lifecycle.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Spectral rules are centrally defined as part of the Postman platform.
             link: https://postman.com
           two: 
             name: Spectral
-            description: Spectral is used to lint contracts.
+            description: Spectral rules are defined to drive automation of governance across the lifecycle.
           three:
           four:      
       - name: Standards
-        text: This is the text.
+        text: Common standards are defined, providing templates that can be applied by designers and developers when it comes to delivering each API.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: Standards can be defined as OpenAPI, and applied automatically using collections.
             link: https://postman.com
           two:
           three:
@@ -718,19 +724,19 @@ governance:
     type: business
     elements:
       - name: Errors
-        text: This is the text.
+        text: Erros ecountered when editing each API contract are reflected inline when designing an API, helping understand when mistakes are being made.
         tools:
           one: 
             name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
+            description: The API builder provides linting errors encountered when dsiging each API.
             link: https://postman.com
           two: 
             name: Spectral
-            description: Spectral is used to lint contracts.
+            description: Spectral rules are executing returning severe errors via API builder.
           three:
           four:      
       - name: Warning
-        text: This is the text.
+        text: Warnings encountered when editing each API contract are reflected inline when designing an API, helping provide common warnings 
         tools:
           one: 
             name: Postman
@@ -751,7 +757,7 @@ governance:
           two:
           three:
           four:      
-  - name: Design
+  - name: Develop
     type: business
     elements:  
       - name: Errors
@@ -800,31 +806,7 @@ governance:
           four:      
   - name: Test
     type: technical
-    elements:  
-      - name: Errors
-        text: This is the text.
-        tools:
-          one: 
-            name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://postman.com
-          two: 
-            name: Spectral
-            description: Spectral is used to lint contracts.
-          three:
-          four:      
-      - name: Warning       
-        text: This is the text.
-        tools:
-          one: 
-            name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://postman.com
-          two: 
-            name: Spectral
-            description: Spectral is used to lint contracts.
-          three:
-          four:      
+    elements:       
       - name: Quality Review
         text: This is the text.
         tools:
@@ -837,31 +819,7 @@ governance:
           four:      
   - name: Secure
     type: technical
-    elements:  
-      - name: Errors
-        text: This is the text.
-        tools:
-          one: 
-            name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://postman.com
-          two: 
-            name: Spectral
-            description: Spectral is used to lint contracts.
-          three:
-          four:      
-      - name: Warning       
-        text: This is the text.
-        tools:
-          one: 
-            name: Postman
-            description: You can organize teams and workspaces by domain or group using Postman.
-            link: https://postman.com
-          two: 
-            name: Spectral
-            description: Spectral is used to lint contracts.
-          three:
-          four:      
+    elements:       
       - name: Security Review  
         text: This is the text.
         tools:
