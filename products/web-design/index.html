@@ -142,7 +142,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
         </tr>          
 
         <tr>
-            <td><img src="../images/producer-consumer-lifecycle.png" width="100%"></td>
+            <td><img src="{{ site.url}}images/producer-consumer-lifecycle.png" width="100%"></td>
         </tr>        
 
         <tr>
@@ -160,10 +160,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                     {% for element in producer.elements %}
                         <div id="inner">
                             <div class="inner-text">
-                                {% if element.tools.one.name %}<img src="../images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
-                                {% if element.tools.two.name %}<img src="../images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
-                                {% if element.tools.three.name %}<img src="../images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
-                                {% if element.tools.four.name %}<img src="../images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
+                                {% if element.tools.one.name %}<img src="{{ site.url}}images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
+                                {% if element.tools.two.name %}<img src="{{ site.url}}images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
+                                {% if element.tools.three.name %}<img src="{{ site.url}}images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
+                                {% if element.tools.four.name %}<img src="{{ site.url}}images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.text }}">
                                     {{ element.name }}
                                 </button>                        
@@ -191,10 +191,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                     {% for element in producer.elements %}
                         <div id="inner">
                             <div class="inner-text">
-                                {% if element.tools.one.name %}<img src="../images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
-                                {% if element.tools.two.name %}<img src="../images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
-                                {% if element.tools.three.name %}<img src="../images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
-                                {% if element.tools.four.name %}<img src="../images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
+                                {% if element.tools.one.name %}<img src="{{ site.url}}images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
+                                {% if element.tools.two.name %}<img src="{{ site.url}}images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
+                                {% if element.tools.three.name %}<img src="{{ site.url}}images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
+                                {% if element.tools.four.name %}<img src="{{ site.url}}images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.text }}">
                                     {{ element.name }}
                                 </button>                        
@@ -222,10 +222,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                     {% for element in producer.elements %}
                         <div id="inner">
                             <div class="inner-text">
-                                {% if element.tools.one.name %}<img src="../images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
-                                {% if element.tools.two.name %}<img src="../images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
-                                {% if element.tools.three.name %}<img src="../images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
-                                {% if element.tools.four.name %}<img src="../images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
+                                {% if element.tools.one.name %}<img src="{{ site.url}}images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
+                                {% if element.tools.two.name %}<img src="{{ site.url}}images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
+                                {% if element.tools.three.name %}<img src="{{ site.url}}images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
+                                {% if element.tools.four.name %}<img src="{{ site.url}}images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.text }}">
                                     {{ element.name }}
                                 </button>                        
@@ -240,7 +240,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
         </tr>      
 
         <tr>
-            <td align="center"><img src="../images/producer-consumer-lifecycle-handoff.png" width="25%" align="center"></td>
+            <td align="center"><img src="{{ site.url}}images/producer-consumer-lifecycle-handoff.png" width="25%" align="center"></td>
         </tr>  
 
         <tr>
@@ -254,10 +254,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                     {% for element in producer.elements %}
                         <div id="inner">
                             <div class="inner-text">
-                                {% if element.tools.one.name %}<img src="../images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
-                                {% if element.tools.two.name %}<img src="../images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
-                                {% if element.tools.three.name %}<img src="../images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
-                                {% if element.tools.four.name %}<img src="../images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
+                                {% if element.tools.one.name %}<img src="{{ site.url}}images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
+                                {% if element.tools.two.name %}<img src="{{ site.url}}images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
+                                {% if element.tools.three.name %}<img src="{{ site.url}}images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
+                                {% if element.tools.four.name %}<img src="{{ site.url}}images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %}     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.text }}">
                                     {{ element.name }}
                                 </button>                        
