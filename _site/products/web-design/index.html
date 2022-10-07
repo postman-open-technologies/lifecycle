@@ -12,7 +12,10 @@
    <title>Products</title>
 
    <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   
    <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/introjs.css" rel="stylesheet">
+
    <meta name="theme-color" content="#7952b3">
     <style>
       .bd-placeholder-img {
@@ -29,6 +32,8 @@
         }
       }
     </style>
+
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -61,10 +66,13 @@
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
-          </li>
+          </li>    
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost:4000/products/">Products</a>
-          </li>                                                                              
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/about/">About</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/contact/">Contact</a>
+          </li>                                                                                                                     
         </ul>
         <form class="d-flex">
           <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -75,7 +83,13 @@
   </nav>
 </header>
 
-<main class="flex-shrink-0"><style id="compiled-css" type="text/css">
+<main class="flex-shrink-0">
+
+
+
+
+
+<style id="compiled-css" type="text/css">
 h2{
 padding: 0;
 margin: 0;
@@ -184,8 +198,17 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
             <td>
                 <div id="header">
 
-                    <h1>Digital Product Blueprint</h1>
-                    <p>This is an opinionated visual and outline to help demonstrate what a complete digital product can be when you adopt an API-first strategy, providing a common approach to defining the API lifecycle, governance, tooling, and which roles are needed to move APIs forward.</p>
+                    <h1>Lifecycle Visualization</h1>
+                    <p data-intro='This is one approach to delivering a consistent API across a common lifecycle while considering governance, and the roles in place. This blueprint will not reflect the needs of every organiation, but provides a nice template to consider as you are building your own strategy.'>This is an opinionated visual and accompanying outline to help demonstrate what a complete digital product can be when you adopt an API-first strategy, providing a common approach to defining the API lifecycle, governance, tooling, and which roles are needed to move APIs forward.</p>
+
+                    <script>
+                        function walkThrough(){
+                        introJs().setOptions({
+                        showBullets: false
+                        }).start(); 
+                        }
+                    </script>
+                    <center><button type="button" class="btn btn-primary btn-lg" onclick="walkThrough();">Walk Through</button></center>
 
                 </div>
 
@@ -198,10 +221,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
             <td>
                 <div id="header">
                     <ul style="font-size: 20px; padding-top: 10px;">
-                        <li><strong>Type</strong>- HTTP / Web / REST API</li>
-                        <li><strong>Approach</strong>- Design-Led</li>
-                        <li><strong>Visibility</strong>- Public</li>
-                        <li><strong>Maturity</strong>- Production</li>
+                        <li data-intro='This lifecycle has been validated against existing web APIs, providing your most simplest, but also most broad approach to how you can do APIs.'><strong>Type</strong>- HTTP / Web / REST API</li>
+                        <li data-intro='This blueprint is opinionated about following a desig-led approach to delivering an API, iterating on the contract amongst stakeholders before any code gets written.'><strong>Approach</strong>- Design-Led</li>
+                        <li data-intro=''><strong>Visibility</strong>- Public</li>
+                        <li data-intro='This blueprint is meant to cover the needs of an API in production, requiring the most comprehensive quality, security, and governance.'><strong>Maturity</strong>- Production</li>
                     </ul>
 
                 </div>
@@ -214,7 +237,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
         </tr>          
 
         <tr>
-            <td><img src="../images/producer-consumer-lifecycle.png" width="100%"></td>
+            <td><img src="http://localhost:4000/images/producer-consumer-lifecycle.png" width="100%" data-intro='Forward motion with any API requires a balanced relationship between the API producer and the consumer, let's stand this lifecycle on its side and walk through all of the elements.'></td>
         </tr>        
 
         <tr>
@@ -228,11 +251,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <h1 style="text-align: left;">Producer Lifecycle</h1>
                 
                 <div id="business" style="min-height: 725px; width: 10%;">
-                    <h2>Define</h2>
+                    <h2 data-intro='text'>Define</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -242,9 +265,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS API Gateway to deploy APIs into different regions around the world.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS API Gateway to deploy APIs into different regions around the world.">                                
                                      
                                      
                                      
@@ -254,9 +277,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Leveraging the Github README to outline the tenchincal and business requirements.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Leveraging the Github README to outline the tenchincal and business requirements.">                                
                                      
                                      
                                      
@@ -266,9 +289,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -278,9 +301,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Setting up a GitHub repository within the organization for the enterprise, domain, or team, providing a place for the API source of truth.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Setting up a GitHub repository within the organization for the enterprise, domain, or team, providing a place for the API source of truth.">                                
                                      
                                      
                                      
@@ -290,9 +313,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman provides the ability to manage API teams, organizing API operations acros domain and teams.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman provides the ability to manage API teams, organizing API operations acros domain and teams.">                                
                                      
                                      
                                      
@@ -302,9 +325,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Private, partner, and public networks and workspaces open up the ability to work with all stakeholders for an API.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Private, partner, and public networks and workspaces open up the ability to work with all stakeholders for an API.">                                
                                      
                                      
                                      
@@ -317,11 +340,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 725px; width: 10%;">
-                    <h2>Design</h2>
+                    <h2 data-intro='text'>Design</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Cloning and syncing with the GitHub repository, keeping all API contracts as part of source control for use across the lifecycle.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Cloning and syncing with the GitHub repository, keeping all API contracts as part of source control for use across the lifecycle.">                                
                                      
                                      
                                      
@@ -331,10 +354,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman API builder allows you to manage the contracts you are designing as part of delivering APIs.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI specification is used to provide a contract that guides, and defines the design of this HTTP / Web / REST API being developed.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman API builder allows you to manage the contracts you are designing as part of delivering APIs.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI specification is used to provide a contract that guides, and defines the design of this HTTP / Web / REST API being developed.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Put contracts like OpenAPI and AsyncAPI to work in defining the surface area of each API, providing a machine-readable contract to guide teams’ work.">
@@ -343,10 +366,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="In API builder you can manage the JSON Schema via OpenAPI contracts used for APIs, or simply used to manage the schema using the domain pattern.">                                
-                                <img src="../images/json-schema-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The JSON Schema specification is used to define the models applied in API requests and responses, allowing them to be validated.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="In API builder you can manage the JSON Schema via OpenAPI contracts used for APIs, or simply used to manage the schema using the domain pattern.">                                
+                                <img src="http://localhost:4000/images/json-schema-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The JSON Schema specification is used to define the models applied in API requests and responses, allowing them to be validated.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Establish a schema for all of the objects used as part of requests, responses, publishing, and subscribing when integrating an API into applications.">
@@ -355,11 +378,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to generate the reference documentation from the OpenAPI contract, keeping a complete reference available for each API.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI specification is used as the source of truth for reference documentation, allowing it to be autogenerated as needed.">     
-                                <img src="../images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman collectioni is used as a generated, portable, and sharable set of reference documentation for each API being developed.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to generate the reference documentation from the OpenAPI contract, keeping a complete reference available for each API.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI specification is used as the source of truth for reference documentation, allowing it to be autogenerated as needed.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman collectioni is used as a generated, portable, and sharable set of reference documentation for each API being developed.">     
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Generating reference documentation using the API contract, providing a complete set of documentation for everything that is possible with an API.">
                                     Reference
@@ -367,11 +390,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can use Postman to generate mock servers, leveraging the OpenAPI as the source of truth, and collectionis as derivative of the truth.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI specification is used as the source of truth for mock servers, allowing it to be autogenerated as needed.">     
-                                <img src="../images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="postman collections are used as a container for each mocked representation, providing portable and sharable virtualized instances of an API.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can use Postman to generate mock servers, leveraging the OpenAPI as the source of truth, and collectionis as derivative of the truth.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI specification is used as the source of truth for mock servers, allowing it to be autogenerated as needed.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="postman collections are used as a container for each mocked representation, providing portable and sharable virtualized instances of an API.">     
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Generate a mock representation of an API using its contract, providing an example of what the API will do in production. That will help with the design process and later on, with onboarding.">
                                     Mocks
@@ -379,10 +402,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can develop and apply different scopes of variables using Postman, which can be applied across the API lifecycle across environments.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman collections can utilize global, collection, and environment variables to apply common values and secrets where APIs are being used.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can develop and apply different scopes of variables using Postman, which can be applied across the API lifecycle across environments.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman collections can utilize global, collection, and environment variables to apply common values and secrets where APIs are being used.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Variables should be used to abstract away commpon patterns and secrets that are used across reference document, mock servers, and eventually API testing.">
@@ -391,9 +414,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman environments are used to define the environments teams will use to deliver APIs, standardizing them across APIs being produced.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman environments are used to define the environments teams will use to deliver APIs, standardizing them across APIs being produced.">                                
                                      
                                      
                                      
@@ -406,11 +429,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 725px; width: 10%;">
-                    <h2>Develop</h2>
+                    <h2 data-intro='text'>Develop</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The GitHub repository is used to keep API artifacts synced, so that they can be used throughout the development process.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The GitHub repository is used to keep API artifacts synced, so that they can be used throughout the development process.">                                
                                      
                                      
                                      
@@ -420,9 +443,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/visual-studio-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="VSCode is used to develop the code and artifacts behind each API, cloning the repository used as the source of truth.">                                
+                                <img src="http://localhost:4000/images/visual-studio-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="VSCode is used to develop the code and artifacts behind each API, cloning the repository used as the source of truth.">                                
                                      
                                      
                                      
@@ -432,9 +455,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman CLI is used as part of the development process, making the platform available locally.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman CLI is used as part of the development process, making the platform available locally.">                                
                                      
                                      
                                      
@@ -444,9 +467,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-lambda-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS Lambda as the serverless backend server for the API, providing scalable compute to power the API.">                                
+                                <img src="http://localhost:4000/images/aws-lambda-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS Lambda as the serverless backend server for the API, providing scalable compute to power the API.">                                
                                      
                                      
                                      
@@ -456,9 +479,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The AWS API Gateway is used for development, staging, and production APIs, providing a regional gateway for access each API.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The AWS API Gateway is used for development, staging, and production APIs, providing a regional gateway for access each API.">                                
                                      
                                      
                                      
@@ -471,12 +494,12 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 725px; width: 10%;">
-                    <h2>Test</h2>
+                    <h2 data-intro='text'>Test</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to test the contract for each API.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Contract test collections are generated for testing aPIs.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to test the contract for each API.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Contract test collections are generated for testing aPIs.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Use OpenAPI and AsyncAPI contracts to ensure that 100% of the surface area of an API is tested and behavior reflects the contract between producer and consumer.">
@@ -485,10 +508,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to test the performance of each API.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Performance test collections are generated for testing APIs.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to test the performance of each API.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Performance test collections are generated for testing APIs.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Test specific paths for each API in multiple regions to make sure the API, gateway, and network provide the desired performance.">
@@ -497,10 +520,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to generate monitors across the tests being automated.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="A monitor can be used to schedule the run of each test across regions.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to generate monitors across the tests being automated.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="A monitor can be used to schedule the run of each test across regions.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Schedule testing monitors to run on a schedule reflecting the business needs of the API, but also the type of test being run, allowing teams to automate testing.">
@@ -512,11 +535,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 725px; width: 10%;">
-                    <h2>Secure</h2>
+                    <h2 data-intro='text'>Secure</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS API Gateway to deploy APIs into different regions around the world.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS API Gateway to deploy APIs into different regions around the world.">                                
                                      
                                      
                                      
@@ -526,9 +549,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS API Gateway to deploy APIs into different regions around the world.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Using AWS API Gateway to deploy APIs into different regions around the world.">                                
                                      
                                      
                                      
@@ -538,9 +561,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman environments are used to define and execute across development, staging, and production.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman environments are used to define and execute across development, staging, and production.">                                
                                      
                                      
                                      
@@ -550,9 +573,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -562,10 +585,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can use Postman combined with network partners who offer API-driven fuzzing solutions.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Fuzzing collections can be defined and used to test for common vulnerabilities across APis.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can use Postman combined with network partners who offer API-driven fuzzing solutions.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Fuzzing collections can be defined and used to test for common vulnerabilities across APis.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Providing invalid, unexpected, or random data as inputs to an API as part of manual and automated testing, helping check for the most common vulnerabilities.">
@@ -577,11 +600,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 725px; width: 10%;">
-                    <h2>Deploy</h2>
+                    <h2 data-intro='text'>Deploy</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The GitHub repository is used as the source of truth when deploying each API.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The GitHub repository is used as the source of truth when deploying each API.">                                
                                      
                                      
                                      
@@ -591,21 +614,21 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="A folder is created within the GitHub repository for storing artifacts.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="OpenAPI contracts for each API are commited to the Github repository.">     
-                                <img src="../images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections for each API are commited to the Github repository.">     
-                                <img src="../images/json-schema-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="JSON Schema are published to the GitHub repository as part of OpenAPI contracts.">     
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="A folder is created within the GitHub repository for storing artifacts.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="OpenAPI contracts for each API are commited to the Github repository.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections for each API are commited to the Github repository.">     
+                                <img src="http://localhost:4000/images/json-schema-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="JSON Schema are published to the GitHub repository as part of OpenAPI contracts.">     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="OpenAPI, JSON Schema, and collections are committed to the source control so that they can be used as part of the CI/CD pipelines, but also anywhere else across the API lifecycle.">
                                     Artifacts
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="GitHub actions are used to make the deployment of each API repeatable.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="GitHub actions are used to make the deployment of each API repeatable.">                                
                                      
                                      
                                      
@@ -615,9 +638,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Staging and production environments are used as part of the CI/CD pipeline.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Staging and production environments are used as part of the CI/CD pipeline.">                                
                                      
                                      
                                      
@@ -627,9 +650,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-lambda-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="AWS Lambda is leveraged to ensure the API is scalable, providing an elastic backend for each aPI.">                                
+                                <img src="http://localhost:4000/images/aws-lambda-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="AWS Lambda is leveraged to ensure the API is scalable, providing an elastic backend for each aPI.">                                
                                      
                                      
                                      
@@ -639,9 +662,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="AWS API Gateway is being used as the gateway for each API, ensuring deployment is automated.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="AWS API Gateway is being used as the gateway for each API, ensuring deployment is automated.">                                
                                      
                                      
                                      
@@ -651,10 +674,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to execute contract tests as part of the CI/CD pipeline.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Contract test collections are executed within the CI/CD pipeline.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to execute contract tests as part of the CI/CD pipeline.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Contract test collections are executed within the CI/CD pipeline.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Contract tests are executed for staging and production environments, ensuring that the contract for each API is met in staging before it is published to production for consumers to use.">
@@ -663,13 +686,13 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to execute security tests as part of the CI/CD pipeline.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Security test collections are executed within the CI/CD pipeline.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to execute security tests as part of the CI/CD pipeline.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Security test collections are executed within the CI/CD pipeline.">     
                                      
                                      
-                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
+                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Security tests are executed for staging and production environments, ensuring that there are no vulnerabilities for each API is met in staging before it is published to production for consumers to use.">
                                     Security Test
                                 </button>                        
                             </div>
@@ -678,11 +701,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 725px; width: 10%;">
-                    <h2>Observe</h2>
+                    <h2 data-intro='text'>Observe</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Usage data is provided by the AWS API Gateway logging, helping define user access to APis.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Usage data is provided by the AWS API Gateway logging, helping define user access to APis.">                                
                                      
                                      
                                      
@@ -692,10 +715,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman monitors are used to observe each element of the producer lifecycle and routed into APM, messaging, CDNs, and other infrastructure.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections are the executable unit of execution that can be used by each monitor to execute the desired business outcomes.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman monitors are used to observe each element of the producer lifecycle and routed into APM, messaging, CDNs, and other infrastructure.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections are the executable unit of execution that can be used by each monitor to execute the desired business outcomes.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Establish monitors for all contract, performance, security, and governance tests. These tests provide the results you need to understand the state of APIs and API operations. Use collections to define all of the outputs you need to understand the state of your APIs.">
@@ -704,9 +727,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/new-relic-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="All monitors have the option to route run results into New Relic, providing dashboards for each API.">                                
+                                <img src="http://localhost:4000/images/new-relic-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="All monitors have the option to route run results into New Relic, providing dashboards for each API.">                                
                                      
                                      
                                      
@@ -716,9 +739,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Notifications regarding regular API activity is made available via desktop, web, and email notifications.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Notifications regarding regular API activity is made available via desktop, web, and email notifications.">                                
                                      
                                      
                                      
@@ -728,9 +751,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman provides a rich set of documentation for observing the usage and activity across aPis.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman provides a rich set of documentation for observing the usage and activity across aPis.">                                
                                      
                                      
                                      
@@ -740,11 +763,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="All APIs and collections within Postman workspaces are able to be watched.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="OpenAPI contracts can be watched using API builder.">     
-                                <img src="../images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman collections can be watched within workspaces.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="All APIs and collections within Postman workspaces are able to be watched.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="OpenAPI contracts can be watched using API builder.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman collections can be watched within workspaces.">     
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="API engagement can be observed using API and collectionw watches, tracking how API consumers are watching the APIs, documentation, mocks, testing, and other aspects of API operations.">
                                     Watches
@@ -752,10 +775,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman provides watch counts, and shows consumers who are watching for API producers.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Each collection has a watch count, allowing consumers to engage with elements of API operations.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman provides watch counts, and shows consumers who are watching for API producers.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Each collection has a watch count, allowing consumers to engage with elements of API operations.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Any Postman collection can be forked by consumers, allowing documentation, mock servers, tests, and other types of collecitons to be forked and used as part of integration and automations.">
@@ -764,12 +787,12 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="GitHub issues are used to gather and organize feedbback from consumers.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Platform comment capabilities are used to gather feedback on OpenAPI.">     
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="GitHub issues are used to gather and organize feedbback from consumers.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Platform comment capabilities are used to gather feedback on OpenAPI.">     
                                      
-                                <img src="../images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="postman comment capabilities are used to gather feedback on collections.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="postman comment capabilities are used to gather feedback on collections.">     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Feedback loops connecting API consumers with API producers allow teams to gather feedback about how well APIs are meeting the needs of consumers, providing valuable information that can be used to iterate upon each API.">
                                     Feedback
                                 </button>                        
@@ -779,12 +802,12 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 725px; width: 10%;">
-                    <h2>Distribute</h2>
+                    <h2 data-intro='text'>Distribute</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman networks are used to distribute APIs to consumers.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections help make onboarding with APIs via networks easier.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman networks are used to distribute APIs to consumers.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections help make onboarding with APIs via networks easier.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="APIs should be published to the private, partner, and public networks where API consumers are, via the platforms they are already using. Tap into existing network effects for API consumers so your developers can meet them where they already are.">
@@ -793,10 +816,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman networks are used to distribute APIs to consumers.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections help make onboarding with APIs via networks easier.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman networks are used to distribute APIs to consumers.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Collections help make onboarding with APIs via networks easier.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="An API deployed into production should be published to the central portal, providing centralized access for internal or external consumers through a single doorway that can be supported as part of overall API operations.">
@@ -805,34 +828,34 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to generate and publish documentation.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI is used as the source of truth for documentation.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to generate and publish documentation.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI is used as the source of truth for documentation.">     
                                      
-                                <img src="../images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Reference collections are used to publish all documentation.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Reference collections are used to publish all documentation.">     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Referencec documentation is published for the API, leveraging OpenAPI contracts to generate reference collections that provide a complete picture of what is possible for consumers.">
                                     Documentation
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to produce client snippets or SDKs.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI contract can be used as code generation source.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to produce client snippets or SDKs.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The OpenAPI contract can be used as code generation source.">     
                                      
-                                <img src="../images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Workflow collections can be used to produce SDKs.">     
-                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Workflow collections can be used to produce SDKs.">     
+                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Generating client SDKs in a variety of programming languages, helping do the redundant work for your consumers when it comes to integration.">
                                     Client SDKs
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to produce the HTML / JavaScript buttons.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Buttons are associated with specific API collections.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Postman is used to produce the HTML / JavaScript buttons.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Buttons are associated with specific API collections.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The documentation, tests, and workspace behind an API should be made available via blog posts, videos, wikis, and other resources to support APIs. Use embeddable and actionable buttons that consumers can activate with one click.">
@@ -841,9 +864,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman blog is used to publish blog posts to the community.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman blog is used to publish blog posts to the community.">                                
                                      
                                      
                                      
@@ -853,9 +876,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/youtube-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="YouTube is used for publishing API videos and make available to consumers.">                                
+                                <img src="http://localhost:4000/images/youtube-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="YouTube is used for publishing API videos and make available to consumers.">                                
                                      
                                      
                                      
@@ -865,9 +888,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman blog is used to publish blog posts to the community.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman blog is used to publish blog posts to the community.">                                
                                      
                                      
                                      
@@ -894,9 +917,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <!--Roles--> 
                 
                 <div id="business" style="min-height: 325px; width: 10%;">
-                    <h2>Define</h2>
+                    <h2 data-intro='text'>Define</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -908,7 +931,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -923,9 +946,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 325px; width: 10%;">
-                    <h2>Design</h2>
+                    <h2 data-intro='text'>Design</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -937,7 +960,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -949,7 +972,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -964,9 +987,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 325px; width: 10%;">
-                    <h2>Develop</h2>
+                    <h2 data-intro='text'>Develop</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -981,9 +1004,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 325px; width: 10%;">
-                    <h2>Test</h2>
+                    <h2 data-intro='text'>Test</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -998,9 +1021,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 325px; width: 10%;">
-                    <h2>Secure</h2>
+                    <h2 data-intro='text'>Secure</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1015,9 +1038,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 325px; width: 10%;">
-                    <h2>Deploy</h2>
+                    <h2 data-intro='text'>Deploy</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1029,7 +1052,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1044,9 +1067,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 325px; width: 10%;">
-                    <h2>Observe</h2>
+                    <h2 data-intro='text'>Observe</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1058,7 +1081,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1070,7 +1093,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1085,9 +1108,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 325px; width: 10%;">
-                    <h2>Distribute</h2>
+                    <h2 data-intro='text'>Distribute</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1099,7 +1122,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1128,11 +1151,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <!--Governance--> 
                 
                 <div id="business" style="min-height: 350px; width: 10%;">
-                    <h2>Define</h2>
+                    <h2 data-intro='text'>Define</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The README for the GitHub repository is used for publishing guidelines.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The README for the GitHub repository is used for publishing guidelines.">                                
                                      
                                      
                                      
@@ -1142,10 +1165,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral rules are centrally defined as part of the Postman platform.">                                
-                                <img src="../images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral rules are defined to drive automation of governance across the lifecycle.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral rules are centrally defined as part of the Postman platform.">                                
+                                <img src="http://localhost:4000/images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral rules are defined to drive automation of governance across the lifecycle.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral rules are used to define the design, security, and other policies that are expected to be applied to APIs across the lifecycle.">
@@ -1154,9 +1177,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Standards can be defined as OpenAPI, and applied automatically using collections.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Standards can be defined as OpenAPI, and applied automatically using collections.">                                
                                      
                                      
                                      
@@ -1169,12 +1192,12 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 350px; width: 10%;">
-                    <h2>Design</h2>
+                    <h2 data-intro='text'>Design</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The API builder provides linting errors encountered when dsiging each API.">                                
-                                <img src="../images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral rules are executing returning severe errors via API builder.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The API builder provides linting errors encountered when dsiging each API.">                                
+                                <img src="http://localhost:4000/images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral rules are executing returning severe errors via API builder.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Erros ecountered when editing each API contract are reflected inline when designing an API, helping understand when mistakes are being made.">
@@ -1183,10 +1206,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Warnings encountered when editing each API contract are reflected inline when designing an API, helping provide common warnings">
@@ -1195,13 +1218,13 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Design reviews can exist within a workspace, either synchronously or asynchronosuly with all the stakeholders.">                                
                                      
                                      
                                      
-                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
+                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Having a design review betwen developer, designer, architects, and product manager to help improve the design of the API, but also help improvie the policies, rules, and guidance provided as part of API governance.">
                                     Design Review
                                 </button>                        
                             </div>
@@ -1210,35 +1233,35 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 350px; width: 10%;">
-                    <h2>Develop</h2>
+                    <h2 data-intro='text'>Develop</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman CLI can be used to validate API contracts during local development.">     
                                      
                                      
-                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
+                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Developers should be able to lint their APIs locally as they desvelop, seeing the errors they are making in the design of an API in real time.">
                                     Errors
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The Postman CLI can be used to validate API contracts during local development.">                                
+                                <img src="http://localhost:4000/images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
                                      
                                      
-                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
+                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Developers should recceive warnings as part of their local development for the most common policies which are automated as part of rules.">
                                     Warning
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1248,9 +1271,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/vscode-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
+                                <img src="http://localhost:4000/images/vscode-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
                                      
                                      
                                      
@@ -1263,11 +1286,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 350px; width: 10%;">
-                    <h2>Test</h2>
+                    <h2 data-intro='text'>Test</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1280,11 +1303,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 350px; width: 10%;">
-                    <h2>Secure</h2>
+                    <h2 data-intro='text'>Secure</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1297,12 +1320,12 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="technical" style="min-height: 350px; width: 10%;">
-                    <h2>Deploy</h2>
+                    <h2 data-intro='text'>Deploy</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
@@ -1311,10 +1334,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/spectral-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Spectral is used to lint contracts.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
@@ -1323,9 +1346,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
                                      
                                      
                                      
@@ -1335,10 +1358,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
@@ -1350,11 +1373,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 350px; width: 10%;">
-                    <h2>Observe</h2>
+                    <h2 data-intro='text'>Observe</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/new-relic-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
+                                <img src="http://localhost:4000/images/new-relic-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
                                      
                                      
                                      
@@ -1364,9 +1387,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1379,11 +1402,11 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 </div>
                 
                 <div id="business" style="min-height: 350px; width: 10%;">
-                    <h2>Distribute</h2>
+                    <h2 data-intro='text'>Distribute</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1393,7 +1416,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1413,7 +1436,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
         </tr>      
 
         <tr>
-            <td align="center"><img src="../images/producer-consumer-lifecycle-handoff.png" width="25%" align="center"></td>
+            <td align="center"><img src="http://localhost:4000/images/producer-consumer-lifecycle-handoff.png" width="25%" align="center"></td>
         </tr>  
 
         <tr>
@@ -1425,21 +1448,21 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <div id="business" style="min-height: 570px; width: 13.5%;">
                     <h2>Discover</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
-                                <img src="../images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Consumers should be able to search for APIs on the interfaces they are already using, allowing for discovery of API information in a manner relevant to their work.">
                                     Search
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1449,9 +1472,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1461,9 +1484,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1473,10 +1496,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The contracts and other artifacts that define the surface area of an API, including authentication and authorization, should be discoverable as part of regular operations.">
@@ -1485,10 +1508,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Up-to-date and accurate documentation for all APIs should be easily discoverable by teams, with human-readable details describing what is possible with each API.">
@@ -1497,9 +1520,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1514,9 +1537,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <div id="business" style="min-height: 570px; width: 13.5%;">
                     <h2>Evaluate</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1526,10 +1549,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Provide rich documentation with useful descriptions, examples, and other information to help consumers get started using each API.">
@@ -1538,10 +1561,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
@@ -1550,10 +1573,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
@@ -1562,10 +1585,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Make sure there are always examples for each element of an API, allowing API contracts to be mocked and providing rich documentation showing how they work.">
@@ -1574,10 +1597,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Provide the ability to execute each request, response, publish, and subscribe, making sure that learning about an API is as hands-on as it can possibly be.">
@@ -1591,9 +1614,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <div id="technical" style="min-height: 570px; width: 13.5%;">
                     <h2>Integrate</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1603,10 +1626,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/aws-api-gateway-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
@@ -1615,10 +1638,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the text.">
@@ -1627,10 +1650,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Machine-readable contracts like OpenAPI and AsyncAPI make integration as simple as importing the contract for an API, authenticating, and  making the API calls you need to move data between systems, providing an artifact that defines consumption.">
@@ -1639,9 +1662,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1651,9 +1674,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1668,9 +1691,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <div id="technical" style="min-height: 570px; width: 13.5%;">
                     <h2>Test</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1680,22 +1703,22 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
-                                <img src="../images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Exposing contract tests and even the results of scheduled contract test runs will increase consumer awareness of API contracts and how their validation can be used in applications and integrations.">
                                     Contract
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Share performance tests and results of scheduled performance test runs, increasing transparency about API performance while demonstrating how your platform has considered performance and is taking steps to improve upon it.">
@@ -1704,9 +1727,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1721,9 +1744,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <div id="technical" style="min-height: 570px; width: 13.5%;">
                     <h2>Deploy</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
                                      
                                      
                                      
@@ -1733,9 +1756,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
                                      
                                      
                                      
@@ -1745,10 +1768,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Leverage a Postman collection as a modular, shareable, and executable definition of an application, stitching together many different API calls across internal and external API sources to apply digital resources and capabilities in a specific way.">
@@ -1757,9 +1780,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/aws-api-gateway-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1769,10 +1792,10 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Acknowledge that some collection applications will be manually run by different team members using runners, organizing different types of integrations and applications by workspaces and letting different stakeholders manually put them to work.">
@@ -1786,7 +1809,7 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                 <div id="technical" style="min-height: 570px; width: 13.5%;">
                     <h2>Observe</h2>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
                                                                 
                                      
@@ -1798,22 +1821,22 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
-                                <img src="../images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Keeping track of the watches on workspaces, APIs, and collections to understand who is tuned into what is happening. Use watches as a metric for the number of consumers, contributors, and internal and external stakeholders who are tuned in.">
                                     Watches
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
-                                <img src="../images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
                                      
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Track who is forking repositories and collections, using the fork count as a metric for engagement and knowing who your consumers are. Track engagement via workspaces, repositories, and collections to learn how consumers are using your APIs.">
@@ -1822,21 +1845,21 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
-                                <img src="../images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/github-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">                                
+                                <img src="http://localhost:4000/images/openapi-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                      
-                                <img src="../images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
+                                <img src="http://localhost:4000/images/collection-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This is the description.">     
                                 <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 14px;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Engage with API producers and consumers, understanding the conversation is around each API or group of APIs. Observe discussions about digital resources and capabilities.">
                                     Feedback
                                 </button>                        
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1846,9 +1869,9 @@ width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0
                             </div>
                         </div>
                     
-                        <div id="inner">
+                        <div id="inner" data-intro='text'>
                             <div class="inner-text">
-                                <img src="../images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
+                                <img src="http://localhost:4000/images/postman-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="You can organize teams and workspaces by domain or group using Postman.">                                
                                      
                                      
                                      
@@ -1886,5 +1909,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 $("#popover").popover({ trigger: "hover" });
 
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/intro.js"></script>  
+
   </body>
 </html>
