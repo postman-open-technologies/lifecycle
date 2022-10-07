@@ -1,19 +1,19 @@
 ---
-
+ 
 info:
   title: Lifecycle Visualization
   description: 
     body: This is an opinionated visual and accompanying outline to help demonstrate what a complete digital product can be when you adopt an API-first strategy, providing a common approach to defining the API lifecycle, governance, tooling, and which roles are needed to move APIs forward.
-    tip: This is one approach to delivering a consistent API across a common lifecycle while considering governance, and the roles in place. This blueprint will not reflect the needs of every organiation, but provides a nice template to consider as you are building your own strategy.
+    tip: This is one approach to delivering a consistent API across a common lifecycle while considering governance, and the roles in place. This blueprint will not reflect the needs of every organization, but provides a nice template to consider as you are building your own strategy.
   type: 
     body: HTTP / Web / REST API
     tip: This lifecycle has been validated against existing web APIs, providing your most simplest, but also most broad approach to how you can do APIs.
   approach: 
     body: Design-Led
-    tip: This blueprint is opinionated about following a desig-led approach to delivering an API, iterating on the contract amongst stakeholders before any code gets written.
+    tip: This blueprint is opinionated about following a design-led approach to delivering an API, iterating on the contract amongst stakeholders before any code gets written.
   visibility:
     body: Public
-    tip: This is a blueprint for a publicly available API, and we should take into consideration what happens when anyone around the world can access.
+    tip: This is a blueprint for a publicly available API, and we should take into consideration what happens when anyone around the world can access it.
   maturity:
     body: Production
     tip: This blueprint is meant to cover the needs of an API in production, requiring the most comprehensive quality, security, and governance.
@@ -23,11 +23,11 @@ info:
 # Producer Lifecycle
 producer:
   - name: Define
-    tip: text
+    tip: Each API should be well-defined by a mix of business and technical stakeholders.
     type: business
     elements:
       - name: Domains
-        tip: text
+        tip: Each API should be part of a well-defined domain that is in alignment with business goals.
         text: What domain will an API be operating in? Define the vocabulary, standards, and other patterns that developers at design and development teams will use.
         tools:
           one: 
@@ -38,7 +38,7 @@ producer:
           three:
           four:
       - name: Regions
-        tip: text
+        tip: Which regions an API will be running in should be well-defined from the beginning.
         text: Identify the region(s) where an API will operate so that you can comply with regulations and other business requirements and ensure that APIs are as close to consumers as possible.
         tools:
           one: 
@@ -49,18 +49,18 @@ producer:
           three:
           four:      
       - name: Requirements
-        tip: text
+        tip: The business, security, and other requirements for an API should always be well-defined.
         text: What are the requirements for the API?  You need to define the business value it will bring to help you guide development and operation.
         tools:
           one:  
             name: Github
-            description: Leveraging the Github README to outline the tenchincal and business requirements.
+            description: Leveraging the Github README to outline the technical and business requirements.
             link: https://github.com
           two:
           three:
           four:      
       - name: Workspaces
-        tip: text
+        tip: Each API should have a dedicated workspace where you can stay up to speed on what is happening.
         text: Set up the workspaces where teams will be designing, developing, and managing APIs, then iterating upon them and managing multiple versions.
         tools:
           one: 
@@ -71,7 +71,7 @@ producer:
           three:
           four:      
       - name: Source
-        tip: text
+        tip: Each API should have a source control repository, ensuring all artifacts and code are available.
         text: Ensuring that every API is using source control and has a repository for managing code, but also API artifacts, and other elements needed to manage the API lifecycle.
         tools:
           one:  
@@ -82,18 +82,18 @@ producer:
           three:
           four:      
       - name: Teams
-        tip: text
+        tip: The teams behind an API should be well-defined and documented as part of the API lifecycle.
         text: Line up who will be working on an API, bringing together designers, developers, technical writers, QA specialists, and other roles who will be involved in moving your APIs forward.
         tools:
           one: 
             name: Postman
-            description: Postman provides the ability to manage API teams, organizing API operations acros domain and teams.
+            description: Postman provides the ability to manage API teams, organizing API operations across domains and teams.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Stakeholders
-        tip: text
+        tip: All business and technical stakeholders should be identified and made part of the process.
         text: Identify business and technical stakeholders, including any external partners and consumers who might need to be involved.
         tools:
           one: 
@@ -104,11 +104,11 @@ producer:
           three:
           four:      
   - name: Design
-    tip: text
+    tip: This is where we design an aPI before we get to work writing any code.
     type: business
     elements:
       - name: Source
-        tip: text
+        tip: Source control should be used as the foundation for designing API contracts.
         text: Using source control to manage the artifacts involved with the API design process, providing a single source of truth that grounds design across teams.
         tools:
           one:  
@@ -119,7 +119,7 @@ producer:
           three:
           four:      
       - name: Contracts
-        tip: text
+        tip: Each API should have a well-defined and complete machine readable contract available.
         text: Put contracts like OpenAPI and AsyncAPI to work in defining the surface area of each API, providing a machine-readable contract to guide teams’ work.
         tools:
           one: 
@@ -133,7 +133,7 @@ producer:
           three:
           four:      
       - name: Schema
-        tip: text
+        tip: The schema for all objects that an API depends on should be part of the contracts.
         text: Establish a schema for all of the objects used as part of requests, responses, publishing, and subscribing when integrating an API into applications.
         tools:
           one: 
@@ -147,7 +147,7 @@ producer:
           three:
           four:      
       - name: Reference
-        tip: text
+        tip: Reference documentation should exist for each API.
         text: Generating reference documentation using the API contract, providing a complete set of documentation for everything that is possible with an API.
         tools:
           one: 
@@ -156,24 +156,24 @@ producer:
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: The OpenAPI specification is used as the source of truth for reference documentation, allowing it to be autogenerated as needed.
+            description: The OpenAPI specification is used as the source of truth for reference documentation, allowing it to be auto generated as needed.
             link: https://example.com
           three:
             name: Collection
-            description: The Postman collectioni is used as a generated, portable, and sharable set of reference documentation for each API being developed.
+            description: The Postman collection is used as a generated, portable, and sharable set of reference documentation for each API being developed.
             link: https://example.com          
           four:      
       - name: Mocks
-        tip: text
+        tip: Mock servers should be used as part of the API design process.
         text: Generate a mock representation of an API using its contract, providing an example of what the API will do in production. That will help with the design process and later on, with onboarding.
         tools: 
           one: 
             name: Postman
-            description: You can use Postman to generate mock servers, leveraging the OpenAPI as the source of truth, and collectionis as derivative of the truth.
+            description: You can use Postman to generate mock servers, leveraging OpenAPI as the source of truth, and collections as derivative of the truth.
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: The OpenAPI specification is used as the source of truth for mock servers, allowing it to be autogenerated as needed.
+            description: The OpenAPI specification is used as the source of truth for mock servers, allowing it to be auto generated as needed.
             link: https://openapis.org     
           three:            
             name: Collection
@@ -181,8 +181,8 @@ producer:
             link: https://postman.com          
           four:      
       - name: Variables
-        tip: text
-        text: Variables should be used to abstract away commpon patterns and secrets that are used across reference document, mock servers, and eventually API testing.
+        tip: The common values, secrets and other elements of APIs should be abstracted as variables.
+        text: Variables should be used to abstract away common patterns and secrets that are used across reference documents, mock servers, and eventually API testing.
         tools:
           one: 
             name: Postman
@@ -195,7 +195,7 @@ producer:
           three:
           four:      
       - name: Environments  
-        tip: text
+        tip: A machine readable environment should be available for all API environments.
         text: Environments allow development, staging, production, and other environments needed to develop and deliver APIs in a machine readable and executable way.
         tools:
           one: 
@@ -206,11 +206,11 @@ producer:
           three:
           four:      
   - name: Develop
-    tip: text
+    tip: The development stage of the API lifecycle should be well-defined, even if it is happening locally.
     type: technical
     elements:
       - name: Source
-        tip: text
+        tip: Source control is the base of local development and provides access to the API source truth.
         text: The source control repository is cloned locally, providing access to artifacts that are produced as part of the API design process to develop API.
         tools:
           one:  
@@ -221,7 +221,7 @@ producer:
           three:
           four:      
       - name: IDE
-        tip: text
+        tip: Developers love their IDE, and will be using it to develop APIs locally.
         text: An integrated development environment is used to develop the code and other artifacts that will be used as part of deploying each API.
         tools:
           one:  
@@ -232,7 +232,7 @@ producer:
           three:
           four:      
       - name: CLI
-        tip: text
+        tip: The command line interface (CLI) is an integral part of the local development of APIs.
         text: A Command Line Interface (CLI) can be used as part of local development, making Postman artifacts and capability as part of the development process.
         tools:
           one: 
@@ -243,7 +243,7 @@ producer:
           three:
           four:      
       - name: Server
-        tip: text
+        tip: The server behind the API will need to be generated and then developed.
         text: Establish a baseline for the underlying API compute, choosing among virtual servers, containers, and serverless to power each API.
         tools:
           one:  
@@ -254,22 +254,22 @@ producer:
           three:
           four:      
       - name: Gateway
-        tip: text
+        tip: The gateway will need to be set up and configured for deploying the API.
         text: Set up the gateway to prepare for an API deployment. Do the initial work to set up everything needed at the gateway layer, shifting as much of this work as far to the left in the life cycle as possible.
         tools:
           one: 
             name: AWS API Gateway
-            description: The AWS API Gateway is used for development, staging, and production APIs, providing a regional gateway for access each API.
+            description: The AWS API Gateway is used for development, staging, and production APIs, providing a regional gateway for accessing each API.
             link: https://aws.amazon.com/api-gateway/
           two:
           three:
           four:        
   - name: Test
-    tip: text
+    tip: All APIs should be tested, shifting the process as far left in the lifecycle as possible.
     type: technical
     elements:
       - name: Contract
-        tip: text
+        tip: The contract for each API should be used as the source of truth for testing.
         text: Use OpenAPI and AsyncAPI contracts to ensure that 100% of the surface area of an API is tested and behavior reflects the contract between producer and consumer.
         tools:
           one: 
@@ -283,7 +283,7 @@ producer:
           three:
           four:      
       - name: Performance
-        tip: text
+        tip: Performance tests should exist for each API to meet SLAs.
         text: Test specific paths for each API in multiple regions to make sure the API, gateway, and network provide the desired performance. 
         tools:
           one: 
@@ -297,7 +297,7 @@ producer:
           three:
           four:      
       - name: Monitors  
-        tip: text
+        tip: Contract and performance testing should be monitored on a schedule.
         text: Schedule testing monitors to run on a schedule reflecting the business needs of the API, but also the type of test being run, allowing teams to automate testing.
         tools:
           one: 
@@ -311,11 +311,11 @@ producer:
           three:
           four:      
   - name: Secure
-    tip: text
+    tip: The security of APIs should be shifted left as far as possible in the API lifecycle.
     type: technical
     elements:
       - name: Authentication
-        tip: text
+        tip: Standardized authentication for APIs should always be used.
         text: Authentication helps ensure APIs are accessed only by those who should have access, allowing API producers and consumers to easily apply rules consistently.
         tools:
           one: 
@@ -326,7 +326,7 @@ producer:
           three:
           four:   
       - name: Authorization
-        tip: text
+        tip: The fine-grain access of digital resources should be considered.
         text: Once a user is authenticated, the authorization layer will make sure they only have access to approved resources. 
         tools:
           one: 
@@ -337,7 +337,7 @@ producer:
           three:
           four:              
       - name: Environments
-        tip: text
+        tip: Environments help standardize how we manage API environments.
         text: Have a solid map of the development, staging, and production environments across all APIs in operation. That will help you manage API deployment more consistently.
         tools:
           one: 
@@ -348,7 +348,7 @@ producer:
           three:
           four:      
       - name: RBAC  
-        tip: text
+        tip: ROle-based access control should be applied to APIs and operations.
         text: Role-based access controls should be applied at the authorization layer of an API and to the API operations around it, helping govern who has access to operations.
         tools:
           one: 
@@ -359,7 +359,7 @@ producer:
           three:
           four: 
       - name: Fuzzing
-        tip: text
+        tip: The entire surface area of APIs should be fuzzed as part of the life cycle.
         text: Providing invalid, unexpected, or random data as inputs to an API as part of manual and automated testing, helping check for the most common vulnerabilities.
         tools:
           one: 
@@ -373,11 +373,11 @@ producer:
           three:
           four:                
   - name: Deploy
-    tip: text
+    tip: This is when an API is being deployed in a repeatable way across teams.
     type: technical
     elements:    
       - name: Source
-        tip: text
+        tip: Source control is the foundation of how APIs are being deployed.
         text: Use source control to manage code and artifacts used to deploy an API, providing a single location where you can find everything behind each version, ideally with multiple branches to accommodate many API contributions.
         tools:
           one:  
@@ -388,7 +388,7 @@ producer:
           three:
           four:      
       - name: Artifacts
-        tip: text
+        tip: All artifacts should be synced and made available via source control.
         text: OpenAPI, JSON Schema, and collections are committed to the source control so that they can be used as part of the CI/CD pipelines, but also anywhere else across the API lifecycle.
         tools:
           one:  
@@ -397,18 +397,18 @@ producer:
             link: https://github.com
           two:  
             name: OpenAPI
-            description: OpenAPI contracts for each API are commited to the Github repository.
+            description: OpenAPI contracts for each API are committed to the Github repository.
             link: https://example.com
           three:  
             name: Collection
-            description: Collections for each API are commited to the Github repository.
+            description: Collections for each API are committed to the Github repository.
             link: https://example.com
           four:  
             name: JSON Schema
             description: JSON Schema are published to the GitHub repository as part of OpenAPI contracts.
             link: https://example.com
       - name: CI/CD
-        tip: text
+        tip: CI/CD is used to deploy and test APIs as they are being built.
         text: The pipeline ensures that the deployment of an API to each stage is as repeatable as possible, with tests and other essential needs of the API build process making API deployment as repeatable as possible across teams.
         tools:
           one:  
@@ -419,7 +419,7 @@ producer:
           three:
           four:      
       - name: Environments
-        tip: text
+        tip: Machine readable environments are needed to apply testing and policies.
         text: Apply commonly managed environments, with a coordinated variable strategy for testing and automating configuration as part of the pipeline, helping to abstract away the technical details and secrets of API environments.
         tools:
           one: 
@@ -430,7 +430,7 @@ producer:
           three:
           four:      
       - name: Server
-        tip: text
+        tip: The server code will get deployed as part of the build process.
         text: The CI/CD pipeline publishes the code behind each individual API operation, levering a serverless backend for this API, helping automate and scale the backend resources needed to power APIs.
         tools:
           one:  
@@ -441,7 +441,7 @@ producer:
           three:
           four:      
       - name: Gateway
-        tip: text
+        tip: The gateway configuration will be updated and deployed.
         text: Publish contracts, extensions, and other configurations to the API gateway, deploying an API into a staging, then a production environment if all tests pass in the pipeline. This gives you a repeatable way of managing gateways.
         tools:
           one: 
@@ -452,7 +452,7 @@ producer:
           three:
           four:      
       - name: Contract Test
-        tip: text
+        tip: Contract test collections will be executed.
         text: Contract tests are executed for staging and production environments, ensuring that the contract for each API is met in staging before it is published to production for consumers to use.
         tools:
           one: 
@@ -466,8 +466,8 @@ producer:
           three:
           four:      
       - name: Security Test  
-        tip: text
-        text: Security tests are executed for staging and production environments, ensuring that there are no vulnerabilities for each API is met in staging before it is published to production for consumers to use.
+        tip: Security test collections will be executed.
+        text: Security tests are executed for staging and production environments, ensuring that there are no vulnerabilities for each API that is met in staging before it is published to production for consumers to use.
         tools:
           one: 
             name: Postman
@@ -480,11 +480,11 @@ producer:
           three:
           four:      
   - name: Observe
-    tip: text
+    tip: The observability of APIs is important to understand the state of each API.
     type: business
     elements:
       - name: Usage
-        tip: text
+        tip: The usage of APIs needs to be readily observable by teams.
         text: The usage of APIs by consumers is observable, leveraging the gateway to understand which APIs are accessed, how much consumers are using APIs, and what errors and other considerations are.
         tools:
           one: 
@@ -495,7 +495,7 @@ producer:
           three:
           four:      
       - name: Monitors
-        tip: text
+        tip: Monitors should exist for all collections, scheduling their execution.
         text: Establish monitors for all contract, performance, security, and governance tests. These tests provide the results you need to understand the state of APIs and API operations. Use collections to define all of the outputs you need to understand the state of your APIs.
         tools:
           one: 
@@ -509,7 +509,7 @@ producer:
           three:
           four:      
       - name: APM
-        tip: text
+        tip: All collection runs can be piped into APM solutions for wider observability.
         text: Route all outputs across API operations into your existing APM solutions, tapping every output across the API life cycle to understand the health and state of the platform through the infrastructure you have already invested in.
         tools:
           one:
@@ -520,18 +520,18 @@ producer:
           three:
           four:      
       - name: Notifications
-        tip: text
+        tip: Teams can receive notifications via web, desktop, and email about API operations.
         text: Use notifications and alerts to observe changes with each API, as well as events that occur across the life cycle. They will help you understand consumer activity, as well as what is happening across teams and other stakeholders.
         tools:
           one: 
             name: Postman
-            description: Notifications regarding regular API activity is made available via desktop, web, and email notifications.
+            description: Notifications regarding regular API activity are made available via desktop, web, and email notifications.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Reports
-        tip: text
+        tip: Reports are available to understand teams, APIs, and operations.
         text: Provide team, API, documentation, testing, and other reporting, showing what teams are doing across API operations and how the lifecycle is unfolding across teams. Use native platform reporting that speaks specifically to API operations.
         tools:
           one: 
@@ -542,8 +542,8 @@ producer:
           three:
           four:      
       - name: Watches
-        tip: text
-        text: API engagement can be observed using API and collectionw watches, tracking how API consumers are watching the APIs, documentation, mocks, testing, and other aspects of API operations.
+        tip: Teams can watch APIs and collections to understand operations.
+        text: API engagement can be observed using API and collection watches, tracking how API consumers are watching the APIs, documentation, mocks, testing, and other aspects of API operations.
         tools:
           one: 
             name: Postman
@@ -559,7 +559,7 @@ producer:
             link: https://postman.com
           four:      
       - name: Forks
-        tip: text
+        tip: The number of forks paint a picture about what is happening.
         text: Any Postman collection can be forked by consumers, allowing documentation, mock servers, tests, and other types of collecitons to be forked and used as part of integration and automations.
         tools:
           one: 
@@ -573,12 +573,12 @@ producer:
           three:
           four:      
       - name: Feedback  
-        tip: text
+        tip: The feedback loop for APIs is important for iterating and evolving APIs.
         text: Feedback loops connecting API consumers with API producers allow teams to gather feedback about how well APIs are meeting the needs of consumers, providing valuable information that can be used to iterate upon each API.
         tools:
           one:  
             name: Github
-            description: GitHub issues are used to gather and organize feedbback from consumers.
+            description: GitHub issues are used to gather and organize feedback from consumers.
             link: https://github.com
           two:  
             name: OpenAPI
@@ -590,11 +590,11 @@ producer:
             description: postman comment capabilities are used to gather feedback on collections.
             link: https://example.com     
   - name: Distribute
-    tip: text
+    tip: Once ready, APIs need to be properly distributed to consumers for use.
     type: business
     elements:
       - name: Network
-        tip: text
+        tip: Networks connect producers and consumers across API operations.
         text: APIs should be published to the private, partner, and public networks where API consumers are, via the platforms they are already using. Tap into existing network effects for API consumers so your developers can meet them where they already are.
         tools:
           one: 
@@ -608,7 +608,7 @@ producer:
           three:
           four:          
       - name: Portal
-        tip: text
+        tip: APIs should be published to relevant private, partner, or public portals.
         text: An API deployed into production should be published to the central portal, providing centralized access for internal or external consumers through a single doorway that can be supported as part of overall API operations.
         tools:
           one: 
@@ -622,8 +622,8 @@ producer:
           three:
           four:    
       - name: Documentation
-        tip: text
-        text: Referencec documentation is published for the API, leveraging OpenAPI contracts to generate reference collections that provide a complete picture of what is possible for consumers.
+        tip: Reference documentation should be distributed for all APIs.
+        text: Reference documentation is published for the API, leveraging OpenAPI contracts to generate reference collections that provide a complete picture of what is possible for consumers.
         tools:
           one: 
             name: Postman
@@ -631,7 +631,7 @@ producer:
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: The OpenAPI is used as the source of truth for documentation.
+            description: OpenAPI is used as the source of truth for documentation.
             link: https://example.com
           three:
           four:  
@@ -639,7 +639,7 @@ producer:
             description: Reference collections are used to publish all documentation.
             link: https://postman.com    
       - name: Client SDKs
-        tip: text
+        tip: Client SDKs and snippets should always be available for APIs by default.
         text: Generating client SDKs in a variety of programming languages, helping do the redundant work for your consumers when it comes to integration.
         tools:
           one: 
@@ -656,7 +656,7 @@ producer:
             description: Workflow collections can be used to produce SDKs.
             link: https://postman.com         
       - name: Buttons
-        tip: text
+        tip: Embeddbable buttons make onboarding with APis easier.
         text: The documentation, tests, and workspace behind an API should be made available via blog posts, videos, wikis, and other resources to support APIs. Use embeddable and actionable buttons that consumers can activate with one click.
         tools:
           one: 
@@ -670,8 +670,8 @@ producer:
           three:
           four:      
       - name: Blog Post
-        tip: text
-        text: Each API should at least have one blog posts published, helping annouce the availablity of each API, ensuring that business and technical are made aware of the value that is available.
+        tip: Each API should enjoy an internal, partner, or private blog post.
+        text: Each API should at least have one blog post published, helping announce the availability of each API, ensuring that business and technical are made aware of the value that is available.
         tools:
           one: 
             name: Postman
@@ -681,19 +681,19 @@ producer:
           three:
           four:      
       - name: Video
-        tip: text
+        tip: A walk-through video should be recorded to show the value of an API.
         text: Each API should have at least one video that helps walk through documentation, onboarding, and using the API as part of workflows, applications, and integrations.
         tools:
           one:
             name: Youtube
-            description: YouTube is used for publishing API videos and make available to consumers.
+            description: YouTube is used for publishing API videos and making them available to consumers.
             link: https://youtube.com          
           two:
           three:
           four:      
       - name: Education
-        tip: text
-        text: Contracts, collections, blog posts, videos, and other sources should be made avalable via workspaces and repositories, helping ensure the required education for consumers is available.
+        tip: Educational resources should be made available across all aPIs.
+        text: Contracts, collections, blog posts, videos, and other sources should be made available via workspaces and repositories, helping ensure the required education for consumers is available.
         tools:
           one: 
             name: Postman
@@ -702,97 +702,100 @@ producer:
           two:
           three:
           four:
-
-
-
-# Roles involved in the lifecycle                
+ 
+ 
+ 
+# Roles involved in the life cycle                
 roles:
   - name: Define
-    tip: text
+    tip: The API definition should be a partnership between business and IT.
     type: business
     elements:
       - name: Product Manager
-        tip: text
+        tip: Every API should have a product owner in charge of the definition.
         text: The product manager or owner is leading the definition of each API.
       - name: Software Architect
-        tip: text
+        tip: The big picture should be defined by software architects.
         text: Software architects are providing the support the product managers need.       
   - name: Design
-    tip: text
+    tip: Not all developers will have the design skills needed.
     type: business
     elements:
       - name: Software Architect
-        tip: text
+        tip: Software architects should lay the foundation for design.
         text: The software architect participates and helps guide the design process.
       - name: Product Manager
-        tip: text
-        text: Product managers participates in the design of each API product delivered.
+        tip: API product managers should be leading the design.
+        text: Product managers participate in the design of each API product delivered.
       - name: Designer      
-        tip: text
+        tip: Ideally, there are dedicated designers in charge of this stage.
         text: The API designer is taking the lead on the design of each API delivered.
   - name: Develop
-    tip: text
+    tip: This stage of the lifecycle is usually a local affair.
     type: technical
     elements:
       - name: Developers  
-        tip: text
+        tip: This work is done by developers in their local environment.
         text: A developer generally develops the backend for each API locally.
   - name: Test
-    tip: text
+    tip: Teams are increasingly brought into handle this stage.
     type: technical
     elements:
       - name:  Test Engineer 
-        tip: text
-        text: Test engineer and QA teams are brought into help ensure the quality of APIs.
+        tip: Engineers with the test experience should be owning this.
+        text: Test engineer and QA teams are brought in to help ensure the quality of APIs.
   - name: Secure
-    tip: text
+    tip: Security is being shifted left, but still defined centrally.
     type: technical
     elements:
       - name: Information Security 
-        tip: text
+        tip: The InfoSec teams are coming in to help.
         text: InfoSec teams are brought in to help make sure all APIs delivered are secure.
   - name: Deploy
-    tip: text
+    tip: The deployment of APIs is increasingly a team sport.
     type: technical
     elements:
       - name: Developers  
-        tip: text
+        tip: Developers are still playing a key role.
         text: Developers may play a role in deploying each API into some or all stages.   
       - name: Release Management 
-        tip: text
+        tip: Release management teams are helping stabilize things.
         text: The release management team is tapped to actually move APIs into production.
   - name: Observe
-    tip: text
+    tip: We are seeing observability begin shifting towards business needs.
     type: business
     elements:
       - name: Site reliability Engineering (SRE)
-        tip: text
-        text: SRE are brought into help mange the technical observability for each API.
+        tip: This role is important to help improve reliability.
+        text: SRE are brought in to help manage the technical observability for each API.
       - name: DevOps
-        tip: text
+        tip: Specialization in this area is increasingly important.
         text: DevOps teams are leveraged to help make the API lifecycle more observable.
       - name: Platform       
-        tip: text
+        tip: The existence of a platform team shows an organization is further along in their journey.
         text: PlatformOps teams are increasingly owning this stage of the API lifecycle.
   - name: Distribute 
-    tip: text
+    tip: The distribution of APIs is increasingly not the developer.
     type: business
     elements:
       - name: Product Marketing
-        tip: text
-        text: Produc marketing teams are in charge of actually distributed APis.
+        tip: Marketing teams are increasingly taking a lead here.
+        text: Product marketing teams are in charge of actually distributed APis.
+      - name: Product Manager
+        tip: The product manager is helping drive the distribution of APIs.
+        text: The product manager or owner is leading the distribution of each API.        
       - name: Advocacy
-        tip: text
+        tip: Developer advocacy is becoming commonplace in distribution.
         text: Dev relations and advocacy are leverage to bring attention to APis.
-
+ 
 # Governance of API Operations
 governance:
   - name: Define
-    tip: text
+    tip: Having things well-defined is essential to API governance.
     type: business
     elements:
       - name: Guidelines
-        tip: text
+        tip: Guidelines provide teams with an overview of governance.
         text: Human readable guidelines are crafted and made available, helping educate teams about policies and practices used across the API lifecycle.
         tools:
           one:  
@@ -803,7 +806,7 @@ governance:
           three:
           four:      
       - name: Rules
-        tip: text
+        tip: Spectral rules codify what is needed for governance.
         text: Spectral rules are used to define the design, security, and other policies that are expected to be applied to APIs across the lifecycle.
         tools:
           one: 
@@ -816,7 +819,7 @@ governance:
           three:
           four:      
       - name: Standards
-        tip: text
+        tip: Common standards should be made available.
         text: Common standards are defined, providing templates that can be applied by designers and developers when it comes to delivering each API.
         tools:
           one: 
@@ -827,16 +830,16 @@ governance:
           three:
           four:      
   - name: Design
-    tip: text
+    tip: This is where we shift governance left in the life cycle.
     type: business
     elements:
       - name: Errors
-        tip: text
-        text: Erros ecountered when editing each API contract are reflected inline when designing an API, helping understand when mistakes are being made.
+        tip: Validate and reveal errors as early on in the process as possible.
+        text: Errors encountered when editing each API contract are reflected inline when designing an API, helping understand when mistakes are being made.
         tools:
           one: 
             name: Postman
-            description: The API builder provides linting errors encountered when dsiging each API.
+            description: The API builder provides linting errors encountered when designing each API.
             link: https://postman.com
           two: 
             name: Spectral
@@ -844,7 +847,7 @@ governance:
           three:
           four:      
       - name: Warning
-        tip: text
+        tip: Make the API design process a learning experience.
         text: Warnings encountered when editing each API contract are reflected inline when designing an API, helping provide common warnings 
         tools:
           one: 
@@ -857,23 +860,23 @@ governance:
           three:
           four:      
       - name: Design Review
-        tip: text
-        text: Having a design review betwen developer, designer, architects, and product manager to help improve the design of the API, but also help improvie the policies, rules, and guidance provided as part of API governance.
+        tip: Have a conversation with stakeholders about each API.
+        text: Having a design review between developer, designer, architects, and product manager to help improve the design of the API, but also help improve the policies, rules, and guidance provided as part of API governance.
         tools:
           one: 
             name: Postman
-            description: Design reviews can exist within a workspace, either synchronously or asynchronosuly with all the stakeholders.
+            description: Design reviews can exist within a workspace, either synchronously or asynchronously with all the stakeholders.
             link: https://postman.com
           two:
           three:
           four:      
   - name: Develop
-    tip: text
+    tip: Governance should be localized for developers during development.
     type: business
     elements:  
       - name: Errors
-        tip: text
-        text: Developers should be able to lint their APIs locally as they desvelop, seeing the errors they are making in the design of an API in real time.
+        tip: Make all errors known locally and allow devs to fix early on.
+        text: Developers should be able to lint their APIs locally as they develop, seeing the errors they are making in the design of an API in real time.
         tools:
           one: 
             name: Postman
@@ -885,8 +888,8 @@ governance:
           three:
           four:      
       - name: Warning       
-        tip: text
-        text: Developers should recceive warnings as part of their local development for the most common policies which are automated as part of rules.
+        tip: Make development a learning experience for developers.
+        text: Developers should receive warnings as part of their local development for the most common policies which are automated as part of rules.
         tools:
           one: 
             name: Postman
@@ -898,8 +901,8 @@ governance:
           three:
           four:      
       - name: CLI
-        tip: text
-        text: Developers should have access to governance linting via the commadn line interface as they are developing APIs locally.
+        tip: Making linting available via CLI for local use.
+        text: Developers should have access to governance linting via the command line interface as they are developing APIs locally.
         tools:
           one: 
             name: Postman
@@ -909,8 +912,8 @@ governance:
           three:
           four:      
       - name: IDE
-        tip: 
-        text: Developers kshould have access to governance linting via their chosen IDE as they are developing APIs locally. 
+        tip: Governance enablement should be available via IDE.
+        text: Developers should have access to governance linting via their chosen IDE as they are developing APIs locally. 
         tools:
           one:  
             name: VSCode
@@ -920,41 +923,41 @@ governance:
           three:
           four:      
   - name: Test
-    tip: text
+    tip: Testing is an essential aspect of API governance.
     type: technical
     elements:       
       - name: Quality Review
-        tip: text
+        tip: Coming together to review the quality of an API.
         text: A review of contract, performance and other tests, as well as documentation and mock servers can be conducted to help ensure a baseline of quality across teams, and the APIs they are developing.
         tools:
           one: 
             name: Postman
-            description: Quality reviews can be conducted via private, partner, or public worksaces across teams.
+            description: Quality reviews can be conducted via private, partner, or public workspaces across teams.
             link: https://postman.com
           two:
           three:
           four:      
   - name: Secure
-    tip: text
+    tip: Security is a critical aspect of API governance.
     type: technical
     elements:       
       - name: Security Review  
-        tip: text
-        text: A review of each API being developed can be conducted by security teams, helping evaluate the decisions made by teams when it comes to security, and ensure there are no vulneraabilities as teh API is being deployed.
+        tip: Coming together to review the security of an API.
+        text: A review of each API being developed can be conducted by security teams, helping evaluate the decisions made by teams when it comes to security, and ensure there are no vulnerabilities as the API is being deployed.
         tools:
           one: 
             name: Postman
-            description: Security reviews can be conducted via private, partner, or public worksaces across teams.
+            description: Security reviews can be conducted via private, partner, or public workspaces across teams.
             link: https://postman.com
           two:
           three:
           four:      
   - name: Deploy
-    tip: text
+    tip: This is where governance can be informed and enforced.
     type: technical
     elements:  
       - name: Errors
-        tip: text
+        tip: Expose governance errors during build time.
         text: Governance linting should be applied as part of the CI/CD pipeline when deploying an API, returning errors as part of the reporting and build failure to staging or production.
         tools:
           one: 
@@ -967,7 +970,7 @@ governance:
           three:
           four:      
       - name: Warning       
-        tip: text
+        tip: Expose warnings to developers during build time.
         text: Governance linting should be applied as part of the CI/CD pipeline when deploying an API, returning warnings as part of the reporting, allowing teams to learn as they iterate upon their APIs.
         tools:
           one: 
@@ -980,7 +983,7 @@ governance:
           three:
           four:          
       - name: Policies
-        tip: text
+        tip: Automate the application of gateway and other policies.
         text: Security, gateway, and other policies are applied as part of the CI/CD pipeline, ensuring that all policies are tested for, and in some cases automatically applied as part of the API deployment process.
         tools:
           one: 
@@ -994,11 +997,11 @@ governance:
           three:
           four:      
   - name: Observe
-    tip: text
+    tip: Governance can be made observable too!
     type: business
     elements:  
       - name: APM
-        tip: text
+        tip: Pipe your governance into your APM.
         text: Governance test results can be fed into APM solutions, providing a way to report across the different aspects of governance for all APIs.
         tools:
           one:
@@ -1009,23 +1012,23 @@ governance:
           three:
           four:      
       - name: Reports
-        tip: text
-        text: Platform reporting shows information about how government rules are beinga pplied across teams and APIs, helping architects, product owners, and other roles see the impact of governance work.
+        tip: Take advantage of centralized governance reporting.
+        text: Platform reporting shows information about how government rules are being applied across teams and APIs, helping architects, product owners, and other roles see the impact of governance work.
         tools:
           one: 
             name: Postman
-            description: Postman reporting allows you to see governance as it being applied across teams and APIs.
+            description: Postman reporting allows you to see governance as it is being applied across teams and APIs.
             link: https://postman.com
           two:
           three:
           four:      
   - name: Distribute
-    tip: text
+    tip: Discover is the most important aspect of governance.
     type: business
     elements:  
       - name: Search
-        tip: text
-        text: Governance guidance, collections, and reporting should be discovable as part of operations, allowing stakeholders to understand the state of one or many APIs by engaging with operations.
+        tip: Make sure your API operations are discoverable.
+        text: Governance guidance, collections, and reporting should be discoverable as part of operations, allowing stakeholders to understand the state of one or many APIs by engaging with operations.
         tools:
           one: 
             name: Postman
@@ -1034,15 +1037,15 @@ governance:
           two:
           three:
           four:          
-
-# The consumer side of the lifecycle
+ 
+# The consumer side of the life cycle
 consumer:
   - name: Discover
-    tip: text
+    tip: Make it simple for your consumers to find what they need.
     type: business
     elements:
       - name: Search
-        tip: text
+        tip: All of your APIs should be available via the search your consumers use.
         text: Consumers should be able to search for APIs on the interfaces they are already using, allowing for discovery of API information in a manner relevant to their work.
         tools:
           one: 
@@ -1059,8 +1062,8 @@ consumer:
             description: This is the description.
             link: https://example.com
       - name: Networks
-        tip: text
-        text: This is the text.
+        tip: Consumers will find what they need via networks.
+        text: Publishing APIs to private, partner, and public networks for discovery.
         tools:
           one: 
             name: Postman
@@ -1070,7 +1073,7 @@ consumer:
           three:
           four:      
       - name: Teams
-        tip: text
+        tip: Your teams need to be discoverable.
         text: The teams behind APIs, and any partner or public contributors, should be made discoverable alongside documentation and other data, encouraging engagement.
         tools:
           one: 
@@ -1081,7 +1084,7 @@ consumer:
           three:
           four:      
       - name: Workspaces
-        tip: text
+        tip: The workspaces behind APIs should be discoverable.
         text: Alongside Git repositories, you should include private, partner, and public workspaces as part of discovery, indexing the places where all work occurs for each API.
         tools:
           one: 
@@ -1092,7 +1095,7 @@ consumer:
           three:
           four:      
       - name: APIs
-        tip: text
+        tip: All APIs should be discoverable.
         text: The contracts and other artifacts that define the surface area of an API, including authentication and authorization, should be discoverable as part of regular operations.
         tools:
           one: 
@@ -1106,7 +1109,7 @@ consumer:
           three:
           four:      
       - name: Documentation
-        tip: text
+        tip: Docs make your APIs discoverable.
         text: Up-to-date and accurate documentation for all APIs should be easily discoverable by teams, with human-readable details describing what is possible with each API.
         tools:
           one: 
@@ -1120,7 +1123,7 @@ consumer:
           three:
           four:      
       - name: Access  
-        tip: text
+        tip: Make sure things are truly accessible!
         text: This APIs, documentation, and the operations around APIs should be accessible to targeted consumers, ensuring that access is handled consistently across all APis, and removes barriers to entry for all consumers.
         tools:
           one: 
@@ -1131,11 +1134,11 @@ consumer:
           three:
           four:      
   - name: Evaluate
-    tip: text
+    tip: Consumers are picky and want to evaluate whether an API meets their needs.
     type: business
     elements:
       - name: Explore
-        tip: text
+        tip: Allow consumers to explore each API.
         text: Enable consumers to explore as much of the surface area of an API as possible, perhaps without even authenticating, so they can learn what is possible.
         tools:
           one: 
@@ -1146,7 +1149,7 @@ consumer:
           three:
           four:      
       - name: Documentation
-        tip: text
+        tip: Make documentation support evaluation.
         text: Provide rich documentation with useful descriptions, examples, and other information to help consumers get started using each API.
         tools:
           one: 
@@ -1160,7 +1163,7 @@ consumer:
           three:
           four:   
       - name: Examples
-        tip: text
+        tip: Provide rich examples for all APIs.
         text: Make sure there are always examples for each element of an API, allowing API contracts to be mocked and providing rich documentation showing how they work.
         tools:
           one: 
@@ -1174,7 +1177,7 @@ consumer:
           three:
           four:               
       - name: Onboarding  
-        tip: text
+        tip: Make onboarding frictionless for consumers.
         text: It should be easy for a consumer to go from exploring to executing and integrating an API, making it as easy as possible to receive keys and understand how to make API requests. 
         tools:
           one: 
@@ -1188,12 +1191,12 @@ consumer:
           three:
           four:               
       - name: Execute  
-        tip: text
+        tip: Make things hands-on and executable.
         text: Provide the ability to execute each request, response, publish, and subscribe, making sure that learning about an API is as hands-on as it can possibly be. 
         tools:
           one: 
             name: Postman
-            description: Postman provides an automated enviroment for working with APIs.
+            description: Postman provides an automated environment for working with APIs.
             link: https://postman.com
           two:  
             name: Collection
@@ -1202,11 +1205,11 @@ consumer:
           three:
           four:      
   - name: Integrate
-    tip: text
+    tip: This is where consumers move from exploration to integration.
     type: technical
     elements:     
       - name: Authentication
-        tip: text
+        tip: Keep authentication standardized.
         text: The authentication with APIs for developers needs to be made as simple and standardized as possible using API keys, OAuth, and OpenID.
         tools:
           one: 
@@ -1219,9 +1222,9 @@ consumer:
             link: https://example.com
           three:
           four:      
-      - name: Capablities Collections
-        tip: text
-        text: Small modular collections can be made available for automating the integration of APIs, applying environments and making integrationi easier for developers.
+      - name: Capabilities Collections
+        tip: Reduce capabilities into bite-size collections.
+        text: Small modular collections can be made available for automating the integration of APIs, applying environments and making integration easier for developers.
         tools:
           one: 
             name: Postman
@@ -1234,7 +1237,7 @@ consumer:
           three:
           four:      
       - name: Contracts
-        tip: text
+        tip: Make contracts available to your consumers.
         text: Machine-readable contracts like OpenAPI and AsyncAPI make integration as simple as importing the contract for an API, authenticating, and  making the API calls you need to move data between systems, providing an artifact that defines consumption.
         tools:
           one: 
@@ -1248,21 +1251,21 @@ consumer:
           three:
           four: 
       - name: Client SDKs
-        tip: text
-        text: Software development kids in a variety of programming languages help minimize the time it takes for developers to integrate with an API in the language they are most familar with.
+        tip: Provide the code consumers need.
+        text: Software development kids in a variety of programming languages help minimize the time it takes for developers to integrate with an API in the language they are most familiar with.
         tools:
           one: 
             name: Postman
-            description: Postman autogenerates code snippets for you in a variety of languages.
+            description: Postman auto generated code snippets for you in a variety of languages.
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: OpenAPI can be used to generated client SDKs as part of the build process.
+            description: OpenAPI can be used to generate client SDKs as part of the build process.
             link: https://example.com
           three:
           four:                
       - name: Automation
-        tip: text
+        tip: Make API automation easy for your consumers.
         text: Take advantage of automation opportunities, allowing collections to be scheduled and baked into the CI/CD pipelines and common business capabilities to be executed. Business and technical stakeholders can do more with less through API automation.
         tools:
           one: 
@@ -1273,7 +1276,7 @@ consumer:
           three:
           four:      
       - name: Workflows  
-        tip: text
+        tip: Offer the most meaningful business workflows.
         text: Provide ready-to-go low-code and no-code options for executing common business workflows, allowing multiple internal, partner, and public APIs to be daisy-chained into solutions that will help business and technical stakeholders integrate better.
         tools:
           one: 
@@ -1287,11 +1290,11 @@ consumer:
           three:
           four:      
   - name: Test
-    tip: text
+    tip: Your API consumers will care a lot about API testing.
     type: technical
     elements:
       - name: Availability
-        tip: text
+        tip: Share the availability of your APIs.
         text: Share uptime and availability information with consumers on a dashboard, providing transparency around the operation of the platform they will depend on for their applications and helping provide a historical accounting of availability.
         tools:
           one: 
@@ -1302,7 +1305,7 @@ consumer:
           three:
           four:      
       - name: Contract
-        tip: text
+        tip: Share your contract tests with consumers.
         text: Exposing contract tests and even the results of scheduled contract test runs will increase consumer awareness of API contracts and how their validation can be used in applications and integrations.
         tools:
           one: 
@@ -1319,7 +1322,7 @@ consumer:
             description: Collections can be used to provide contract tests that consumers can run on their own.
             link: https://example.com     
       - name: Performance
-        tip: text
+        tip: Share your performance tests with consumers.
         text: Share performance tests and results of scheduled performance test runs, increasing transparency about API performance while demonstrating how your platform has considered performance and is taking steps to improve upon it.
         tools:
           one: 
@@ -1333,12 +1336,12 @@ consumer:
           three:
           four:      
       - name: Security
-        tip: text
+        tip: Share your security tests with consumers.
         text: Share your overall security policy and security test results, creating trust with consumers. 
         tools:
           one: 
             name: Postman
-            description: Postman workspaces can make security collections and reporting available to cosumers.
+            description: Postman workspaces can make security collections and reporting available to consumers.
             link: https://postman.com
           two:  
             name: Collection
@@ -1348,11 +1351,11 @@ consumer:
           three:
           four:      
   - name: Deploy
-    tip: text
+    tip: Your consumers need to deploy their integrations.
     type: technical
     elements:
       - name: Source
-        tip: text
+        tip: Source control powers integrations.
         text: Place all manually developed or automatically generating client code in a repository, providing a source of truth for the code and for any artifacts that are needed to define the deployment and operation of any API integration.
         tools:
           one:  
@@ -1363,7 +1366,7 @@ consumer:
           three:
           four:      
       - name: CI/CD Pipelines
-        tip: text
+        tip: CI/CD makes integrations repeatable.
         text: Implement the continuous integration portion of CI/CD, automating how applications and integrations are deployed and, making the deployment of API integrations, applications, and other use cases something that is always repeatable.
         tools:
           one:  
@@ -1374,7 +1377,7 @@ consumer:
           three:
           four:      
       - name: Collection
-        tip: text
+        tip: Collection integrations are easy!
         text: Leverage a Postman collection as a modular, shareable, and executable definition of an application, stitching together many different API calls across internal and external API sources to apply digital resources and capabilities in a specific way.
         tools:
           one: 
@@ -1383,23 +1386,23 @@ consumer:
             link: https://postman.com
           two:  
             name: Collection
-            description: Collections can be used to autoamte the integration of many different APis.
+            description: Collections can be used to automate the integration of many different APis.
             link: https://example.com
           three:
           four:      
       - name: Serverless
-        tip: text
+        tip: Provide simple computers for consumers.
         text: Use serverless layers for deploying integrations, orchestrations, and automating API resources and capabilities, tapping into ephemeral compute to deploy integration code that accomplishes specific business outcomes.
         tools:
           one: 
             name: AWS Lambda
-            description: AWS Lambda can be used as the serverless compute behind API operations.
+            description: AWS Lambda can be used as the serverless computer behind API operations.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Runners  
-        tip: text
+        tip: Offer consumers collection runners.
         text: Acknowledge that some collection applications will be manually run by different team members using runners, organizing different types of integrations and applications by workspaces and letting different stakeholders manually put them to work.
         tools:
           one: 
@@ -1413,22 +1416,22 @@ consumer:
           three:
           four:      
   - name: Observe 
-    tip: text
+    tip: Your consumers need to observe APIs too.
     type: technical
     elements:
       - name: Usage
-        tip: text
-        text: A consumers uage of an API should always be made available to consumers so they can always be understand of how they are putting resources to work.
+        tip: Keep consumers informed of usage.
+        text: A consumer's usage of an API should always be made available to consumers so they can always be understood of how they are putting resources to work.
         tools:
           one:
             name: AWS API Gateway
-            description: AWS API Gateway is used to understand and report upon the usage of APIs by consumer.
+            description: AWS API Gateway is used to understand and report upon the usage of APIs by consumers.
             link: https://example.com          
           two:
           three:
           four:      
       - name: Watches
-        tip: text
+        tip: Consumers can watch APIs.
         text: Keeping track of the watches on workspaces, APIs, and collections to understand who is tuned into what is happening. Use watches as a metric for the number of consumers, contributors, and internal and external stakeholders who are tuned in.
         tools:
           one: 
@@ -1445,7 +1448,7 @@ consumer:
             description: Consumers can watch collections that are made available to consumers.
             link: https://example.com
       - name: Forks
-        tip: text
+        tip: Consumers can fork and submit pull requests.
         text: Track who is forking repositories and collections, using the fork count as a metric for engagement and knowing who your consumers are. Track engagement via workspaces, repositories, and collections to learn how consumers are using your APIs.
         tools:
           one: 
@@ -1459,7 +1462,7 @@ consumer:
           three:
           four:      
       - name: Feedback
-        tip: text
+        tip: Provide feedback loops for consumers.
         text: Engage with API producers and consumers, understanding the conversation is around each API or group of APIs. Observe discussions about digital resources and capabilities.
         tools:
           one:  
@@ -1476,18 +1479,18 @@ consumer:
             description: This is the description.
             link: https://example.com      
       - name: Monitors
-        tip: text
+        tip: Allow consumers to monitor your APIs.
         text: Monitors can be used by consumers to monitor uptime, contracts, performance, and security of the APIs that they are depending on.
         tools:
           one: 
             name: Postman
-            description: Postman enables consumer to setup monitors on any APIs they are consumering.
+            description: Postman enables consumers to set up monitors on any APIs they are consuming.
             link: https://postman.com
           two:
           three:
           four:      
       - name: Notifications  
-        tip: text
+        tip: Keep consumers informed with notifications.
         text: Use in-app, email, or SMS notifications to engage with a platform and keep consumers part of the forward motion of an API, collecting metrics for observability.
         tools:
           one: 
@@ -1496,4 +1499,4 @@ consumer:
             link: https://postman.com
           two:
           three:
-          four:      
+          four: 
