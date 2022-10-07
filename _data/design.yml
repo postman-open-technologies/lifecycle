@@ -877,7 +877,7 @@ governance:
         tools:
           one: 
             name: Postman
-            description: description: Postman on the desktop can be used to edit API contracts and return inline linting warnings triggered by Spectral rules.
+            description: Postman on the desktop can be used to edit API contracts and return inline linting warnings triggered by Spectral rules.
             link: https://postman.com
           two: 
             name: Spectral
@@ -903,7 +903,7 @@ governance:
         tools:
           one: 
             name: Postman
-            description:The Postman CLI can be used to validate API contracts during local development.
+            description: The Postman CLI can be used to validate API contracts during local development.
             link: https://postman.com
           two:
           three:
