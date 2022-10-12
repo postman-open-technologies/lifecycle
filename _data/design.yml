@@ -917,7 +917,7 @@ governance:
         tools:
           one:  
             name: VSCode
-            description: This is the description.
+            description: VSCode is being used to develop the API locally.
             link: https://example.com
           two:
           three:
@@ -1054,12 +1054,12 @@ consumer:
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: An OpenAPI can be used to make an API more discoverazble.
             link: https://example.com
           three:
           four:  
             name: Collection
-            description: This is the description.
+            description: Documentation, mock, and test collections can be used to make an API more discoverazble.
             link: https://example.com
       - name: Networks
         tip: Consumers will find what they need via networks.
@@ -1104,7 +1104,7 @@ consumer:
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: The OpenAPI is how you make an API more discoverable.
             link: https://example.com
           three:
           four:      
@@ -1118,7 +1118,7 @@ consumer:
             link: https://postman.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: OpenAPI is used to generate documentation.
             link: https://example.com
           three:
           four:      
@@ -1411,7 +1411,7 @@ consumer:
             link: https://postman.com
           two:  
             name: Collection
-            description: This is the description.
+            description: BUsiness workflows can be defined as collections and automated using runners.
             link: https://example.com
           three:
           four:      
@@ -1467,16 +1467,16 @@ consumer:
         tools:
           one:  
             name: Github
-            description: This is the description.
+            description: GitHub issues are used to gather feedback.
             link: https://example.com
           two:  
             name: OpenAPI
-            description: This is the description.
+            description: Comments on the OpenAPI definition is used to gather inline feedback.
             link: https://example.com
           three:
           four:  
             name: Collection
-            description: This is the description.
+            description: Comments on documentation, mock, and test collection is used to gather inline feedback.
             link: https://example.com      
       - name: Monitors
         tip: Allow consumers to monitor your APIs.
