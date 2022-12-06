@@ -1,0 +1,143 @@
+<style id="compiled-css" type="text/css">
+h2{
+padding: 0;
+margin: 0;
+font-size: 24px;
+}
+h2{
+padding: 0px 0px 8px 0px;
+margin: 0px auto;
+text-align: center;
+font-size: 20px;
+text-decoration: underline;
+}
+h3{
+padding: 0px auto;
+margin: 5px auto;
+text-align: center;
+font-size: 16px;
+border: 1px solid #000;
+}
+#container{
+width: 90%;
+margin: 0 auto;
+padding: 2px auto;
+background-color: #FFF;
+border-radius: 10px;
+padding: 10px;
+overflow: hidden;
+}
+#header{
+background-color: FFF;
+width: 100%;
+margin: 0 auto;
+border-radius: 0px;
+margin-bottom: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+#business{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+}    
+
+#technical{
+background-color: #FFF;
+border: 1px solid #000;
+float: left;
+width: 150px;
+margin: 10px;
+padding: 10px 2px 2px 2px;
+border-radius: 10px;
+min-height: 475px;
+background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+}  
+#inner{
+    background-color: FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 92%;
+    margin: 5px;
+    padding: 10px 3px 3px 3px;
+    border-radius: 10px;
+    font-size: 12px;
+    min-height: 60px;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #FFF;
+}  
+
+.inner-text{
+    width: 100%; 
+    margin: 0px 0px 0px 0px;
+    padding: 8px 0px 0px 0px;
+    text-align: center; 
+    border: 0px solid #000; 
+    position: relative;  
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 50px;
+    display: inline;
+}
+
+.icon{
+width: 25px; height: 25px; top: -19px; right: -10px; position: absolute; padding:0px; margin: 0px; border: 0px solid #000; 
+}
+.icon2{
+width: 25px; height: 25px; top: -19px; left: -10px; position: absolute; padding:0px; margin: 0px;border: 0px solid #000; 
+}
+.icon3{
+width: 25px; height: 25px; top: 7px; left: -10px; position: absolute; padding:0px; margin: 0px;border: 0px solid #000; 
+}
+.icon4{
+width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0px; margin: 0px;border: 0px solid #000; 
+}
+</style>
+<div id="container" style="border: 0px solid #000; margin-top: 50px;">
+
+    <table border="0" align="center" width="90%">
+
+        <tr>
+            <td>   
+
+                <!--LIFECYCLE--> 
+                {% for producer in producer %}
+                <div id="{{ producer.type }}" style="min-height: 850px; width: 10.9%;">
+                    <h2 data-intro="{{ producer.tip }}" style="{% if producer.opacity %} opacity: {{ producer.opacity }};{% endif %}">{{ producer.name }}</h2>
+                    {% for element in producer.elements %}
+                        <div id="inner" data-intro='{{ element.tip }}' style="width: 92%;{% if element.opacity %} opacity: {{ element.opacity }};{% endif %}{% if element.focus %} border: {{ element.focus }}px solid #EF5B25;{% endif %}">
+                            <div class="inner-text" style="padding:0px;">
+
+                                <!-- Four Image Icons-->
+                                {% if element.tools.one.name %}<img src="{{ site.url}}/images/{{ element.tools.one.name | replace: ' ','-' | downcase }}-icon.png" class="icon" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.one.description }}">{% endif %}                                
+                                {% if element.tools.two.name %}<img src="{{ site.url}}/images/{{ element.tools.two.name | replace: ' ','-' | downcase }}-icon.png" class="icon2" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.two.description }}">{% endif %}     
+                                {% if element.tools.three.name %}<img src="{{ site.url}}/images/{{ element.tools.three.name | replace: ' ','-' | downcase }}-icon.png" class="icon3" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.three.description }}">{% endif %}     
+                                {% if element.tools.four.name %}<img src="{{ site.url}}/images/{{ element.tools.four.name | replace: ' ','-' | downcase }}-icon.png" class="icon4" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.tools.four.description }}">{% endif %} 
+                                <!-- Four Image Icons-->
+
+                                <!-- Mouseover Text-->
+                                <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="{{ element.text }}">
+                                    {% if element.icon %}<img src="../../images/icons/{{ element.icon }}" width="50" style="padding: 0px;"><br>{% endif %}
+                                    {{ element.name }}
+                                </button>                        
+                            </div>
+                        </div>
+                    {% endfor %}                    
+                </div>
+                {% endfor %}
+                <!--LIFECYCLE--> 
+
+            </td>
+        </tr> 
+
+    </table>        
+
+</div>

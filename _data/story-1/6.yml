@@ -1,0 +1,183 @@
+---
+ 
+info:
+  title: Journey - Deploy - CI/CD
+  description: 
+    body: We are also often using our command line interface (CLI) to work some magic as we are developing.
+    tip: Need a tip.
+
+producer:
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: Develop
+    tip: 
+    type: technical
+    opacity: 100
+    elements:
+
+      - name: IDE
+        tip: 
+        text:
+        opacity: 100
+        icon: integrated-development.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: CLI
+        tip: 
+        text:
+        opacity: 100
+        icon: code-generator.png
+        tools:
+          one: 
+          two:
+          three:
+          four:     
+
+      - name: Code
+        tip: 
+        text:
+        opacity: 100
+        icon: deploy.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: Source Control
+        tip: 
+        text:
+        opacity: 100
+        icon: source-control.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                            
+       
+  - name: 
+    tip: 
+    type: technical
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: 
+    tip: 
+    type: technical
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+               
+  - name: Deploy
+    tip: 
+    type: technical
+    opacity: 100
+    elements:  
+
+      - name: Source Control
+        tip: 
+        text:
+        opacity: 100
+        icon: source-control.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: CI/CD
+        tip: 
+        text:
+        opacity: 100
+        focus: 5
+        icon: ci-cd.png
+        tools:
+          one: 
+          two:
+          three:
+          four:               
+     
+  - name: Observe
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+    
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four: 

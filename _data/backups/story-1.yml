@@ -1,0 +1,464 @@
+---
+ 
+info:
+  title: Lifecycle Visualization
+  description: 
+    body: This is an opinionated visual and accompanying outline to help demonstrate what a complete digital product can be when you adopt an API-first strategy, providing a common approach to defining the API lifecycle, governance, tooling, and which roles are needed to move APIs forward.
+    tip: This is one approach to delivering a consistent API across a common lifecycle while considering governance, and the roles in place. This blueprint will not reflect the needs of every organization, but provides a nice template to consider as you are building your own strategy.
+  type: 
+    body: HTTP / Web / REST API
+    tip: This lifecycle has been validated against existing web APIs, providing your most simplest, but also most broad approach to how you can do APIs.
+  approach: 
+    body: Design-Led
+    tip: This blueprint is opinionated about following a design-led approach to delivering an API, iterating on the contract amongst stakeholders before any code gets written.
+  visibility:
+    body: Public
+    tip: This is a blueprint for a publicly available API, and we should take into consideration what happens when anyone around the world can access it.
+  maturity:
+    body: Production
+    tip: This blueprint is meant to cover the needs of an API in production, requiring the most comprehensive quality, security, and governance.
+  lifecycle:
+    image: producer-consumer-lifecycle.png
+    tip: Forward motion with any API requires a balanced relationship between the API producer and the consumer, let's stand this lifecycle on its side and walk through all of the elements.
+
+producer:
+  - name: Define
+    tip: Each API should be well-defined by a mix of business and technical stakeholders.
+    type: business
+    elements:
+      - name: Domains
+        tip: Each API should be part of a well-defined domain that is in alignment with business goals.
+        text: What domain will an API be operating in? Define the vocabulary, standards, and other patterns that developers at design and development teams will use.
+        tools:
+          one: 
+          two:
+          three:
+          four:
+      - name: Regions
+        tip: Which regions an API will be running in should be well-defined from the beginning.
+        text: Identify the region(s) where an API will operate so that you can comply with regulations and other business requirements and ensure that APIs are as close to consumers as possible.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Requirements
+        tip: The business, security, and other requirements for an API should always be well-defined.
+        text: What are the requirements for the API?  You need to define the business value it will bring to help you guide development and operation.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: Workspaces
+        tip: Each API should have a dedicated workspace where you can stay up to speed on what is happening.
+        text: Set up the workspaces where teams will be designing, developing, and managing APIs, then iterating upon them and managing multiple versions.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Source
+        tip: Each API should have a source control repository, ensuring all artifacts and code are available.
+        text: Ensuring that every API is using source control and has a repository for managing code, but also API artifacts, and other elements needed to manage the API lifecycle.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: Teams
+        tip: The teams behind an API should be well-defined and documented as part of the API lifecycle.
+        text: Line up who will be working on an API, bringing together designers, developers, technical writers, QA specialists, and other roles who will be involved in moving your APIs forward.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Stakeholders
+        tip: All business and technical stakeholders should be identified and made part of the process.
+        text: Identify business and technical stakeholders, including any external partners and consumers who might need to be involved.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+  - name: Design
+    tip: This is where we design an aPI before we get to work writing any code.
+    type: business
+    elements:
+      - name: Source
+        tip: Source control should be used as the foundation for designing API contracts.
+        text: Using source control to manage the artifacts involved with the API design process, providing a single source of truth that grounds design across teams.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: Contracts
+        tip: Each API should have a well-defined and complete machine readable contract available.
+        text: Put contracts like OpenAPI and AsyncAPI to work in defining the surface area of each API, providing a machine-readable contract to guide teams’ work.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Schema
+        tip: The schema for all objects that an API depends on should be part of the contracts.
+        text: Establish a schema for all of the objects used as part of requests, responses, publishing, and subscribing when integrating an API into applications.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Reference
+        tip: Reference documentation should exist for each API.
+        text: Generating reference documentation using the API contract, providing a complete set of documentation for everything that is possible with an API.
+        tools:
+          one: 
+          two:  
+          three:       
+          four:      
+      - name: Mocks
+        tip: Mock servers should be used as part of the API design process.
+        text: Generate a mock representation of an API using its contract, providing an example of what the API will do in production. That will help with the design process and later on, with onboarding.
+        tools: 
+          one: 
+          two:     
+          three:                   
+          four:      
+      - name: Variables
+        tip: The common values, secrets and other elements of APIs should be abstracted as variables.
+        text: Variables should be used to abstract away common patterns and secrets that are used across reference documents, mock servers, and eventually API testing.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Environments  
+        tip: A machine readable environment should be available for all API environments.
+        text: Environments allow development, staging, production, and other environments needed to develop and deliver APIs in a machine readable and executable way.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+  - name: Develop
+    tip: The development stage of the API lifecycle should be well-defined, even if it is happening locally.
+    type: technical
+    elements:
+      - name: Source
+        tip: Source control is the base of local development and provides access to the API source truth.
+        text: The source control repository is cloned locally, providing access to artifacts that are produced as part of the API design process to develop API.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: IDE
+        tip: Developers love their IDE, and will be using it to develop APIs locally.
+        text: An integrated development environment is used to develop the code and other artifacts that will be used as part of deploying each API.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: CLI
+        tip: The command line interface (CLI) is an integral part of the local development of APIs.
+        text: A Command Line Interface (CLI) can be used as part of local development, making Postman artifacts and capability as part of the development process.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Server
+        tip: The server behind the API will need to be generated and then developed.
+        text: Establish a baseline for the underlying API compute, choosing among virtual servers, containers, and serverless to power each API.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: Gateway
+        tip: The gateway will need to be set up and configured for deploying the API.
+        text: Set up the gateway to prepare for an API deployment. Do the initial work to set up everything needed at the gateway layer, shifting as much of this work as far to the left in the life cycle as possible.
+        tools:
+          one: 
+          two:
+          three:
+          four:        
+  - name: Test
+    tip: All APIs should be tested, shifting the process as far left in the lifecycle as possible.
+    type: technical
+    elements:
+      - name: Contract
+        tip: The contract for each API should be used as the source of truth for testing.
+        text: Use OpenAPI and AsyncAPI contracts to ensure that 100% of the surface area of an API is tested and behavior reflects the contract between producer and consumer.
+        tools:
+          one: 
+          two: 
+          three:
+          four:      
+      - name: Performance
+        tip: Performance tests should exist for each API to meet SLAs.
+        text: Test specific paths for each API in multiple regions to make sure the API, gateway, and network provide the desired performance. 
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Monitors  
+        tip: Contract and performance testing should be monitored on a schedule.
+        text: Schedule testing monitors to run on a schedule reflecting the business needs of the API, but also the type of test being run, allowing teams to automate testing.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+  - name: Secure
+    tip: The security of APIs should be shifted left as far as possible in the API lifecycle.
+    type: technical
+    elements:
+      - name: Authentication
+        tip: Standardized authentication for APIs should always be used.
+        text: Authentication helps ensure APIs are accessed only by those who should have access, allowing API producers and consumers to easily apply rules consistently.
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+      - name: Authorization
+        tip: The fine-grain access of digital resources should be considered.
+        text: Once a user is authenticated, the authorization layer will make sure they only have access to approved resources. 
+        tools:
+          one: 
+          two:
+          three:
+          four:              
+      - name: Environments
+        tip: Environments help standardize how we manage API environments.
+        text: Have a solid map of the development, staging, and production environments across all APIs in operation. That will help you manage API deployment more consistently.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: RBAC  
+        tip: ROle-based access control should be applied to APIs and operations.
+        text: Role-based access controls should be applied at the authorization layer of an API and to the API operations around it, helping govern who has access to operations.
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+      - name: Fuzzing
+        tip: The entire surface area of APIs should be fuzzed as part of the life cycle.
+        text: Providing invalid, unexpected, or random data as inputs to an API as part of manual and automated testing, helping check for the most common vulnerabilities.
+        tools:
+          one: 
+          two:  
+          three:
+          four:                
+  - name: Deploy
+    tip: This is when an API is being deployed in a repeatable way across teams.
+    type: technical
+    elements:    
+      - name: Source
+        tip: Source control is the foundation of how APIs are being deployed.
+        text: Use source control to manage code and artifacts used to deploy an API, providing a single location where you can find everything behind each version, ideally with multiple branches to accommodate many API contributions.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: Artifacts
+        tip: All artifacts should be synced and made available via source control.
+        text: OpenAPI, JSON Schema, and collections are committed to the source control so that they can be used as part of the CI/CD pipelines, but also anywhere else across the API lifecycle.
+        tools:
+          one:  
+          two:  
+          three:  
+          four:  
+      - name: CI/CD
+        tip: CI/CD is used to deploy and test APIs as they are being built.
+        text: The pipeline ensures that the deployment of an API to each stage is as repeatable as possible, with tests and other essential needs of the API build process making API deployment as repeatable as possible across teams.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: Environments
+        tip: Machine readable environments are needed to apply testing and policies.
+        text: Apply commonly managed environments, with a coordinated variable strategy for testing and automating configuration as part of the pipeline, helping to abstract away the technical details and secrets of API environments.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Server
+        tip: The server code will get deployed as part of the build process.
+        text: The CI/CD pipeline publishes the code behind each individual API operation, levering a serverless backend for this API, helping automate and scale the backend resources needed to power APIs.
+        tools:
+          one:  
+          two:
+          three:
+          four:      
+      - name: Gateway
+        tip: The gateway configuration will be updated and deployed.
+        text: Publish contracts, extensions, and other configurations to the API gateway, deploying an API into a staging, then a production environment if all tests pass in the pipeline. This gives you a repeatable way of managing gateways.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Contract Test
+        tip: Contract test collections will be executed.
+        text: Contract tests are executed for staging and production environments, ensuring that the contract for each API is met in staging before it is published to production for consumers to use.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Security Test  
+        tip: Security test collections will be executed.
+        text: Security tests are executed for staging and production environments, ensuring that there are no vulnerabilities for each API that is met in staging before it is published to production for consumers to use.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+  - name: Observe
+    tip: The observability of APIs is important to understand the state of each API.
+    type: business
+    elements:
+      - name: Usage
+        tip: The usage of APIs needs to be readily observable by teams.
+        text: The usage of APIs by consumers is observable, leveraging the gateway to understand which APIs are accessed, how much consumers are using APIs, and what errors and other considerations are.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Monitors
+        tip: Monitors should exist for all collections, scheduling their execution.
+        text: Establish monitors for all contract, performance, security, and governance tests. These tests provide the results you need to understand the state of APIs and API operations. Use collections to define all of the outputs you need to understand the state of your APIs.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: APM
+        tip: All collection runs can be piped into APM solutions for wider observability.
+        text: Route all outputs across API operations into your existing APM solutions, tapping every output across the API life cycle to understand the health and state of the platform through the infrastructure you have already invested in.
+        tools:
+          one:    
+          two:
+          three:
+          four:      
+      - name: Notifications
+        tip: Teams can receive notifications via web, desktop, and email about API operations.
+        text: Use notifications and alerts to observe changes with each API, as well as events that occur across the life cycle. They will help you understand consumer activity, as well as what is happening across teams and other stakeholders.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Reports
+        tip: Reports are available to understand teams, APIs, and operations.
+        text: Provide team, API, documentation, testing, and other reporting, showing what teams are doing across API operations and how the lifecycle is unfolding across teams. Use native platform reporting that speaks specifically to API operations.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Watches
+        tip: Teams can watch APIs and collections to understand operations.
+        text: API engagement can be observed using API and collection watches, tracking how API consumers are watching the APIs, documentation, mocks, testing, and other aspects of API operations.
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+      - name: Forks
+        tip: The number of forks paint a picture about what is happening.
+        text: Any Postman collection can be forked by consumers, allowing documentation, mock servers, tests, and other types of collecitons to be forked and used as part of integration and automations.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Feedback  
+        tip: The feedback loop for APIs is important for iterating and evolving APIs.
+        text: Feedback loops connecting API consumers with API producers allow teams to gather feedback about how well APIs are meeting the needs of consumers, providing valuable information that can be used to iterate upon each API.
+        tools:
+          one:  
+          two:  
+          three:
+          four:     
+  - name: Distribute
+    tip: Once ready, APIs need to be properly distributed to consumers for use.
+    type: business
+    elements:
+      - name: Network
+        tip: Networks connect producers and consumers across API operations.
+        text: APIs should be published to the private, partner, and public networks where API consumers are, via the platforms they are already using. Tap into existing network effects for API consumers so your developers can meet them where they already are.
+        tools:
+          one: 
+          two:  
+          three:
+          four:          
+      - name: Portal
+        tip: APIs should be published to relevant private, partner, or public portals.
+        text: An API deployed into production should be published to the central portal, providing centralized access for internal or external consumers through a single doorway that can be supported as part of overall API operations.
+        tools:
+          one: 
+          two:  
+          three:
+          four:    
+      - name: Documentation
+        tip: Reference documentation should be distributed for all APIs.
+        text: Reference documentation is published for the API, leveraging OpenAPI contracts to generate reference collections that provide a complete picture of what is possible for consumers.
+        tools:
+          one: 
+          two:  
+          three:
+          four:   
+      - name: Client SDKs
+        tip: Client SDKs and snippets should always be available for APIs by default.
+        text: Generating client SDKs in a variety of programming languages, helping do the redundant work for your consumers when it comes to integration.
+        tools:
+          one: 
+          two:  
+          three:
+          four:         
+      - name: Buttons
+        tip: Embeddbable buttons make onboarding with APis easier.
+        text: The documentation, tests, and workspace behind an API should be made available via blog posts, videos, wikis, and other resources to support APIs. Use embeddable and actionable buttons that consumers can activate with one click.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Blog Post
+        tip: Each API should enjoy an internal, partner, or private blog post.
+        text: Each API should at least have one blog post published, helping announce the availability of each API, ensuring that business and technical are made aware of the value that is available.
+        tools:
+          one: 
+          two:  
+          three:
+          four:      
+      - name: Video
+        tip: A walk-through video should be recorded to show the value of an API.
+        text: Each API should have at least one video that helps walk through documentation, onboarding, and using the API as part of workflows, applications, and integrations.
+        tools:
+          one: 
+          two:  
+          three:
+          four:       
+      - name: Education
+        tip: Educational resources should be made available across all aPIs.
+        text: Contracts, collections, blog posts, videos, and other sources should be made available via workspaces and repositories, helping ensure the required education for consumers is available.
+        tools:
+          one: 
+          two:  
+          three:
+          four: 

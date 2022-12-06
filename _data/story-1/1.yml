@@ -1,0 +1,138 @@
+---
+ 
+info:
+  title: Journey - IDE
+  description: 
+    body: In the early times, we just get tow work developing our APIs in our integrated development environment (IDE).
+    tip: Need a tip.
+
+producer:
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: Develop
+    tip: 
+    type: technical
+    opacity: 100
+    elements:
+
+      - name: IDE
+        tip: 
+        text:
+        opacity: 100
+        focus: 5
+        icon: integrated-development.png
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+       
+  - name: 
+    tip: 
+    type: technical
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: 
+    tip: 
+    type: technical
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+               
+  - name: Deploy
+    tip: 
+    type: technical
+    opacity: 0
+    elements:  
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+     
+  - name: Observe
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+    
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four: 

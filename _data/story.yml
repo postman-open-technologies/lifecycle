@@ -1,0 +1,137 @@
+---
+ 
+info:
+  title: Stories
+  description: 
+    body: The body for the story.
+    tip: Need a tip.
+
+producer:
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: Develop
+    tip: 
+    type: technical
+    opacity: 100
+    elements:
+
+      - name: IDE
+        tip: 
+        text:
+        opacity: 100
+        icon: integrated-development.png
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+       
+  - name: 
+    tip: 
+    type: technical
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: 
+    tip: 
+    type: technical
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+               
+  - name: Deploy
+    tip: 
+    type: technical
+    opacity: 0
+    elements:  
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+     
+  - name: Observe
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+    
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four: 

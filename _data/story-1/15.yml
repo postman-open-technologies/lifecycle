@@ -1,0 +1,253 @@
+---
+ 
+info:
+  title: Journey - Deploy - Contract Testing
+  description: 
+    body: We are also often using our command line interface (CLI) to work some magic as we are developing.
+    tip: Need a tip.
+
+producer:
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+     
+  - name: Develop
+    tip: 
+    type: technical
+    opacity: 100
+    elements:
+
+      - name: IDE
+        tip: 
+        text:
+        opacity: 100
+        icon: integrated-development.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: CLI
+        tip: 
+        text:
+        opacity: 100
+        icon: code-generator.png
+        tools:
+          one: 
+          two:
+          three:
+          four:     
+
+      - name: Code
+        tip: 
+        text:
+        opacity: 100
+        icon: deploy.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: Source Control
+        tip: 
+        text:
+        opacity: 100
+        icon: source-control.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                            
+       
+  - name: Test
+    tip: 
+    type: technical
+    opacity: 100
+    elements:
+
+      - name: Contract Tests
+        tip: 
+        text:
+        opacity: 100
+        focus: 5
+        icon: contract-testing.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Performance Tests
+        tip: 
+        text:
+        opacity: 100   
+        focus: 5     
+        icon: dashboard.png
+        tools:
+          one: 
+          two:
+          three:
+          four:           
+
+      - name: Integration Tests
+        tip: 
+        text:
+        opacity: 100
+        focus: 5
+        icon: contract-testing.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+     
+  - name: 
+    tip: 
+    type: technical
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+               
+  - name: Deploy
+    tip: 
+    type: technical
+    opacity: 100
+    elements:  
+
+      - name: Source Control
+        tip: 
+        text:
+        opacity: 100
+        icon: source-control.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: CI/CD
+        tip: 
+        text:
+        opacity: 100
+        icon: ci-cd.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: Gateway
+        tip: 
+        text:
+        opacity: 100
+        icon: gateway.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: API
+        tip: 
+        text:
+        opacity: 100
+        icon: api.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                 
+     
+  - name: Observe
+    tip: 
+    type: business
+    opacity: 100
+    elements: 
+
+      - name: Security Tests
+        tip: 
+        text:
+        opacity: 100
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Monitors
+        tip: 
+        text:
+        opacity: 100
+        icon: monitor.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: APM
+        tip: 
+        text:
+        opacity: 100
+        icon: apm.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                        
+    
+  - name: 
+    tip: 
+    type: business
+    opacity: 0
+    elements:
+
+      - name: 
+        tip: 
+        text:
+        opacity: 0
+        tools:
+          one: 
+          two:
+          three:
+          four: 
