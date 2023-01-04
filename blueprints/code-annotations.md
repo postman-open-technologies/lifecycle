@@ -1,0 +1,20 @@
+## Code Annotations 
+This is a blueprint for entering the API lifecycle by generating an OpenAPI using code annotations, taking a code-first approach to bringing each API to life, while still ensuring that there is a contract to help guide the API across a more standardized API lifecycle. 
+
+### Define 
+Code annotations allow the backend of APIs to be annotated within the code, which can then be used to generate machine-readable artifacts like OpenAPI and JSON Schema as part of the build process. 
+
+- **Overview** - Providing a single overview of an API so that all the moving parts of an API viewed in a single dashboard helps ensure that all team members will be able to get up to speed on the overall picture of an API in a way that doesn~t require another meeting, making sure every artifact, documentation, test, and another element has a useful overview provided. 
+- **Operations** - The active and functioning state of an enterprise, something that is increasingly being shaped and defined by APIs, provides the business functions needed to deliver the products and services an organization provides, which are increasingly accessed and purchased via web and mobile applications. 
+- **Schema** - Defining all objects use as part of API operations using JSON Schema provides for a definitions that can be used as part of modeling and the API design process, as well as for validation at development, build, or even run time. 
+- **Security** - The security of APIs spans multiple domains, beginning with encryption of API requests and responses in transport, but then moving to identity and access management using keys, tokens, and other standards, while also ensuring that you scan, audit, fuzz, and ensure that the surface area of APIs are free from common vulnerabilities, and malicious actors are unable to get access to the resources and capabilities available via APIs. 
+- **Extensions** - Use extensions for OpenAPI and AsyncAPI, going beyond what each specification can do and providing templates teams can use across the API life cycle. 
+All of these objects can be generated as part of the regular coding processing, maintaining a code-first approach, while still ensuring that there is a machine-readable contract produced as part of the process to power documentation and code generation. 
+### Build 
+The road to setting a new code-first or existing API on a road to a standardized API lifecycle oftentimes begins with the generation of an OpenAPI from annotations in the code as part of a build process. Relying on annotations for each coding method to produce an API for the surface area of the API, updating the OpenAPI, and other supporting documentation and tests using a CI/CD pipeline. Bypassing the API design process and going with a code-first approach to delivering an API, and relying on the pipeline for the existing software development lifecycle to generate the OpenAPI, and set in motion the delivery of documentation, testing, and other elements of the API lifecycle. 
+
+- **OpenAPI** - The OpenAPI specification provides a common vocabulary for describing the surface area of request and response APIs, as well as webhooks, ensuring that API producers and consumers are on the same page when it comes to integration, but also helps stabilize multiple areas of the API lifecycle providing a contract that can be used for delivering documentation, mocks, testing, and more. 
+- **Gateways** - API gateways provide a centralized or federated approach to the deployment and management of APIs at scale across an organization, leveraging commercial or open-source API gateways to deploy APIs into development, staging, production, or other environments, allowing for the standardization of common elements of API management, and configuring APIs using common policies. 
+- **CI/CD** - Operating in a state of continuous integration and continuous deployment involving APIs, ensuring that the process involved with consuming and producing APIs are as reliable, high quality, and resulting in consistent outcomes that benefit everyone involved, and powers useful applications. 
+null 
+ 
