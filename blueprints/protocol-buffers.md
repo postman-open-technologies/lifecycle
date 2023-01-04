@@ -1,0 +1,15 @@
+## Protocol Buffers 
+Protocol Buffers (Protobuf) is a free and open-source cross-platform data format used to serialize structured data. It is useful in developing programs to communicate with each other over a network or for storing data. The method involves an interface description language that describes the structure of some data and a program that generates source code from that description for generating or parsing a stream of bytes that represents the structured data. 
+
+### Elements 
+ 
+
+- **Serialization** - Protocol buffers provide a serialization format for packets of typed, structured data that are up to a few megabytes in size, suitable for both ephemeral network traffic and long-term data storage, and extending with new information. 
+- **Services** - A service is an individual system that supplies a digital resource or capability, providing a granular unit of business value that can be used internally within the enterprise or made available to partners in a secure but highly performant manner. 
+- **Messages** - Messages are digital communications for sending serialized and structured, record-like, typed data in a language-neutral, platform-neutral, extensible manner, providing a highly efficient way of communicating between systems within the enterprise and with partners. 
+- **Message Types** -  Protocol Buffers allow you to define any type of message you will need to make your digital resources and capabilities available, giving you full control over how data will be structured, interpreted, and consumed by internal and partner developers. 
+- **Language Compatibility** - Language Compatibility - Messages can be read by code written in any programming language, providing a high-performant way to make data available across many different platforms. A robust add-on ecosystem allows for a long tail of integrations. 
+ 
+Protocol Buffers provide a solid contract for defining the relationship between your internal services, allowing for large volumes of high-quality and well-defined data to be exchanged across the enterprise. In some cases, gRPC is used externally with partners, providing high-volume business-to-business services outside the enterprise firewall.
+Protocol Buffers are a very strict and efficient approach to delivering industrial-grade digital plumbing for the enterprise. But don’t confuse these APIs with the simpler web APIs that are the fundamental building blocks of internal and external APIs. Make sure you are right-sizing your approach to APIs, and possess a clear definition of what it will take to deliver what your API consumers need before choosing gRPC as the solution.
+Not all developers will find working with gRPC intuitive, so make sure your teams have the right education and skills to be effective when producing and consuming gRPC APIs. When it comes to the right implementations, gRPC is very effective at delivering high availability and powerful APIs. But in the wrong situation, they can be overkill and introduce more friction for developers. 
