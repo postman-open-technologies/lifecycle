@@ -1,9 +1,9 @@
 ---
  
 info:
-  title: Journey - Deploy - Rules & Standards
+  title: Testing an API Payload
   description: 
-    body: We are also often using our command line interface (CLI) to work some magic as we are developing.
+    body: This is a narrative for how to test the payload of an API.
     tip: Need a tip.
 
 producer:
@@ -12,6 +12,17 @@ producer:
     type: business
     opacity: 100
     elements:
+
+      - name: Stakeholders
+        tip: 
+        text:
+        opacity: 100
+        icon: stakeholders.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
 
       - name: Business Reqs
         tip: 
@@ -22,46 +33,14 @@ producer:
           one: 
           two:
           three:
-          four:  
-
-      - name: Workspace
-        tip: 
-        text:
-        opacity: 100
-        icon: workspaces.png
-        tools:
-          one: 
-          two:
-          three:
-          four: 
-
-      - name: Source Control
-        tip: 
-        text:
-        opacity: 100
-        icon: source-control.png
-        tools:
-          one: 
-          two:
-          three:
-          four:  
+          four:   
 
       - name: Rules
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: execute.png
-        tools:
-          one: 
-          two:
-          three:
-          four: 
-
-      - name: Standards
-        tip: 
-        text:
-        opacity: 100
-        icon: shapes.png
         tools:
           one: 
           two:
@@ -78,34 +57,13 @@ producer:
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: contract.png
         tools:
           one: 
           two:
           three:
-          four:   
-
-      - name: Mocks
-        tip: 
-        text:
-        opacity: 100
-        icon: mock-servers.png
-        tools:
-          one: 
-          two:
-          three:
-          four:   
-
-      - name: Docs
-        tip: 
-        text:
-        opacity: 100
-        icon: documentation.png
-        tools:
-          one: 
-          two:
-          three:
-          four:                      
+          four:                                                                                
      
   - name: Develop
     tip: 
@@ -128,6 +86,7 @@ producer:
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: code-generator.png
         tools:
           one: 
@@ -167,6 +126,7 @@ producer:
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: contract-testing.png
         tools:
           one: 
@@ -177,13 +137,26 @@ producer:
       - name: Performance Tests
         tip: 
         text:
+        focus: 5
         opacity: 100  
         icon: dashboard.png
         tools:
           one: 
           two:
           three:
-          four:           
+          four: 
+
+      - name: Platform Tests
+        tip: 
+        text:
+        opacity: 100 
+        focus: 5 
+        icon: platform.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                     
 
       - name: Integration Tests
         tip: 
@@ -194,13 +167,13 @@ producer:
           one: 
           two:
           three:
-          four:            
+          four:                       
      
   - name: Secure
     tip: 
     type: technical
     opacity: 100
-    elements:
+    elements:    
 
       - name: Security Tests
         tip: 
@@ -211,7 +184,7 @@ producer:
           one: 
           two:
           three:
-          four:    
+          four:                                       
                
   - name: Deploy
     tip: 
@@ -234,6 +207,7 @@ producer:
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: ci-cd.png
         tools:
           one: 
@@ -245,6 +219,7 @@ producer:
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: gateway.png
         tools:
           one: 
@@ -256,6 +231,7 @@ producer:
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: api.png
         tools:
           one: 
@@ -267,23 +243,13 @@ producer:
     tip: 
     type: business
     opacity: 100
-    elements: 
-
-      - name: Network
-        tip: 
-        text:
-        opacity: 100
-        icon: network.png
-        tools:
-          one: 
-          two:
-          three:
-          four:     
+    elements:  
 
       - name: Monitors
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: monitor.png
         tools:
           one: 
@@ -295,18 +261,42 @@ producer:
         tip: 
         text:
         opacity: 100
+        focus: 5
         icon: apm.png
         tools:
           one: 
           two:
           three:
-          four:                                        
+          four:   
+
+      - name: Reports
+        tip: 
+        text:
+        opacity: 100
+        focus: 5
+        icon: reporting.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                                 
     
   - name: Distribute
     tip: 
     type: business
     opacity: 100
     elements:
+
+      - name: Network
+        tip: 
+        text:
+        opacity: 100
+        icon: network.png
+        tools:
+          one: 
+          two:
+          three:
+          four:        
 
       - name: Portal
         tip: 
@@ -328,18 +318,7 @@ producer:
           one: 
           two:
           three:
-          four:     
-
-      - name: SDKs
-        tip: 
-        text:
-        opacity: 100
-        icon: sdk.png
-        tools:
-          one: 
-          two:
-          three:
-          four:    
+          four:       
 
       - name: Feedback
         tip: 

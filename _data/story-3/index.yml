@@ -1,0 +1,765 @@
+---
+ 
+info:
+  title: Journey - Deploy - Rules & Standards
+  description: 
+    body: We are also often using our command line interface (CLI) to work some magic as we are developing.
+    tip: Need a tip.
+
+producer:
+
+  - name: Broken object level authorization
+    tip: 
+    type: business
+    opacity: 100
+    width: 15%
+    elements:
+
+      - name: Scope for OAuth scheme used in security field is not defined in the securityScheme declaration
+        tip: Broken object level authorization
+        text:
+        width: 95%       
+        height: 250px
+        opacity: 100         
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Scope for OAuth scheme used is not defined in the securityScheme declaration
+        tip: Broken object level authorization
+        text:
+        width: 95%
+        height: 250px
+        opacity: 100  
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+  - name: Broken user authentication
+    tip: 
+    type: business
+    opacity: 100
+    width: 40%
+    elements:
+
+      - name: Security field is not defined
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Security field does not contain any item
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:
+
+      - name: Security field does not contain any scheme
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:
+
+      - name: Security scheme object not defined
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:          
+
+      - name: Security scheme object does not contain any scheme
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: Scheme used in security field is not defined in the security scheme object
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: HTTP authentication scheme is using an unknown scheme
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:     
+
+      - name: Security field for the operation does not contain any item
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                  
+
+      - name: Security field for the operation does not contain any scheme
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: Operation does not enforce any security scheme
+        tip: Broken user authentication
+        text:
+        width: 31%
+        height: 150px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+  - name: Excessive data exposure
+    tip: 
+    type: business
+    opacity: 100
+    width: 40%
+    elements:
+
+      - name: API accepts credentials from OAuth authentication in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: API accepts credentials from OpenID Connect authentication in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: API accepts credentials from OAuth 1.0 authentication in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+
+      - name: API accepts API key in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+
+      - name: API accepts auth credentials in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+
+      - name: Global server URL uses HTTP protocol
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                               
+
+      - name: Operation accepts credentials from OAuth authentication in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Operation accepts credentials from OpenID Connect authentication as plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: Operation accepts credentials from OAuth 1.0 authentication in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                    
+
+      - name: Operation accepts API key in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Operation accepts authentication credentials in plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:     
+
+      - name: Server URL of the operation is using HTTP protocol
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                 
+
+      - name: Authorization URL uses HTTP protocol; credentials will be transferred as plain text
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Token URL uses HTTP protocol
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: Refresh URL uses HTTP protocol
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: OpenID Connect URL uses HTTP protocol
+        tip: Excessive data exposure
+        text:
+        width: 31%
+        height: 160px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                             
+
+  - name: API information
+    tip: 
+    type: business
+    opacity: 100
+    elements:
+
+      - name: The info object should have a description
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                  
+
+      - name: The info object should have a license
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:
+
+      - name: The info object should have a license URL
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+
+      - name: The info object should have a terms of service
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: API must have contact information available
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:      
+
+      - name: API must have a contact name available
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: API must have a contact URL or email available
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: API must have a contact email available
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: API must have a contact URL available
+        tip: API information
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                                             
+
+  - name: Operations
+    tip: 
+    type: business
+    opacity: 100
+    width: 43%
+    elements:
+
+      - name: There should be no trailing slashes on paths
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: All operations should have summaries
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: Operation summaries shouldn't end with a period
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+
+      - name: All operations should have descriptions
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: All parameters should have descriptions
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:    
+
+      - name: All parameters should have examples
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: POST methods should have request bodies
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: PUT methods should have request bodies
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:  
+
+      - name: PATCH methods should have request bodies
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                                                       
+
+      - name: All request bodies should have examples
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Operation should return a 2xx HTTP status code
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:   
+
+      - name: Operation should return a 5xx HTTP status code
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:     
+
+      - name: All responses should have examples
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: A 204 response can't have a body
+        tip: Operations
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:                                      
+
+  - name: Models
+    tip: 
+    type: business
+    opacity: 100
+    width: 43%
+    elements:
+
+      - name: A schema property should reference a reusable schema
+        tip: Models
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four:           
+
+      - name: All reusable schemas should have descriptions
+        tip: Models
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: All schema properties should have descriptions
+        tip: Models
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 
+
+      - name: Arrays must have minItems and maxItems defined
+        tip: Models
+        text:
+        width: 45%
+        height: 140px
+        opacity: 100 
+        icon: security-shield.png
+        tools:
+          one: 
+          two:
+          three:
+          four: 

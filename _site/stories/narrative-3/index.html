@@ -1,0 +1,1261 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Hugo 0.88.1">
+   
+   <title>Stories</title>
+
+   <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">--->
+   
+   <link href="http://localhost:4000/assets/css/bootstrap.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/introjs.css" rel="stylesheet">
+
+   <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Cookies.js - http://github.com/ScottHamper/Cookies -->
+    <script src="http://localhost:4000/assets/js/cookies.js"></script>
+
+    <script src="https://kit.fontawesome.com/29ac0024f3.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        function getUrlVar(key){
+            var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+            return result && unescape(result[1]) || "";
+        }
+
+    </script>
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://localhost:4000/">Stories</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/about/">About</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://localhost:4000/contact/">Contact</a>
+          </li>                                                                                                                     
+        </ul>
+        <form class="d-flex">
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-shrink-0">
+
+<style id="compiled-css" type="text/css">
+    h2{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    }
+    h2{
+    padding: 0px 0px 8px 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    }
+    h3{
+    padding: 0px auto;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #000;
+    }
+    #container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2px auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 9px;
+    overflow: hidden;
+    }
+    #header{
+    background-color: FFF;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+    
+    #business{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    background: linear-gradient(to bottom, white 0%, #8abdff 100%)
+    }    
+    
+    #technical{
+    background-color: #FFF;
+    border: 1px solid #000;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 10px 2px 2px 2px;
+    border-radius: 10px;
+    min-height: 475px;
+    background: linear-gradient(to bottom, white 0%, #ffc895 100%)
+    }  
+    #inner{
+        background-color: FFF;
+        border: 1px solid #000;
+        float: left;
+        width: 92%;
+        margin: 5px;
+        padding: 10px 3px 3px 3px;
+        border-radius: 10px;
+        font-size: 12px;
+        min-height: 60px;
+        display: -webkit-flex;
+        display: flex;
+        background-color: #FFF;
+    }  
+    
+    .inner-text{
+        width: 100%; 
+        margin: 0px 0px 0px 0px;
+        padding: 8px 0px 0px 0px;
+        text-align: center; 
+        border: 0px solid #000; 
+        position: relative;  
+        font-size: 20px;
+        font-weight: bold;
+        min-height: 50px;
+        display: inline;
+    }
+    
+    .icon{
+    width: 25px; height: 25px; top: -19px; right: -10px; position: absolute; padding:0px; margin: 0px; border: 0px solid #000; 
+    }
+    .icon2{
+    width: 25px; height: 25px; top: -19px; left: -10px; position: absolute; padding:0px; margin: 0px;border: 0px solid #000; 
+    }
+    .icon3{
+    width: 25px; height: 25px; top: 7px; left: -10px; position: absolute; padding:0px; margin: 0px;border: 0px solid #000; 
+    }
+    .icon4{
+    width: 25px; height: 25px; top: 35px; left: -10px; position: absolute; padding:0px; margin: 0px;border: 0px solid #000; 
+    }
+    </style>
+    <div id="container" style="border: 0px solid #000; margin-top: 50px;">
+    
+        <table border="0" align="center" width="90%">
+    
+            <tr>
+                <td>   
+                    <!--LIFECYCLE--> 
+                    
+                    <div id="business" style="min-height: 300px; width: 15%;">
+                        <h2 data-intro="" style=" opacity: 100;">Broken object level authorization</h2>
+                        
+                            <div id="inner" data-intro='Broken object level authorization' style="width: 95%; height: 250px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Scope for OAuth scheme used in security field is not defined in the securityScheme declaration
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken object level authorization' style="width: 95%; height: 250px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Scope for OAuth scheme used is not defined in the securityScheme declaration
+                                    </button>                        
+                                </div>
+                            </div>
+                                            
+                    </div>
+                    
+                    <div id="business" style="min-height: 300px; width: 40%;">
+                        <h2 data-intro="" style=" opacity: 100;">Broken user authentication</h2>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Security field is not defined
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Security field does not contain any item
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Security field does not contain any scheme
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Security scheme object not defined
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Security scheme object does not contain any scheme
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Scheme used in security field is not defined in the security scheme object
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        HTTP authentication scheme is using an unknown scheme
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Security field for the operation does not contain any item
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Security field for the operation does not contain any scheme
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Broken user authentication' style="width: 31%; height: 150px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation does not enforce any security scheme
+                                    </button>                        
+                                </div>
+                            </div>
+                                            
+                    </div>
+                    
+                    <div id="business" style="min-height: 300px; width: 40%;">
+                        <h2 data-intro="" style=" opacity: 100;">Excessive data exposure</h2>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API accepts credentials from OAuth authentication in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API accepts credentials from OpenID Connect authentication in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API accepts credentials from OAuth 1.0 authentication in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API accepts API key in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API accepts auth credentials in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Global server URL uses HTTP protocol
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation accepts credentials from OAuth authentication in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation accepts credentials from OpenID Connect authentication as plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation accepts credentials from OAuth 1.0 authentication in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation accepts API key in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation accepts authentication credentials in plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Server URL of the operation is using HTTP protocol
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Authorization URL uses HTTP protocol; credentials will be transferred as plain text
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Token URL uses HTTP protocol
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Refresh URL uses HTTP protocol
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Excessive data exposure' style="width: 31%; height: 160px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        OpenID Connect URL uses HTTP protocol
+                                    </button>                        
+                                </div>
+                            </div>
+                                            
+                    </div>
+                    
+                    <div id="business" style="min-height: 300px; width: ;">
+                        <h2 data-intro="" style=" opacity: 100;">API information</h2>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        The info object should have a description
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        The info object should have a license
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        The info object should have a license URL
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        The info object should have a terms of service
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API must have contact information available
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API must have a contact name available
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API must have a contact URL or email available
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API must have a contact email available
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='API information' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        API must have a contact URL available
+                                    </button>                        
+                                </div>
+                            </div>
+                                            
+                    </div>
+                    
+                    <div id="business" style="min-height: 300px; width: 43%;">
+                        <h2 data-intro="" style=" opacity: 100;">Operations</h2>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        There should be no trailing slashes on paths
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All operations should have summaries
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation summaries shouldn't end with a period
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All operations should have descriptions
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All parameters should have descriptions
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All parameters should have examples
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        POST methods should have request bodies
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        PUT methods should have request bodies
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        PATCH methods should have request bodies
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All request bodies should have examples
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation should return a 2xx HTTP status code
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Operation should return a 5xx HTTP status code
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All responses should have examples
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Operations' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        A 204 response can't have a body
+                                    </button>                        
+                                </div>
+                            </div>
+                                            
+                    </div>
+                    
+                    <div id="business" style="min-height: 300px; width: 43%;">
+                        <h2 data-intro="" style=" opacity: 100;">Models</h2>
+                        
+                            <div id="inner" data-intro='Models' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        A schema property should reference a reusable schema
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Models' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All reusable schemas should have descriptions
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Models' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        All schema properties should have descriptions
+                                    </button>                        
+                                </div>
+                            </div>
+                        
+                            <div id="inner" data-intro='Models' style="width: 45%; height: 140px;;  opacity: 100;">
+                                <div class="inner-text" style="padding:0px;">
+    
+                                    <!-- Four Image Icons-->
+                                                                    
+                                         
+                                         
+                                     
+                                    <!-- Four Image Icons-->
+    
+                                    <!-- Mouseover Text-->
+                                    <button style="background-color:#FFF; border-color:#FFF; color:#000; font-size: 13px; font-weight: bold;" type="button" class="btn btn-secondary" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+                                        <img src="../../images/icons/security-shield.png" width="35" style="padding: 0px;"><br>
+                                        Arrays must have minItems and maxItems defined
+                                    </button>                        
+                                </div>
+                            </div>
+                                            
+                    </div>
+                    
+                    <!--LIFECYCLE--> 
+    
+                </td>
+            </tr> 
+    
+        </table>        
+    
+    </div>
+
+<div class="alert alert-success" role="alert">
+</div></main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted"></span>
+  </div>
+</footer>
+
+<script src="http://localhost:4000/assets/js/bootstrap.bundle.min.js"></script>  
+<script>
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
+$("#popover").popover({ trigger: "hover" });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/intro.js"></script>  
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-51"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-51');
+</script>
+
+  </body>
+</html>
