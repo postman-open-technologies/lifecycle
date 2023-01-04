@@ -5,14 +5,14 @@ A blueprint is just a concept. It begins with an idea, grows with discussion and
 ### Postman
 These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
 ## 100 Series Blueprints 
-- [What is an API?](blueprints/what-is-an-api?.md) 
+- [What is an API?](blueprints/what-is-an-api.md) 
 - [How to Think About APIs](blueprints/how-to-think-about-apis.md) 
 - [The Early Seeds of APIs](blueprints/the-early-seeds-of-apis.md) 
 - [APIs in Commerce and Social Media](blueprints/apis-in-commerce-and-social-media.md) 
 - [The API Moves to the Cloud](blueprints/the-api-moves-to-the-cloud.md) 
-- [Who Uses APIs?](blueprints/who-uses-apis?.md) 
-- [Why Are APIs Used?](blueprints/why-are-apis-used?.md) 
-- [Where Are APIs?](blueprints/where-are-apis?.md) 
+- [Who Uses APIs?](blueprints/who-uses-apis.md) 
+- [Why Are APIs Used?](blueprints/why-are-apis-used.md) 
+- [Where Are APIs?](blueprints/where-are-apis.md) 
 - [Using APIs Across Many Types of Applications](blueprints/using-apis-across-many-types-of-applications.md) 
 - [API-Early](blueprints/api-early.md) 
 - [History of Web APIs](blueprints/history-of-web-apis.md) 
@@ -136,7 +136,7 @@ These are blueprints that are specific to Postman, and how we operate different 
 - [Education](blueprints/education.md) 
 - [Postman Open Technologies](blueprints/postman-open-technologies.md) 
 - [Open Technologies Standard Support](blueprints/open-technologies-standard-support.md) 
-- [Why do you become API-first?](blueprints/why-do-you-become-api-first?.md) 
+- [Why do you become API-first?](blueprints/why-do-you-become-api-first.md) 
 - [Public Workspaces](blueprints/public-workspaces.md) 
 - [Producer - Observe](blueprints/producer-observe.md) 
 - [Application Performance Management (APM)](blueprints/application-performance-management-(apm).md) 
