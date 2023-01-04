@@ -11,4 +11,4 @@ It can be very helpful to pause, step back, and think about the parts of each in
 - **Body** - Enabling the ability to add JSON, XML, Text, and other types of data payloads as a body of the request, securely sending data (when encrypted) as part of a request. 
 - **Pre-Request Script** - A script that runs before a request is made, providing the automation of business logic before each individual request is initiated, setting the stage for each individual request. 
 null 
-null 
+ 
