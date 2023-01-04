@@ -1,0 +1,18 @@
+## Public Workspaces 
+Make API workspaces public, provide the ability to engage with 3rd party consumers in the entire API lifecycle, making APIs, mock servers, documentation, testing, monitoring, and automation accessible to everyone, making APIs discoverable to public consumers, and increasing the possibilities for engagement through watching, forking, and feedback loops. 
+
+### Contents 
+Public workspaces provide an unprecedented opportunity to turn how you do APIs into an exhibition that others can learn from, and engage with. Public workspaces represent the next evolution in how we engage with consumers, evolving the classic API portal and Git repository into something that better reflects the API lifecycle. Public workspaces open up more engagement opportunities beyond just documentation, making the artifacts behind our API documentation, mocks, tests, and code generation something that is watchable and forkable, and able to be engaged with via comments. There is no limit to what public workspaces can contain, and as Github has done for open-source, public workspaces will do for APIs, making the API economy much more visible, accessible, and something you can put to work as part of your operations. 
+
+- **OpenAPI** - The OpenAPI specification provides a common vocabulary for describing the surface area of request and response APIs, as well as webhooks, ensuring that API producers and consumers are on the same page when it comes to integration, but also helps stabilize multiple areas of the API lifecycle providing a contract that can be used for delivering documentation, mocks, testing, and more. 
+- **Reference Documentation** - It is helpful for API consumers to have complete documentation for the entire surface area of an API, providing a complete reference of what is possible with an API to help consumers explore every path, parameter, schema, and other details of how an API works, making the resources and capabilities available within API something consumers can find and put to use without much work. 
+- **Onboarding Collections** - When it comes to onboarding new consumers with an API or workspace, it helps to reduce the cognitive load by providing them with onboarding collections that only possess the API requests they will need to get started in their work. 
+null 
+### Engagement 
+Public workspaces are taking engagement between API producers and consumers by providing some of the common elements of social networks as a native part of the API lifecycle. Building on the momentum that watches and forks have given Repository used in service of open-source software, OpenAPI, GraphQL, and SOAP APIs can now be watched, and the collections used for documentation, mock servers, testing, automation, and many other purposes can now also be watched but also forked. Both APIs and collections can also have a general comment, but more importantly inline comments on specific parameters, schema, scripts, and other moving parts of an API request. Public workspace makes the API lifecycle much more collaborative and open for discussion, reuse, and demonstration, shifting how you contribute as part of the API economy. 
+
+- **Watches** - Keeping track of the watches on workspaces, APIs, and collections to understand who is tuned into what is happening. Use watches as a
+metric for the number of consumers, contributors, and internal and external stakeholders who are tuned in. 
+- **Forks** - Making a linked copy of an API, or the mocks, documentation, tests, and other areas of the lifecycle defined as a collection to another workspace, allowing anyone to run on their own, make changes and enhancements, then if they desire, contribute back to the original and receive regular updates over time. 
+null 
+ 
