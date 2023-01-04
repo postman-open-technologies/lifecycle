@@ -1,0 +1,18 @@
+## Low-Code / No-Code 
+Low Code/ No Code refers to an ever-growing opportunity to deliver applications without writing code or at least minimizing the amount of code needing to be written. Making producing and consuming APIs much more inclusive to those who are not fluent in writing code, but also makes those who are even more productive in their work. Providing business and technical stakeholders with a variety of solutions for engaging with API operations, and the business that it supports. 
+
+### Building Blocks 
+
+Low code/ no code refers to an ever-growing opportunity to deliver applications without writing code–or at least minimizing the amount of code that needs to be written. This makes producing and consuming APIs much more inclusive, allowing those who are
+not fluent in writing code to benefit. But it also helps those who are proficient in coding by making them more productive in their work. Low-code/no-code business and technology stakeholders have a variety of ways of engaging with API operations and the businesses they support. 
+
+- **Inventory** - To enable low-code/no-code development, provide business and technical stakeholders with a robust inventory of internal, partner, and third- party resources they can use when creating low-code/no-code integrations and applications, enabling them to do whatever is needed across services. 
+- **Flows** - Low code/no code offers the ability to create and evolve common business workflows using many different APIs, allowing them to be used by technical and business stakeholders to perform common business tasks e without getting their hands dirty in the code. 
+- **Authentication** - The complexities of authentication and authorization should be abstracted away, making it easy for anyone to be able to navigate the secrets needed to authenticate with one or many APIs, and solve authentication problems along the way. 
+- **Visuals** - With low-code/no-code, you make it a visual experience to navigate API inventory, build workflows, and configure authentication. Anyone can stitch together many different APIs, allowing business or technical stakeholders to take advantage of using them. 
+- **Runtime** - Low- and no-code applications provide a simple runtime any user can employ to run their workflows, providing the compute power to make each individual request, handle responses, and execute workflows in the order suggested by the user and executing the jobs they need done. 
+- **Automation** - You have the ability to schedule and trigger specific events, setting in motion the desired workflow. Low- and no-code allows anyone to automate common business tasks throughout the day, so that teams can do more with less. 
+- **Collaboration** - Low- and no-code improves collaboration and sharing, providing feedback and allowing anyone to iterate upon the functionality of each workflow. That makes business integrations and orchestration a team affair, something everyone learns from. 
+- **Observability** - People using low code/no code applications can see how their workflows and automations are running. They can also see the results of their work and how it fits into context with what other users are doing, cultivating a higher awareness of how the organization functions. 
+Low-code/no-code isn’t just for non-technical folks. It will help enterprises deal with the demands of their digital future. There is a perpetual shortage of developers, and extending the ability to develop applications to more people will expand the pipes behind the applications and integrations that business stakeholders depend on, giving them the . resources and capabilities they need to be successful. 
+null 
