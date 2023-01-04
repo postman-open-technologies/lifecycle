@@ -1,15 +1,14 @@
 ## Applications 
-APIs are used to deliver resources and digital capabilities across multiple types of applications, providing what is needed to power many different  web, mobile, and device applications, as well as system-to-system integration and automation. How the enterprise sees applications and integrations evolves  once they begin shifting towards an API-first way of looking at operations, demonstrating how APIs are behind every digital application we depend on today. 
+APIs deliver resources and digital capabilities across multiple types of applications, powering many different web, mobile, and device services, as well as providing system-
+to-system integrations and automations. The way enterprises see applications and integrations begins to evolve once they begin shifting towards API-first operations, pushing the boundaries of what applications mean and how they become part of business operations. 
 
 ### Types 
-There are many different types of applications that depend on APIs for whatever they do. Early on in the evolution of the web developers figured out that APIs made their applications more distributed in nature, but it wasn~t until the introduction of the iPhone and Android mobile devices that we began to see APIs also power mobile applications. Once lightweight web APIs proved useful for communication via unreliable mobile networks, device manufacturers also saw the potential for powering what has now become known as the Internet of Things. Pushing APIs further to the edge, powering devices, but also the networks and infrastructure beneath our applications, and APIs, making it APIs all the way down. 
+APIs have powered applications since the beginning of computers. The current breed of web APIs found its roots in aggregating content for web applications, then quickly expanded to mobile devices, back to the desktop, and even to the network beneath our applications. 
 
-- **Web** - Websites began as simple HTML documents, but have become a dynamic mix of many internal and external API calls being made to stitch together the desired online experience within a specific domain, providing a more rich web than possible before. 
-- **Mobile** - Mobile phones allow websites and applications to be accessible in our hands, turning what used to just be a device for voice or messaging into a rich application ecosystem that is sending and receiving data from across many different cloud platforms. 
-- **Device** -  Once developers realized that APIs could power mobile applications they began seeing what other types of mobile devices could be made Internet-enabled, moving our televisions, thermostats, automobiles, and almost every other device in our life online. 
-- **Integrations** - The integrations between lines of business, partners, and 3rd party vendors are increasingly governed through APIs and not just FTP and other connections, helping businesses be more effective with integrations. 
-- **Workflows** - Regular business processes are distilled down into a series of API requests, helping standardize how business operations are defined, and providing low-code or even no-code solutions for automating business for everyone. 
-- **Network** - As more of the infrastructure we depend on for the web moved into the cloud, the network that connected servers and clients together also has become API-enabled, making the network composable and configurable, changing how we operate applications. 
-- **Desktop** - APIs are how our desktop applications on our Windows and Mac desktops send and receive data back and forth to the server, making hundreds or thousands of calls each day to created, read, update, and delete the information needed as part of regular usage. 
-null 
-null 
+- **Desktop** - APIs are how desktop applications on our Windows and Mac PCs exchange data with the server, making hundreds or thousands of calls each day to create, read, update, and delete information as needed. 
+- **Web** - Websites began as simple HTML documents, but have become a dynamic mix of many internal and external API calls. These are stitched together to provide the desired online experience within a specific domain, providing a richer web experience than was possible before. 
+- **Mobile** - Mobile phones allow websites and applications to be accessible in our hands, turning a device for voice or messaging into a rich application ecosystem that sends and receives data across many different cloud platforms. 
+- **Device** - Once developers realized that APIs could power mobile applications, they moved on to making internet-enabled televisions, thermostats, automobiles, and other IoT products. 
+- **Network** - As more of the infrastructure we depend on for the web moved to the clouds, the network connecting servers and clients has also become API- enabled, making the network composable and configurable and changing how we operate applications. 
+ 
+ 
