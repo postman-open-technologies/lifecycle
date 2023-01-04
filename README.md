@@ -4,7 +4,7 @@ This is our Git managed process for centralizing the ideation and creation of co
 A blueprint is just a concept. It begins with an idea, grows with discussion and research, and then becomes an outline, which can be used as a buffet of concepts to work with when producing blog posts, videos, decks, and other reusable content.
 ### Postman
 These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
-## 100 
+## 100 Series Blueprints 
 - 101)[What is an API?](blueprints/what-is-an-api?.md) 
 - 101)[How to Think About APIs](blueprints/how-to-think-about-apis.md) 
 - 101)[The Early Seeds of APIs](blueprints/the-early-seeds-of-apis.md) 
@@ -59,7 +59,7 @@ These are blueprints that are specific to Postman, and how we operate different 
 - 175)[Gateway Capabilities](blueprints/gateway-capabilities.md) 
 - 190)[Business Workflows](blueprints/business-workflows.md) 
 - 190)[Consumer - Integrate](blueprints/consumer-integrate.md) 
-## 200 
+## 200 Series Blueprints 
 - 203)[Marketing](blueprints/marketing.md) 
 - 205)[API-Aware](blueprints/api-aware.md) 
 - 210)[Code Annotations](blueprints/code-annotations.md) 
@@ -106,8 +106,8 @@ These are blueprints that are specific to Postman, and how we operate different 
 - 240)[AsyncAPI Contracts](blueprints/asyncapi-contracts.md) 
 - 240)[Consumer - Observe](blueprints/consumer-observe.md) 
 - 245)[Design Reviews](blueprints/design-reviews.md) 
-## 300 
-## 400 
+## 300 Series Blueprints 
+## 400 Series Blueprints 
 ## Process
 The process we are using to move blueprints forward is an ever evolving one, but to help encourage participation across the team, and even from the community, here are steps we are taking to create new blueprints, and iterate upon existing ones.
 - **Ideas** - Use a miro board to get all the concepts on the table in a visual way.
