@@ -178,6 +178,7 @@ These are blueprints that are specific to Postman, and how we operate different 
 - [Category-Defining](blueprints/category-defining.md) 
 ## 400 Series Blueprints 
 - [Complete](blueprints/complete.md) 
+- [Testing Landscape](blueprints/testing-landscape.md) 
 ## Process
 The process we are using to move blueprints forward is an ever evolving one, but to help encourage participation across the team, and even from the community, here are steps we are taking to create new blueprints, and iterate upon existing ones.
 - **Ideas** - Use a miro board to get all the concepts on the table in a visual way.
