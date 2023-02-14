@@ -6,7 +6,6 @@ A blueprint is just a concept. It begins with an idea, grows with discussion and
 These are blueprints that are specific to Postman, and how we operate different aspects of Open Tech.
 ## 100 Series Blueprints 
 ## 200 Series Blueprints 
-- [Builder](blueprints/builder.md) 
 ## 300 Series Blueprints 
 ## 400 Series Blueprints 
 ## Process
