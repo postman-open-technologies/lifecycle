@@ -145,6 +145,7 @@ These are blueprints that are specific to Postman, and how we operate different 
 - [Open Technologies Standard Support](blueprints/open-technologies-standard-support.md) 
 - [Why do you become API-first?](blueprints/why-do-you-become-api-first.md) 
 - [API Program Lifecycle](blueprints/api-program-lifecycle.md) 
+- [Buttons](blueprints/buttons.md) 
 - [Public Workspaces](blueprints/public-workspaces.md) 
 - [Producer - Observe](blueprints/producer-observe.md) 
 - [Application Performance Management (APM)](blueprints/application-performance-management-(apm).md) 
