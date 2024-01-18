@@ -1252,7 +1252,7 @@ consumer:
           four: 
       - name: Client SDKs
         tip: Provide the code consumers need.
-        text: Software development kids in a variety of programming languages help minimize the time it takes for developers to integrate with an API in the language they are most familiar with.
+        text: Software development kits in a variety of programming languages help minimize the time it takes for developers to integrate with an API in the language they are most familiar with.
         tools:
           one: 
             name: Postman
